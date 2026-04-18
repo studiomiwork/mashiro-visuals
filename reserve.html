@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Configure your photo package and add-ons, pick a date, and check out online."
+    />
+    <title>Checkout | Mashiro Visuals</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="reserve">
+    <header class="site-header site-header--bar">
+      <div class="container header-inner header-inner--bar">
+        <a class="brand" href="./index.html">Mashiro Visuals</a>
+        <div class="header-tools header-tools--bar">
+          <div class="header-social">
+            <a
+              class="header-icon-circle"
+              href="https://www.instagram.com/photour_mi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.instagramAria"
+            >
+              <svg
+                class="header-icon-circle__svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="header-icon-circle"
+              href="https://wa.me/819083038369"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.whatsappAria"
+            >
+              <svg
+                class="header-icon-circle__svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="lang-switcher">
+            <select id="lang-select" class="lang-select" aria-label="Language">
+              <option value="en">English</option>
+              <option value="zh-TW">繁體中文</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="ru">Русский</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+          <button
+            type="button"
+            class="header-menu-btn header-menu-btn--dark"
+            id="nav-menu-open"
+            aria-expanded="false"
+            aria-controls="nav-overlay"
+            data-i18n-aria="nav.menuOpenAria"
+          >
+            <span class="header-menu-btn__hamburger" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="nav-overlay" class="nav-overlay" hidden aria-hidden="true">
+      <div
+        class="nav-overlay__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="nav-overlay-heading"
+      >
+        <div class="nav-overlay__top">
+          <a class="nav-overlay__brand brand" href="./index.html">Mashiro Visuals</a>
+          <div class="header-tools nav-overlay__tools">
+            <div class="header-social">
+              <a
+                class="header-icon-circle header-icon-circle--on-dark"
+                href="https://www.instagram.com/photour_mi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria="nav.instagramAria"
+              >
+                <svg
+                  class="header-icon-circle__svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+                </svg>
+              </a>
+              <a
+                class="header-icon-circle header-icon-circle--on-dark"
+                href="https://wa.me/819083038369"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria="nav.whatsappAria"
+              >
+                <svg
+                  class="header-icon-circle__svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <button
+              type="button"
+              class="header-menu-btn header-menu-btn--close"
+              id="nav-menu-close"
+              data-i18n-aria="nav.menuCloseAria"
+              aria-label="Close menu"
+            >
+              <span class="header-menu-btn__close" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <h2 id="nav-overlay-heading" class="visually-hidden" data-i18n="nav.menuTitle">Menu</h2>
+        <p class="nav-overlay__watermark" aria-hidden="true">Mashiro Visuals</p>
+        <nav class="nav-overlay__grid" aria-label="Primary">
+          <a class="nav-overlay__link" href="./campaign.html">
+            <span class="nav-overlay__title" data-i18n="nav.campaignEvent">CAMPAIGN &amp; EVENT</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subCampaignEvent">Seasonal fairs &amp; news</span>
+          </a>
+          <a class="nav-overlay__link" href="./plan.html">
+            <span class="nav-overlay__title" data-i18n="nav.plan">Plan</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subPlan">Products &amp; packages</span>
+          </a>
+          <a class="nav-overlay__link" href="./portfolio.html">
+            <span class="nav-overlay__title" data-i18n="nav.gallery">Gallery</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subGallery">Selected work</span>
+          </a>
+          <a class="nav-overlay__link" href="./costume.html">
+            <span class="nav-overlay__title nav-overlay__title--costume" data-i18n="nav.costume"
+              >COSTUME</span
+            >
+            <span class="nav-overlay__sub" data-i18n="nav.subCostume">Outfits &amp; styling</span>
+          </a>
+          <a class="nav-overlay__link" href="./about.html">
+            <span class="nav-overlay__title" data-i18n="nav.about">About</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subAbout">Our story</span>
+          </a>
+          <a class="nav-overlay__link" href="./contact.html">
+            <span class="nav-overlay__title" data-i18n="nav.contact">Contact</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subContact">Inquire &amp; booking</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow" data-i18n="reserve.hero.eyebrow">Checkout</div>
+          <h1 data-i18n="reserve.hero.h1">Order your photo session</h1>
+          <p data-i18n="reserve.hero.lead">
+            Choose your package and date, then enter your details, then pay online on the secure checkout step. A
+            confirmation email follows payment.
+          </p>
+        </div>
+      </section>
+
+      <section class="reserve-page">
+        <div class="container reserve-page__container">
+          <div class="reserve-flow card">
+            <h2 class="reserve-flow__title" data-i18n="reserve.flowTitle">How checkout works</h2>
+            <ol class="reserve-flow__list">
+              <li data-i18n="reserve.step1">Choose your session, add-ons, and a preferred date.</li>
+              <li data-i18n="reserve.step2">Enter your personal information for the order.</li>
+              <li data-i18n="reserve.step3">Complete online payment on the secure page; you will receive a confirmation email.</li>
+            </ol>
+            <p class="reserve-phone" data-i18n="reserve.phoneLine">Phone inquiries: 10:00–18:00 (closed Wednesdays)</p>
+          </div>
+
+          <form id="reserve-form" class="reserve-form" action="#" method="post" novalidate>
+            <p id="reserve-success-msg" class="visually-hidden" data-i18n="reserve.successMsg">Order placed.</p>
+
+            <input type="hidden" name="booking_total_ex" id="reserve-total-ex" value="" />
+            <input type="hidden" name="booking_total_in" id="reserve-total-in" value="" />
+            <input type="hidden" name="booking_addons_ex" id="reserve-addons-ex" value="" />
+
+            <div class="reserve-os reserve-os--with-sidebar reserve-configurator">
+              <div class="reserve-os__stack reserve-os__stack--booking">
+                <nav
+                  class="reserve-wizard-nav"
+                  aria-label=""
+                  data-i18n-aria="reserve.wizardNavAria"
+                >
+                  <ol class="reserve-wizard-nav__list">
+                    <li class="reserve-wizard-nav__step is-current" data-checkout-wizard="build">
+                      <span class="reserve-wizard-nav__num" aria-hidden="true">1</span>
+                      <span class="reserve-wizard-nav__label" data-i18n="reserve.wizardStepBuild">Build your order</span>
+                    </li>
+                    <li class="reserve-wizard-nav__step" data-checkout-wizard="details">
+                      <span class="reserve-wizard-nav__num" aria-hidden="true">2</span>
+                      <span class="reserve-wizard-nav__label" data-i18n="reserve.wizardStepDetails">Your details</span>
+                    </li>
+                    <li class="reserve-wizard-nav__step" data-checkout-wizard="pay">
+                      <span class="reserve-wizard-nav__num" aria-hidden="true">3</span>
+                      <span class="reserve-wizard-nav__label" data-i18n="reserve.wizardStepPay">Pay online</span>
+                    </li>
+                  </ol>
+                </nav>
+
+                <section class="reserve-apple-step" id="reserve-step-model" data-reserve-step="model">
+                  <header class="reserve-apple-step__head">
+                    <h2 class="reserve-apple-step__title" data-i18n="reserve.modelSectionTitle">Choose your session</h2>
+                    <p class="reserve-apple-step__sub" data-i18n="reserve.modelSectionSub"></p>
+                  </header>
+                  <p class="reserve-model-hint reserve-win__hint" data-i18n="reserve.booking.hintSelectPlan"></p>
+                  <div class="reserve-pkg-grid" role="radiogroup" aria-labelledby="reserve-pkg-legend">
+                    <span id="reserve-pkg-legend" class="visually-hidden" data-i18n="reserve.selectLabel"
+                      >Photo package</span
+                    >
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="tokyo" required />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.tokyo.title">Tokyo urban</span>
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.tokyo.priceExNum">148,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="shonan" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.shonan.title">Shonan coast</span>
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.shonan.priceExNum">238,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="fuji" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.fuji.title">Mount Fuji &amp; lakes</span>
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.fuji.priceExNum">288,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="kansai" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.kansai.title">Kansai (one city)</span>
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.kansai.priceExNum">238,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="hokkaido" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.hokkaido.title">Hokkaido</span>
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.hokkaido.priceExNum">308,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="traditional" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.traditional.title"
+                            >Iro-uchikake or shiromuku</span
+                          >
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.traditional.priceExNum">138,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
+                  </div>
+                  <section
+                    class="reserve-includes reserve-apple-panel"
+                    id="reserve-includes-panel"
+                    hidden
+                    aria-live="polite"
+                  >
+                    <h3 class="reserve-includes__title" data-i18n="reserve.includesTitle">What's included in this package</h3>
+                    <ul class="reserve-includes__list" id="reserve-includes-list" role="list"></ul>
+                    <p class="reserve-includes__note" data-i18n="reserve.includesDisclaimer"></p>
+                  </section>
+                  <p class="reserve-win__links">
+                    <a href="./plan.html" class="reserve-inline-link" data-i18n="reserve.booking.viewPlansLink"
+                      >Plan lineup</a
+                    >
+                  </p>
+                </section>
+
+                <section class="reserve-apple-step reserve-apple-step--options" id="reserve-step-options" hidden>
+                  <header class="reserve-apple-step__head reserve-apple-step__head--split">
+                    <div>
+                      <h2 class="reserve-apple-step__title" data-i18n="reserve.optionsSectionTitle">
+                        Configure your session
+                      </h2>
+                      <p class="reserve-apple-step__sub" data-i18n="reserve.optionsSectionSub"></p>
+                    </div>
+                    <button type="button" class="reserve-apple-textlink" id="reserve-change-package" data-i18n="reserve.changePackage">
+                      Change package
+                    </button>
+                  </header>
+                  <div class="reserve-apple-panel reserve-apple-panel--options">
+                    <div class="reserve-addon-fieldset">
+                      <label class="reserve-addon-legend" for="reserve-addon-dress" data-i18n="reserve.booking.dressGroup"
+                        >Dress</label
+                      >
+                      <select
+                        id="reserve-addon-dress"
+                        class="reserve-addon-select"
+                        name="addon_dress"
+                        autocomplete="off"
+                      >
+                        <option value="dress0" selected data-i18n="reserve.booking.dress0">—</option>
+                        <option value="dress1" data-i18n="reserve.booking.dress1">—</option>
+                        <option value="dress2" data-i18n="reserve.booking.dress2">—</option>
+                        <option value="dress3" data-i18n="reserve.booking.dress3">—</option>
+                      </select>
+                      <p class="reserve-dress-cap-note" data-i18n="reserve.booking.dressCapNote"></p>
+                    </div>
+
+                    <fieldset class="reserve-addon-fieldset">
+                      <legend class="reserve-addon-legend" data-i18n="reserve.booking.btsGroup">BTS</legend>
+                      <div class="reserve-seg reserve-seg--wrap" role="radiogroup">
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="addon_bts" value="bts_none" checked />
+                          <span data-i18n="reserve.booking.btsNone">—</span></label
+                        >
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="addon_bts" value="bts50" />
+                          <span data-i18n="reserve.booking.btsStd">—</span></label
+                        >
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="addon_bts" value="bts70" />
+                          <span data-i18n="reserve.booking.btsReg">—</span></label
+                        >
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="reserve-addon-fieldset">
+                      <legend class="reserve-addon-legend" data-i18n="reserve.booking.kimonoGroup">Kimono</legend>
+                      <div class="reserve-seg reserve-seg--wrap" role="radiogroup">
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="addon_kimono" value="k_none" checked />
+                          <span data-i18n="reserve.booking.kimonoNone">—</span></label
+                        >
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="addon_kimono" value="k50" />
+                          <span data-i18n="reserve.booking.kimonoStd">—</span></label
+                        >
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="addon_kimono" value="k70" />
+                          <span data-i18n="reserve.booking.kimonoHkd">—</span></label
+                        >
+                      </div>
+                    </fieldset>
+
+                    <div class="reserve-addon-checks">
+                      <label class="reserve-check">
+                        <input type="checkbox" name="addon_shiro" value="1" />
+                        <span data-i18n="reserve.booking.shiroCheck">Shiro</span>
+                      </label>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="reserve-apple-step reserve-apple-step--schedule" id="reserve-step-schedule">
+                  <header class="reserve-apple-step__head">
+                    <h2 class="reserve-apple-step__title" data-i18n="reserve.scheduleSectionTitle">Preferred date</h2>
+                    <p class="reserve-apple-step__sub" data-i18n="reserve.scheduleSectionSub"></p>
+                  </header>
+                  <div class="reserve-apple-panel reserve-calendar-wrap">
+                    <h3 class="reserve-calendar__heading" data-i18n="reserve.calendarTitle">Preferred date</h3>
+                    <div
+                      class="reserve-calendar"
+                      id="reserve-calendar"
+                      data-i18n-aria="reserve.ariaCalendar"
+                      aria-label="Calendar"
+                    >
+                      <div class="reserve-calendar__toolbar">
+                        <button type="button" class="reserve-cal-nav" data-calendar="prev" aria-label="Previous month">
+                          ‹
+                        </button>
+                        <span class="reserve-calendar__month-label" aria-live="polite"></span>
+                        <button type="button" class="reserve-cal-nav" data-calendar="next" aria-label="Next month">
+                          ›
+                        </button>
+                      </div>
+                      <div class="reserve-calendar__legend">
+                        <span class="reserve-calendar__legend-item reserve-calendar__legend-item--open">
+                          <span class="dot" aria-hidden="true"></span>
+                          <span data-i18n="reserve.legendOpen">Available</span>
+                        </span>
+                        <span class="reserve-calendar__legend-item reserve-calendar__legend-item--few">
+                          <span class="tri" aria-hidden="true"></span>
+                          <span data-i18n="reserve.legendFew">Few left</span>
+                        </span>
+                        <span class="reserve-calendar__legend-item reserve-calendar__legend-item--closed">
+                          <span class="x" aria-hidden="true">×</span>
+                          <span data-i18n="reserve.legendClosed">Closed</span>
+                        </span>
+                      </div>
+                      <div class="reserve-calendar__weekdays">
+                        <span data-i18n="reserve.wdMon">Mon</span>
+                        <span data-i18n="reserve.wdTue">Tue</span>
+                        <span data-i18n="reserve.wdWed">Wed</span>
+                        <span data-i18n="reserve.wdThu">Thu</span>
+                        <span data-i18n="reserve.wdFri">Fri</span>
+                        <span data-i18n="reserve.wdSat">Sat</span>
+                        <span data-i18n="reserve.wdSun">Sun</span>
+                      </div>
+                      <div class="reserve-calendar__grid"></div>
+                    </div>
+                    <input type="hidden" id="reserve-date" name="date" value="" required />
+                  </div>
+                  <p
+                    id="reserve-date-error"
+                    class="reserve-field-error visually-hidden"
+                    role="alert"
+                    data-i18n="reserve.dateRequired"
+                  >
+                    Please choose a date on the calendar.
+                  </p>
+                  <div class="reserve-checkout-actions">
+                    <button
+                      type="button"
+                      id="reserve-btn-to-details"
+                      class="btn btn-primary btn-block reserve-submit-btn"
+                      disabled
+                      aria-disabled="true"
+                      data-i18n="reserve.btnNextDetails"
+                    >
+                      Continue to your details
+                    </button>
+                  </div>
+                </section>
+
+                <section class="reserve-apple-step reserve-apple-step--details" id="reserve-step-details" hidden>
+                  <header class="reserve-apple-step__head">
+                    <h2 class="reserve-apple-step__title" data-i18n="reserve.detailsSectionTitle">Your details</h2>
+                    <p class="reserve-apple-step__sub" data-i18n="reserve.detailsSectionSub"></p>
+                  </header>
+                  <div class="reserve-apple-panel reserve-contact-block">
+                    <div class="row-field">
+                      <label for="reserve-name" data-i18n="reserve.nameLabel">Full name</label>
+                      <input id="reserve-name" name="name" type="text" required autocomplete="name" />
+                    </div>
+                    <div class="row-field">
+                      <label for="reserve-email" data-i18n="reserve.emailLabel">Email</label>
+                      <input id="reserve-email" name="email" type="email" required autocomplete="email" />
+                    </div>
+                    <div class="row-field">
+                      <label for="reserve-phone" data-i18n="reserve.phoneLabel">Phone</label>
+                      <input id="reserve-phone" name="phone" type="tel" autocomplete="tel" />
+                    </div>
+                  </div>
+                  <div class="reserve-checkout-actions reserve-checkout-actions--split">
+                    <button type="button" class="btn btn-ghost" id="reserve-back-to-config" data-i18n="reserve.btnBackConfig">
+                      Back
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary reserve-submit-btn"
+                      id="reserve-btn-to-payment"
+                      data-i18n="reserve.btnNextPayment"
+                    >
+                      Continue to payment
+                    </button>
+                  </div>
+                </section>
+
+                <section class="reserve-apple-step reserve-apple-step--payment" id="reserve-step-payment" hidden>
+                  <header class="reserve-apple-step__head">
+                    <h2 class="reserve-apple-step__title" data-i18n="reserve.paymentSectionTitle">Online payment</h2>
+                    <p class="reserve-apple-step__sub" data-i18n="reserve.paymentSectionSub"></p>
+                  </header>
+                  <div class="reserve-apple-panel">
+                    <p class="reserve-note" data-i18n="reserve.note">
+                      Card numbers are entered only on the secure payment page. A confirmation email with your order
+                      summary is sent after payment.
+                    </p>
+                    <p class="reserve-booking__card" data-i18n="reserve.booking.cardNote"></p>
+                    <button type="submit" class="btn btn-primary btn-block reserve-submit-btn" data-i18n="reserve.submitPay">
+                      Pay online
+                    </button>
+                    <p class="reserve-checkout-back">
+                      <button type="button" class="reserve-apple-textlink" id="reserve-back-from-payment" data-i18n="reserve.btnBackDetails">
+                        Back to your details
+                      </button>
+                    </p>
+                  </div>
+                </section>
+              </div>
+
+              <aside class="reserve-os__aside" id="reserve-summary">
+                <div class="reserve-summary card">
+                  <h3 class="reserve-summary__title" data-i18n="reserve.booking.summaryTitle">Order summary</h3>
+                  <dl class="reserve-summary__dl">
+                    <div class="reserve-summary__row">
+                      <dt data-i18n="reserve.booking.planLine">Plan</dt>
+                      <dd id="reserve-sum-plan">—</dd>
+                    </div>
+                    <div class="reserve-summary__row">
+                      <dt data-i18n="reserve.booking.addonsLine">Add-ons</dt>
+                      <dd id="reserve-sum-addons">—</dd>
+                    </div>
+                    <div class="reserve-summary__row reserve-summary__row--strong">
+                      <dt data-i18n="reserve.booking.subtotalEx">Subtotal</dt>
+                      <dd id="reserve-sum-ex">—</dd>
+                    </div>
+                    <div class="reserve-summary__row">
+                      <dt data-i18n="reserve.booking.taxLine">Tax</dt>
+                      <dd id="reserve-sum-tax">—</dd>
+                    </div>
+                    <div class="reserve-summary__row reserve-summary__row--total">
+                      <dt data-i18n="reserve.booking.totalIn">Total</dt>
+                      <dd id="reserve-sum-in" aria-live="polite" aria-atomic="true">—</dd>
+                    </div>
+                  </dl>
+                </div>
+              </aside>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer site-footer--dark">
+      <div class="container site-footer__main">
+        <div class="site-footer__brand-col">
+          <a class="site-footer__brand" href="./index.html">Mashiro Visuals</a>
+          <p class="site-footer__tagline" data-i18n="index.footer.line2">Japan Elopement & Outdoor Photography</p>
+          <p class="site-footer__address" data-i18n="footer.address">
+            Japan-based photographer. Visits and consultations by appointment.
+          </p>
+          <div class="site-footer__social">
+            <a
+              class="site-footer__soc"
+              href="https://www.instagram.com/photour_mi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.instagramAria"
+            >
+              <svg
+                class="site-footer__soc-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="site-footer__soc"
+              href="https://wa.me/819083038369"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.whatsappAria"
+            >
+              <svg
+                class="site-footer__soc-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="site-footer__nav-col" aria-label="Site links">
+          <ul class="site-footer__list">
+            <li><a href="./index.html" data-i18n="footer.linkHome">Home</a></li>
+            <li><a href="./campaign.html" data-i18n="footer.linkCampaign">Campaign &amp; Event</a></li>
+            <li><a href="./plan.html" data-i18n="footer.linkPlan">Plan</a></li>
+            <li><a href="./portfolio.html" data-i18n="footer.linkGallery">Gallery</a></li>
+            <li><a href="./costume.html" data-i18n="footer.linkCostume">Costume</a></li>
+          </ul>
+        </nav>
+        <nav class="site-footer__nav-col" aria-label="Site links secondary">
+          <ul class="site-footer__list">
+            <li><a href="./reserve.html" aria-current="page" data-i18n="footer.linkReserve">Reserve</a></li>
+            <li><a href="./contact.html" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="./about.html" data-i18n="footer.linkAbout">About</a></li>
+            <li><a href="./elopement.html" data-i18n="footer.linkElopement">Elopement</a></li>
+            <li><a href="./ski.html" data-i18n="footer.linkOutdoor">Outdoor</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <div class="site-footer__legal">
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <span class="site-footer__legal-sep" aria-hidden="true">|</span>
+            <a href="#" data-i18n="footer.company">Company</a>
+          </div>
+          <p class="site-footer__copy" data-i18n="footer.copyright">© 2026 Mashiro Visuals</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./i18n.js" defer></script>
+    <script src="./nav-overlay.js" defer></script>
+    <script src="./reserve.js" defer></script>
+  </body>
+</html>

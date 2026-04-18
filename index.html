@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashiro Visuals | Japan Elopement & Outdoor Photography</title>
+    <meta
+      name="description"
+      content="Wedding & elopement photography in Japan's wild places. Honest, cinematic—natural light, real emotion."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page-home" data-page="index">
+    <header class="site-header site-header--overlay site-header--hero-lux">
+      <div class="container header-inner header-inner--lux">
+        <a class="brand" href="./index.html">Mashiro Visuals</a>
+        <p class="site-header__lux-line" data-i18n="index.hero.tagline">Photo wedding · Japan</p>
+        <div class="header-tools header-tools--lux">
+          <div class="header-social">
+            <a
+              class="header-icon-circle"
+              href="https://www.instagram.com/photour_mi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.instagramAria"
+            >
+              <svg
+                class="header-icon-circle__svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="header-icon-circle"
+              href="https://wa.me/819083038369"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.whatsappAria"
+            >
+              <svg
+                class="header-icon-circle__svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="lang-switcher">
+            <select id="lang-select" class="lang-select" aria-label="Language">
+              <option value="en">English</option>
+              <option value="zh-TW">繁體中文</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="ru">Русский</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+          <button
+            type="button"
+            class="header-menu-btn"
+            id="nav-menu-open"
+            aria-expanded="false"
+            aria-controls="nav-overlay"
+            data-i18n-aria="nav.menuOpenAria"
+          >
+            <span class="header-menu-btn__hamburger" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="nav-overlay" class="nav-overlay" hidden aria-hidden="true">
+      <div
+        class="nav-overlay__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="nav-overlay-heading"
+      >
+        <div class="nav-overlay__top">
+          <a class="nav-overlay__brand brand" href="./index.html">Mashiro Visuals</a>
+          <div class="header-tools nav-overlay__tools">
+            <div class="header-social">
+              <a
+                class="header-icon-circle header-icon-circle--on-dark"
+                href="https://www.instagram.com/photour_mi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria="nav.instagramAria"
+              >
+                <svg
+                  class="header-icon-circle__svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+                </svg>
+              </a>
+              <a
+                class="header-icon-circle header-icon-circle--on-dark"
+                href="https://wa.me/819083038369"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria="nav.whatsappAria"
+              >
+                <svg
+                  class="header-icon-circle__svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <button
+              type="button"
+              class="header-menu-btn header-menu-btn--close"
+              id="nav-menu-close"
+              data-i18n-aria="nav.menuCloseAria"
+              aria-label="Close menu"
+            >
+              <span class="header-menu-btn__close" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <h2 id="nav-overlay-heading" class="visually-hidden" data-i18n="nav.menuTitle">Menu</h2>
+        <p class="nav-overlay__watermark" aria-hidden="true">Mashiro Visuals</p>
+        <nav class="nav-overlay__grid" aria-label="Primary">
+          <a class="nav-overlay__link" href="./campaign.html">
+            <span class="nav-overlay__title" data-i18n="nav.campaignEvent">CAMPAIGN &amp; EVENT</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subCampaignEvent">Seasonal fairs &amp; news</span>
+          </a>
+          <a class="nav-overlay__link" href="./plan.html">
+            <span class="nav-overlay__title" data-i18n="nav.plan">Plan</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subPlan">Products &amp; packages</span>
+          </a>
+          <a class="nav-overlay__link" href="./portfolio.html">
+            <span class="nav-overlay__title" data-i18n="nav.gallery">Gallery</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subGallery">Selected work</span>
+          </a>
+          <a class="nav-overlay__link" href="./costume.html">
+            <span class="nav-overlay__title nav-overlay__title--costume" data-i18n="nav.costume"
+              >COSTUME</span
+            >
+            <span class="nav-overlay__sub" data-i18n="nav.subCostume">Outfits &amp; styling</span>
+          </a>
+          <a class="nav-overlay__link" href="./about.html">
+            <span class="nav-overlay__title" data-i18n="nav.about">About</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subAbout">Our story</span>
+          </a>
+          <a class="nav-overlay__link" href="./contact.html">
+            <span class="nav-overlay__title" data-i18n="nav.contact">Contact</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subContact">Inquire &amp; booking</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero hero--video hero--cinematic hero--lux" aria-label="Introduction">
+        <video
+          class="hero-media"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="./videos/hero-fuji-robin-zoe.m4v" type="video/mp4" />
+        </video>
+        <div class="hero-bridal-glow hero-bridal-glow--lux" aria-hidden="true"></div>
+        <div class="hero-noise hero-noise--lux" aria-hidden="true"></div>
+        <a
+          href="#campaign-event"
+          class="hero-scroll"
+          data-i18n-aria="index.hero.scrollAria"
+          aria-label="Scroll to content"
+        >
+          <span class="hero-scroll__line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <div class="hero-after hero-after--lux">
+        <div class="container hero-after__inner">
+          <h1 class="hero-after__title" data-i18n="index.hero.h1">
+            Capture your love story in Japan&rsquo;s untamed beauty
+          </h1>
+        </div>
+      </div>
+
+      <div
+        class="hero-float-cta"
+        data-i18n-aria="index.hero.floatCtaAria"
+        aria-label="Quick links"
+      >
+        <a class="hero-circle hero-circle--sand" href="./campaign.html">
+          <span class="hero-circle__stack">
+            <span class="hero-circle__line" data-i18n="index.hero.circleCampaign">CAMPAIGN</span>
+            <span class="hero-circle__sub" data-i18n="index.hero.circleCampaignSub"
+              >Events &amp; offers</span
+            >
+          </span>
+        </a>
+        <a class="hero-circle hero-circle--dark" href="./reserve.html">
+          <span class="hero-circle__stack">
+            <span class="hero-circle__line" data-i18n="index.hero.circleReserve">RESERVE</span>
+            <span class="hero-circle__sub" data-i18n="index.hero.circleReserveSub"
+              >Book a consultation</span
+            >
+          </span>
+        </a>
+      </div>
+
+      <section
+        id="campaign-event"
+        class="campaign-event"
+        aria-labelledby="campaign-event-heading"
+      >
+        <div class="container campaign-event__head reveal">
+          <h2 class="section-title--lux" id="campaign-event-heading" data-i18n="index.campaign.eyebrow">
+            CAMPAIGN &amp; EVENT
+          </h2>
+        </div>
+        <div
+          class="campaign-event__stage float-carousel float-carousel--horizontal reveal"
+          data-carousel-interval="5000"
+          role="region"
+          aria-roledescription="carousel"
+          data-i18n-aria="index.campaign.ariaCarousel"
+          aria-label="Campaigns and events"
+        >
+          <div class="float-carousel__shell campaign-event__shell">
+            <button
+              type="button"
+              class="float-carousel__btn float-carousel__btn--prev"
+              data-i18n-aria="index.float.ariaPrev"
+              aria-label="Previous slide"
+            >
+              <span class="float-carousel__btn-icon" aria-hidden="true">‹</span>
+            </button>
+            <div class="float-carousel__viewport">
+              <div class="float-carousel__track">
+                <a class="float-card campaign-card" href="./plan.html" data-slide-index="0">
+                  <div class="float-card__media campaign-card__media">
+                    <img
+                      src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+                      alt=""
+                      width="800"
+                      height="533"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="campaign-card__meta">
+                    <div class="campaign-card__tags">
+                      <span class="campaign-tag" data-i18n="index.campaign.c1.tag1">EVENT</span>
+                    </div>
+                    <h3 class="campaign-card__title" data-i18n="index.campaign.c1.title">
+                      Spring trial &amp; consultation fair
+                    </h3>
+                    <p class="campaign-card__desc" data-i18n="index.campaign.c1.body">
+                      Limited dates — outfit upgrade perks and add-on options. Book a session to see packages.
+                    </p>
+                  </div>
+                </a>
+                <a class="float-card campaign-card" href="./portfolio.html" data-slide-index="1">
+                  <div class="float-card__media campaign-card__media">
+                    <img
+                      src="https://images.unsplash.com/photo-1529634898451-1f3f0d89f495?auto=format&fit=crop&w=1200&q=80"
+                      alt=""
+                      width="800"
+                      height="533"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="campaign-card__meta">
+                    <div class="campaign-card__tags">
+                      <span class="campaign-tag" data-i18n="index.campaign.c2.tag1">CAMPAIGN</span>
+                    </div>
+                    <h3 class="campaign-card__title" data-i18n="index.campaign.c2.title">
+                      Second dress complimentary
+                    </h3>
+                    <p class="campaign-card__desc" data-i18n="index.campaign.c2.body">
+                      For shoots scheduled within the campaign window — ask when you inquire.
+                    </p>
+                  </div>
+                </a>
+                <a class="float-card campaign-card" href="./contact.html" data-slide-index="2">
+                  <div class="float-card__media campaign-card__media">
+                    <img
+                      src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                      alt=""
+                      width="800"
+                      height="533"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="campaign-card__meta">
+                    <div class="campaign-card__tags">
+                      <span class="campaign-tag" data-i18n="index.campaign.c3.tag1">EVENT</span>
+                      <span class="campaign-tag" data-i18n="index.campaign.c3.tag2">NEW</span>
+                    </div>
+                    <h3 class="campaign-card__title" data-i18n="index.campaign.c3.title">
+                      Online gallery walkthrough
+                    </h3>
+                    <p class="campaign-card__desc" data-i18n="index.campaign.c3.body">
+                      Short online session — see how we plan routes, light, and delivery.
+                    </p>
+                  </div>
+                </a>
+                <a class="float-card campaign-card" href="./reserve.html" data-slide-index="3">
+                  <div class="float-card__media campaign-card__media">
+                    <img
+                      src="https://images.unsplash.com/photo-1522673606560-13136ffb3527?auto=format&fit=crop&w=1200&q=80"
+                      alt=""
+                      width="800"
+                      height="533"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="campaign-card__meta">
+                    <div class="campaign-card__tags">
+                      <span class="campaign-tag" data-i18n="index.campaign.c4.tag1">EVENT</span>
+                    </div>
+                    <h3 class="campaign-card__title" data-i18n="index.campaign.c4.title">
+                      Early-bird booking window
+                    </h3>
+                    <p class="campaign-card__desc" data-i18n="index.campaign.c4.body">
+                      A limited window for select dates — check availability and build your session online.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="float-carousel__btn float-carousel__btn--next"
+              data-i18n-aria="index.float.ariaNext"
+              aria-label="Next slide"
+            >
+              <span class="float-carousel__btn-icon" aria-hidden="true">›</span>
+            </button>
+            <div class="float-carousel__dots" role="group" aria-label="Slides"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="site-content" class="floating-showcase" aria-labelledby="floating-showcase-heading">
+        <div class="container floating-showcase__intro reveal reveal--chain">
+          <p class="eyebrow floating-showcase__eyebrow" data-i18n="index.float.eyebrow">Explore</p>
+          <h2 id="floating-showcase-heading" class="floating-showcase__title" data-i18n="index.float.h2">
+            Wedding &amp; elopement offerings
+          </h2>
+          <p class="floating-showcase__lead" data-i18n="index.float.lead">
+            Use the side arrows or wait — each slide stays centered for 3 seconds. Click the image for packages.
+          </p>
+        </div>
+        <div
+          class="floating-showcase__stage float-carousel float-carousel--horizontal reveal"
+          data-carousel-interval="3000"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Wedding by region"
+        >
+          <div class="float-carousel__shell">
+            <button
+              type="button"
+              class="float-carousel__btn float-carousel__btn--prev"
+              data-i18n-aria="index.float.ariaPrev"
+              aria-label="Previous slide"
+            >
+              <span class="float-carousel__btn-icon" aria-hidden="true">‹</span>
+            </button>
+            <div class="float-carousel__viewport">
+            <div class="float-carousel__track">
+              <a class="float-card" href="./elopement.html#p-fuji" data-slide-index="0">
+                <div class="float-card__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1576678927114-204c6a782d56?auto=format&fit=crop&w=1400&q=80"
+                    alt=""
+                    width="900"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="float-card__overlay">
+                    <span class="float-card__title" data-i18n="index.float.c1.title">富士山婚纱</span>
+                  </div>
+                </div>
+              </a>
+              <a class="float-card" href="./elopement.html#p-kyoto" data-slide-index="1">
+                <div class="float-card__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1400&q=80"
+                    alt=""
+                    width="900"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="float-card__overlay">
+                    <span class="float-card__title" data-i18n="index.float.c2.title">京都婚纱</span>
+                  </div>
+                </div>
+              </a>
+              <a class="float-card" href="./elopement.html#p-hokkaido" data-slide-index="2">
+                <div class="float-card__media">
+                  <img
+                    src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                    alt=""
+                    width="900"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="float-card__overlay">
+                    <span class="float-card__title" data-i18n="index.float.c3.title">北海道婚纱</span>
+                  </div>
+                </div>
+              </a>
+              <a class="float-card" href="./elopement.html#p-kamakura" data-slide-index="3">
+                <div class="float-card__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa254d?auto=format&fit=crop&w=1400&q=80"
+                    alt=""
+                    width="900"
+                    height="675"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="float-card__overlay">
+                    <span class="float-card__title" data-i18n="index.float.c4.title">镰仓婚纱</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            </div>
+            <button
+              type="button"
+              class="float-carousel__btn float-carousel__btn--next"
+              data-i18n-aria="index.float.ariaNext"
+              aria-label="Next slide"
+            >
+              <span class="float-carousel__btn-icon" aria-hidden="true">›</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="index.services.h2">Services</h2>
+            <p data-i18n="index.services.lead">
+              No heavy posing. Just real movement, emotion, and connection in nature.
+            </p>
+          </div>
+          <div class="grid-2 reveal reveal--chain">
+            <article class="card">
+              <h3 data-i18n="index.services.card1.title">Elopement & Couples</h3>
+              <p data-i18n="index.services.card1.body">
+                Designed for couples traveling to Japan. We create your story across forests, lakes, and alpine landscapes.
+              </p>
+              <a class="btn" href="./elopement.html" data-i18n="index.services.card1.btn">Learn More</a>
+            </article>
+            <article class="card">
+              <h3 data-i18n="index.services.card2.title">Outdoor Photography</h3>
+              <p data-i18n="index.services.card2.body">
+                From snow to backcountry terrain, I know the environment and flow, so your session feels natural and cinematic.
+              </p>
+              <a class="btn" href="./ski.html" data-i18n="index.services.card2.btn">View Outdoor Sessions</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="index.featured.h2">Featured Work</h2>
+          </div>
+          <div class="gallery reveal reveal--chain">
+            <img
+              class="shot-lg"
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1800&q=80"
+              alt="Mountain elopement"
+              loading="lazy"
+            />
+            <img
+              class="shot-sm"
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80"
+              alt="Couple in nature"
+              loading="lazy"
+            />
+            <img
+              class="shot-sm"
+              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=80"
+              alt="Elopement in wild landscape"
+              loading="lazy"
+            />
+            <img
+              class="shot-lg"
+              src="https://images.unsplash.com/photo-1518398046578-8cca57782e17?auto=format&fit=crop&w=1800&q=80"
+              alt="Dynamic outdoor moment"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container about reveal reveal--chain">
+          <img
+            class="about-image"
+            src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?auto=format&fit=crop&w=1400&q=80"
+            alt="Photographer Mashiro"
+            loading="lazy"
+          />
+          <div>
+            <div class="eyebrow" data-i18n="index.about.eyebrow">About</div>
+            <h2 data-i18n="index.about.h2">I'm Miller, also known as Mashiro in Japan</h2>
+            <p data-i18n="index.about.body">
+              I specialize in elopement and outdoor stories across Japan, using natural light and real interactions. The style is cinematic, but never over-produced.
+            </p>
+            <a class="btn" href="./about.html" data-i18n="index.about.btn">About Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="index.why.h2">Why Work With Me</h2>
+          </div>
+          <div class="why-list reveal reveal--chain">
+            <div class="why-item">
+              <h3 data-i18n="index.why.i1.title">Based in Japan</h3>
+              <p data-i18n="index.why.i1.body">I know the seasons, weather, and locations, making planning smooth and efficient.</p>
+            </div>
+            <div class="why-item">
+              <h3 data-i18n="index.why.i2.title">Outdoor-Ready</h3>
+              <p data-i18n="index.why.i2.body">I move confidently in alpine terrain and capture key moments with safety in mind.</p>
+            </div>
+            <div class="why-item">
+              <h3 data-i18n="index.why.i3.title">Natural Cinematic Style</h3>
+              <p data-i18n="index.why.i3.body">Less directing, more guidance. Genuine emotion over staged performance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="index.pricing.h2">Starting Pricing</h2>
+          </div>
+          <div class="pricing reveal reveal--chain">
+            <article class="card">
+              <h3 data-i18n="index.pricing.c1.title">Elopement / Couples</h3>
+              <p class="price-tag" data-i18n="index.pricing.c1.price">From ¥250,000</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="index.pricing.c2.title">Outdoor Photography</h3>
+              <p class="price-tag" data-i18n="index.pricing.c2.price">From ¥80,000</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container cta card reveal reveal--chain">
+          <div class="eyebrow" data-i18n="index.cta.eyebrow">Contact</div>
+          <h2 data-i18n="index.cta.h2">Turn your Japan journey into a living, cinematic story</h2>
+          <p data-i18n="index.cta.p">Share your dates and destination ideas. I will send a tailored shooting proposal.</p>
+          <div class="actions" style="justify-content: center">
+            <a class="btn btn-primary" href="./contact.html" data-i18n="index.cta.btn">Send Inquiry</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--dark reveal reveal--chain">
+      <div class="container site-footer__main">
+        <div class="site-footer__brand-col">
+          <a class="site-footer__brand" href="./index.html">Mashiro Visuals</a>
+          <p class="site-footer__tagline" data-i18n="index.footer.line2">Japan Elopement & Outdoor Photography</p>
+          <p class="site-footer__address" data-i18n="footer.address">
+            Japan-based photographer. Visits and consultations by appointment.
+          </p>
+          <div class="site-footer__social">
+            <a
+              class="site-footer__soc"
+              href="https://www.instagram.com/photour_mi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.instagramAria"
+            >
+              <svg
+                class="site-footer__soc-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="site-footer__soc"
+              href="https://wa.me/819083038369"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.whatsappAria"
+            >
+              <svg
+                class="site-footer__soc-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="site-footer__nav-col" aria-label="Site links">
+          <ul class="site-footer__list">
+            <li><a href="./index.html" aria-current="page" data-i18n="footer.linkHome">Home</a></li>
+            <li><a href="./campaign.html" data-i18n="footer.linkCampaign">Campaign &amp; Event</a></li>
+            <li><a href="./plan.html" data-i18n="footer.linkPlan">Plan</a></li>
+            <li><a href="./portfolio.html" data-i18n="footer.linkGallery">Gallery</a></li>
+            <li><a href="./costume.html" data-i18n="footer.linkCostume">Costume</a></li>
+          </ul>
+        </nav>
+        <nav class="site-footer__nav-col" aria-label="Site links secondary">
+          <ul class="site-footer__list">
+            <li><a href="./reserve.html" data-i18n="footer.linkReserve">Reserve</a></li>
+            <li><a href="./contact.html" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="./about.html" data-i18n="footer.linkAbout">About</a></li>
+            <li><a href="./elopement.html" data-i18n="footer.linkElopement">Elopement</a></li>
+            <li><a href="./ski.html" data-i18n="footer.linkOutdoor">Outdoor</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <div class="site-footer__legal">
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <span class="site-footer__legal-sep" aria-hidden="true">|</span>
+            <a href="#" data-i18n="footer.company">Company</a>
+          </div>
+          <p class="site-footer__copy" data-i18n="footer.copyright">© 2026 Mashiro Visuals</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./i18n.js" defer></script>
+    <script src="./nav-overlay.js" defer></script>
+    <script src="./float-carousel.js" defer></script>
+    <script src="./hero-lux-scroll.js" defer></script>
+    <script src="./index-reveal.js" defer></script>
+  </body>
+</html>

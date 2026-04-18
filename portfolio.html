@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Mashiro Visuals</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="portfolio">
+    <header class="site-header site-header--bar">
+      <div class="container header-inner header-inner--bar">
+        <a class="brand" href="./index.html">Mashiro Visuals</a>
+        <div class="header-tools header-tools--bar">
+          <div class="header-social">
+            <a
+              class="header-icon-circle"
+              href="https://www.instagram.com/photour_mi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.instagramAria"
+            >
+              <svg
+                class="header-icon-circle__svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="header-icon-circle"
+              href="https://wa.me/819083038369"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.whatsappAria"
+            >
+              <svg
+                class="header-icon-circle__svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="lang-switcher">
+            <select id="lang-select" class="lang-select" aria-label="Language">
+              <option value="en">English</option>
+              <option value="zh-TW">繁體中文</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="ru">Русский</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
+          <button
+            type="button"
+            class="header-menu-btn header-menu-btn--dark"
+            id="nav-menu-open"
+            aria-expanded="false"
+            aria-controls="nav-overlay"
+            data-i18n-aria="nav.menuOpenAria"
+          >
+            <span class="header-menu-btn__hamburger" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="nav-overlay" class="nav-overlay" hidden aria-hidden="true">
+      <div
+        class="nav-overlay__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="nav-overlay-heading"
+      >
+        <div class="nav-overlay__top">
+          <a class="nav-overlay__brand brand" href="./index.html">Mashiro Visuals</a>
+          <div class="header-tools nav-overlay__tools">
+            <div class="header-social">
+              <a
+                class="header-icon-circle header-icon-circle--on-dark"
+                href="https://www.instagram.com/photour_mi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria="nav.instagramAria"
+              >
+                <svg
+                  class="header-icon-circle__svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+                </svg>
+              </a>
+              <a
+                class="header-icon-circle header-icon-circle--on-dark"
+                href="https://wa.me/819083038369"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-aria="nav.whatsappAria"
+              >
+                <svg
+                  class="header-icon-circle__svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <button
+              type="button"
+              class="header-menu-btn header-menu-btn--close"
+              id="nav-menu-close"
+              data-i18n-aria="nav.menuCloseAria"
+              aria-label="Close menu"
+            >
+              <span class="header-menu-btn__close" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <h2 id="nav-overlay-heading" class="visually-hidden" data-i18n="nav.menuTitle">Menu</h2>
+        <p class="nav-overlay__watermark" aria-hidden="true">Mashiro Visuals</p>
+        <nav class="nav-overlay__grid" aria-label="Primary">
+          <a class="nav-overlay__link" href="./campaign.html">
+            <span class="nav-overlay__title" data-i18n="nav.campaignEvent">CAMPAIGN &amp; EVENT</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subCampaignEvent">Seasonal fairs &amp; news</span>
+          </a>
+          <a class="nav-overlay__link" href="./plan.html">
+            <span class="nav-overlay__title" data-i18n="nav.plan">Plan</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subPlan">Products &amp; packages</span>
+          </a>
+          <a class="nav-overlay__link" href="./portfolio.html" aria-current="page">
+            <span class="nav-overlay__title" data-i18n="nav.gallery">Gallery</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subGallery">Selected work</span>
+          </a>
+          <a class="nav-overlay__link" href="./costume.html">
+            <span class="nav-overlay__title nav-overlay__title--costume" data-i18n="nav.costume"
+              >COSTUME</span
+            >
+            <span class="nav-overlay__sub" data-i18n="nav.subCostume">Outfits &amp; styling</span>
+          </a>
+          <a class="nav-overlay__link" href="./about.html">
+            <span class="nav-overlay__title" data-i18n="nav.about">About</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subAbout">Our story</span>
+          </a>
+          <a class="nav-overlay__link" href="./contact.html">
+            <span class="nav-overlay__title" data-i18n="nav.contact">Contact</span>
+            <span class="nav-overlay__sub" data-i18n="nav.subContact">Inquire &amp; booking</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow" data-i18n="portfolio.hero.eyebrow">Portfolio</div>
+          <h1 data-i18n="portfolio.hero.h1">Real emotion, held in landscape</h1>
+          <p data-i18n="portfolio.hero.lead">
+            A curated selection of elopement, couples, and outdoor sessions with a natural narrative style.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container gallery">
+          <img class="shot-lg" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1800&q=80" alt="portfolio 1" />
+          <img class="shot-sm" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1400&q=80" alt="portfolio 2" />
+          <img class="shot-sm" src="https://images.unsplash.com/photo-1529634898451-1f3f0d89f495?auto=format&fit=crop&w=1400&q=80" alt="portfolio 3" />
+          <img class="shot-lg" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1800&q=80" alt="portfolio 4" />
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer site-footer--dark">
+      <div class="container site-footer__main">
+        <div class="site-footer__brand-col">
+          <a class="site-footer__brand" href="./index.html">Mashiro Visuals</a>
+          <p class="site-footer__tagline" data-i18n="index.footer.line2">Japan Elopement & Outdoor Photography</p>
+          <p class="site-footer__address" data-i18n="footer.address">
+            Japan-based photographer. Visits and consultations by appointment.
+          </p>
+          <div class="site-footer__social">
+            <a
+              class="site-footer__soc"
+              href="https://www.instagram.com/photour_mi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.instagramAria"
+            >
+              <svg
+                class="site-footer__soc-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="6" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              class="site-footer__soc"
+              href="https://wa.me/819083038369"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="nav.whatsappAria"
+            >
+              <svg
+                class="site-footer__soc-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="site-footer__nav-col" aria-label="Site links">
+          <ul class="site-footer__list">
+            <li><a href="./index.html" data-i18n="footer.linkHome">Home</a></li>
+            <li><a href="./campaign.html" data-i18n="footer.linkCampaign">Campaign &amp; Event</a></li>
+            <li><a href="./plan.html" data-i18n="footer.linkPlan">Plan</a></li>
+            <li><a href="./portfolio.html" aria-current="page" data-i18n="footer.linkGallery">Gallery</a></li>
+            <li><a href="./costume.html" data-i18n="footer.linkCostume">Costume</a></li>
+          </ul>
+        </nav>
+        <nav class="site-footer__nav-col" aria-label="Site links secondary">
+          <ul class="site-footer__list">
+            <li><a href="./reserve.html" data-i18n="footer.linkReserve">Reserve</a></li>
+            <li><a href="./contact.html" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="./about.html" data-i18n="footer.linkAbout">About</a></li>
+            <li><a href="./elopement.html" data-i18n="footer.linkElopement">Elopement</a></li>
+            <li><a href="./ski.html" data-i18n="footer.linkOutdoor">Outdoor</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <div class="site-footer__legal">
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <span class="site-footer__legal-sep" aria-hidden="true">|</span>
+            <a href="#" data-i18n="footer.company">Company</a>
+          </div>
+          <p class="site-footer__copy" data-i18n="footer.copyright">© 2026 Mashiro Visuals</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./i18n.js" defer></script>
+    <script src="./nav-overlay.js" defer></script>
+  </body>
+</html>
