@@ -23,6 +23,26 @@
     return tiles.length > 0;
   }
 
+  /**
+   * If img src is under images/gallery/ and the next path segment starts with YYMMDD (6 digits),
+   * set data-date to 20YY-MM-DD so "Newest" follows shoot folder date.
+   */
+  function hydrateDatesFromGalleryPath() {
+    tiles.forEach(function (tile) {
+      var img = tile.querySelector("img[src]");
+      if (!img) return;
+      var src = img.getAttribute("src") || "";
+      var m = src.match(/images\/gallery\/(\d{6})(?=[^/0-9]|\/)/);
+      if (!m) return;
+      var yymmdd = m[1];
+      var yy = parseInt(yymmdd.slice(0, 2), 10);
+      if (Number.isNaN(yy)) return;
+      var year = 2000 + yy;
+      var iso = year + "-" + yymmdd.slice(2, 4) + "-" + yymmdd.slice(4, 6);
+      tile.setAttribute("data-date", iso);
+    });
+  }
+
   function getGalleryColumns() {
     var w = window.innerWidth || document.documentElement.clientWidth;
     if (w <= 720) return 2;
@@ -161,6 +181,7 @@
 
   function initGalleryFilter() {
     if (!refreshTiles()) return;
+    hydrateDatesFromGalleryPath();
     attachListenersOnce();
     galleryExpanded = false;
     setFilterActive();

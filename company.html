@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company | Mashiro Visuals</title>
     <meta
       name="description"
-      content="Packages and products for wedding and elopement photography in Japan."
+      content="Mashiro Visuals — Japan-based photography for elopements, weddings on location, and outdoor stories."
     />
-    <title>Shonan coast | Mashiro Visuals</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="page-plan page-plan-detail">
+  <body>
     <header class="site-header site-header--bar">
       <div class="container header-inner header-inner--bar">
         <a class="brand" href="./index.html">Mashiro Visuals</a>
@@ -230,47 +230,37 @@
         </nav>
       </div>
     </div>
-
-    <main class="plan-detail-main">
-      <div class="container plan-detail-toolbar">
-        <a class="plan-detail-back" href="./plan.html"
-          ><span data-i18n="plan.detail.back">All plans</span></a
-        >
-      </div>
-      <div class="plan-detail-hero">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
-          alt=""
-          width="1600"
-          height="857"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
-      <article class="container plan-detail-content">
-        <div class="plan-detail-tags">
-          <span class="plan-chip" data-i18n="plan.pkg.shonan.cardTag1"></span>
-          <span class="plan-chip" data-i18n="plan.pkg.shonan.cardTag2"></span>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">Studio</div>
+          <h1>Mashiro Visuals</h1>
+          <p class="legal-doc__intro">
+            Mashiro Visuals is the photography practice of Miller (Mashiro), based in Japan. Work focuses on elopement
+            and on-location wedding photography with natural light and a restrained, cinematic tone.
+          </p>
         </div>
-        <h1 data-i18n="plan.pkg.shonan.title"></h1>
-        <div class="plan-detail-price-row plan-price-ref plan-price-ref--detail">
-          <span class="plan-card-lux__yen-label" data-i18n="plan.list.priceLabel">Price</span>
-          <div class="plan-price-ref__block">
-            <span class="plan-price-ref__ex">
-              <span class="plan-price-ref__amount" data-i18n="plan.pkg.shonan.priceExNum"></span><span class="plan-price-ref__yen" data-i18n="plan.list.yenSuffix"></span><span class="plan-price-ref__tag plan-price-ref__tag--ex" data-i18n="plan.list.taxExcludedTag"></span>
-            </span>
-            <span class="plan-price-ref__in">
-              <span class="plan-price-ref__amount-in" data-i18n="plan.pkg.shonan.priceInNum"></span><span class="plan-price-ref__yen plan-price-ref__yen--in" data-i18n="plan.list.yenSuffix"></span><span class="plan-price-ref__tag-in" data-i18n="plan.list.taxIncludedTag"></span>
-            </span>
-          </div>
+      </section>
+      <section class="legal-doc">
+        <div class="container content-narrow">
+          <h2>How we work</h2>
+          <p>
+            Consultations and visits are by appointment. Proposals, routing, and wardrobe notes are aligned to season,
+            light, and pace—especially for outdoor days.
+          </p>
+          <h2>Commercial notices</h2>
+          <p>
+            Published plans and prices are presented as guidance; firm quotes are confirmed after human review of dates,
+            locations, and add-ons. Taxes are shown according to each page’s notes.
+          </p>
+          <h2>Contact</h2>
+          <p>
+            For bookings and questions, please use
+            <a href="./contact.html">Contact</a>
+            or WhatsApp / WeChat from the site header.
+          </p>
         </div>
-        <p class="plan-detail-body" data-i18n="plan.pkg.shonan.body"></p>
-        <div class="plan-detail-actions">
-          <a class="btn btn-primary" href="./contact.html" data-i18n="plan.detail.inquire">Inquire</a>
-          <a class="btn btn-ghost" href="./reserve.html" data-i18n="plan.detail.reserve">Reserve</a>
-        </div>
-      </article>
-
+      </section>
     </main>
     <footer class="site-footer site-footer--dark">
       <div class="container site-footer__main">
@@ -365,7 +355,7 @@
           <div class="site-footer__legal">
             <a href="./privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
             <span class="site-footer__legal-sep" aria-hidden="true">|</span>
-            <a href="./company.html" data-i18n="footer.company">Company</a>
+            <a href="./company.html" aria-current="page" data-i18n="footer.company">Company</a>
           </div>
           <p class="site-footer__copy" data-i18n="footer.copyright">© 2026 Mashiro Visuals</p>
         </div>

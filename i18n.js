@@ -76,11 +76,31 @@
           description:
             "Wedding & elopement photography in Japan's wild places. Honest, cinematic—natural light, real emotion.",
         },
-        elopement: { title: "Elopement | Mashiro Visuals" },
-        ski: { title: "Outdoor Photography | Mashiro Visuals" },
-        portfolio: { title: "Portfolio | Mashiro Visuals" },
-        about: { title: "About | Mashiro Visuals" },
-        contact: { title: "Contact | Mashiro Visuals" },
+        elopement: {
+          title: "Elopement | Mashiro Visuals",
+          description:
+            "Elopement and on-location wedding photography across Japan — routes, packages, and what to expect.",
+        },
+        ski: {
+          title: "Outdoor Photography | Mashiro Visuals",
+          description:
+            "Outdoor couple and adventure stories in Japan — movement, weather-aware planning, cinematic stills.",
+        },
+        portfolio: {
+          title: "Portfolio | Mashiro Visuals",
+          description:
+            "Selected location work from Tokyo, Mount Fuji, Hokkaido, Kamakura, studio days, and more.",
+        },
+        about: {
+          title: "About | Mashiro Visuals",
+          description:
+            "Meet Miller / Mashiro — Japan-based photographer for elopements, outdoor weddings, and honest light.",
+        },
+        contact: {
+          title: "Contact | Mashiro Visuals",
+          description:
+            "Reach Mashiro Visuals for dates, destinations, and budgets — form, WhatsApp, or WeChat.",
+        },
         aiChat: {
           title: "AI assistant | Mashiro Visuals",
           description:
@@ -120,7 +140,45 @@
           scrollAria: "Scroll to content",
           note: "Based in Japan. English inquiries welcome.",
         },
-        featured: { h2: "Featured Work" },
+        featured: { cta: "Check our plan" },
+        plan: {
+          eyebrow: "Packages",
+          h2: "Our Plan",
+          lead:
+            "Compare Tokyo, Fuji, Kanto day routes, add-ons, and what is included before you reserve.",
+        },
+        costume: {
+          eyebrow: "Styling",
+          h2: "Costume",
+          body:
+            "Wedding dress, colour dress, kimono, and suits — preview the wardrobe lineup for your shoot day.",
+          btn: "Browse Costume",
+        },
+        combos: {
+          h2: "Popular combinations",
+          lead: "Starter pairings guests often book together.",
+          c1Title: "Tokyo urban & second look",
+          c1Body: "City skyline routes plus an outfit change — full-day pacing.",
+          c2Title: "Fuji lakes day trip",
+          c2Body: "Lakeside light and mountain backdrops in one session.",
+          c3Title: "Kanto day route",
+          c3Body: "Tokyo + Kamakura or Fuji + Hakone when you want two moods in one day.",
+          c1Cta: "View Tokyo plan",
+          c2Cta: "View Fuji plan",
+          c3Cta: "View Kanto day plan",
+        },
+        galleryBand: {
+          h2: "Gallery",
+          lead:
+            "Location work across Fuji, Tokyo, Hokkaido, Kamakura, and studio sets — open the full grid for albums.",
+          btn: "Open Gallery",
+        },
+        endTiles: {
+          flowTitle: "FLOW",
+          flowSub: "Steps from inquiry to your shoot day.",
+          faqTitle: "FAQ",
+          faqSub: "Timing, weather buffers, outfits, and booking basics.",
+        },
         about: {
           eyebrow: "About",
           h2: "I'm Miller, also known as Mashiro in Japan",
@@ -180,16 +238,16 @@
           },
         },
         float: {
-          eyebrow: "Explore",
-          h2: "Wedding & elopement offerings",
+          eyebrow: "Locations",
+          h2: "Location photos",
           lead:
-            "Use the arrows or wait — each slide stays centered for 3 seconds. Click the image to open the matching location in Gallery; package lines are linked from that row.",
+            "Use the arrows or wait — each slide opens the same spot in Gallery; plans are linked from there.",
           ariaPrev: "Previous slide",
           ariaNext: "Next slide",
-          c1: { title: "Mount Fuji · Wedding" },
-          c2: { title: "Kyoto · Wedding" },
-          c3: { title: "Hokkaido · Wedding" },
-          c4: { title: "Kamakura · Wedding" },
+          c1: { title: "Mount Fuji" },
+          c2: { title: "Tokyo" },
+          c3: { title: "Hokkaido" },
+          c4: { title: "Kamakura" },
         },
         footer: { line2: "Japan Elopement & Outdoor Photography" },
       },
@@ -535,7 +593,7 @@
         wizardStepPay: "Pay online",
         modelSectionTitle: "Choose your session",
         modelSectionSub:
-          "Start with a location package—the same idea as picking a Mac before memory, storage, and accessories.",
+          "Start with a location package first, then add options—wardrobe, behind-the-scenes film, kimono, and more.",
         optionsSectionTitle: "Configure your session",
         optionsSectionSub: "Dress add-ons, behind-the-scenes video, kimono, and more.",
         scheduleSectionTitle: "Preferred date",
@@ -683,6 +741,18 @@
           opt2: "Outdoor Photography",
           opt3: "Not sure yet, I need guidance",
         },
+        faq: {
+          h2: "Frequently asked questions",
+          q1: "How far ahead should we book?",
+          a1:
+            "Popular seasons fill early; share your month and region and we will suggest realistic windows.",
+          q2: "What if the weather is bad on shoot day?",
+          a2:
+            "Outdoor days are planned with buffer where possible; your consult covers backup ideas and safety.",
+          q3: "Do you help with outfits and routes?",
+          a3:
+            "Yes — see Costume for wardrobe samples and Plan for what each line includes; we align routes to light and pace.",
+        },
         wechat: {
           heading: "WeChat",
           lead: "Prefer WeChat? Add us with the ID below and send your dates and ideas.",
@@ -779,11 +849,26 @@
           description:
             "在日本荒野與自然中，記錄婚紗、私奔與戶外的真實情感。誠實、有電影感。",
         },
-        elopement: { title: "婚紗／私奔｜Mashiro Visuals" },
-        ski: { title: "戶外攝影｜Mashiro Visuals" },
-        portfolio: { title: "作品集｜Mashiro Visuals" },
-        about: { title: "關於｜Mashiro Visuals" },
-        contact: { title: "聯絡｜Mashiro Visuals" },
+        elopement: {
+          title: "婚紗／私奔｜Mashiro Visuals",
+          description: "日本各地外景婚紗與私奔攝影——路線、方案與拍攝節奏說明。",
+        },
+        ski: {
+          title: "戶外攝影｜Mashiro Visuals",
+          description: "日本戶外與山岳環境中的情侶／冒險影像——兼顧天候與安全節奏。",
+        },
+        portfolio: {
+          title: "作品集｜Mashiro Visuals",
+          description: "東京、富士山、北海道、鎌倉與棚內等系列精選作品。",
+        },
+        about: {
+          title: "關於｜Mashiro Visuals",
+          description: "認識 Miller／Mashiro——駐點日本，專注婚紗、私奔與戶外自然光影像。",
+        },
+        contact: {
+          title: "聯絡｜Mashiro Visuals",
+          description: "諮詢檔期、地點與預算——表單、WhatsApp 或微信與我們聯繫。",
+        },
         aiChat: {
           title: "智能助理｜Mashiro Visuals",
           description: "與 Mashiro Visuals 智能助理對話，了解方案、地點、預約與交付等資訊。",
@@ -821,7 +906,42 @@
           scrollAria: "向下捲動至內容",
           note: "駐點日本。歡迎以英文聯絡。",
         },
-        featured: { h2: "精選作品" },
+        featured: { cta: "查看方案" },
+        plan: {
+          eyebrow: "方案",
+          h2: "我們的方案",
+          lead: "預約前先比較東京、富士、關東一日路線、加購項目與包含內容。",
+        },
+        costume: {
+          eyebrow: "造型",
+          h2: "禮服與造型",
+          body: "婚紗、彩色禮服、和裝與西裝樣本——先預覽拍攝日可選的衣著陣容。",
+          btn: "瀏覽禮服頁",
+        },
+        combos: {
+          h2: "人氣組合",
+          lead: "新人常一起詢問的入門搭配。",
+          c1Title: "東京都市＋第二套造型",
+          c1Body: "都會天際與換裝節奏——適合全日拍攝。",
+          c2Title: "富士五湖一日旅拍",
+          c2Body: "湖畔光線與山景，單日完成。",
+          c3Title: "關東一日路線",
+          c3Body: "東京＋鎌倉，或富士＋箱根——同日兩種氛圍。",
+          c1Cta: "東京方案",
+          c2Cta: "富士方案",
+          c3Cta: "關東一日方案",
+        },
+        galleryBand: {
+          h2: "作品集",
+          lead: "富士、東京、北海道、鎌倉與棚內等實景作品——開啟完整相簿瀏覽各系列。",
+          btn: "開啟作品集",
+        },
+        endTiles: {
+          flowTitle: "流程",
+          flowSub: "從諮詢到拍攝當日的步驟說明。",
+          faqTitle: "常見問題",
+          faqSub: "檔期、天候彈性、衣著與預約重點。",
+        },
         about: {
           eyebrow: "關於",
           h2: "我是 Miller，在日本也以 Mashiro 為名",
@@ -876,15 +996,15 @@
           },
         },
         float: {
-          eyebrow: "探索",
-          h2: "婚紗與私奔方案",
-          lead: "可用兩側箭頭切換，或自動輪播；中央約停留 3 秒。點圖可前往作品集（Gallery）對應地區；該列可再連到方案頁。",
+          eyebrow: "地點",
+          h2: "地點實景作品",
+          lead: "可用箭頭切換或自動輪播；點圖前往作品集（Gallery）對應區塊，再連到方案內容。",
           ariaPrev: "上一張",
           ariaNext: "下一張",
-          c1: { title: "富士山婚紗" },
-          c2: { title: "京都婚紗" },
-          c3: { title: "北海道婚紗" },
-          c4: { title: "鎌倉婚紗" },
+          c1: { title: "富士山" },
+          c2: { title: "東京" },
+          c3: { title: "北海道" },
+          c4: { title: "鎌倉" },
         },
         footer: { line2: "日本婚紗私奔與戶外攝影" },
       },
@@ -1215,7 +1335,7 @@
         wizardStepPay: "線上付款",
         modelSectionTitle: "選擇攝影方案",
         modelSectionSub:
-            "先決定地點與套系，再加選禮服、影片等—就像先選 Mac 機型，再選記憶體與配件。",
+            "先選定地點與套系，再依序加上禮服、花絮影片、和服等選項。",
         optionsSectionTitle: "配置加購與選項",
         optionsSectionSub: "追加禮服套數、花絮影片、和服與白無垢套餐等。",
         scheduleSectionTitle: "希望日期",
@@ -1360,6 +1480,15 @@
           opt2: "戶外攝影",
           opt3: "還不確定，想先聊聊",
         },
+        faq: {
+          h2: "常見問題集",
+          q1: "建議多久前預約？",
+          a1: "熱門季節檔期較滿；請告知月份與地區，我們會回覆可行窗口。",
+          q2: "若拍攝日天候不佳怎麼辦？",
+          a2: "戶外行程會盡量預留彈性；諮詢時也會討論備案與安全考量。",
+          q3: "會協助服裝與路線嗎？",
+          a3: "會——可先參考禮服頁樣本與各方案內容，並依光線與節奏規劃路線。",
+        },
         wechat: {
           heading: "微信",
           lead: "習慣用微信聯繫的話，可用下方 ID 加我們，並傳送拍攝日期與想法。",
@@ -1455,11 +1584,26 @@
           description:
             "雪山や自然の中で、ありのままの感情を記録。エロープメントとアウトドア撮影。",
         },
-        elopement: { title: "エロープメント | Mashiro Visuals" },
-        ski: { title: "アウトドア撮影 | Mashiro Visuals" },
-        portfolio: { title: "作品集 | Mashiro Visuals" },
-        about: { title: "について | Mashiro Visuals" },
-        contact: { title: "お問い合わせ | Mashiro Visuals" },
+        elopement: {
+          title: "エロープメント | Mashiro Visuals",
+          description: "日本全国のロケーション・前撮り／エロープメントのルートとプラン概要。",
+        },
+        ski: {
+          title: "アウトドア撮影 | Mashiro Visuals",
+          description: "山や自然の中でのカップル／アウトドア撮影。天候と安全を踏まえた進行。",
+        },
+        portfolio: {
+          title: "作品集 | Mashiro Visuals",
+          description: "東京・富士・北海道・鎌倉・スタジオなどの厳選ロケーション作品。",
+        },
+        about: {
+          title: "について | Mashiro Visuals",
+          description: "Miller／Mashiroについて。日本を拠点に、自然光のウェディング／エロープメントを。",
+        },
+        contact: {
+          title: "お問い合わせ | Mashiro Visuals",
+          description: "日程・ロケーション・ご予算のご相談はフォーム、WhatsApp、WeChatから。",
+        },
         aiChat: {
           title: "AIアシスタント | Mashiro Visuals",
           description:
@@ -1498,7 +1642,42 @@
           scrollAria: "下にスクロール",
           note: "日本を拠点に。英語でのお問い合わせ歓迎。",
         },
-        featured: { h2: "作品ハイライト" },
+        featured: { cta: "プランを見る" },
+        plan: {
+          eyebrow: "プラン",
+          h2: "撮影プラン",
+          lead: "ご予約前に、東京・富士・関東1日などのライン、オプション、含まれる内容を比較できます。",
+        },
+        costume: {
+          eyebrow: "衣裳",
+          h2: "衣裳・スタイリング",
+          body: "ウェディングドレス・カラー衣装・和装・スーツのラインナップ例。撮影日の雰囲気を先にイメージできます。",
+          btn: "衣裳ページへ",
+        },
+        combos: {
+          h2: "人気の組み合わせ",
+          lead: "よく一緒に相談される入門セットです。",
+          c1Title: "東京都市＋お着替え",
+          c1Body: "都市のラインと衣装チェンジを同日で。フルデイ向け。",
+          c2Title: "富士五湖デイトリップ",
+          c2Body: "湖畔の光と山の背景を、1日で。",
+          c3Title: "関東1日ルート",
+          c3Body: "東京＋鎌倉、または富士＋箱根——同日で二つのムード。",
+          c1Cta: "東京プラン",
+          c2Cta: "富士プラン",
+          c3Cta: "関東1日プラン",
+        },
+        galleryBand: {
+          h2: "ギャラリー",
+          lead: "富士・東京・北海道・鎌倉・スタジオなどのロケーション作品。アルバムはフルグリッドでご覧ください。",
+          btn: "ギャラリーを開く",
+        },
+        endTiles: {
+          flowTitle: "FLOW",
+          flowSub: "お問い合わせから撮影当日までの流れ。",
+          faqTitle: "FAQ",
+          faqSub: "日程の目安、天候、衣裳、予約の基本。",
+        },
         about: {
           eyebrow: "について",
           h2: "Miller／日本名は Mashiro（マシロ）です",
@@ -1553,16 +1732,16 @@
           },
         },
         float: {
-          eyebrow: "見る",
-          h2: "ウェディング & エロープメント",
+          eyebrow: "ロケーション",
+          h2: "ロケーション写真",
           lead:
-            "左右の矢印で切り替え、または自動再生。中央の表示は約3秒。画像をクリックでギャラリー該当地域へ。そこからプランへ進めます。",
+            "矢印で切り替え、または自動再生。各スライドからギャラリー同地点へ。プランはそこから辿れます。",
           ariaPrev: "前のスライド",
           ariaNext: "次のスライド",
-          c1: { title: "富士山ウェディング" },
-          c2: { title: "京都ウェディング" },
-          c3: { title: "北海道ウェディング" },
-          c4: { title: "鎌倉ウェディング" },
+          c1: { title: "富士山" },
+          c2: { title: "東京" },
+          c3: { title: "北海道" },
+          c4: { title: "鎌倉" },
         },
         footer: { line2: "日本エロープメント & アウトドア撮影" },
       },
@@ -2043,6 +2222,15 @@
           opt2: "アウトドア撮影",
           opt3: "まだ決まっていない / 相談したい",
         },
+        faq: {
+          h2: "よくあるご質問",
+          q1: "どのくらい前から予約すべきですか？",
+          a1: "人気シーズンは早めに埋まります。ご希望の月とエリアをお知らせください。",
+          q2: "撮影日に悪天候の場合は？",
+          a2: "屋外は余裕を持った進行をご提案します。ご相談時に代替案もお話しします。",
+          q3: "衣裳やルートの相談はできますか？",
+          a3: "はい——衣裳ページと各プランの内容をご参照のうえ、光とペースに合わせてルートを整えます。",
+        },
         wechat: {
           heading: "WeChat（微信）",
           lead: "WeChat をご利用の場合は、下記の ID から追加し、撮影希望日やイメージをお送りください。",
@@ -2138,11 +2326,26 @@
           description:
             "일본의 산과 자연에서 진짜 감정을 담습니다. 엘로프먼트와 아웃도어 촬영.",
         },
-        elopement: { title: "엘로프먼트 | Mashiro Visuals" },
-        ski: { title: "아웃도어 촬영 | Mashiro Visuals" },
-        portfolio: { title: "포트폴리오 | Mashiro Visuals" },
-        about: { title: "소개 | Mashiro Visuals" },
-        contact: { title: "문의 | Mashiro Visuals" },
+        elopement: {
+          title: "엘로프먼트 | Mashiro Visuals",
+          description: "일본 전역 로케이션 웨딩·엘로프먼트 촬영 루트와 패키지 안내.",
+        },
+        ski: {
+          title: "아웃도어 촬영 | Mashiro Visuals",
+          description: "산과 자연 속 커플·어드벤처 스토리 촬영. 날씨와 안전을 고려한 일정.",
+        },
+        portfolio: {
+          title: "포트폴리오 | Mashiro Visuals",
+          description: "도쿄, 후지산, 홋카이도, 가마쿠라, 스튜디오 등 대표 작품.",
+        },
+        about: {
+          title: "소개 | Mashiro Visuals",
+          description: "Miller / Mashiro 소개 — 일본 기반 엘로프먼트·야외 웨딩 포토그래퍼.",
+        },
+        contact: {
+          title: "문의 | Mashiro Visuals",
+          description: "일정·지역·예산 상담 — 폼, WhatsApp, WeChat으로 연락 주세요.",
+        },
         aiChat: {
           title: "AI 도우미 | Mashiro Visuals",
           description: "Mashiro Visuals 도우미와 채팅으로 패키지, 촬영지, 예약, 납품 등을 안내받을 수 있습니다.",
@@ -2180,7 +2383,42 @@
           scrollAria: "아래로 스크롤",
           note: "일본 기반. 영어 문의 환영.",
         },
-        featured: { h2: "추천 작품" },
+        featured: { cta: "플랜 보기" },
+        plan: {
+          eyebrow: "플랜",
+          h2: "촬영 플랜",
+          lead: "예약 전에 도쿄·후지·간토 당일 루트와 옵션, 포함 내용을 비교해 보세요.",
+        },
+        costume: {
+          eyebrow: "스타일링",
+          h2: "코스튬",
+          body: "웨딩드레스·컬러 드레스·기모노·정장 라인업 예시를 미리 확인할 수 있습니다.",
+          btn: "코스튬 페이지",
+        },
+        combos: {
+          h2: "인기 조합",
+          lead: "함께 문의가 많은 스타터 세트입니다.",
+          c1Title: "도쿄 시티 + 룩 체인지",
+          c1Body: "도심 라인과 의상 교체를 하루에 — 풀데이 페이싱.",
+          c2Title: "후지 오호 당일 촬영",
+          c2Body: "호숫가 빛과 산 배경을 하루에.",
+          c3Title: "간토 당일 루트",
+          c3Body: "도쿄+가마쿠라 또는 후지+하코네 — 하루에 두 가지 무드.",
+          c1Cta: "도쿄 플랜",
+          c2Cta: "후지 플랜",
+          c3Cta: "간토 당일 플랜",
+        },
+        galleryBand: {
+          h2: "갤러리",
+          lead: "후지·도쿄·홋카이도·가마쿠라·스튜디오 등 로케이션 작품 — 전체 그리드에서 앨범을 열어보세요.",
+          btn: "갤러리 열기",
+        },
+        endTiles: {
+          flowTitle: "FLOW",
+          flowSub: "문의부터 촬영일까지의 단계.",
+          faqTitle: "FAQ",
+          faqSub: "일정·날씨·의상·예약 기본.",
+        },
         about: {
           eyebrow: "소개",
           h2: "Miller이며, 일본에서는 Mashiro로 불립니다",
@@ -2235,16 +2473,16 @@
           },
         },
         float: {
-          eyebrow: "탐색",
-          h2: "웨딩 & 엘로프먼트",
+          eyebrow: "로케이션",
+          h2: "로케이션 사진",
           lead:
-            "양옆 화살표로 넘기거나 자동 재생을 기다리세요. 가운데는 약 3초 유지됩니다. 이미지를 누르면 갤러리(Gallery)의 해당 지역으로 이동합니다(거기서 상품으로 이어집니다).",
+            "화살표로 넘기거나 자동 재생을 기다리세요. 각 슬라이드는 갤러리(Gallery)의 같은 지점으로 연결됩니다.",
           ariaPrev: "이전 슬라이드",
           ariaNext: "다음 슬라이드",
-          c1: { title: "후지산 웨딩" },
-          c2: { title: "교토 웨딩" },
-          c3: { title: "홋카이도 웨딩" },
-          c4: { title: "가마쿠라 웨딩" },
+          c1: { title: "후지산" },
+          c2: { title: "도쿄" },
+          c3: { title: "홋카이도" },
+          c4: { title: "가마쿠라" },
         },
         footer: { line2: "일본 엘로프먼트 & 아웃도어" },
       },
@@ -2725,6 +2963,15 @@
           opt2: "아웃도어 촬영",
           opt3: "아직 잘 모르겠어요",
         },
+        faq: {
+          h2: "자주 묻는 질문",
+          q1: "얼마나 미리 예약해야 하나요?",
+          a1: "인기 시즌은 빨리 찹니다. 희망 월과 지역을 알려주시면 가능한 일정을 안내합니다.",
+          q2: "촬영일 날씨가 안 좋으면요?",
+          a2: "야외 일정은 여유를 두고 조정합니다. 상담 시 대안과 안전도 함께 이야기합니다.",
+          q3: "의상과 루트도 도와주나요?",
+          a3: "네 — 코스튬 샘플과 각 플랜 내용을 참고해 빛과 템포에 맞춰 루트를 맞춥니다.",
+        },
         wechat: {
           heading: "WeChat",
           lead: "WeChat을 선호하시면 아래 ID로 추가한 뒤 희망 일정과 아이디어를 보내 주세요.",
@@ -2821,11 +3068,26 @@
           description:
             "Настоящие эмоции в горах и природе Японии. Элопмент и аутдор-съёмка.",
         },
-        elopement: { title: "Элопмент | Mashiro Visuals" },
-        ski: { title: "Аутдор-съёмка | Mashiro Visuals" },
-        portfolio: { title: "Портфолио | Mashiro Visuals" },
-        about: { title: "Обо мне | Mashiro Visuals" },
-        contact: { title: "Контакты | Mashiro Visuals" },
+        elopement: {
+          title: "Элопмент | Mashiro Visuals",
+          description: "Свадьба и элопмент на натуре по Японии — маршруты, пакеты и ожидания.",
+        },
+        ski: {
+          title: "Аутдор-съёмка | Mashiro Visuals",
+          description: "Истории пар и приключений на природе Японии — движение, погода, кинематографичный кадр.",
+        },
+        portfolio: {
+          title: "Портфолио | Mashiro Visuals",
+          description: "Отборочные серии: Токио, Фудзи, Хоккайдо, Камакура, студия и другое.",
+        },
+        about: {
+          title: "Обо мне | Mashiro Visuals",
+          description: "Miller / Mashiro — фотограф в Японии: элопменты, свадьбы на локациях, естественный свет.",
+        },
+        contact: {
+          title: "Контакты | Mashiro Visuals",
+          description: "Даты, локации, бюджет — форма, WhatsApp или WeChat в шапке сайта.",
+        },
         aiChat: {
           title: "Помощник | Mashiro Visuals",
           description:
@@ -2864,7 +3126,45 @@
           scrollAria: "Прокрутить к содержимому",
           note: "Базируюсь в Японии. Пишите на английском — добро пожаловать.",
         },
-        featured: { h2: "Избранное" },
+        featured: { cta: "Смотреть планы" },
+        plan: {
+          eyebrow: "Пакеты",
+          h2: "Наши планы",
+          lead:
+            "Сравните Токио, Фудзи, маршруты «день в Канто», опции и состав работ до бронирования.",
+        },
+        costume: {
+          eyebrow: "Стилистика",
+          h2: "Костюмы",
+          body:
+            "Платья, цветные наряды, кимоно и костюмы — посмотрите примеры гардероба на день съёмки.",
+          btn: "К странице костюмов",
+        },
+        combos: {
+          h2: "Популярные связки",
+          lead: "Часто выбирают вместе на старте.",
+          c1Title: "Токио + второй образ",
+          c1Body: "Городские маршруты и смена наряда — темп полного дня.",
+          c2Title: "День у озёр Фудзи",
+          c2Body: "Свет у воды и горы в одной сессии.",
+          c3Title: "Маршрут дня по Канто",
+          c3Body: "Токио + Камакура или Фудзи + Хаконэ — два настроения за день.",
+          c1Cta: "План Токио",
+          c2Cta: "План Фудзи",
+          c3Cta: "План «день в Канто»",
+        },
+        galleryBand: {
+          h2: "Галерея",
+          lead:
+            "Локации: Фудзи, Токио, Хоккайдо, Камакура, студия — откройте полную сетку альбомов.",
+          btn: "Открыть галерею",
+        },
+        endTiles: {
+          flowTitle: "FLOW",
+          flowSub: "От запроса до дня съёмки.",
+          faqTitle: "FAQ",
+          faqSub: "Сроки, погода, образы, основы брони.",
+        },
         about: {
           eyebrow: "Обо мне",
           h2: "Я Miller, в Японии меня зовут Mashiro",
@@ -2919,16 +3219,16 @@
           },
         },
         float: {
-          eyebrow: "Смотреть",
-          h2: "Свадьба и элопмент",
+          eyebrow: "Локации",
+          h2: "Фото локаций",
           lead:
-            "Листайте стрелками по бокам или дождитесь автопрокрутки; в центре ~3 с. Клик по кадру — соответствующий регион в галерее (оттуда — к тарифам).",
+            "Стрелки или автопрокрутка; каждый слайд ведёт в ту же точку галереи, дальше — к планам.",
           ariaPrev: "Предыдущий слайд",
           ariaNext: "Следующий слайд",
-          c1: { title: "Фудзи · свадьба" },
-          c2: { title: "Киото · свадьба" },
-          c3: { title: "Хоккайдо · свадьба" },
-          c4: { title: "Камакура · свадьба" },
+          c1: { title: "Фудзи" },
+          c2: { title: "Токио" },
+          c3: { title: "Хоккайдо" },
+          c4: { title: "Камакура" },
         },
         footer: { line2: "Элопмент и аутдор в Японии" },
       },
@@ -3418,6 +3718,15 @@
           opt2: "Аутдор",
           opt3: "Пока не уверен(а)",
         },
+        faq: {
+          h2: "Частые вопросы",
+          q1: "За какое время лучше бронировать?",
+          a1: "В пик сезонов даты заканчиваются раньше — напишите месяц и регион, подскажем окна.",
+          q2: "Что если в день съёмки плохая погода?",
+          a2: "На улице закладываем гибкость; на консультации обсуждаем запасные варианты и безопасность.",
+          q3: "Помогаете с образами и маршрутом?",
+          a3: "Да — смотрите образцы костюмов и состав планов; маршрут подстраиваем под свет и темп.",
+        },
         wechat: {
           heading: "WeChat",
           lead: "Если удобнее WeChat — добавьте нас по ID ниже и напишите даты и идеи съёмки.",
@@ -3515,11 +3824,26 @@
           description:
             "Emoción auténtica en montañas y naturaleza de Japón. Elopement y sesiones outdoor.",
         },
-        elopement: { title: "Elopement | Mashiro Visuals" },
-        ski: { title: "Fotografía outdoor | Mashiro Visuals" },
-        portfolio: { title: "Portafolio | Mashiro Visuals" },
-        about: { title: "Sobre mí | Mashiro Visuals" },
-        contact: { title: "Contacto | Mashiro Visuals" },
+        elopement: {
+          title: "Elopement | Mashiro Visuals",
+          description: "Elopement y boda en locación por Japón — rutas, paquetes y qué esperar.",
+        },
+        ski: {
+          title: "Fotografía outdoor | Mashiro Visuals",
+          description: "Historias de pareja y aventura al aire libre en Japón — ritmo consciente del clima.",
+        },
+        portfolio: {
+          title: "Portafolio | Mashiro Visuals",
+          description: "Trabajos en Tokio, Fuji, Hokkaido, Kamakura, estudio y más.",
+        },
+        about: {
+          title: "Sobre mí | Mashiro Visuals",
+          description: "Miller / Mashiro — fotógrafo en Japón para elopements y bodas en exteriores.",
+        },
+        contact: {
+          title: "Contacto | Mashiro Visuals",
+          description: "Fechas, destinos y presupuesto — formulario, WhatsApp o WeChat.",
+        },
         aiChat: {
           title: "Asistente IA | Mashiro Visuals",
           description:
@@ -3558,7 +3882,45 @@
           scrollAria: "Desplazar al contenido",
           note: "Basado en Japón. Consultas en inglés bienvenidas.",
         },
-        featured: { h2: "Trabajos destacados" },
+        featured: { cta: "Ver nuestros planes" },
+        plan: {
+          eyebrow: "Paquetes",
+          h2: "Nuestros planes",
+          lead:
+            "Compara Tokio, Fuji, rutas de un día en Kanto, extras y qué incluye cada línea antes de reservar.",
+        },
+        costume: {
+          eyebrow: "Estilismo",
+          h2: "Vestuario",
+          body:
+            "Vestido, color, kimono y traje — adelanta el armario que puedes usar el día del rodaje.",
+          btn: "Ver vestuario",
+        },
+        combos: {
+          h2: "Combinaciones populares",
+          lead: "Parejas de entrada que suelen pedirse juntas.",
+          c1Title: "Tokio urbano y segundo look",
+          c1Body: "Rutas de ciudad más cambio de outfit — ritmo de día completo.",
+          c2Title: "Día en los lagos del Fuji",
+          c2Body: "Luz lacustre y montaña en una sola sesión.",
+          c3Title: "Ruta de un día en Kanto",
+          c3Body: "Tokio + Kamakura o Fuji + Hakone — dos ambientes el mismo día.",
+          c1Cta: "Plan Tokio",
+          c2Cta: "Plan Fuji",
+          c3Cta: "Plan día Kanto",
+        },
+        galleryBand: {
+          h2: "Galería",
+          lead:
+            "Trabajos en Fuji, Tokio, Hokkaido, Kamakura y estudio — abre la parrilla completa de álbumes.",
+          btn: "Abrir galería",
+        },
+        endTiles: {
+          flowTitle: "FLOW",
+          flowSub: "Pasos desde la consulta hasta el día del rodaje.",
+          faqTitle: "FAQ",
+          faqSub: "Plazos, clima, vestuario y lo básico de la reserva.",
+        },
         about: {
           eyebrow: "Sobre mí",
           h2: "Soy Miller, también conocido como Mashiro en Japón",
@@ -3613,16 +3975,16 @@
           },
         },
         float: {
-          eyebrow: "Explorar",
-          h2: "Boda y elopement",
+          eyebrow: "Ubicaciones",
+          h2: "Fotos por ubicación",
           lead:
-            "Usa las flechas laterales o espera el autopaseo; cada foto ~3 s en el centro. Clic en la imagen para ir a la región equivalente en la galería (desde ahí, a los planes).",
+            "Flechas o reproducción automática; cada diapositiva abre el mismo punto en la galería y enlaza con los planes.",
           ariaPrev: "Diapositiva anterior",
           ariaNext: "Diapositiva siguiente",
-          c1: { title: "Monte Fuji · boda" },
-          c2: { title: "Kioto · boda" },
-          c3: { title: "Hokkaido · boda" },
-          c4: { title: "Kamakura · boda" },
+          c1: { title: "Monte Fuji" },
+          c2: { title: "Tokio" },
+          c3: { title: "Hokkaido" },
+          c4: { title: "Kamakura" },
         },
         footer: { line2: "Elopement y fotografía outdoor en Japón" },
       },
@@ -3962,7 +4324,7 @@
         wizardStepPay: "Pagar en línea",
         modelSectionTitle: "Elige tu sesión",
         modelSectionSub:
-            "Empieza por el paquete de ubicación; después podrás añadir extras, como al elegir un Mac y luego su configuración.",
+            "Empieza por el paquete de ubicación; después añade opciones (vestuario, vídeo, kimono, etc.).",
         optionsSectionTitle: "Configura tu sesión",
         optionsSectionSub: "Vestidos extra, vídeo detrás de cámaras, kimono y más.",
         scheduleSectionTitle: "Fecha preferida",
@@ -4110,6 +4472,15 @@
           opt1: "Elopement / parejas",
           opt2: "Fotografía outdoor",
           opt3: "Aún no lo tengo claro",
+        },
+        faq: {
+          h2: "Preguntas frecuentes",
+          q1: "¿Con cuánta antelación reservar?",
+          a1: "Las temporadas altas se llenan pronto; indica mes y región y te proponemos ventanas realistas.",
+          q2: "¿Y si el día del rodaje hace mal tiempo?",
+          a2: "En exteriores dejamos margen; en la consulta vemos alternativas y seguridad.",
+          q3: "¿Ayudáis con vestuario y rutas?",
+          a3: "Sí — revisa Vestuario y cada plan; ajustamos la ruta a la luz y al ritmo.",
         },
         wechat: {
           heading: "WeChat",
