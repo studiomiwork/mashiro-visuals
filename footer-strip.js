@@ -47,7 +47,8 @@
       "</div></section>" +
       '<section class="campaign-reserve-banner" aria-labelledby="site-footer-strip-reserve-h">' +
       '<div class="container campaign-reserve-banner__inner">' +
-      '<h2 id="site-footer-strip-reserve-h" class="campaign-reserve-banner__display" data-i18n="campaign.reserveBannerTitle">Reservation</h2>' +
+      '<h2 id="site-footer-strip-reserve-h" class="campaign-reserve-banner__display">' +
+      '<a class="campaign-reserve-banner__display-link" href="./reserve.html" data-i18n="campaign.reserveBannerTitle">Reservation</a></h2>' +
       '<p class="campaign-reserve-banner__sub" data-i18n="campaign.reserveBannerSub">Consultation booking &amp; inquiries</p>' +
       '<div class="campaign-reserve-banner__cols">' +
       '<div class="campaign-reserve-banner__col">' +
@@ -56,7 +57,6 @@
       '<a class="campaign-reserve-btn campaign-reserve-btn--primary" href="./reserve.html" data-i18n="campaign.reserveBtnReserve">Book a consultation</a>' +
       '<a class="campaign-reserve-btn campaign-reserve-btn--whatsapp" href="https://wa.me/819083038369" target="_blank" rel="noopener noreferrer" data-i18n="campaign.reserveBtnWhatsapp">Chat on WhatsApp</a>' +
       '<a class="campaign-reserve-btn campaign-reserve-btn--wechat" href="./contact.html#wechat" data-i18n="campaign.reserveBtnWechat">WeChat</a>' +
-      '<a class="campaign-reserve-btn campaign-reserve-btn--x" href="https://x.com/photour_mi" target="_blank" rel="noopener noreferrer" data-i18n="campaign.reserveBtnX">X</a>' +
       '<a class="campaign-reserve-btn campaign-reserve-btn--dark" href="./contact.html" data-i18n="campaign.reserveBtnContact">Contact</a>' +
       "</div></div>" +
       '<div class="campaign-reserve-banner__divider" aria-hidden="true"></div>' +

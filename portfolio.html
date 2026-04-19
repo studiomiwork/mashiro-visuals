@@ -24,7 +24,7 @@
           <div class="header-social">
             <a
               class="header-icon-circle"
-              href="https://www.instagram.com/photour_mi/"
+              href="https://www.instagram.com/mashirovisuals/"
               target="_blank"
               rel="noopener noreferrer"
               data-i18n-aria="nav.instagramAria"
@@ -87,26 +87,7 @@
                 />
               </svg>
             </a>
-            <a
-              class="header-icon-circle"
-              href="https://x.com/photour_mi"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n-aria="nav.xAria"
-            >
-              <svg
-                class="header-icon-circle__svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path
-                  fill="currentColor"
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                />
-              </svg>
-            </a>
+
           </div>
           <div class="lang-switcher">
             <select id="lang-select" class="lang-select" aria-label="Language">
@@ -147,7 +128,7 @@
             <div class="header-social">
               <a
                 class="header-icon-circle header-icon-circle--on-dark"
-                href="https://www.instagram.com/photour_mi/"
+                href="https://www.instagram.com/mashirovisuals/"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-i18n-aria="nav.instagramAria"
@@ -210,26 +191,7 @@
                   />
                 </svg>
               </a>
-              <a
-                class="header-icon-circle header-icon-circle--on-dark"
-                href="https://x.com/photour_mi"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-i18n-aria="nav.xAria"
-              >
-                <svg
-                  class="header-icon-circle__svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                  />
-                </svg>
-              </a>
+
             </div>
             <button
               type="button"
@@ -275,146 +237,506 @@
       </div>
     </div>
     <main>
-      <section class="gallery-loc-hero" aria-labelledby="gallery-loc-heading">
-        <div class="gallery-loc-hero__visual">
-          <img
-            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=82"
-            alt=""
-            width="1600"
-            height="900"
-            loading="eager"
-            decoding="async"
-          />
-          <div class="gallery-loc-hero__scrim" aria-hidden="true"></div>
-        </div>
-        <div class="container gallery-loc-hero__content">
-          <p class="gallery-loc-kicker" data-i18n="portfolio.loc.kicker">LOCATION PHOTO</p>
-          <h1 id="gallery-loc-heading" class="gallery-loc-h1">
-            <span class="gallery-loc-h1__line" data-i18n="portfolio.loc.h1">Location photography</span>
-            <span class="gallery-loc-h1__sub" data-i18n="portfolio.loc.h1sub">Mashiro Visuals · Japan</span>
-          </h1>
-          <p class="gallery-loc-lead" data-i18n="portfolio.loc.lead">
-            On-location sessions across Japan — natural light, quiet framing, and space for real emotion.
-          </p>
+      <section class="gallery-page-head" aria-labelledby="gallery-page-h1">
+        <div class="container gallery-page-head__inner">
+          <h1 id="gallery-page-h1" class="gallery-page-head__title" data-i18n="portfolio.gallery.title">GALLERY</h1>
+          <p class="gallery-page-head__sub" data-i18n="portfolio.gallery.subtitle">Photo gallery</p>
         </div>
       </section>
 
-      <section class="gallery-loc-band" aria-labelledby="gallery-loc-intro">
-        <div class="container gallery-loc-band__inner">
-          <p id="gallery-loc-intro" class="gallery-loc-intro" data-i18n="portfolio.loc.intro">
-            Beyond the studio: routes we know by season, light, and crowd rhythm — so you can stay present while the landscape does the rest.
-          </p>
+      <div class="gallery-filter-outer">
+        <div
+          class="gallery-filter-bar"
+          role="tablist"
+          data-i18n-aria="portfolio.gallery.filterAria"
+          aria-label="Filter gallery by category"
+        >
+          <button
+            type="button"
+            class="gallery-filter-bar__btn is-active"
+            role="tab"
+            aria-selected="true"
+            data-filter="all"
+            data-i18n="portfolio.gallery.catAll"
+          >
+            ALL
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="studio"
+            data-i18n="portfolio.gallery.catStudio"
+          >
+            STUDIO PHOTO
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="tokyo"
+            data-i18n="portfolio.gallery.catTokyo"
+          >
+            东京
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="fuji"
+            data-i18n="portfolio.gallery.catFuji"
+          >
+            富士山
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="kamakura"
+            data-i18n="portfolio.gallery.catKamakura"
+          >
+            镰仓
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="kyoto"
+            data-i18n="portfolio.gallery.catKyoto"
+          >
+            京都
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="hokkaido"
+            data-i18n="portfolio.gallery.catHokkaido"
+          >
+            北海道
+          </button>
+          <button
+            type="button"
+            class="gallery-filter-bar__btn"
+            role="tab"
+            aria-selected="false"
+            data-filter="other"
+            data-i18n="portfolio.gallery.catOther"
+          >
+            其他
+          </button>
         </div>
-      </section>
+      </div>
 
-      <section class="gallery-loc-features" aria-labelledby="gallery-loc-feature-h">
+      <div class="gallery-sort" data-i18n-aria="portfolio.gallery.sortAria" aria-label="Sort gallery">
+        <button type="button" class="gallery-sort__btn" data-sort="popular" data-i18n="portfolio.gallery.sortPopular">
+          Popular
+        </button>
+        <span class="gallery-sort__sep" aria-hidden="true">|</span>
+        <button type="button" class="gallery-sort__btn is-active" data-sort="newest" data-i18n="portfolio.gallery.sortNewest">
+          Newest
+        </button>
+      </div>
+
+      <section class="gallery-page-mosaic" aria-label="Photo grid">
         <div class="container">
-          <p class="gallery-loc-memo" data-i18n="portfolio.loc.memo">Memories</p>
-          <h2 id="gallery-loc-feature-h" class="gallery-loc-section-title" data-i18n="portfolio.loc.featureTitle">FEATURE</h2>
-          <p class="gallery-loc-section-lead" data-i18n="portfolio.loc.featureLead">
-            What we bring to every on-location day.
-          </p>
-          <div class="gallery-loc-feature-grid">
-            <article class="gallery-loc-feature">
-              <p class="gallery-loc-feature__n" data-i18n="portfolio.loc.f1n">01</p>
-              <h3 class="gallery-loc-feature__t" data-i18n="portfolio.loc.f1t">Light &amp; wardrobe</h3>
-              <p class="gallery-loc-feature__p" data-i18n="portfolio.loc.f1b">
-                Dress and suit choices aligned with your route; we plan timing so fabric, skin tone, and landscape read cleanly on camera.
-              </p>
-            </article>
-            <article class="gallery-loc-feature">
-              <p class="gallery-loc-feature__n" data-i18n="portfolio.loc.f2n">02</p>
-              <h3 class="gallery-loc-feature__t" data-i18n="portfolio.loc.f2t">Locations</h3>
-              <p class="gallery-loc-feature__p" data-i18n="portfolio.loc.f2b">
-                From urban lines to lakeside wind — we shortlist spots that match your story, then keep movement unhurried.
-              </p>
-            </article>
-            <article class="gallery-loc-feature">
-              <p class="gallery-loc-feature__n" data-i18n="portfolio.loc.f3n">03</p>
-              <h3 class="gallery-loc-feature__t" data-i18n="portfolio.loc.f3t">Direction</h3>
-              <p class="gallery-loc-feature__p" data-i18n="portfolio.loc.f3b">
-                Light posing and clear cues so you never guess what to do — the day stays yours, not a performance.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery-loc-spots" aria-labelledby="gallery-loc-spots-h">
-        <div class="container">
-          <h2 id="gallery-loc-spots-h" class="gallery-loc-section-title" data-i18n="portfolio.loc.spotsTitle">LOCATION SPOTS</h2>
-          <p class="gallery-loc-section-lead" data-i18n="portfolio.loc.spotsLead">Regions we return to often for elopement &amp; couples work.</p>
-          <ul class="gallery-loc-spot-list">
-            <li id="gallery-tokyo" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot1">Tokyo · urban core</span>
-            </li>
-            <li id="gallery-shonan" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot2">Shonan · coast</span>
-            </li>
-            <li id="gallery-mt-fuji" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot3">Mt. Fuji · lakes</span>
-              <a class="gallery-loc-spot-item__link" href="./elopement.html#p-fuji" data-i18n="portfolio.loc.spotPackagesLink">Packages</a>
-            </li>
-            <li id="gallery-kyoto" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot4">Kyoto · heritage streets</span>
-              <a class="gallery-loc-spot-item__link" href="./elopement.html#p-kyoto" data-i18n="portfolio.loc.spotPackagesLink">Packages</a>
-            </li>
-            <li id="gallery-kamakura" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot5">Kamakura · shrine &amp; sea</span>
-              <a class="gallery-loc-spot-item__link" href="./elopement.html#p-kamakura" data-i18n="portfolio.loc.spotPackagesLink">Packages</a>
-            </li>
-            <li id="gallery-hokkaido" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot6">Hokkaido · snow &amp; open land</span>
-              <a class="gallery-loc-spot-item__link" href="./elopement.html#p-hokkaido" data-i18n="portfolio.loc.spotPackagesLink">Packages</a>
-            </li>
-            <li id="gallery-karuizawa" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot7">Karuizawa · forest light</span>
-            </li>
-            <li id="gallery-nikko" class="gallery-loc-spot-item">
-              <span class="gallery-loc-spot-item__text" data-i18n="portfolio.loc.spot8">Nikko · cedar roads</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="gallery-mosaic" class="gallery-loc-mosaic" aria-label="Gallery">
-        <div class="container">
-          <p class="gallery-loc-mosaic__label" data-i18n="portfolio.loc.mosaicLabel">PHOTO GALLERY</p>
-          <div class="gallery-loc-mosaic__grid">
-            <figure class="gallery-loc-tile gallery-loc-tile--wide">
+          <div id="gallery-page-grid" class="gallery-page-grid">
+            <!-- 240514 Mt.Fuji — 首页 #gallery-mt-fuji 锚点保留在首张 -->
+            <figure
+              class="gallery-page-tile"
+              id="gallery-mt-fuji"
+              data-category="fuji"
+              data-album="alb-240514-fuji"
+              data-date="2024-05-14"
+              data-pop="10"
+            >
               <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1800&q=80"
-                alt=""
+                src="images/gallery/240514Mt.Fuji/WMA_4866.jpg"
+                alt="240514 富士山"
                 width="1200"
                 height="800"
                 loading="lazy"
                 decoding="async"
               />
             </figure>
-            <figure class="gallery-loc-tile">
+            <figure class="gallery-page-tile" data-category="fuji" data-album="alb-240514-fuji" data-date="2024-05-14" data-pop="9">
               <img
-                src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1400&q=80"
-                alt=""
-                width="900"
-                height="1200"
+                src="images/gallery/240514Mt.Fuji/WMA_4950.jpg"
+                alt="240514 富士山"
+                width="1200"
+                height="800"
                 loading="lazy"
                 decoding="async"
               />
             </figure>
-            <figure class="gallery-loc-tile">
+            <figure class="gallery-page-tile" data-category="fuji" data-album="alb-240514-fuji" data-date="2024-05-14" data-pop="9">
               <img
-                src="https://images.unsplash.com/photo-1529634898451-1f3f0d89f495?auto=format&fit=crop&w=1400&q=80"
-                alt=""
-                width="900"
-                height="675"
+                src="images/gallery/240514Mt.Fuji/IMG_3114.jpg"
+                alt="240514 富士山"
+                width="1200"
+                height="800"
                 loading="lazy"
                 decoding="async"
               />
             </figure>
-            <figure class="gallery-loc-tile gallery-loc-tile--wide">
+            <figure class="gallery-page-tile" data-category="fuji" data-album="alb-240514-fuji" data-date="2024-05-14" data-pop="8">
               <img
-                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1800&q=80"
-                alt=""
+                src="images/gallery/240514Mt.Fuji/WMA_5038.jpg"
+                alt="240514 富士山"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="fuji" data-album="alb-240514-fuji" data-date="2024-05-14" data-pop="8">
+              <img
+                src="images/gallery/240514Mt.Fuji/WMA_5461.jpg"
+                alt="240514 富士山"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="fuji" data-album="alb-240514-fuji" data-date="2024-05-14" data-pop="7">
+              <img
+                src="images/gallery/240514Mt.Fuji/WMA_5721.jpg"
+                alt="240514 富士山"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 230203 北海道（项目内文件夹名为 230203Hokaido） -->
+            <figure class="gallery-page-tile" data-category="hokkaido" data-album="alb-230203-hokkaido" data-date="2023-02-03" data-pop="8">
+              <img
+                src="images/gallery/230203Hokaido/210A7051.jpg"
+                alt="230203 北海道"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="hokkaido" data-album="alb-230203-hokkaido" data-date="2023-02-03" data-pop="8">
+              <img
+                src="images/gallery/230203Hokaido/210A7348.jpg"
+                alt="230203 北海道"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="hokkaido" data-album="alb-230203-hokkaido" data-date="2023-02-03" data-pop="7">
+              <img
+                src="images/gallery/230203Hokaido/210A7380.jpg"
+                alt="230203 北海道"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="hokkaido" data-album="alb-230203-hokkaido" data-date="2023-02-03" data-pop="7">
+              <img
+                src="images/gallery/230203Hokaido/210A7411.jpg"
+                alt="230203 北海道"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 230203 东京 -->
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230203-tokyo" data-date="2023-02-03" data-pop="8">
+              <img
+                src="images/gallery/230203Tokyo/_ILA0712.jpg"
+                alt="230203 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230203-tokyo" data-date="2023-02-03" data-pop="8">
+              <img
+                src="images/gallery/230203Tokyo/_ILA0826.jpg"
+                alt="230203 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230203-tokyo" data-date="2023-02-03" data-pop="7">
+              <img
+                src="images/gallery/230203Tokyo/_ILA0849.jpg"
+                alt="230203 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230203-tokyo" data-date="2023-02-03" data-pop="7">
+              <img
+                src="images/gallery/230203Tokyo/_ILA0876.jpg"
+                alt="230203 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 230307 Studio -->
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230307-studio" data-date="2023-03-07" data-pop="9">
+              <img
+                src="images/gallery/230307Studio Photo/210A3117.jpg"
+                alt="230307 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230307-studio" data-date="2023-03-07" data-pop="9">
+              <img
+                src="images/gallery/230307Studio Photo/210A3202.jpg"
+                alt="230307 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230307-studio" data-date="2023-03-07" data-pop="8">
+              <img
+                src="images/gallery/230307Studio Photo/210A3212.jpg"
+                alt="230307 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230307-studio" data-date="2023-03-07" data-pop="8">
+              <img
+                src="images/gallery/230307Studio Photo/210A3224.jpg"
+                alt="230307 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 230307 东京 -->
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230307-tokyo" data-date="2023-03-07" data-pop="8">
+              <img
+                src="images/gallery/230307Tokyo/210A3645.jpg"
+                alt="230307 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230307-tokyo" data-date="2023-03-07" data-pop="8">
+              <img
+                src="images/gallery/230307Tokyo/210A3729.jpg"
+                alt="230307 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230307-tokyo" data-date="2023-03-07" data-pop="7">
+              <img
+                src="images/gallery/230307Tokyo/210A3792.jpg"
+                alt="230307 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230307-tokyo" data-date="2023-03-07" data-pop="7">
+              <img
+                src="images/gallery/230307Tokyo/210A3803.jpg"
+                alt="230307 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 230320 Studio -->
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230320-studio" data-date="2023-03-20" data-pop="9">
+              <img
+                src="images/gallery/230320Studio Photo/_ILA5384.jpg"
+                alt="230320 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230320-studio" data-date="2023-03-20" data-pop="9">
+              <img
+                src="images/gallery/230320Studio Photo/_ILA5445.jpg"
+                alt="230320 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230320-studio" data-date="2023-03-20" data-pop="8">
+              <img
+                src="images/gallery/230320Studio Photo/_ILA5498.jpg"
+                alt="230320 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-230320-studio" data-date="2023-03-20" data-pop="8">
+              <img
+                src="images/gallery/230320Studio Photo/_ILA5532.jpg"
+                alt="230320 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 230320 东京 -->
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230320-tokyo" data-date="2023-03-20" data-pop="8">
+              <img
+                src="images/gallery/230320Tokyo/_ILA5819.jpg"
+                alt="230320 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230320-tokyo" data-date="2023-03-20" data-pop="8">
+              <img
+                src="images/gallery/230320Tokyo/_ILA5864.jpg"
+                alt="230320 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230320-tokyo" data-date="2023-03-20" data-pop="7">
+              <img
+                src="images/gallery/230320Tokyo/_ILA5929.jpg"
+                alt="230320 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="tokyo" data-album="alb-230320-tokyo" data-date="2023-03-20" data-pop="7">
+              <img
+                src="images/gallery/230320Tokyo/_ILA5933.jpg"
+                alt="230320 东京"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 250408 Studio -->
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-250408-studio" data-date="2025-04-08" data-pop="9">
+              <img
+                src="images/gallery/250408Studio/MILA5090.jpg"
+                alt="250408 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-250408-studio" data-date="2025-04-08" data-pop="9">
+              <img
+                src="images/gallery/250408Studio/MILA5099.jpg"
+                alt="250408 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-250408-studio" data-date="2025-04-08" data-pop="8">
+              <img
+                src="images/gallery/250408Studio/MILA5111.jpg"
+                alt="250408 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="studio" data-album="alb-250408-studio" data-date="2025-04-08" data-pop="8">
+              <img
+                src="images/gallery/250408Studio/MILA5132.jpg"
+                alt="250408 影棚"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- 250408 镰仓 -->
+            <figure class="gallery-page-tile" data-category="kamakura" data-album="alb-250408-kamakura" data-date="2025-04-08" data-pop="9">
+              <img
+                src="images/gallery/250408镰仓/MILA5188.jpg"
+                alt="250408 镰仓"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="kamakura" data-album="alb-250408-kamakura" data-date="2025-04-08" data-pop="9">
+              <img
+                src="images/gallery/250408镰仓/MILA5229.jpg"
+                alt="250408 镰仓"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="kamakura" data-album="alb-250408-kamakura" data-date="2025-04-08" data-pop="8">
+              <img
+                src="images/gallery/250408镰仓/MILA5557.jpg"
+                alt="250408 镰仓"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="gallery-page-tile" data-category="kamakura" data-album="alb-250408-kamakura" data-date="2025-04-08" data-pop="8">
+              <img
+                src="images/gallery/250408镰仓/MILA5726.jpg"
+                alt="250408 镰仓"
                 width="1200"
                 height="800"
                 loading="lazy"
@@ -422,8 +744,15 @@
               />
             </figure>
           </div>
-          <div class="gallery-loc-more">
-            <a class="gallery-loc-more__btn" href="./contact.html" data-i18n="portfolio.loc.moreBtn">VIEW MORE</a>
+          <div class="gallery-page-more" id="gallery-page-more" hidden>
+            <button
+              type="button"
+              class="gallery-page-more__btn"
+              id="gallery-view-more-btn"
+              data-i18n="portfolio.loc.moreBtn"
+            >
+              VIEW MORE
+            </button>
           </div>
         </div>
       </section>
@@ -439,7 +768,7 @@
           <div class="site-footer__social">
             <a
               class="site-footer__soc"
-              href="https://www.instagram.com/photour_mi/"
+              href="https://www.instagram.com/mashirovisuals/"
               target="_blank"
               rel="noopener noreferrer"
               data-i18n-aria="nav.instagramAria"
@@ -494,26 +823,7 @@
                 />
               </svg>
             </a>
-            <a
-              class="site-footer__soc"
-              href="https://x.com/photour_mi"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-i18n-aria="nav.xAria"
-            >
-              <svg
-                class="site-footer__soc-svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path
-                  fill="currentColor"
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                />
-              </svg>
-            </a>
+
           </div>
         </div>
         <nav class="site-footer__nav-col" aria-label="Site links">
@@ -551,5 +861,7 @@
     <script src="./floating-cta.js" defer></script>
     <script src="./ai-consult.js" defer></script>
     <script src="./footer-strip.js" defer></script>
+    <script src="./portfolio-filter.js" defer></script>
+    <script src="./portfolio-lightbox.js" defer></script>
   </body>
 </html>
