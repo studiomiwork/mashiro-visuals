@@ -29,10 +29,43 @@
         menuCloseAria: "Close menu",
         instagramAria: "Instagram",
         whatsappAria: "WhatsApp",
+        wechatAria: "WeChat",
+        xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "Seasonal fairs & news",
       },
-      common: { langAria: "Language" },
+      common: {
+        langAria: "Language",
+        floatCtaAria: "AI assistant and reservation shortcuts",
+        floatAiTitle: "AI CHAT",
+        floatAiSub: "Ask anything",
+        aiPanelTitle: "Mashiro AI assistant",
+        aiPanelCloseAria: "Close chat",
+        aiWelcome:
+          "Hi — I’m an automated assistant for Mashiro Visuals. Ask about packages, locations, booking, or timing. For a firm quote or contract, we’ll connect you with a human via WhatsApp or the reserve form.",
+        aiPlaceholder: "Type your question…",
+        aiSend: "Send",
+        aiThinking: "Thinking…",
+        aiDisclaimer:
+          "Answers are automated and may be incomplete. Plans and prices are confirmed after human review.",
+        aiReplyDefault:
+          "Thanks for your message. Try asking about pricing, locations we cover, how to book, or delivery. You can also use WhatsApp from the site header for a personal reply.",
+        aiReplyPricing:
+          "Published plans and price bands are on the Plan page (tax notes included where shown). Final quotes depend on season, locations, and add-ons — Reserve or WhatsApp for a tailored estimate.",
+        aiReplyLocations:
+          "We often shoot around Tokyo, Shonan, Mt. Fuji & lakes, Kyoto, Kamakura, Hokkaido, Karuizawa, and Nikko — see Gallery → Location spots. Your route is shaped for light, weather, and pace.",
+        aiReplyBooking:
+          "Start from the RESERVE button, the Reserve page, or WhatsApp. We confirm dates and deliverables before any payment link.",
+        aiReplyDeliver:
+          "File counts, retouching, and turnaround are listed per package on the Plan pages and in your order summary after booking.",
+        aiReplyWeather:
+          "Outdoor days flex with weather — we plan buffer time where we can and prioritise safety; your consult covers backup ideas.",
+        aiReplyWhatsApp:
+          "For the fastest human answer, open WhatsApp from the header icons or the reservation strip and share your dates and region.",
+        aiWhatsAppCta: "Open WhatsApp",
+        aiBack: "Back to site",
+        aiBackAria: "Back to home",
+      },
       meta: {
         index: {
           title: "Mashiro Visuals | Japan Elopement & Outdoor Photography",
@@ -44,6 +77,11 @@
         portfolio: { title: "Portfolio | Mashiro Visuals" },
         about: { title: "About | Mashiro Visuals" },
         contact: { title: "Contact | Mashiro Visuals" },
+        aiChat: {
+          title: "AI assistant | Mashiro Visuals",
+          description:
+            "Chat with the Mashiro Visuals assistant about packages, locations, booking, and delivery in Japan.",
+        },
         plan: {
           title: "Plan | Mashiro Visuals",
           description:
@@ -52,7 +90,7 @@
         costume: {
           title: "Costume | Mashiro Visuals",
           description:
-            "Dress, suit, and styling options for your wedding and elopement session in Japan.",
+            "Browse dress, colour dress, kimono, and suit samples for Japan elopement & location shoots — consult for final lineup.",
         },
         campaign: {
           title: "Campaign & Event | Mashiro Visuals",
@@ -73,30 +111,10 @@
             "Honest, cinematic wedding and elopement photography for couples who travel to Japan. Snow, mountains, and open air—without stiff posing, just you and the landscape. Natural light and real emotion.",
           ctaPortfolio: "View Portfolio",
           ctaInquire: "Inquire Now",
-          circleCampaign: "CAMPAIGN",
-          circleCampaignSub: "Events & offers",
           circleReserve: "RESERVE",
           circleReserveSub: "Book a consultation",
-          floatCtaAria: "Campaign and reservation shortcuts",
           scrollAria: "Scroll to content",
           note: "Based in Japan. English inquiries welcome.",
-        },
-        services: {
-          h2: "Services",
-          lead:
-            "No heavy posing. Just real movement, emotion, and connection in nature.",
-          card1: {
-            title: "Elopement & Couples",
-            body:
-              "Designed for couples traveling to Japan. We create your story across forests, lakes, and alpine landscapes.",
-            btn: "Learn More",
-          },
-          card2: {
-            title: "Outdoor Photography",
-            body:
-              "From snow to backcountry terrain, I know the environment and flow, so your session feels natural and cinematic.",
-            btn: "View Outdoor Sessions",
-          },
         },
         featured: { h2: "Featured Work" },
         about: {
@@ -123,11 +141,6 @@
             body:
               "Less directing, more guidance. Genuine emotion over staged performance.",
           },
-        },
-        pricing: {
-          h2: "Starting Pricing",
-          c1: { title: "Elopement / Couples", price: "From ¥250,000" },
-          c2: { title: "Outdoor Photography", price: "From ¥80,000" },
         },
         cta: {
           eyebrow: "Contact",
@@ -166,7 +179,7 @@
           eyebrow: "Explore",
           h2: "Wedding & elopement offerings",
           lead:
-            "Use the arrows or wait — each slide stays centered for 3 seconds. Click the image for packages.",
+            "Use the arrows or wait — each slide stays centered for 3 seconds. Click the image to open the matching location in Gallery; package lines are linked from that row.",
           ariaPrev: "Previous slide",
           ariaNext: "Next slide",
           c1: { title: "Mount Fuji · Wedding" },
@@ -238,6 +251,43 @@
           h1: "Real emotion, held in landscape",
           lead:
             "A curated selection of elopement, couples, and outdoor sessions with a natural narrative style.",
+        },
+        loc: {
+          kicker: "LOCATION PHOTO",
+          h1: "Location photography",
+          h1sub: "Mashiro Visuals · Japan",
+          lead:
+            "On-location sessions across Japan — natural light, quiet framing, and space for real emotion.",
+          intro:
+            "Beyond the studio: routes we know by season, light, and crowd rhythm — so you can stay present while the landscape does the rest.",
+          memo: "Memories",
+          featureTitle: "FEATURE",
+          featureLead: "What we bring to every on-location day.",
+          f1n: "01",
+          f1t: "Light & wardrobe",
+          f1b:
+            "Dress and suit choices aligned with your route; we plan timing so fabric, skin tone, and landscape read cleanly on camera.",
+          f2n: "02",
+          f2t: "Locations",
+          f2b:
+            "From urban lines to lakeside wind — we shortlist spots that match your story, then keep movement unhurried.",
+          f3n: "03",
+          f3t: "Direction",
+          f3b:
+            "Light posing and clear cues so you never guess what to do — the day stays yours, not a performance.",
+          spotsTitle: "LOCATION SPOTS",
+          spotsLead: "Regions we return to often for elopement & couples work.",
+          spot1: "Tokyo · urban core",
+          spot2: "Shonan · coast",
+          spot3: "Mt. Fuji · lakes",
+          spot4: "Kyoto · heritage streets",
+          spot5: "Kamakura · shrine & sea",
+          spot6: "Hokkaido · snow & open land",
+          spot7: "Karuizawa · forest light",
+          spot8: "Nikko · cedar roads",
+          mosaicLabel: "PHOTO GALLERY",
+          moreBtn: "VIEW MORE",
+          spotPackagesLink: "Packages",
         },
       },
       about: {
@@ -357,6 +407,37 @@
           body:
             "Classic tailoring or relaxed fits for mountains, snow, and city walks.",
         },
+        page: {
+          kicker: "COSTUME",
+          h1: "Costume",
+          h1Line2: "A curated wardrobe line-up",
+          h1Line3: "for elopement & on-location days",
+          lead:
+            "Dresses, suits, and wasō — chosen for movement, wind, and light across Japan.",
+          intro:
+            "We keep silhouettes travel-friendly and photograph cleanly in snow, forest, and city glass. Final selection is confirmed at consult; the grid below is a sample of styles we coordinate with partner ateliers.",
+          fairBefore: "Trial fitting days and seasonal fairs are listed on",
+          fairLink: "Campaign & Event",
+          fairAfter: ".",
+          tabAll: "ALL",
+          tabWedding: "WEDDING DRESS",
+          tabColor: "COLOR DRESS",
+          tabKimono: "KIMONO",
+          tabMens: "MEN'S",
+          filtersAria: "Filter costume catalogue",
+          catalogHeading: "Costume catalogue",
+          eventsHead: "CAMPAIGN & EVENT",
+          ev1Tag: "EVENT",
+          ev1Title: "Trial fitting & mini session",
+          ev1Body:
+            "Limited weekend slots — try silhouettes and meet us before you book a full day.",
+          ev2Tag: "CAMPAIGN",
+          ev2Title: "Second look bonus window",
+          ev2Body:
+            "For shoots inside the posted dates — outfit blocks may stack differently; see the campaign page.",
+          evCta: "Details",
+          pagerNote: "Showing sample pieces — availability varies by season.",
+        },
       },
       campaign: {
         hero: {
@@ -377,6 +458,8 @@
         reserveWebHeading: "Web reservation & inquiries",
         reserveBtnReserve: "Book a consultation",
         reserveBtnWhatsapp: "Chat on WhatsApp",
+        reserveBtnWechat: "WeChat",
+        reserveBtnX: "X",
         reserveBtnContact: "Contact",
         reservePhoneHeading: "Phone inquiries",
         reservePhoneNumber: "—",
@@ -540,6 +623,15 @@
           opt2: "Outdoor Photography",
           opt3: "Not sure yet, I need guidance",
         },
+        wechat: {
+          heading: "WeChat",
+          lead: "Prefer WeChat? Add us with the ID below and send your dates and ideas.",
+          idLabel: "WeChat ID",
+          idValue: "photour_mi",
+          copyBtn: "Copy ID",
+          copied: "Copied",
+          note: "You can also reach us via WhatsApp or the form on this page.",
+        },
       },
       footer: {
         address:
@@ -581,10 +673,42 @@
         menuCloseAria: "關閉選單",
         instagramAria: "Instagram",
         whatsappAria: "WhatsApp",
+        wechatAria: "微信",
+        xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "季節活動與消息",
       },
-      common: { langAria: "語言" },
+      common: {
+        langAria: "語言",
+        floatCtaAria: "智能助理與預約捷徑",
+        floatAiTitle: "智能諮詢",
+        floatAiSub: "線上問答",
+        aiPanelTitle: "Mashiro 智能助理",
+        aiPanelCloseAria: "關閉對話",
+        aiWelcome:
+          "您好，我是 Mashiro Visuals 的自動助理。可詢問方案、地點、預約或檔期相關問題；若要正式報價或合約，仍會由真人透過 WhatsApp 或預約表與您確認。",
+        aiPlaceholder: "請輸入您的問題…",
+        aiSend: "送出",
+        aiThinking: "整理中…",
+        aiDisclaimer: "回覆為自動生成，可能不完整；實際方案與價格以人工確認為準。",
+        aiReplyDefault:
+          "收到。可試著問：價格區間、常拍地點、如何預約、或交付內容；也可點選網站上的 WhatsApp 由真人回覆。",
+        aiReplyPricing:
+          "公開方案與價格區間請見 Plan 頁（含稅註記以頁面為準）。最終費用依季節、地點與加購而定，建議 Reserve 或 WhatsApp 取得專屬估價。",
+        aiReplyLocations:
+          "常拍區域包含東京、湘南、富士湖畔、京都、鎌倉、北海道、輕井澤、日光等，可至 Gallery 的 Location spots 查看；路線會依光線與節奏安排。",
+        aiReplyBooking:
+          "可從右下角 RESERVE、Reserve 頁面或 WhatsApp 開始諮詢；付款連結前會先確認日期與交付內容。",
+        aiReplyDeliver:
+          "張數、精修與交件週期依各方案在 Plan 頁說明；下單後摘要內亦會載明。",
+        aiReplyWeather:
+          "外景會依天候彈性調整，能排緩衝時段會先預留，並以安全為優先；諮詢時可討論備案。",
+        aiReplyWhatsApp:
+          "若要最快由真人回覆，請用頁首或預約區的 WhatsApp，並附上希望日期與地區。",
+        aiWhatsAppCta: "開啟 WhatsApp",
+        aiBack: "返回網站",
+        aiBackAria: "返回首頁",
+      },
       meta: {
         index: {
           title: "Mashiro Visuals｜日本婚紗、私奔與戶外攝影",
@@ -596,13 +720,18 @@
         portfolio: { title: "作品集｜Mashiro Visuals" },
         about: { title: "關於｜Mashiro Visuals" },
         contact: { title: "聯絡｜Mashiro Visuals" },
+        aiChat: {
+          title: "智能助理｜Mashiro Visuals",
+          description: "與 Mashiro Visuals 智能助理對話，了解方案、地點、預約與交付等資訊。",
+        },
         plan: {
           title: "方案｜Mashiro Visuals",
           description: "日本婚紗與私奔攝影的方案與產品說明。",
         },
         costume: {
           title: "衣裳｜Mashiro Visuals",
-          description: "禮服、西裝與造型選擇，配合拍攝地點與季節。",
+          description:
+            "日本婚紗、外景私奔的禮服、彩色禮服、和裝與西裝樣本參考；實際以諮詢確認為準。",
         },
         campaign: {
           title: "活動｜Mashiro Visuals",
@@ -623,29 +752,10 @@
             "為來日本的新人與伴侶，拍攝誠實、有電影感的婚紗與私奔影像。雪山、曠野與戶外——不擺拍，只記錄你們與風景。自然光與真實情緒。",
           ctaPortfolio: "瀏覽作品",
           ctaInquire: "預約諮詢",
-          circleCampaign: "CAMPAIGN",
-          circleCampaignSub: "活動資訊",
           circleReserve: "RESERVE",
           circleReserveSub: "預約來訪",
-          floatCtaAria: "活動與預約捷徑",
           scrollAria: "向下捲動至內容",
           note: "駐點日本。歡迎以英文聯絡。",
-        },
-        services: {
-          h2: "服務項目",
-          lead: "不追求僵硬姿勢，只記錄在自然裡的真實動作、情緒與連結。",
-          card1: {
-            title: "婚紗／情侶私奔",
-            body:
-              "為來日本旅行的伴侶設計。在森林、湖泊與高山之間，完成屬於你們的故事。",
-            btn: "了解更多",
-          },
-          card2: {
-            title: "戶外攝影",
-            body:
-              "從雪地到山區，我熟悉環境節奏，讓拍攝自然、有電影感，也更安心。",
-            btn: "查看戶外方案",
-          },
         },
         featured: { h2: "精選作品" },
         about: {
@@ -669,11 +779,6 @@
             title: "自然電影感",
             body: "少指令、多引導，重視真實情緒，而不是過度表演。",
           },
-        },
-        pricing: {
-          h2: "參考價格",
-          c1: { title: "婚紗／情侶", price: "¥250,000 起（日圓）" },
-          c2: { title: "戶外攝影", price: "¥80,000 起（日圓）" },
         },
         cta: {
           eyebrow: "聯絡",
@@ -709,7 +814,7 @@
         float: {
           eyebrow: "探索",
           h2: "婚紗與私奔方案",
-          lead: "可用兩側箭頭切換，或自動輪播；中央約停留 3 秒。點圖查看方案。",
+          lead: "可用兩側箭頭切換，或自動輪播；中央約停留 3 秒。點圖可前往作品集（Gallery）對應地區；該列可再連到方案頁。",
           ariaPrev: "上一張",
           ariaNext: "下一張",
           c1: { title: "富士山婚紗" },
@@ -779,6 +884,39 @@
           eyebrow: "作品集",
           h1: "真實情緒，留在風景裡",
           lead: "精選私奔、情侶與戶外作品，以自然敘事為主，不過度擺拍。",
+        },
+        loc: {
+          kicker: "LOCATION PHOTO",
+          h1: "外景／地點式拍攝",
+          h1sub: "Mashiro Visuals · 日本",
+          lead: "日本各地外景——自然光、安靜的構圖，把情緒留給你們與風景。",
+          intro:
+            "走出棚內：依季節、光線與人潮節奏規劃路線，讓你們專注當下，把其餘交給環境與鏡頭。",
+          memo: "回憶",
+          featureTitle: "FEATURE",
+          featureLead: "每一次外景，我們在意的事。",
+          f1n: "01",
+          f1t: "光線與禮服",
+          f1b: "依路線搭配禮服與西裝，安排時間讓布料、膚色與風景在畫面裡乾淨呈現。",
+          f2n: "02",
+          f2t: "地點",
+          f2b: "從都市線條到湖畔的風——先篩出符合故事的地點，再讓移動與停留都從容。",
+          f3n: "03",
+          f3t: "引導",
+          f3b: "輕量姿態與清楚提示，不必猜下一步；這一天是你們的，而不是一場表演。",
+          spotsTitle: "LOCATION SPOTS",
+          spotsLead: "私奔與情侶拍攝常回到的區域參考。",
+          spot1: "東京 · 都市核心",
+          spot2: "湘南 · 海岸",
+          spot3: "富士山 · 湖畔",
+          spot4: "京都 · 老街與寺院巷弄",
+          spot5: "鎌倉 · 神社與海",
+          spot6: "北海道 · 雪原與開闊地",
+          spot7: "輕井澤 · 林間光線",
+          spot8: "日光 · 杉木林道",
+          mosaicLabel: "PHOTO GALLERY",
+          moreBtn: "VIEW MORE",
+          spotPackagesLink: "方案",
         },
       },
       about: {
@@ -894,6 +1032,34 @@
           title: "西裝與層次",
           body: "正式剪裁或休閒風格，配合山區、雪地與城市步行。",
         },
+        page: {
+          kicker: "COSTUME",
+          h1: "衣裳",
+          h1Line2: "為外景與私奔日",
+          h1Line3: "精選的禮服與造型",
+          lead: "禮服、西裝與和裝——為日本的風、光與移動而挑。",
+          intro:
+            "我們偏好易於旅行、在雪地、林間與都市玻璃前都乾淨入鏡的輪廓。最終款式於諮詢時確認；以下為與合作工坊協調的風格範例。",
+          fairBefore: "試穿活動與季節檔期請見",
+          fairLink: "活動與檔期",
+          fairAfter: "頁面。",
+          tabAll: "ALL",
+          tabWedding: "婚紗禮服",
+          tabColor: "彩色禮服",
+          tabKimono: "和裝",
+          tabMens: "男裝",
+          filtersAria: "篩選衣裳型錄",
+          catalogHeading: "衣裳型錄",
+          eventsHead: "CAMPAIGN & EVENT",
+          ev1Tag: "EVENT",
+          ev1Title: "試穿體驗與輕拍諮詢",
+          ev1Body: "限定週末時段——先試輪廓、認識我們，再決定是否預約全日。",
+          ev2Tag: "CAMPAIGN",
+          ev2Title: "第二套造型加值檔期",
+          ev2Body: "檔期內預約的拍攝，衣裝時段可能另有疊加方案；詳見活動頁。",
+          evCta: "詳情",
+          pagerNote: "為示意款項——實際庫存依季節而異。",
+        },
       },
       campaign: {
         hero: {
@@ -913,6 +1079,8 @@
         reserveWebHeading: "網路預約與諮詢",
         reserveBtnReserve: "預約諮詢",
         reserveBtnWhatsapp: "WhatsApp 諮詢",
+        reserveBtnWechat: "微信",
+        reserveBtnX: "X",
         reserveBtnContact: "聯絡表單",
         reservePhoneHeading: "電話諮詢",
         reservePhoneNumber: "—",
@@ -1073,6 +1241,15 @@
           opt2: "戶外攝影",
           opt3: "還不確定，想先聊聊",
         },
+        wechat: {
+          heading: "微信",
+          lead: "習慣用微信聯繫的話，可用下方 ID 加我們，並傳送拍攝日期與想法。",
+          idLabel: "微信號",
+          idValue: "photour_mi",
+          copyBtn: "複製號碼",
+          copied: "已複製",
+          note: "也可使用 WhatsApp 或本頁表單與我們聯繫。",
+        },
       },
       footer: {
         address: "日本為據點。預約制諮詢與來訪。",
@@ -1113,10 +1290,42 @@
         menuCloseAria: "メニューを閉じる",
         instagramAria: "Instagram",
         whatsappAria: "WhatsApp",
+        wechatAria: "WeChat",
+        xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "キャンペーン・イベント情報",
       },
-      common: { langAria: "言語" },
+      common: {
+        langAria: "言語",
+        floatCtaAria: "AIアシスタントと予約ショートカット",
+        floatAiTitle: "AI相談",
+        floatAiSub: "質問へ回答",
+        aiPanelTitle: "Mashiro AIアシスタント",
+        aiPanelCloseAria: "チャットを閉じる",
+        aiWelcome:
+          "こんにちは。Mashiro Visuals の自動アシスタントです。プラン・ロケーション・予約・日程についてご質問ください。正式な見積や契約は、WhatsApp や予約フォームから担当者がご案内します。",
+        aiPlaceholder: "ご質問を入力…",
+        aiSend: "送信",
+        aiThinking: "考え中…",
+        aiDisclaimer: "回答は自動生成であり、不正確な場合があります。最終的な条件は担当者の確認をご確認ください。",
+        aiReplyDefault:
+          "ありがとうございます。料金の目安、撮影エリア、予約の流れ、納品について聞いてみてください。個別のご相談は WhatsApp でも受け付けています。",
+        aiReplyPricing:
+          "料金の目安は Plan ページに記載されています（税表記は各表記に準拠）。最終見積は季節・ロケーション・オプションにより変わります。Reserve や WhatsApp で個別にお問い合わせください。",
+        aiReplyLocations:
+          "東京・湘南・富士周辺の湖・京都・鎌倉・北海道・軽井沢・日光などでよく撮影します。Gallery の Location spots もご参照ください。",
+        aiReplyBooking:
+          "RESERVE ボタン、Reserve ページ、または WhatsApp からご相談いただけます。お支払い前に日程と納品内容を確認します。",
+        aiReplyDeliver:
+          "カット数・レタッチ・納期は各プランの Plan ページに記載され、ご予約後のサマリーにも反映されます。",
+        aiReplyWeather:
+          "屋外撮影は天候に合わせて時間を調整します。安全を優先し、余裕のあるスケジュールをご提案します。",
+        aiReplyWhatsApp:
+          "担当者への早い返信は、ヘッダーまたは予約欄の WhatsApp から希望日とエリアを送ってください。",
+        aiWhatsAppCta: "WhatsAppを開く",
+        aiBack: "サイトに戻る",
+        aiBackAria: "ホームに戻る",
+      },
       meta: {
         index: {
           title: "Mashiro Visuals | 日本・アウトドア前撮り・エロープメント",
@@ -1128,13 +1337,19 @@
         portfolio: { title: "作品集 | Mashiro Visuals" },
         about: { title: "について | Mashiro Visuals" },
         contact: { title: "お問い合わせ | Mashiro Visuals" },
+        aiChat: {
+          title: "AIアシスタント | Mashiro Visuals",
+          description:
+            "Mashiro Visuals のアシスタントとチャットして、プラン・ロケーション・予約・納品などについて案内を受けられます。",
+        },
         plan: {
           title: "プラン | Mashiro Visuals",
           description: "日本での前撮り・エロープメントのプランと商品案内。",
         },
         costume: {
           title: "衣裳 | Mashiro Visuals",
-          description: "ドレス・スーツ・スタイリングのご案内。",
+          description:
+            "前撮り・エロープメント向けのドレス・カラー衣装・和装・メンズのラインナップ例。最終はご相談で確定します。",
         },
         campaign: {
           title: "キャンペーン | Mashiro Visuals",
@@ -1155,30 +1370,10 @@
             "日本を旅するふたりへ。ウェディングとエロープメントの、誠実でシネマティックな写真。雪と山、開けた空の下で—無理なポーズではなく、ふたりと風景だけを。自然光と本当の感情。",
           ctaPortfolio: "作品を見る",
           ctaInquire: "相談する",
-          circleCampaign: "CAMPAIGN",
-          circleCampaignSub: "イベント情報",
           circleReserve: "RESERVE",
           circleReserveSub: "今すぐご予約",
-          floatCtaAria: "キャンペーンと予約のショートカット",
           scrollAria: "下にスクロール",
           note: "日本を拠点に。英語でのお問い合わせ歓迎。",
-        },
-        services: {
-          h2: "サービス",
-          lead:
-            "過度なポーズより、自然の中での動き・感情・つながりを大切にします。",
-          card1: {
-            title: "エロープメント & カップル",
-            body:
-              "日本旅行のふたりへ。森や湖、山々で、ふたりだけの物語をつくります。",
-            btn: "詳しく見る",
-          },
-          card2: {
-            title: "アウトドア撮影",
-            body:
-              "雪原から山まで。地形とリズムを知っているから、自然でシネマチックに。",
-            btn: "アウトドアを見る",
-          },
         },
         featured: { h2: "作品ハイライト" },
         about: {
@@ -1202,11 +1397,6 @@
             title: "ナチュラル・シネマ",
             body: "指示より導く。演技ではなく、本当の感情を。",
           },
-        },
-        pricing: {
-          h2: "参考料金",
-          c1: { title: "エロープメント / カップル", price: "¥250,000〜" },
-          c2: { title: "アウトドア撮影", price: "¥80,000〜" },
         },
         cta: {
           eyebrow: "お問い合わせ",
@@ -1243,7 +1433,7 @@
           eyebrow: "見る",
           h2: "ウェディング & エロープメント",
           lead:
-            "左右の矢印で切り替え、または自動再生。中央の表示は約3秒。画像をクリックで詳細。",
+            "左右の矢印で切り替え、または自動再生。中央の表示は約3秒。画像をクリックでギャラリー該当地域へ。そこからプランへ進めます。",
           ariaPrev: "前のスライド",
           ariaNext: "次のスライド",
           c1: { title: "富士山ウェディング" },
@@ -1315,6 +1505,39 @@
           h1: "感情を、風景にとどめる",
           lead:
             "エロープメント、カップル、アウトドアの厳選。自然な語り口で。",
+        },
+        loc: {
+          kicker: "LOCATION PHOTO",
+          h1: "ロケーション撮影",
+          h1sub: "Mashiro Visuals · Japan",
+          lead: "日本各地のロケーション撮影——自然光、静かなフレーミング、ふたりの感情に余白を。",
+          intro:
+            "スタジオの外へ：季節・光・人の波を踏まえたルートで、景色に身を任せられる時間をつくります。",
+          memo: "Memories",
+          featureTitle: "FEATURE",
+          featureLead: "ロケーション当日に大切にしていること。",
+          f1n: "01",
+          f1t: "光と衣裳",
+          f1b: "ルートに合わせたドレス・タキシード選び。質感と肌色、風景がきれいに乗る時間帯を設計します。",
+          f2n: "02",
+          f2t: "ロケーション",
+          f2b: "都市のラインから湖畔の風まで——ストーリーに合う候補を絞り、移動もゆったりと。",
+          f3n: "03",
+          f3t: "ディレクション",
+          f3b: "軽いポージングと明確な合図で迷わせない。一日はふたりのもので、演技ではありません。",
+          spotsTitle: "LOCATION SPOTS",
+          spotsLead: "エロープメント・カップルでよく戻るエリア。",
+          spot1: "東京 · アーバン",
+          spot2: "湘南 · 海岸",
+          spot3: "富士 · 湖畔",
+          spot4: "京都 · 石畳と寺社",
+          spot5: "鎌倉 · 鳥居と海",
+          spot6: "北海道 · 雪と大地",
+          spot7: "軽井沢 · 森の光",
+          spot8: "日光 · 杉並木",
+          mosaicLabel: "PHOTO GALLERY",
+          moreBtn: "VIEW MORE",
+          spotPackagesLink: "プラン",
         },
       },
       about: {
@@ -1430,6 +1653,34 @@
           title: "スーツ・レイヤー",
           body: "山や雪、街歩きに合わせたクラシックからリラックスフィットまで。",
         },
+        page: {
+          kicker: "COSTUME",
+          h1: "コスチューム",
+          h1Line2: "ロケーション＆エロープメントの日のために",
+          h1Line3: "セレクトした衣裳ライン",
+          lead: "ドレス・スーツ・和装——日本の風と光、動きやすさを見据えて。",
+          intro:
+            "旅に耐える軽さと、雪・森・都市のガラス前でも写真に馴染むシルエットを大切にしています。最終のお衣装はご相談で確定します。下記は提携アトリエと調整するスタイルの一例です。",
+          fairBefore: "試着会やシーズン情報は",
+          fairLink: "キャンペーン＆イベント",
+          fairAfter: "をご覧ください。",
+          tabAll: "ALL",
+          tabWedding: "ウェディングドレス",
+          tabColor: "カラードレス",
+          tabKimono: "KIMONO",
+          tabMens: "MEN'S",
+          filtersAria: "衣裳一覧を絞り込む",
+          catalogHeading: "衣裳一覧",
+          eventsHead: "CAMPAIGN & EVENT",
+          ev1Tag: "EVENT",
+          ev1Title: "ご試着フォト体験",
+          ev1Body: "週末限定枠——シルエットを試しながら、本番前にお会いできます。",
+          ev2Tag: "CAMPAIGN",
+          ev2Title: "セカンドルック特典ウィンドウ",
+          ev2Body: "掲載期間内の撮影では衣裳ブロックの組み合わせが変わる場合があります。詳細はキャンペーンページへ。",
+          evCta: "詳細",
+          pagerNote: "掲載はサンプルです——在庫はシーズンにより異なります。",
+        },
       },
       campaign: {
         hero: {
@@ -1449,6 +1700,8 @@
         reserveWebHeading: "Webからの予約・お問い合わせ",
         reserveBtnReserve: "ご相談予約をする",
         reserveBtnWhatsapp: "WhatsAppで相談する",
+        reserveBtnWechat: "WeChat",
+        reserveBtnX: "X",
         reserveBtnContact: "お問い合わせ",
         reservePhoneHeading: "お電話でのお問い合わせ",
         reservePhoneNumber: "—",
@@ -1612,6 +1865,15 @@
           opt2: "アウトドア撮影",
           opt3: "まだ決まっていない / 相談したい",
         },
+        wechat: {
+          heading: "WeChat（微信）",
+          lead: "WeChat をご利用の場合は、下記の ID から追加し、撮影希望日やイメージをお送りください。",
+          idLabel: "WeChat ID",
+          idValue: "photour_mi",
+          copyBtn: "IDをコピー",
+          copied: "コピーしました",
+          note: "WhatsApp やこのページのフォームからもご連絡いただけます。",
+        },
       },
       footer: {
         address: "日本を拠点に活動。ご来店・ご相談は予約制です。",
@@ -1652,10 +1914,42 @@
         menuCloseAria: "메뉴 닫기",
         instagramAria: "Instagram",
         whatsappAria: "WhatsApp",
+        wechatAria: "WeChat",
+        xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "캠페인·이벤트",
       },
-      common: { langAria: "언어" },
+      common: {
+        langAria: "언어",
+        floatCtaAria: "AI 도우미 및 예약 바로가기",
+        floatAiTitle: "AI 상담",
+        floatAiSub: "질문 답변",
+        aiPanelTitle: "Mashiro AI 도우미",
+        aiPanelCloseAria: "채팅 닫기",
+        aiWelcome:
+          "안녕하세요. Mashiro Visuals 자동 도우미입니다. 패키지, 촬영지, 예약, 일정에 대해 물어보세요. 정식 견적·계약은 WhatsApp 또는 예약 양식으로 담당자가 안내합니다.",
+        aiPlaceholder: "질문을 입력하세요…",
+        aiSend: "보내기",
+        aiThinking: "생각 중…",
+        aiDisclaimer: "답변은 자동 생성이며 부정확할 수 있습니다. 최종 조건은 담당자 확인을 기준으로 합니다.",
+        aiReplyDefault:
+          "감사합니다. 가격대, 촬영 지역, 예약 방법, 납품에 대해 다시 질문해 보시거나 WhatsApp으로 연락해 주세요.",
+        aiReplyPricing:
+          "공개 요금은 Plan 페이지에 안내됩니다(세금 표기는 페이지 기준). 최종 견적은 시즌·지역·옵션에 따라 달라지며 Reserve 또는 WhatsApp으로 개별 문의하세요.",
+        aiReplyLocations:
+          "도쿄·쇼난·후지 호숫가·교토·가마쿠라·홋카이도·가루이자와·닛코 등에서 자주 촬영합니다. Gallery의 Location spots를 참고하세요.",
+        aiReplyBooking:
+          "RESERVE 버튼, Reserve 페이지 또는 WhatsApp으로 상담을 시작할 수 있습니다. 결제 링크 전에 일정과 납품을 확인합니다.",
+        aiReplyDeliver:
+          "컷 수·리터치·납기는 각 Plan 카드와 예약 후 요약에 안내됩니다.",
+        aiReplyWeather:
+          "야외 촬영은 날씨에 맞춰 일정을 조정하며 안전을 우선합니다.",
+        aiReplyWhatsApp:
+          "빠른 답변은 헤더 또는 예약 영역의 WhatsApp으로 희망일과 지역을 보내 주세요.",
+        aiWhatsAppCta: "WhatsApp 열기",
+        aiBack: "사이트로 돌아가기",
+        aiBackAria: "홈으로 돌아가기",
+      },
       meta: {
         index: {
           title: "Mashiro Visuals | 일본 야외 웨딩 & 엘로프먼트",
@@ -1667,13 +1961,18 @@
         portfolio: { title: "포트폴리오 | Mashiro Visuals" },
         about: { title: "소개 | Mashiro Visuals" },
         contact: { title: "문의 | Mashiro Visuals" },
+        aiChat: {
+          title: "AI 도우미 | Mashiro Visuals",
+          description: "Mashiro Visuals 도우미와 채팅으로 패키지, 촬영지, 예약, 납품 등을 안내받을 수 있습니다.",
+        },
         plan: {
           title: "플랜 | Mashiro Visuals",
           description: "일본 웨딩·엘로프먼트 촬영 플랜과 상품 안내.",
         },
         costume: {
           title: "코스튬 | Mashiro Visuals",
-          description: "드레스·수트·스타일링 선택 안내.",
+          description:
+            "일본 에로프먼트·로케이션 촬영용 드레스·컬러·기모노·수트 샘플 안내. 최종 선택은 상담 후 확정됩니다.",
         },
         campaign: {
           title: "캠페인 | Mashiro Visuals",
@@ -1694,30 +1993,10 @@
             "일본을 여행하는 커플을 위한 웨딩·엘로프먼트 촬영. 솔직하고 시네마틱하게. 눈과 산, 열린 하늘 아래—억지 포즈 없이 둘과 풍경만. 자연광과 진짜 감정.",
           ctaPortfolio: "작품 보기",
           ctaInquire: "문의하기",
-          circleCampaign: "CAMPAIGN",
-          circleCampaignSub: "이벤트 안내",
           circleReserve: "RESERVE",
           circleReserveSub: "방문 예약",
-          floatCtaAria: "캠페인 및 예약 바로가기",
           scrollAria: "아래로 스크롤",
           note: "일본 기반. 영어 문의 환영.",
-        },
-        services: {
-          h2: "서비스",
-          lead:
-            "과한 포즈보다 자연 속에서의 움직임, 감정, 연결을 중시합니다.",
-          card1: {
-            title: "엘로프먼트 & 커플",
-            body:
-              "일본을 여행하는 커플을 위해. 숲, 호수, 고산 풍경 속에 이야기를 담습니다.",
-            btn: "더 알아보기",
-          },
-          card2: {
-            title: "아웃도어 촬영",
-            body:
-              "눈부터 산악까지. 환경과 리듬을 알기에 자연스럽고 시네마틱하게.",
-            btn: "아웃도어 보기",
-          },
         },
         featured: { h2: "추천 작품" },
         about: {
@@ -1741,11 +2020,6 @@
             title: "자연스러운 시네마",
             body: "지시보다 안내. 연기가 아닌 진짜 감정.",
           },
-        },
-        pricing: {
-          h2: "가격 안내",
-          c1: { title: "엘로프먼트 / 커플", price: "¥250,000부터" },
-          c2: { title: "아웃도어 촬영", price: "¥80,000부터" },
         },
         cta: {
           eyebrow: "문의",
@@ -1782,7 +2056,7 @@
           eyebrow: "탐색",
           h2: "웨딩 & 엘로프먼트",
           lead:
-            "양옆 화살표로 넘기거나 자동 재생을 기다리세요. 가운데는 약 3초 유지됩니다. 이미지를 눌러 상세를 보세요.",
+            "양옆 화살표로 넘기거나 자동 재생을 기다리세요. 가운데는 약 3초 유지됩니다. 이미지를 누르면 갤러리(Gallery)의 해당 지역으로 이동합니다(거기서 상품으로 이어집니다).",
           ariaPrev: "이전 슬라이드",
           ariaNext: "다음 슬라이드",
           c1: { title: "후지산 웨딩" },
@@ -1854,6 +2128,39 @@
           h1: "감정을 풍경에 남기다",
           lead:
             "엘로프먼트, 커플, 아웃도어 엄선. 자연스러운 내러티브.",
+        },
+        loc: {
+          kicker: "LOCATION PHOTO",
+          h1: "로케이션 촬영",
+          h1sub: "Mashiro Visuals · Japan",
+          lead: "일본 로케이션 촬영 — 자연광, 여유 있는 구도, 진짜 감정을 담습니다.",
+          intro:
+            "스튜디오 밖으로: 계절·빛·사람의 흐름을 고려한 루트로, 풍경에 몰입할 시간을 만듭니다.",
+          memo: "Memories",
+          featureTitle: "FEATURE",
+          featureLead: "로케이션 당일 중요하게 여기는 것.",
+          f1n: "01",
+          f1t: "빛 & 의상",
+          f1b: "루트에 맞춘 드레스·턱시도. 질감·피부톤·풍경이 조화롭게 담기도록 시간을 설계합니다.",
+          f2n: "02",
+          f2t: "로케이션",
+          f2b: "도시의 라인부터 호숫가의 바람까지 — 이야기에 맞는 후보를 고르고 이동은 여유 있게.",
+          f3n: "03",
+          f3t: "디렉션",
+          f3b: "가벼운 포즈와 명확한 신호로 망설임을 줄입니다. 하루는 연기가 아닙니다.",
+          spotsTitle: "LOCATION SPOTS",
+          spotsLead: "엘로프먼트·커플 촬영에 자주 다시 가는 지역.",
+          spot1: "도쿄 · 도심",
+          spot2: "쇼난 · 해안",
+          spot3: "후지 · 호수",
+          spot4: "교토 · 골목과 사찰",
+          spot5: "가마쿠라 · 도리이와 바다",
+          spot6: "홋카이도 · 눈과 들판",
+          spot7: "가루이자와 · 숲의 빛",
+          spot8: "닛코 · 삼나무 길",
+          mosaicLabel: "PHOTO GALLERY",
+          moreBtn: "VIEW MORE",
+          spotPackagesLink: "상품",
         },
       },
       about: {
@@ -1969,6 +2276,34 @@
           title: "수트·레이어",
           body: "산·눈·도시 산책에 맞는 클래식부터 캐주얼까지.",
         },
+        page: {
+          kicker: "COSTUME",
+          h1: "코스튬",
+          h1Line2: "로케이션·에로프먼트 데이를 위한",
+          h1Line3: "큐레이션 워드로브",
+          lead: "드레스·수트·와소——일본의 바람, 빛, 움직임을 고려해 고릅니다.",
+          intro:
+            "여행에 무리 없는 실루엣과 눈·숲·도시 유리 앞에서도 사진이 깔끔하게 읽히는 라인을 중시합니다. 최종 의상은 상담에서 확정하며, 아래는 파트너 아뜰리에와 조율하는 스타일 예시입니다.",
+          fairBefore: "시착 이벤트와 시즌 정보는",
+          fairLink: "캠페인 & 이벤트",
+          fairAfter: " 페이지에서 확인하세요.",
+          tabAll: "ALL",
+          tabWedding: "웨딩 드레스",
+          tabColor: "컬러 드레스",
+          tabKimono: "기모노",
+          tabMens: "맨즈",
+          filtersAria: "코스튬 카탈로그 필터",
+          catalogHeading: "코스튬 카탈로그",
+          eventsHead: "CAMPAIGN & EVENT",
+          ev1Tag: "EVENT",
+          ev1Title: "시착·미니 세션",
+          ev1Body: "주말 한정 슬롯——실루엣을 먼저 보고, 종일 촬영 예약 전에 만나보세요.",
+          ev2Tag: "CAMPAIGN",
+          ev2Title: "세컨드 룩 보너스 기간",
+          ev2Body: "게시된 기간 안 촬영은 의상 블록 구성이 달라질 수 있습니다. 캠페인 페이지를 참고하세요.",
+          evCta: "자세히",
+          pagerNote: "샘플 안내입니다——재고는 시즌에 따라 달라집니다.",
+        },
       },
       campaign: {
         hero: {
@@ -1988,6 +2323,8 @@
         reserveWebHeading: "웹 예약·문의",
         reserveBtnReserve: "상담 예약하기",
         reserveBtnWhatsapp: "WhatsApp 상담",
+        reserveBtnWechat: "WeChat",
+        reserveBtnX: "X",
         reserveBtnContact: "문의하기",
         reservePhoneHeading: "전화 문의",
         reservePhoneNumber: "—",
@@ -2151,6 +2488,15 @@
           opt2: "아웃도어 촬영",
           opt3: "아직 잘 모르겠어요",
         },
+        wechat: {
+          heading: "WeChat",
+          lead: "WeChat을 선호하시면 아래 ID로 추가한 뒤 희망 일정과 아이디어를 보내 주세요.",
+          idLabel: "WeChat ID",
+          idValue: "photour_mi",
+          copyBtn: "ID 복사",
+          copied: "복사됨",
+          note: "WhatsApp이나 이 페이지의 양식으로도 연락하실 수 있습니다.",
+        },
       },
       footer: {
         address: "일본 기반. 방문·상담은 예약제입니다.",
@@ -2191,10 +2537,43 @@
         menuCloseAria: "Закрыть меню",
         instagramAria: "Instagram",
         whatsappAria: "WhatsApp",
+        wechatAria: "WeChat",
+        xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "Акции и события",
       },
-      common: { langAria: "Язык" },
+      common: {
+        langAria: "Язык",
+        floatCtaAria: "ИИ-помощник и быстрые ссылки на запись",
+        floatAiTitle: "ИИ-ЧАТ",
+        floatAiSub: "Спросить",
+        aiPanelTitle: "Помощник Mashiro",
+        aiPanelCloseAria: "Закрыть чат",
+        aiWelcome:
+          "Здравствуйте. Я автоматический помощник Mashiro Visuals. Спрашивайте о пакетах, локациях, бронировании и сроках. Для точной сметы или договора с вами свяжется человек через WhatsApp или форму записи.",
+        aiPlaceholder: "Введите вопрос…",
+        aiSend: "Отправить",
+        aiThinking: "Думаю…",
+        aiDisclaimer:
+          "Ответы создаются автоматически и могут быть неполными. Итоговые условия — после проверки человеком.",
+        aiReplyDefault:
+          "Спасибо. Попробуйте спросить про цены, регионы, как записаться или про сдачу материалов. Либо напишите в WhatsApp в шапке сайта.",
+        aiReplyPricing:
+          "Ориентиры цен — на странице Plan (налогообложение — как указано). Финальная сумма зависит от сезона, локаций и опций; для оценки — Reserve или WhatsApp.",
+        aiReplyLocations:
+          "Часто снимаем: Токио, Сёнан, Фудзи и озёра, Киото, Камакура, Хоккайдо, Каруидзава, Никко — см. список Location spots в Gallery.",
+        aiReplyBooking:
+          "Начать можно с кнопки RESERVE, страницы Reserve или WhatsApp. Перед ссылкой на оплату подтверждаем даты и состав работ.",
+        aiReplyDeliver:
+          "Количество кадров, ретушь и сроки — в карточках планов и в сводке после бронирования.",
+        aiReplyWeather:
+          "На улице график гибкий по погоде; безопасность важнее — запас по времени обсуждаем на консультации.",
+        aiReplyWhatsApp:
+          "Быстрее всего ответ человека — через WhatsApp в шапке или в блоке бронирования: укажите даты и регион.",
+        aiWhatsAppCta: "Открыть WhatsApp",
+        aiBack: "На сайт",
+        aiBackAria: "На главную",
+      },
       meta: {
         index: {
           title: "Mashiro Visuals | Элопмент и аутдор в Японии",
@@ -2206,13 +2585,19 @@
         portfolio: { title: "Портфолио | Mashiro Visuals" },
         about: { title: "Обо мне | Mashiro Visuals" },
         contact: { title: "Контакты | Mashiro Visuals" },
+        aiChat: {
+          title: "Помощник | Mashiro Visuals",
+          description:
+            "Чат с помощником Mashiro Visuals: пакеты, локации, бронирование и сдача материалов в Японии.",
+        },
         plan: {
           title: "План | Mashiro Visuals",
           description: "Пакеты и продукты для свадебной и элопмент-съёмки в Японии.",
         },
         costume: {
           title: "Костюмы | Mashiro Visuals",
-          description: "Платья, костюмы и стиль для вашей съёмки.",
+          description:
+            "Примеры платьев, цветных нарядов, кимоно и костюмов для съёмок в Японии; финальный набор — на консультации.",
         },
         campaign: {
           title: "Кампании | Mashiro Visuals",
@@ -2233,30 +2618,10 @@
             "Честная кинематографичная съёмка свадеб и элопментов для пар, путешествующих по Японии. Снег, горы и открытое небо — без жёстких поз, только вы и пейзаж. Естественный свет и настоящие эмоции.",
           ctaPortfolio: "Портфолио",
           ctaInquire: "Связаться",
-          circleCampaign: "CAMPAIGN",
-          circleCampaignSub: "Акции и события",
           circleReserve: "RESERVE",
           circleReserveSub: "Записаться на визит",
-          floatCtaAria: "Быстрые ссылки: акции и запись",
           scrollAria: "Прокрутить к содержимому",
           note: "Базируюсь в Японии. Пишите на английском — добро пожаловать.",
-        },
-        services: {
-          h2: "Услуги",
-          lead:
-            "Без натянутых поз — движение, эмоции и связь с природой.",
-          card1: {
-            title: "Элопмент и пары",
-            body:
-              "Для пар, путешествующих по Японии. Ваш рассказ — в лесах, у озёр и в горах.",
-            btn: "Подробнее",
-          },
-          card2: {
-            title: "Аутдор-съёмка",
-            body:
-              "От снега до гор — знаю ритм места, съёмка естественная и киношная.",
-            btn: "Аутдор",
-          },
         },
         featured: { h2: "Избранное" },
         about: {
@@ -2280,11 +2645,6 @@
             title: "Естественное кино",
             body: "Меньше указаний — больше направления. Эмоции, не игра.",
           },
-        },
-        pricing: {
-          h2: "Ориентир по ценам",
-          c1: { title: "Элопмент / пара", price: "от ¥250 000" },
-          c2: { title: "Аутдор", price: "от ¥80 000" },
         },
         cta: {
           eyebrow: "Контакты",
@@ -2321,7 +2681,7 @@
           eyebrow: "Смотреть",
           h2: "Свадьба и элопмент",
           lead:
-            "Листайте стрелками по бокам или дождитесь автопрокрутки; в центре ~3 с. Клик по кадру — подробности.",
+            "Листайте стрелками по бокам или дождитесь автопрокрутки; в центре ~3 с. Клик по кадру — соответствующий регион в галерее (оттуда — к тарифам).",
           ariaPrev: "Предыдущий слайд",
           ariaNext: "Следующий слайд",
           c1: { title: "Фудзи · свадьба" },
@@ -2393,6 +2753,43 @@
           h1: "Эмоции, удержанные пейзажем",
           lead:
             "Отбор элопмента, пар и аутдора. Естественный рассказ.",
+        },
+        loc: {
+          kicker: "LOCATION PHOTO",
+          h1: "Локационная съёмка",
+          h1sub: "Mashiro Visuals · Japan",
+          lead:
+            "Съёмки на натуре по Японии — естественный свет, спокойный кадр, место для настоящих эмоций.",
+          intro:
+            "Вне студии: маршруты с учётом сезона, света и людей — чтобы вы были в моменте, а пейзаж работал за вас.",
+          memo: "Memories",
+          featureTitle: "FEATURE",
+          featureLead: "Что важно в каждый день на локации.",
+          f1n: "01",
+          f1t: "Свет и наряды",
+          f1b:
+            "Платье и костюм под маршрут; время съёмки, чтобы ткань, тон кожи и пейзаж читались чисто.",
+          f2n: "02",
+          f2t: "Локации",
+          f2b:
+            "От городских линий до ветра у озера — короткий список мест под вашу историю и неспешные переходы.",
+          f3n: "03",
+          f3t: "Постановка",
+          f3b:
+            "Лёгкие позы и ясные подсказки — без догадок; день ваш, а не спектакль.",
+          spotsTitle: "LOCATION SPOTS",
+          spotsLead: "Регионы, куда мы часто возвращаемся для пар и элопмента.",
+          spot1: "Токио · центр",
+          spot2: "Сёнан · побережье",
+          spot3: "Фудзи · озёра",
+          spot4: "Киото · улочки и храмы",
+          spot5: "Камакура · тории и море",
+          spot6: "Хоккайдо · снег и простор",
+          spot7: "Каруидзава · свет в лесу",
+          spot8: "Никко · кедровая аллея",
+          mosaicLabel: "PHOTO GALLERY",
+          moreBtn: "VIEW MORE",
+          spotPackagesLink: "Тарифы",
         },
       },
       about: {
@@ -2509,6 +2906,36 @@
           title: "Костюм и слои",
           body: "Классика или расслабленный стиль для гор, снега и города.",
         },
+        page: {
+          kicker: "COSTUME",
+          h1: "Костюмы",
+          h1Line2: "Подбор гардероба",
+          h1Line3: "для элопмента и съёмок на локации",
+          lead: "Платья, костюмы и васо — с учётом ветра, света и свободы движения по Японии.",
+          intro:
+            "Мы ориентируемся на удобство в поездке и на то, как силуэт читается в кадре — в снегу, лесу и у городского стекла. Финальный комплект фиксируется на консультации; ниже — примеры стилей, которые мы согласуем с партнёрскими ателье.",
+          fairBefore: "Дни примерок и сезонные акции — в разделе",
+          fairLink: "Кампании и события",
+          fairAfter: ".",
+          tabAll: "ALL",
+          tabWedding: "СВАДЕБНОЕ ПЛАТЬЕ",
+          tabColor: "ЦВЕТНОЕ ПЛАТЬЕ",
+          tabKimono: "КИМОНО",
+          tabMens: "МУЖСКОЕ",
+          filtersAria: "Фильтр каталога костюмов",
+          catalogHeading: "Каталог костюмов",
+          eventsHead: "CAMPAIGN & EVENT",
+          ev1Tag: "EVENT",
+          ev1Title: "Примерка и мини-сессия",
+          ev1Body:
+            "Ограниченные слоты в выходные — примерьте силуэты и познакомьтесь с нами до полного дня съёмки.",
+          ev2Tag: "CAMPAIGN",
+          ev2Title: "Окно бонуса для второго образа",
+          ev2Body:
+            "Для съёмок в указанные даты блоки образов могут складываться иначе — см. страницу кампании.",
+          evCta: "Подробнее",
+          pagerNote: "Показаны образцы — наличие зависит от сезона.",
+        },
       },
       campaign: {
         hero: {
@@ -2529,6 +2956,8 @@
         reserveWebHeading: "Онлайн-запись и запросы",
         reserveBtnReserve: "Записаться на консультацию",
         reserveBtnWhatsapp: "Написать в WhatsApp",
+        reserveBtnWechat: "WeChat",
+        reserveBtnX: "X",
         reserveBtnContact: "Связаться",
         reservePhoneHeading: "Телефон",
         reservePhoneNumber: "—",
@@ -2693,6 +3122,15 @@
           opt2: "Аутдор",
           opt3: "Пока не уверен(а)",
         },
+        wechat: {
+          heading: "WeChat",
+          lead: "Если удобнее WeChat — добавьте нас по ID ниже и напишите даты и идеи съёмки.",
+          idLabel: "WeChat ID",
+          idValue: "photour_mi",
+          copyBtn: "Скопировать ID",
+          copied: "Скопировано",
+          note: "Также можно написать в WhatsApp или через форму на этой странице.",
+        },
       },
       footer: {
         address:
@@ -2734,10 +3172,43 @@
         menuCloseAria: "Cerrar menú",
         instagramAria: "Instagram",
         whatsappAria: "WhatsApp",
+        wechatAria: "WeChat",
+        xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "Campañas y eventos",
       },
-      common: { langAria: "Idioma" },
+      common: {
+        langAria: "Idioma",
+        floatCtaAria: "Asistente IA y accesos de reserva",
+        floatAiTitle: "IA AYUDA",
+        floatAiSub: "Pregunta aquí",
+        aiPanelTitle: "Asistente IA Mashiro",
+        aiPanelCloseAria: "Cerrar chat",
+        aiWelcome:
+          "Hola — soy un asistente automático de Mashiro Visuals. Pregunta por planes, ubicaciones, reservas o plazos. Para un presupuesto firme o contrato, un humano te atenderá por WhatsApp o el formulario de reserva.",
+        aiPlaceholder: "Escribe tu pregunta…",
+        aiSend: "Enviar",
+        aiThinking: "Pensando…",
+        aiDisclaimer:
+          "Las respuestas son automáticas y pueden ser incompletas. Los planes definitivos se confirman con revisión humana.",
+        aiReplyDefault:
+          "Gracias. Prueba a preguntar por precios orientativos, zonas donde trabajamos, cómo reservar o la entrega. También puedes usar WhatsApp en la cabecera.",
+        aiReplyPricing:
+          "Los planes y rangos públicos están en Plan (impuestos según indique cada tarjeta). El total final depende de temporada, locaciones y extras — Reserve o WhatsApp para un presupuesto a medida.",
+        aiReplyLocations:
+          "Solemos trabajar en Tokio, Shonan, Fuji y lagos, Kioto, Kamakura, Hokkaido, Karuizawa y Nikko — ver la lista Location spots en Gallery.",
+        aiReplyBooking:
+          "Puedes empezar con el botón RESERVE, la página Reserve o WhatsApp. Confirmamos fechas y entregables antes del enlace de pago.",
+        aiReplyDeliver:
+          "Archivos, retoques y plazos figuran en cada plan y en el resumen tras reservar.",
+        aiReplyWeather:
+          "Las sesiones exteriores se adaptan al clima; priorizamos seguridad y margen de tiempo cuando es posible.",
+        aiReplyWhatsApp:
+          "Para respuesta humana rápida, abre WhatsApp desde los iconos del encabezado o la franja de reserva y envía fechas y región.",
+        aiWhatsAppCta: "Abrir WhatsApp",
+        aiBack: "Volver al sitio",
+        aiBackAria: "Volver al inicio",
+      },
       meta: {
         index: {
           title: "Mashiro Visuals | Elopement y fotografía outdoor en Japón",
@@ -2749,13 +3220,19 @@
         portfolio: { title: "Portafolio | Mashiro Visuals" },
         about: { title: "Sobre mí | Mashiro Visuals" },
         contact: { title: "Contacto | Mashiro Visuals" },
+        aiChat: {
+          title: "Asistente IA | Mashiro Visuals",
+          description:
+            "Chatea con el asistente de Mashiro Visuals sobre planes, ubicaciones, reservas y entregas en Japón.",
+        },
         plan: {
           title: "Plan | Mashiro Visuals",
           description: "Paquetes y productos para boda y elopement en Japón.",
         },
         costume: {
           title: "Vestuario | Mashiro Visuals",
-          description: "Vestidos, trajes y estilismo para vuestra sesión.",
+          description:
+            "Muestras de vestido, color, kimono y traje para sesiones en Japón; la selección final se confirma en consulta.",
         },
         campaign: {
           title: "Campañas | Mashiro Visuals",
@@ -2776,30 +3253,10 @@
             "Fotografía honesta y cinematográfica de bodas y elopements para parejas que viajan a Japón. Nieve, montañas y aire libre—sin poses forzadas, solo vosotros y el paisaje. Luz natural y emoción real.",
           ctaPortfolio: "Ver portafolio",
           ctaInquire: "Consultar",
-          circleCampaign: "CAMPAIGN",
-          circleCampaignSub: "Eventos y ofertas",
           circleReserve: "RESERVE",
           circleReserveSub: "Reservar visita",
-          floatCtaAria: "Accesos a campaña y reserva",
           scrollAria: "Desplazar al contenido",
           note: "Basado en Japón. Consultas en inglés bienvenidas.",
-        },
-        services: {
-          h2: "Servicios",
-          lead:
-            "Sin posar en exceso. Movimiento real, emoción y conexión con la naturaleza.",
-          card1: {
-            title: "Elopement y parejas",
-            body:
-              "Para parejas que viajan a Japón. Vuestra historia en bosques, lagos y paisajes alpinos.",
-            btn: "Saber más",
-          },
-          card2: {
-            title: "Fotografía outdoor",
-            body:
-              "De la nieve al terreno montañoso: conozco el entorno para una sesión natural y cinematográfica.",
-            btn: "Ver sesiones outdoor",
-          },
         },
         featured: { h2: "Trabajos destacados" },
         about: {
@@ -2823,11 +3280,6 @@
             title: "Estilo natural y cinematográfico",
             body: "Menos dirección, más guía. Emoción genuina frente a pose.",
           },
-        },
-        pricing: {
-          h2: "Precios orientativos",
-          c1: { title: "Elopement / parejas", price: "Desde ¥250.000" },
-          c2: { title: "Fotografía outdoor", price: "Desde ¥80.000" },
         },
         cta: {
           eyebrow: "Contacto",
@@ -2864,7 +3316,7 @@
           eyebrow: "Explorar",
           h2: "Boda y elopement",
           lead:
-            "Usa las flechas laterales o espera el autopaseo; cada foto ~3 s en el centro. Clic en la imagen para ver paquetes.",
+            "Usa las flechas laterales o espera el autopaseo; cada foto ~3 s en el centro. Clic en la imagen para ir a la región equivalente en la galería (desde ahí, a los planes).",
           ariaPrev: "Diapositiva anterior",
           ariaNext: "Diapositiva siguiente",
           c1: { title: "Monte Fuji · boda" },
@@ -2936,6 +3388,43 @@
           h1: "Emoción real, fijada en el paisaje",
           lead:
             "Selección de elopement, parejas y outdoor. Narrativa natural.",
+        },
+        loc: {
+          kicker: "LOCATION PHOTO",
+          h1: "Fotografía en locación",
+          h1sub: "Mashiro Visuals · Japón",
+          lead:
+            "Sesiones en locación por Japón — luz natural, encuadre sobrio y espacio para la emoción real.",
+          intro:
+            "Fuera del estudio: rutas según estación, luz y ritmo de la gente — para que estén presentes y el paisaje haga el resto.",
+          memo: "Memories",
+          featureTitle: "FEATURE",
+          featureLead: "Qué aportamos cada día en locación.",
+          f1n: "01",
+          f1t: "Luz y vestuario",
+          f1b:
+            "Vestido y traje alineados con la ruta; horarios para que tela, tono de piel y paisaje se lean limpios.",
+          f2n: "02",
+          f2t: "Locaciones",
+          f2b:
+            "De líneas urbanas al viento del lago — acotamos lugares que encajan con vuestra historia, sin prisas.",
+          f3n: "03",
+          f3t: "Dirección",
+          f3b:
+            "Posing ligero y señales claras — el día es vuestro, no un espectáculo.",
+          spotsTitle: "LOCATION SPOTS",
+          spotsLead: "Regiones a las que volvemos a menudo para parejas y elopement.",
+          spot1: "Tokio · núcleo urbano",
+          spot2: "Shonan · costa",
+          spot3: "Monte Fuji · lagos",
+          spot4: "Kioto · calles patrimonio",
+          spot5: "Kamakura · santuario y mar",
+          spot6: "Hokkaido · nieve y tierra abierta",
+          spot7: "Karuizawa · luz en el bosque",
+          spot8: "Nikko · camino de cedros",
+          mosaicLabel: "PHOTO GALLERY",
+          moreBtn: "VIEW MORE",
+          spotPackagesLink: "Planes",
         },
       },
       about: {
@@ -3051,6 +3540,36 @@
           title: "Traje y capas",
           body: "Del clásico al relajado para montaña, nieve y ciudad.",
         },
+        page: {
+          kicker: "COSTUME",
+          h1: "Vestuario",
+          h1Line2: "Una línea curada",
+          h1Line3: "para elopements y días en locación",
+          lead: "Vestidos, trajes y wasō — pensados para el movimiento, el viento y la luz en Japón.",
+          intro:
+            "Priorizamos siluetas fáciles de viajar y que se lean limpias en nieve, bosque y cristal urbano. La elección final se confirma en consulta; la cuadrícula es una muestra de estilos que coordinamos con ateliers socios.",
+          fairBefore: "Las jornadas de prueba y ferias de temporada están en",
+          fairLink: "Campaña y evento",
+          fairAfter: ".",
+          tabAll: "ALL",
+          tabWedding: "VESTIDO DE NOVIA",
+          tabColor: "VESTIDO DE COLOR",
+          tabKimono: "KIMONO",
+          tabMens: "CABALLERO",
+          filtersAria: "Filtrar catálogo de vestuario",
+          catalogHeading: "Catálogo de vestuario",
+          eventsHead: "CAMPAIGN & EVENT",
+          ev1Tag: "EVENT",
+          ev1Title: "Prueba de vestuario y mini sesión",
+          ev1Body:
+            "Cupos de fin de semana — probad siluetas y conocednos antes de reservar un día completo.",
+          ev2Tag: "CAMPAIGN",
+          ev2Title: "Ventana bonus segundo look",
+          ev2Body:
+            "Para sesiones dentro de las fechas publicadas los bloques de vestuario pueden variar; ver la página de campaña.",
+          evCta: "Ver más",
+          pagerNote: "Piezas de muestra — disponibilidad según temporada.",
+        },
       },
       campaign: {
         hero: {
@@ -3071,6 +3590,8 @@
         reserveWebHeading: "Reserva y consultas web",
         reserveBtnReserve: "Reservar consulta",
         reserveBtnWhatsapp: "Escribir por WhatsApp",
+        reserveBtnWechat: "WeChat",
+        reserveBtnX: "X",
         reserveBtnContact: "Contacto",
         reservePhoneHeading: "Teléfono",
         reservePhoneNumber: "—",
@@ -3234,6 +3755,15 @@
           opt1: "Elopement / parejas",
           opt2: "Fotografía outdoor",
           opt3: "Aún no lo tengo claro",
+        },
+        wechat: {
+          heading: "WeChat",
+          lead: "Si prefieres WeChat, añádenos con el ID de abajo y envía fechas e ideas.",
+          idLabel: "ID de WeChat",
+          idValue: "photour_mi",
+          copyBtn: "Copiar ID",
+          copied: "Copiado",
+          note: "También puedes contactar por WhatsApp o con el formulario de esta página.",
         },
       },
       footer: {

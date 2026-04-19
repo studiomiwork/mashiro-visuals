@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elopement | Mashiro Visuals</title>
+    <title>AI assistant | Mashiro Visuals</title>
+    <meta
+      name="description"
+      content="Chat with the Mashiro Visuals assistant about packages, locations, and booking in Japan."
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body data-page="elopement">
+  <body class="page-ai-chat" data-page="ai-chat">
     <header class="site-header site-header--bar">
       <div class="container header-inner header-inner--bar">
         <a class="brand" href="./index.html">Mashiro Visuals</a>
@@ -264,104 +268,41 @@
         </nav>
       </div>
     </div>
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <div class="eyebrow" data-i18n="elopement.hero.eyebrow">Elopement in Japan</div>
-          <h1 data-i18n="elopement.hero.h1">Your vows, framed by nature</h1>
-          <p data-i18n="elopement.hero.lead">
-            From Tokyo outskirts to Fuji, Hokkaido, and Karuizawa. Routes are customized by season and light.
-          </p>
-        </div>
-      </section>
-
-      <section id="wedding-products" class="product-section" aria-labelledby="wedding-products-heading">
-        <div class="container">
-          <div class="product-section__head">
-            <h2 id="wedding-products-heading" data-i18n="elopement.products.h2">
-              Wedding &amp; elopement packages
-            </h2>
-            <p class="lead" data-i18n="elopement.products.lead">
-              Coverage, deliverables, and travel notes for each line. All include a private online gallery and
-              print-ready files.
-            </p>
+    <main class="ai-chat-main" id="main-content">
+      <div class="container ai-chat-layout">
+        <div class="ai-chat-shell ai-consult--page" id="ai-consult-page">
+          <div class="ai-chat-top">
+            <a
+              class="ai-chat-back"
+              href="./index.html"
+              data-i18n="common.aiBack"
+              data-i18n-aria="common.aiBackAria"
+              >Back</a>
+            <h1 id="ai-consult-title" class="ai-consult__title ai-chat-page-title" data-i18n="common.aiPanelTitle">
+              Mashiro AI assistant
+            </h1>
           </div>
-
-          <article id="p-fuji" class="product-card">
-            <h3 data-i18n="elopement.products.fuji.title">Mount Fuji — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.fuji.price">From ¥180,000</p>
-            <ul>
-              <li data-i18n="elopement.products.fuji.b1">
-                Lakeside and fifth-station routes; sunrise and golden-hour windows
-              </li>
-              <li data-i18n="elopement.products.fuji.b2">
-                500+ edited images; timeline planned around weather and crowds
-              </li>
-              <li data-i18n="elopement.products.fuji.b3">
-                Iconic peak backdrops and wide landscape portraits
-              </li>
-            </ul>
-          </article>
-
-          <article id="p-kyoto" class="product-card">
-            <h3 data-i18n="elopement.products.kyoto.title">Kyoto — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.kyoto.price">From ¥200,000</p>
-            <ul>
-              <li data-i18n="elopement.products.kyoto.b1">
-                Gion, Arashiyama, bamboo groves, and temple gardens (permits where required)
-              </li>
-              <li data-i18n="elopement.products.kyoto.b2">
-                Classic kimono or modern dress; quiet morning slots available
-              </li>
-              <li data-i18n="elopement.products.kyoto.b3">
-                Heritage streets, stone paths, and seasonal maples or blossoms
-              </li>
-            </ul>
-          </article>
-
-          <article id="p-hokkaido" class="product-card">
-            <h3 data-i18n="elopement.products.hokkaido.title">Hokkaido — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.hokkaido.price">From ¥280,000</p>
-            <ul>
-              <li data-i18n="elopement.products.hokkaido.b1">
-                Snow fields, ski areas, and open coastlines — full-day coverage
-              </li>
-              <li data-i18n="elopement.products.hokkaido.b2">
-                700+ images; cold-weather guidance and flexible routing
-              </li>
-              <li data-i18n="elopement.products.hokkaido.b3">
-                Second shooter available; strong winter bridal portraits
-              </li>
-            </ul>
-          </article>
-
-          <article id="p-kamakura" class="product-card">
-            <h3 data-i18n="elopement.products.kamakura.title">Kamakura — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.kamakura.price">From ¥160,000</p>
-            <ul>
-              <li data-i18n="elopement.products.kamakura.b1">
-                Shrines, bamboo paths, and coastline — easy day trip from Tokyo
-              </li>
-              <li data-i18n="elopement.products.kamakura.b2">
-                Half- to full-day options; relaxed pacing for couples and families
-              </li>
-              <li data-i18n="elopement.products.kamakura.b3">
-                Ocean breeze, torii gates, and forest trails in one compact area
-              </li>
-            </ul>
-          </article>
+          <div class="ai-consult__messages" id="ai-consult-messages" aria-live="polite"></div>
+          <p class="ai-consult__disclaimer" data-i18n="common.aiDisclaimer"></p>
+          <a
+            class="ai-consult__wa"
+            href="https://wa.me/819083038369"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span data-i18n="common.aiWhatsAppCta">WhatsApp</span></a>
+          <form class="ai-consult__form" id="ai-consult-form">
+            <input
+              type="text"
+              class="ai-consult__input"
+              id="ai-consult-input"
+              autocomplete="off"
+              data-i18n-placeholder="common.aiPlaceholder"
+              placeholder=""
+            />
+            <button type="submit" class="ai-consult__submit" data-i18n="common.aiSend">Send</button>
+          </form>
         </div>
-      </section>
-
-      <section>
-        <div class="container gallery">
-          <img class="shot-lg" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1800&q=80" alt="elopement" />
-          <img class="shot-sm" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80" alt="couple" />
-          <img class="shot-sm" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1400&q=80" alt="outdoor wedding" />
-          <img class="shot-lg" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80" alt="natural motion" />
-        </div>
-      </section>
-
+      </div>
     </main>
     <footer class="site-footer site-footer--dark">
       <div class="container site-footer__main">
@@ -465,7 +406,7 @@
             <li><a href="./reserve.html" data-i18n="footer.linkReserve">Reserve</a></li>
             <li><a href="./contact.html" data-i18n="footer.linkContact">Contact</a></li>
             <li><a href="./about.html" data-i18n="footer.linkAbout">About</a></li>
-            <li><a href="./elopement.html" aria-current="page" data-i18n="footer.linkElopement">Elopement</a></li>
+            <li><a href="./elopement.html" data-i18n="footer.linkElopement">Elopement</a></li>
             <li><a href="./ski.html" data-i18n="footer.linkOutdoor">Outdoor</a></li>
           </ul>
         </nav>
@@ -483,7 +424,6 @@
     </footer>
     <script src="./i18n.js" defer></script>
     <script src="./nav-overlay.js" defer></script>
-    <script src="./floating-cta.js" defer></script>
     <script src="./ai-consult.js" defer></script>
     <script src="./footer-strip.js" defer></script>
   </body>
