@@ -8,7 +8,7 @@
   var roots = document.querySelectorAll(".float-carousel--horizontal");
   if (!roots.length) return;
 
-  var TRANS = "transform 0.78s cubic-bezier(0.25, 0.08, 0.25, 1)";
+  var DEFAULT_TRANS = "transform 0.78s cubic-bezier(0.25, 0.08, 0.25, 1)";
   var prefersReduced =
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -58,6 +58,11 @@
 
     var intervalMs = parseInt(root.getAttribute("data-carousel-interval") || "3000", 10);
     var autoplay = intervalMs > 0;
+    var transAttr = root.getAttribute("data-carousel-transition");
+    var TRANS =
+      transAttr && transAttr.trim()
+        ? "transform " + transAttr.trim() + " cubic-bezier(0.25, 0.08, 0.25, 1)"
+        : DEFAULT_TRANS;
     var physical = 1;
     var timer = null;
 
@@ -235,6 +240,53 @@
 
     if (btnPrev) btnPrev.addEventListener("click", onPrevClick);
     if (btnNext) btnNext.addEventListener("click", onNextClick);
+
+    /* Touch / swipe: left → next, right → previous (mobile) */
+    var swipeStartX = 0;
+    var swipeStartY = 0;
+    var swipeTracking = false;
+    var SWIPE_MIN = 48;
+    var SWIPE_ANGLE = 1.2;
+
+    function onSwipeStart(e) {
+      if (e.touches.length !== 1) return;
+      swipeTracking = true;
+      swipeStartX = e.touches[0].clientX;
+      swipeStartY = e.touches[0].clientY;
+    }
+
+    function onSwipeMove(e) {
+      if (!swipeTracking || e.touches.length !== 1) return;
+      var dx = e.touches[0].clientX - swipeStartX;
+      var dy = e.touches[0].clientY - swipeStartY;
+      if (Math.abs(dx) > Math.abs(dy) * SWIPE_ANGLE && Math.abs(dx) > 14) {
+        e.preventDefault();
+      }
+    }
+
+    function onSwipeEnd(e) {
+      if (!swipeTracking) return;
+      swipeTracking = false;
+      var dx = e.changedTouches[0].clientX - swipeStartX;
+      var dy = e.changedTouches[0].clientY - swipeStartY;
+      if (Math.abs(dx) < SWIPE_MIN) return;
+      if (Math.abs(dx) < Math.abs(dy) * SWIPE_ANGLE) return;
+      stop();
+      if (dx < 0) {
+        stepNext();
+      } else {
+        stepPrev();
+      }
+    }
+
+    function onSwipeCancel() {
+      swipeTracking = false;
+    }
+
+    viewport.addEventListener("touchstart", onSwipeStart, { passive: true });
+    viewport.addEventListener("touchmove", onSwipeMove, { passive: false });
+    viewport.addEventListener("touchend", onSwipeEnd, { passive: true });
+    viewport.addEventListener("touchcancel", onSwipeCancel, { passive: true });
 
     var resizeT;
     window.addEventListener("resize", function () {

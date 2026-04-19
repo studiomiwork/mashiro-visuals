@@ -145,6 +145,7 @@
     hokkaido: 308000,
     traditional: 138000,
   };
+  var KANTO_ROUTE_EX = { tk: 60000, fh: 80000 };
   var DRESS = { dress0: 0, dress1: 20000, dress2: 40000, dress3: 60000 };
   /** Extra dress sets chosen in the dropdown (dress1 = +1 set, etc.). */
   var DRESS_EXTRA_SETS = { dress0: 0, dress1: 1, dress2: 2, dress3: 3 };
@@ -156,6 +157,7 @@
     kansai: 2,
     hokkaido: 2,
     traditional: 1,
+    kanto_day: 2,
   };
   var MAX_DRESSES_PER_DAY = 4;
   var BTS = { bts_none: 0, bts50: 50000, bts70: 70000 };
@@ -220,7 +222,10 @@
     var sel = form.querySelector('select[name="addon_dress"]');
     if (!sel) return;
     var pkgVal = valRadio("photo_package");
-    if (!pkgVal || !Object.prototype.hasOwnProperty.call(PKG, pkgVal)) {
+    if (
+      !pkgVal ||
+      (!Object.prototype.hasOwnProperty.call(PKG, pkgVal) && pkgVal !== "kanto_day")
+    ) {
       for (var i = 0; i < sel.options.length; i++) {
         sel.options[i].disabled = false;
         sel.options[i].removeAttribute("title");
@@ -278,11 +283,24 @@
     }, 220);
   }
 
+  function syncKantoRouteUI() {
+    var wrap = document.getElementById("reserve-kanto-route-wrap");
+    if (!wrap) return;
+    var pkgVal = valRadio("photo_package");
+    var show = pkgVal === "kanto_day";
+    wrap.hidden = !show;
+    var radios = wrap.querySelectorAll('input[name="kanto_route"]');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].disabled = !show;
+    }
+  }
+
   function updateTotals() {
     var pkgVal = valRadio("photo_package");
     syncDressSelectLimits();
+    syncKantoRouteUI();
 
-    if (!pkgVal || !Object.prototype.hasOwnProperty.call(PKG, pkgVal)) {
+    if (!pkgVal || (!Object.prototype.hasOwnProperty.call(PKG, pkgVal) && pkgVal !== "kanto_day")) {
       if (hint) hint.classList.remove("is-hidden");
       var dash = "—";
       if (planEl) planEl.textContent = dash;
@@ -300,7 +318,13 @@
 
     if (hint) hint.classList.add("is-hidden");
 
-    var base = PKG[pkgVal];
+    var base;
+    if (pkgVal === "kanto_day") {
+      var kr = valRadio("kanto_route") || "tk";
+      base = Object.prototype.hasOwnProperty.call(KANTO_ROUTE_EX, kr) ? KANTO_ROUTE_EX[kr] : KANTO_ROUTE_EX.tk;
+    } else {
+      base = PKG[pkgVal];
+    }
     var dress = DRESS[valDress()] || 0;
     var bts = BTS[valRadio("addon_bts") || "bts_none"] || 0;
     var kim = KIM[valRadio("addon_kimono") || "k_none"] || 0;

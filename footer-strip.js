@@ -63,7 +63,7 @@
       '<div class="campaign-reserve-banner__col campaign-reserve-banner__col--phone">' +
       '<p class="campaign-reserve-banner__col-label" data-i18n="campaign.reservePhoneHeading">Phone inquiries</p>' +
       '<p class="campaign-reserve-banner__phone" data-i18n="campaign.reservePhoneNumber">—</p>' +
-      '<p class="campaign-reserve-banner__hours" data-i18n="campaign.reservePhoneHours">10:00–18:00 · Closed Wednesdays</p>' +
+      '<p class="campaign-reserve-banner__hours" data-i18n="campaign.reservePhoneHours">10:00–18:00</p>' +
       "</div></div></div></section>";
 
     while (holder.firstChild) {

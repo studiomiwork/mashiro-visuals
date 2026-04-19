@@ -290,7 +290,7 @@
               <li data-i18n="reserve.step2">Enter your personal information for the order.</li>
               <li data-i18n="reserve.step3">Complete online payment on the secure page; you will receive a confirmation email.</li>
             </ol>
-            <p class="reserve-phone" data-i18n="reserve.phoneLine">Phone inquiries: 10:00–18:00 (closed Wednesdays)</p>
+            <p class="reserve-phone" data-i18n="reserve.phoneLine">Phone inquiries: 10:00–18:00</p>
           </div>
 
           <form id="reserve-form" class="reserve-form" action="#" method="post" novalidate>
@@ -413,6 +413,34 @@
                           </span>
                         </span>
                       </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="kanto_day" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.kanto_day.title"
+                            >Tokyo area day trip</span
+                          >
+                          <span class="reserve-pkg__meta reserve-pkg__meta--block">
+                            <span data-i18n="reserve.booking.kantoPkgMeta">From ¥60,000 (excl. tax)</span>
+                          </span>
+                        </span>
+                      </label>
+                  </div>
+                  <div id="reserve-kanto-route-wrap" class="reserve-kanto-route" hidden>
+                    <fieldset class="reserve-addon-fieldset">
+                      <legend class="reserve-addon-legend" data-i18n="reserve.booking.kantoRouteLegend">
+                        Day-trip route
+                      </legend>
+                      <div class="reserve-seg reserve-seg--wrap" role="radiogroup" aria-required="true">
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="kanto_route" value="tk" checked disabled />
+                          <span data-i18n="reserve.booking.kantoRouteTk">Tokyo + Kamakura (1 day) — ¥60,000</span></label
+                        >
+                        <label class="reserve-seg__item"
+                          ><input type="radio" name="kanto_route" value="fh" disabled />
+                          <span data-i18n="reserve.booking.kantoRouteFh">Mt. Fuji + Hakone (1 day) — ¥80,000</span></label
+                        >
+                      </div>
+                    </fieldset>
                   </div>
                   <section
                     class="reserve-includes reserve-apple-panel"

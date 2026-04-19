@@ -539,6 +539,34 @@ a {
   color: rgb(255 255 255 / 0.42);
 }
 
+/* Full-width hairline between primary links and AI / Reserve (same grid) */
+.nav-overlay__grid-rule {
+  grid-column: 1 / -1;
+  display: block;
+  height: 0;
+  margin: 0.65rem 0 0.15rem;
+  border: 0;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+
+/* Secondary row: same typography as nav links, slightly brighter accent */
+.nav-overlay__link--accent {
+  padding-top: 0.65rem;
+}
+
+.nav-overlay__link--accent .nav-overlay__title {
+  letter-spacing: 0.3em;
+  color: rgb(255 255 255 / 0.99);
+}
+
+.nav-overlay__link--accent .nav-overlay__sub {
+  color: rgb(255 255 255 / 0.48);
+}
+
+.nav-overlay__link--accent:hover {
+  opacity: 0.92;
+}
+
 @media (max-width: 640px) {
   .nav-overlay__grid {
     grid-template-columns: 1fr;
@@ -1233,6 +1261,15 @@ section {
   transition-delay: 0.08s, 0.08s, 0.04s;
 }
 
+/* Motion modifiers are declared after generic .is-visible — must re-assert deblur + final transform */
+.reveal.reveal--soft-rise:not(.reveal--chain).is-visible,
+.reveal.reveal--stage-depth:not(.reveal--chain).is-visible,
+.reveal.reveal--title-shift:not(.reveal--chain).is-visible {
+  opacity: 1;
+  filter: none;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
 /* --- Editorial chains (stagger + different eases per row) --- */
 .reveal--chain > * {
   opacity: 0;
@@ -1269,42 +1306,44 @@ section {
   transition-delay: 0.56s;
 }
 
-/* Floating showcase intro: blur + tiered vertical rhythm */
+/* Floating showcase intro: tiered vertical rhythm (no blur — blur was overriding is-visible) */
 .reveal--chain.reveal--chain--float > * {
   transform: translate3d(0, 36px, 0) scale(0.992);
-  filter: blur(6px);
   transition:
     opacity 1.12s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1.12s cubic-bezier(0.16, 1, 0.3, 1),
-    filter 0.85s ease-out;
+    transform 1.12s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal--chain.reveal--chain--float > *:nth-child(1) {
   transform: translate3d(0, 14px, 0) scale(0.985);
-  filter: blur(8px);
 }
 
 .reveal--chain.reveal--chain--float > *:nth-child(2) {
   transform: translate3d(0, 42px, 0) scale(0.99);
-  filter: blur(5px);
-  transition-duration: 1.05s, 1.18s, 0.8s;
+  transition-duration: 1.05s, 1.18s;
 }
 
 .reveal--chain.reveal--chain--float > *:nth-child(3) {
   transform: translate3d(0, 26px, 0);
-  filter: blur(4px);
-  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1), cubic-bezier(0.22, 1, 0.45, 1), ease-out;
-  transition-duration: 0.95s, 1.08s, 0.7s;
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1), cubic-bezier(0.22, 1, 0.45, 1);
+  transition-duration: 0.95s, 1.08s;
+}
+
+.reveal--chain.reveal--chain--float.is-visible > *:nth-child(1),
+.reveal--chain.reveal--chain--float.is-visible > *:nth-child(2),
+.reveal--chain.reveal--chain--float.is-visible > *:nth-child(3) {
+  filter: none;
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .reveal--chain.reveal--chain--float.is-visible > *:nth-child(1) {
-  transition-delay: 0s, 0s, 0s;
+  transition-delay: 0s, 0s;
 }
 .reveal--chain.reveal--chain--float.is-visible > *:nth-child(2) {
-  transition-delay: 0.12s, 0.14s, 0.08s;
+  transition-delay: 0.12s, 0.14s;
 }
 .reveal--chain.reveal--chain--float.is-visible > *:nth-child(3) {
-  transition-delay: 0.28s, 0.3s, 0.18s;
+  transition-delay: 0.28s, 0.3s;
 }
 
 /* About: image vs copy — opposing directions */
@@ -1441,6 +1480,34 @@ section {
 }
 .reveal--chain.reveal--chain--footer.is-visible > *:nth-child(3) {
   transition-delay: 0.24s;
+}
+
+/* Chain motion variants use more specific selectors than .reveal--chain.is-visible > * — reset filter + transform */
+.reveal--chain.reveal--chain--about.is-visible > *:nth-child(1),
+.reveal--chain.reveal--chain--about.is-visible > *:nth-child(2) {
+  filter: none;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.reveal--chain.reveal--chain--why.is-visible > .why-item:nth-child(1),
+.reveal--chain.reveal--chain--why.is-visible > .why-item:nth-child(2),
+.reveal--chain.reveal--chain--why.is-visible > .why-item:nth-child(3) {
+  filter: none;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.reveal--chain.reveal--chain--cta.is-visible > *:nth-child(1),
+.reveal--chain.reveal--chain--cta.is-visible > *:nth-child(2),
+.reveal--chain.reveal--chain--cta.is-visible > *:nth-child(3),
+.reveal--chain.reveal--chain--cta.is-visible > *:nth-child(4),
+.reveal--chain.reveal--chain--cta.is-visible > *:nth-child(5) {
+  filter: none;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.reveal--chain.reveal--chain--footer.is-visible > * {
+  filter: none;
+  transform: translate3d(0, 0, 0);
 }
 
 /* Featured grid: each cell its own depth / direction */
@@ -2139,6 +2206,14 @@ section {
   font-size: clamp(0.84rem, 1.45vw, 0.95rem);
 }
 
+.plan-card-lux__note {
+  margin: 0.35rem 1.15rem 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  color: rgb(90 88 82 / 0.9);
+}
+
 .plan-card-lux__cta {
   display: flex;
   align-items: center;
@@ -2181,6 +2256,35 @@ section {
 
 [dir="rtl"] .plan-card-lux__rule {
   transform: scaleX(-1);
+}
+
+.plan-detail-lead--kanto {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: rgb(90 88 82 / 0.95);
+}
+
+.plan-price-ref__block--stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: flex-start;
+}
+
+.plan-price-ref__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+}
+
+.plan-price-ref__route {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: rgb(90 88 82 / 0.92);
+  min-width: min(100%, 12rem);
 }
 
 /* Plan detail */
@@ -2707,6 +2811,8 @@ textarea {
   position: relative;
   overflow: hidden;
   padding-block: 0.25rem;
+  /* Let the page scroll vertically; horizontal swipes go to carousel JS */
+  touch-action: pan-y;
 }
 
 .float-carousel__btn {
@@ -2955,6 +3061,16 @@ textarea {
 }
 
 /* Reserve / booking page — tiered flow (session → options → date) */
+.reserve-kanto-route {
+  margin-top: 1.25rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
+.reserve-kanto-route[hidden] {
+  display: none !important;
+}
+
 body[data-page="reserve"] .reserve-page {
   background: #f5f5f7;
 }
