@@ -13,8 +13,8 @@
     aAi.className = "nav-overlay__link nav-overlay__link--accent";
     aAi.href = "./ai-chat.html";
     aAi.innerHTML =
-      '<span class="nav-overlay__title" data-i18n="nav.ctaAiTitle">AI CHAT</span>' +
-      '<span class="nav-overlay__sub" data-i18n="nav.ctaAiSub">Ask anything</span>';
+      '<span class="nav-overlay__title" data-i18n="nav.ctaAiTitle">Consultation Desk</span>' +
+      '<span class="nav-overlay__sub" data-i18n="nav.ctaAiSub">Tell us your plan</span>';
     var aRes = document.createElement("a");
     aRes.className = "nav-overlay__link nav-overlay__link--accent";
     aRes.href = "./reserve.html";
@@ -74,6 +74,10 @@
     });
 
     overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) {
+        close();
+        return;
+      }
       var link = e.target && e.target.closest ? e.target.closest("a[href]") : null;
       if (!link || !overlay.contains(link)) return;
       close();

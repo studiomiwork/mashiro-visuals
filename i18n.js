@@ -33,16 +33,16 @@
         xAria: "X",
         campaignEvent: "CAMPAIGN & EVENT",
         subCampaignEvent: "Seasonal fairs & news",
-        ctaAiTitle: "AI CHAT",
-        ctaAiSub: "Ask anything",
+        ctaAiTitle: "Consultation Desk",
+        ctaAiSub: "Tell us your plan",
         ctaReserveTitle: "RESERVE",
         ctaReserveSub: "Book a consultation",
       },
       common: {
         langAria: "Language",
         floatCtaAria: "AI assistant and reservation shortcuts",
-        floatAiTitle: "AI CHAT",
-        floatAiSub: "Ask anything",
+        floatAiTitle: "Consultation Desk",
+        floatAiSub: "Tell us your plan",
         aiPanelTitle: "Mashiro AI assistant",
         aiPanelCloseAria: "Close chat",
         aiWelcome:
@@ -120,6 +120,11 @@
           title: "Campaign & Event | Mashiro Visuals",
           description: "Seasonal campaigns, fairs, and studio events.",
         },
+        flow: {
+          title: "Flow | Mashiro Visuals",
+          description:
+            "A clear booking flow for Mashiro Visuals — from inquiry and planning to your shoot day and delivery.",
+        },
         reserve: {
           title: "Checkout | Mashiro Visuals",
           description:
@@ -163,6 +168,9 @@
           c2Body: "Lakeside light and mountain backdrops in one session.",
           c3Title: "Kanto day route",
           c3Body: "Tokyo + Kamakura or Fuji + Hakone when you want two moods in one day.",
+          c4Body: "Soft coast light, train crossing, and shoreline pacing.",
+          c5Body: "Open land, northern colour, and expansive travel routes.",
+          c6Body: "Kimono-focused portraits with a more formal Japanese mood.",
           c1Cta: "View Tokyo plan",
           c2Cta: "View Fuji plan",
           c3Cta: "View Kanto day plan",
@@ -250,6 +258,47 @@
           c4: { title: "Kamakura" },
         },
         footer: { line2: "Japan Elopement & Outdoor Photography" },
+      },
+      flowPage: {
+        hero: {
+          eyebrow: "Flow",
+          h1: "From inquiry to your shoot day",
+          lead:
+            "A clear overview of how we plan, confirm, and photograph your session in Japan.",
+        },
+        kicker: "Simple and calm",
+        title: "A clear process, with room for real moments",
+        body:
+          "We keep the booking flow structured, but the day itself flexible enough for weather, pace, and emotion.",
+        stepLabel: "Step",
+        step1: {
+          title: "Tell us your dates and region",
+          body:
+            "Start with your month, preferred area, and whether you already know the kind of session you want.",
+        },
+        step2: {
+          title: "We suggest the right plan and route",
+          body:
+            "Based on timing, light, and travel rhythm, we propose a plan, route, and realistic shoot structure.",
+        },
+        step3: {
+          title: "Confirm styling, timing, and backup ideas",
+          body:
+            "We align outfits, meeting time, weather fallback ideas, and any add-ons before the shoot day.",
+        },
+        step4: {
+          title: "Shoot, edit, and deliver",
+          body:
+            "On the day, we guide lightly and keep things moving naturally. Afterward, your edited gallery is delivered online.",
+        },
+        cta: {
+          eyebrow: "Ready to start?",
+          title: "Share your dates and we will shape the next step",
+          body:
+            "If you already know your season or destination, we can guide you to the most suitable plan first.",
+          primary: "Send an inquiry",
+          secondary: "Book a consultation",
+        },
       },
       elopement: {
         hero: {
@@ -757,7 +806,7 @@
           heading: "WeChat",
           lead: "Prefer WeChat? Add us with the ID below and send your dates and ideas.",
           idLabel: "WeChat ID",
-          idValue: "mashirovisuals",
+          idValue: "photour_mi",
           copyBtn: "Copy ID",
           copied: "Copied",
           note: "You can also reach us via WhatsApp or the form on this page.",
@@ -815,8 +864,8 @@
       common: {
         langAria: "語言",
         floatCtaAria: "智能助理與預約捷徑",
-        floatAiTitle: "智能諮詢",
-        floatAiSub: "線上問答",
+        floatAiTitle: "諮詢服務",
+        floatAiSub: "告訴我們你的需求",
         aiPanelTitle: "Mashiro 智能助理",
         aiPanelCloseAria: "關閉對話",
         aiWelcome:
@@ -886,6 +935,10 @@
           title: "活動｜Mashiro Visuals",
           description: "季節檔期、體驗活動與工作室消息。",
         },
+        flow: {
+          title: "流程｜Mashiro Visuals",
+          description: "從諮詢、規劃到拍攝日與交付的完整流程說明。",
+        },
         reserve: {
           title: "結帳｜Mashiro Visuals",
           description:
@@ -927,6 +980,9 @@
           c2Body: "湖畔光線與山景，單日完成。",
           c3Title: "關東一日路線",
           c3Body: "東京＋鎌倉，或富士＋箱根——同日兩種氛圍。",
+          c4Body: "柔和海岸線、平交道與海邊散步節奏。",
+          c5Body: "遼闊北國景色、旅行感與開展的路線。",
+          c6Body: "以和裝為主的正式感人像與日式氛圍。",
           c1Cta: "東京方案",
           c2Cta: "富士方案",
           c3Cta: "關東一日方案",
@@ -1007,6 +1063,40 @@
           c4: { title: "鎌倉" },
         },
         footer: { line2: "日本婚紗私奔與戶外攝影" },
+      },
+      flowPage: {
+        hero: {
+          eyebrow: "流程",
+          h1: "從諮詢到拍攝當日",
+          lead: "用清楚的方式說明：我們如何一起規劃、確認，並完成你們在日本的拍攝。",
+        },
+        kicker: "簡單且安心",
+        title: "流程清楚，但保留真實與彈性",
+        body: "我們讓預約與規劃有條理，同時保留天氣、節奏與情緒需要的彈性空間。",
+        stepLabel: "Step",
+        step1: {
+          title: "先告訴我們日期與地區",
+          body: "先分享月份、想拍的區域，以及你目前想像中的拍攝類型。",
+        },
+        step2: {
+          title: "我們回覆合適的方案與路線",
+          body: "依照季節、光線與移動節奏，提出適合的方案、地點與拍攝安排。",
+        },
+        step3: {
+          title: "確認造型、時間與備案",
+          body: "在拍攝前確認服裝、集合時間、天候備案與需要的加購內容。",
+        },
+        step4: {
+          title: "拍攝、修圖與交付",
+          body: "拍攝當天以自然引導為主，完成後透過線上相簿交付修整後的作品。",
+        },
+        cta: {
+          eyebrow: "準備開始了嗎？",
+          title: "先把日期告訴我們，下一步就會更清楚",
+          body: "如果你已經知道季節或目的地，我們可以先帶你對應到最適合的方案。",
+          primary: "送出諮詢",
+          secondary: "預約諮詢",
+        },
       },
       elopement: {
         hero: {
@@ -1493,7 +1583,7 @@
           heading: "微信",
           lead: "習慣用微信聯繫的話，可用下方 ID 加我們，並傳送拍攝日期與想法。",
           idLabel: "微信號",
-          idValue: "mashirovisuals",
+          idValue: "photour_mi",
           copyBtn: "複製號碼",
           copied: "已複製",
           note: "也可使用 WhatsApp 或本頁表單與我們聯繫。",
@@ -1550,8 +1640,8 @@
       common: {
         langAria: "言語",
         floatCtaAria: "AIアシスタントと予約ショートカット",
-        floatAiTitle: "AI相談",
-        floatAiSub: "質問へ回答",
+        floatAiTitle: "相談デスク",
+        floatAiSub: "ご希望をお聞かせください",
         aiPanelTitle: "Mashiro AIアシスタント",
         aiPanelCloseAria: "チャットを閉じる",
         aiWelcome:
@@ -1622,6 +1712,10 @@
           title: "キャンペーン | Mashiro Visuals",
           description: "季節のキャンペーン・イベント情報。",
         },
+        flow: {
+          title: "流れ | Mashiro Visuals",
+          description: "お問い合わせから撮影日、納品までの進め方をご案内します。",
+        },
         reserve: {
           title: "チェックアウト | Mashiro Visuals",
           description:
@@ -1663,6 +1757,9 @@
           c2Body: "湖畔の光と山の背景を、1日で。",
           c3Title: "関東1日ルート",
           c3Body: "東京＋鎌倉、または富士＋箱根——同日で二つのムード。",
+          c4Body: "海沿いの光、踏切、海辺の空気感をやわらかく。",
+          c5Body: "北国の広がり、旅の余白、スケール感のあるルート。",
+          c6Body: "和装を主役にした、よりフォーマルな和の空気感。",
           c1Cta: "東京プラン",
           c2Cta: "富士プラン",
           c3Cta: "関東1日プラン",
@@ -1744,6 +1841,40 @@
           c4: { title: "鎌倉" },
         },
         footer: { line2: "日本エロープメント & アウトドア撮影" },
+      },
+      flowPage: {
+        hero: {
+          eyebrow: "FLOW",
+          h1: "お問い合わせから撮影当日まで",
+          lead: "日本での撮影を、どのように一緒に計画し、確定し、進めるかをわかりやすくまとめています。",
+        },
+        kicker: "シンプルで安心",
+        title: "流れは明確に、でも当日は自然に",
+        body: "ご予約までの進行は整理しつつ、当日は天候や気持ちに合わせて柔軟に動けるようにしています。",
+        stepLabel: "Step",
+        step1: {
+          title: "日程とエリアを教えてください",
+          body: "ご希望の月、撮影したい地域、イメージしている撮影タイプをお知らせください。",
+        },
+        step2: {
+          title: "最適なプランとルートをご提案します",
+          body: "季節、光、移動のしやすさを見ながら、合うプランとルートをご提案します。",
+        },
+        step3: {
+          title: "衣裳・時間・天候時の案を確認します",
+          body: "衣裳、集合時間、悪天候時の考え方、必要なオプションを事前に整えます。",
+        },
+        step4: {
+          title: "撮影、編集、オンライン納品",
+          body: "当日は自然な流れを大切に撮影し、後日オンラインギャラリーでお届けします。",
+        },
+        cta: {
+          eyebrow: "準備はできていますか？",
+          title: "まずは希望日を教えてください。次の一歩をご案内します",
+          body: "季節や行きたい場所が決まっていれば、最初に合うプランへ整理できます。",
+          primary: "お問い合わせ",
+          secondary: "相談を予約する",
+        },
       },
       elopement: {
         hero: {
@@ -2235,7 +2366,7 @@
           heading: "WeChat（微信）",
           lead: "WeChat をご利用の場合は、下記の ID から追加し、撮影希望日やイメージをお送りください。",
           idLabel: "WeChat ID",
-          idValue: "mashirovisuals",
+          idValue: "photour_mi",
           copyBtn: "IDをコピー",
           copied: "コピーしました",
           note: "WhatsApp やこのページのフォームからもご連絡いただけます。",
@@ -2292,8 +2423,8 @@
       common: {
         langAria: "언어",
         floatCtaAria: "AI 도우미 및 예약 바로가기",
-        floatAiTitle: "AI 상담",
-        floatAiSub: "질문 답변",
+        floatAiTitle: "상담 데스크",
+        floatAiSub: "원하시는 내용을 알려주세요",
         aiPanelTitle: "Mashiro AI 도우미",
         aiPanelCloseAria: "채팅 닫기",
         aiWelcome:
@@ -2363,6 +2494,10 @@
           title: "캠페인 | Mashiro Visuals",
           description: "시즌 캠페인과 이벤트 안내.",
         },
+        flow: {
+          title: "진행 흐름 | Mashiro Visuals",
+          description: "문의부터 촬영일과 납품까지의 흐름을 정리했습니다.",
+        },
         reserve: {
           title: "결제 | Mashiro Visuals",
           description:
@@ -2404,6 +2539,9 @@
           c2Body: "호숫가 빛과 산 배경을 하루에.",
           c3Title: "간토 당일 루트",
           c3Body: "도쿄+가마쿠라 또는 후지+하코네 — 하루에 두 가지 무드.",
+          c4Body: "부드러운 해안 빛, 건널목, 해변의 리듬을 담는 구성.",
+          c5Body: "북쪽의 넓은 풍경과 여행감이 살아 있는 루트.",
+          c6Body: "와소 중심의 보다 격식 있는 일본 분위기 촬영.",
           c1Cta: "도쿄 플랜",
           c2Cta: "후지 플랜",
           c3Cta: "간토 당일 플랜",
@@ -2485,6 +2623,40 @@
           c4: { title: "가마쿠라" },
         },
         footer: { line2: "일본 엘로프먼트 & 아웃도어" },
+      },
+      flowPage: {
+        hero: {
+          eyebrow: "FLOW",
+          h1: "문의부터 촬영일까지",
+          lead: "일본에서의 촬영을 어떻게 함께 계획하고 확정하는지, 그리고 당일까지 어떻게 이어지는지 안내합니다.",
+        },
+        kicker: "단순하고 안정적으로",
+        title: "흐름은 명확하게, 하루는 자연스럽게",
+        body: "예약 과정은 구조적으로, 촬영 당일은 날씨와 분위기에 맞게 유연하게 진행합니다.",
+        stepLabel: "Step",
+        step1: {
+          title: "희망 날짜와 지역을 알려주세요",
+          body: "원하는 월, 촬영 지역, 그리고 상상 중인 촬영 타입을 먼저 알려주세요.",
+        },
+        step2: {
+          title: "맞는 플랜과 동선을 제안합니다",
+          body: "계절, 빛, 이동 리듬을 고려해 적합한 플랜과 동선을 안내합니다.",
+        },
+        step3: {
+          title: "의상, 시간, 대체안까지 확정합니다",
+          body: "촬영 전 의상, 집합 시간, 날씨 대응안, 필요한 옵션을 함께 정리합니다.",
+        },
+        step4: {
+          title: "촬영, 보정, 온라인 전달",
+          body: "당일은 자연스럽게 진행하고, 이후 보정본을 온라인 갤러리로 전달합니다.",
+        },
+        cta: {
+          eyebrow: "시작해볼까요?",
+          title: "먼저 날짜를 알려주시면 다음 단계를 정리해드립니다",
+          body: "이미 계절이나 목적지가 정해져 있다면, 가장 어울리는 플랜부터 안내할 수 있습니다.",
+          primary: "문의 보내기",
+          secondary: "상담 예약",
+        },
       },
       elopement: {
         hero: {
@@ -2976,7 +3148,7 @@
           heading: "WeChat",
           lead: "WeChat을 선호하시면 아래 ID로 추가한 뒤 희망 일정과 아이디어를 보내 주세요.",
           idLabel: "WeChat ID",
-          idValue: "mashirovisuals",
+          idValue: "photour_mi",
           copyBtn: "ID 복사",
           copied: "복사됨",
           note: "WhatsApp이나 이 페이지의 양식으로도 연락하실 수 있습니다.",
@@ -3033,8 +3205,8 @@
       common: {
         langAria: "Язык",
         floatCtaAria: "ИИ-помощник и быстрые ссылки на запись",
-        floatAiTitle: "ИИ-ЧАТ",
-        floatAiSub: "Спросить",
+        floatAiTitle: "Консультации",
+        floatAiSub: "Расскажите о ваших планах",
         aiPanelTitle: "Помощник Mashiro",
         aiPanelCloseAria: "Закрыть чат",
         aiWelcome:
@@ -3106,6 +3278,10 @@
           title: "Кампании | Mashiro Visuals",
           description: "Сезонные акции и события студии.",
         },
+        flow: {
+          title: "Этапы | Mashiro Visuals",
+          description: "Как проходит работа: от запроса и планирования до съёмки и передачи материалов.",
+        },
         reserve: {
           title: "Оформление заказа | Mashiro Visuals",
           description:
@@ -3149,6 +3325,9 @@
           c2Body: "Свет у воды и горы в одной сессии.",
           c3Title: "Маршрут дня по Канто",
           c3Body: "Токио + Камакура или Фудзи + Хаконэ — два настроения за день.",
+          c4Body: "Мягкий прибрежный свет, переезд у моря и спокойный ритм побережья.",
+          c5Body: "Северные просторы, ощущение путешествия и более масштабный маршрут.",
+          c6Body: "Портреты в японском наряде с более формальным настроением.",
           c1Cta: "План Токио",
           c2Cta: "План Фудзи",
           c3Cta: "План «день в Канто»",
@@ -3231,6 +3410,40 @@
           c4: { title: "Камакура" },
         },
         footer: { line2: "Элопмент и аутдор в Японии" },
+      },
+      flowPage: {
+        hero: {
+          eyebrow: "FLOW",
+          h1: "От запроса до дня съёмки",
+          lead: "Коротко и понятно: как мы вместе планируем, подтверждаем и проводим съёмку в Японии.",
+        },
+        kicker: "Спокойно и понятно",
+        title: "Структурный процесс, но живой день съёмки",
+        body: "Этапы бронирования мы держим ясными, а в сам день оставляем пространство для погоды, ритма и эмоций.",
+        stepLabel: "Step",
+        step1: {
+          title: "Сообщите даты и регион",
+          body: "Напишите желаемый месяц, регион и то, какой формат съёмки вы себе представляете.",
+        },
+        step2: {
+          title: "Мы предложим подходящий пакет и маршрут",
+          body: "С учётом сезона, света и логистики мы подбираем подходящий пакет и съёмочный маршрут.",
+        },
+        step3: {
+          title: "Подтверждаем стиль, время и запасные идеи",
+          body: "До дня съёмки согласовываем образы, время встречи, погодные варианты и нужные дополнения.",
+        },
+        step4: {
+          title: "Съёмка, ретушь и передача",
+          body: "В день съёмки мы мягко направляем и держим естественный ритм, затем отдаём обработанную галерею онлайн.",
+        },
+        cta: {
+          eyebrow: "Готовы начать?",
+          title: "Напишите ваши даты, и мы подскажем следующий шаг",
+          body: "Если вы уже знаете сезон или регион, мы быстрее подберём наиболее подходящий пакет.",
+          primary: "Отправить запрос",
+          secondary: "Записаться на консультацию",
+        },
       },
       elopement: {
         hero: {
@@ -3731,7 +3944,7 @@
           heading: "WeChat",
           lead: "Если удобнее WeChat — добавьте нас по ID ниже и напишите даты и идеи съёмки.",
           idLabel: "WeChat ID",
-          idValue: "mashirovisuals",
+          idValue: "photour_mi",
           copyBtn: "Скопировать ID",
           copied: "Скопировано",
           note: "Также можно написать в WhatsApp или через форму на этой странице.",
@@ -3789,8 +4002,8 @@
       common: {
         langAria: "Idioma",
         floatCtaAria: "Asistente IA y accesos de reserva",
-        floatAiTitle: "IA AYUDA",
-        floatAiSub: "Pregunta aquí",
+        floatAiTitle: "Mesa de Consulta",
+        floatAiSub: "Cuéntanos tu plan",
         aiPanelTitle: "Asistente IA Mashiro",
         aiPanelCloseAria: "Cerrar chat",
         aiWelcome:
@@ -3862,6 +4075,10 @@
           title: "Campañas | Mashiro Visuals",
           description: "Campañas de temporada y eventos del estudio.",
         },
+        flow: {
+          title: "Proceso | Mashiro Visuals",
+          description: "Cómo trabajamos: desde la consulta y la planificación hasta el rodaje y la entrega.",
+        },
         reserve: {
           title: "Pago | Mashiro Visuals",
           description:
@@ -3905,6 +4122,9 @@
           c2Body: "Luz lacustre y montaña en una sola sesión.",
           c3Title: "Ruta de un día en Kanto",
           c3Body: "Tokio + Kamakura o Fuji + Hakone — dos ambientes el mismo día.",
+          c4Body: "Luz costera suave, cruce del tren y ritmo tranquilo junto al mar.",
+          c5Body: "Espacios abiertos del norte, sensación de viaje y rutas más amplias.",
+          c6Body: "Retratos centrados en kimono con un aire japonés más formal.",
           c1Cta: "Plan Tokio",
           c2Cta: "Plan Fuji",
           c3Cta: "Plan día Kanto",
@@ -3987,6 +4207,40 @@
           c4: { title: "Kamakura" },
         },
         footer: { line2: "Elopement y fotografía outdoor en Japón" },
+      },
+      flowPage: {
+        hero: {
+          eyebrow: "FLOW",
+          h1: "Desde la consulta hasta el día del rodaje",
+          lead: "Una guía clara de cómo planificamos, confirmamos y realizamos vuestra sesión en Japón.",
+        },
+        kicker: "Simple y claro",
+        title: "Un proceso ordenado, con espacio para lo real",
+        body: "Mantenemos la reserva y la planificación bien estructuradas, pero dejamos margen para el clima, el ritmo y la emoción.",
+        stepLabel: "Step",
+        step1: {
+          title: "Cuéntanos fechas y región",
+          body: "Empieza compartiendo el mes, la zona y el tipo de sesión que imaginas.",
+        },
+        step2: {
+          title: "Te proponemos el plan y la ruta adecuados",
+          body: "Según la temporada, la luz y el ritmo del viaje, proponemos un plan y una ruta realistas.",
+        },
+        step3: {
+          title: "Confirmamos estilismo, tiempos y plan alternativo",
+          body: "Antes del rodaje alineamos vestuario, hora de encuentro, ideas por si cambia el tiempo y extras necesarios.",
+        },
+        step4: {
+          title: "Rodaje, edición y entrega",
+          body: "El día de la sesión guiamos con suavidad y mantenemos un ritmo natural. Después entregamos la galería editada en línea.",
+        },
+        cta: {
+          eyebrow: "¿Listos para empezar?",
+          title: "Comparte tus fechas y te guiamos con el siguiente paso",
+          body: "Si ya sabes la temporada o la zona, podremos orientarte antes hacia el plan más adecuado.",
+          primary: "Enviar consulta",
+          secondary: "Reservar consulta",
+        },
       },
       elopement: {
         hero: {
@@ -4486,7 +4740,7 @@
           heading: "WeChat",
           lead: "Si prefieres WeChat, añádenos con el ID de abajo y envía fechas e ideas.",
           idLabel: "ID de WeChat",
-          idValue: "mashirovisuals",
+          idValue: "photour_mi",
           copyBtn: "Copiar ID",
           copied: "Copiado",
           note: "También puedes contactar por WhatsApp o con el formulario de esta página.",
@@ -4596,6 +4850,12 @@
     var page = document.body && document.body.getAttribute("data-page");
     if (page) {
       var meta = getNested(pack, "meta." + page);
+      if (!meta && page.indexOf("-") !== -1) {
+        var camelPage = page.replace(/-([a-z])/g, function (_, ch) {
+          return ch.toUpperCase();
+        });
+        meta = getNested(pack, "meta." + camelPage);
+      }
       if (meta && meta.title) document.title = meta.title;
       var md = document.querySelector('meta[name="description"]');
       if (md && meta && meta.description)

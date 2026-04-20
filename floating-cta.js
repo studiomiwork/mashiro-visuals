@@ -20,11 +20,11 @@
     var line1 = document.createElement("span");
     line1.className = "hero-circle__line";
     line1.setAttribute("data-i18n", "common.floatAiTitle");
-    line1.textContent = "AI CHAT";
+    line1.textContent = "Consultation Desk";
     var sub1 = document.createElement("span");
     sub1.className = "hero-circle__sub";
     sub1.setAttribute("data-i18n", "common.floatAiSub");
-    sub1.textContent = "Ask anything";
+    sub1.textContent = "Tell us your plan";
     stack1.appendChild(line1);
     stack1.appendChild(sub1);
     btnAi.appendChild(stack1);

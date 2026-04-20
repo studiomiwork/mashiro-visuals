@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI assistant | Mashiro Visuals</title>
     <meta
       name="description"
-      content="Chat with the Mashiro Visuals assistant about packages, locations, and booking in Japan."
+      content="A clear booking flow for Mashiro Visuals — from inquiry and planning to your shoot day and delivery."
     />
+    <title>Flow | Mashiro Visuals</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="page-ai-chat" data-page="ai-chat" data-ai-chat-endpoint="/api/chat">
+  <body data-page="flow">
     <header class="site-header site-header--bar">
       <div class="container header-inner header-inner--bar">
         <a class="brand" href="./index.html">Mashiro Visuals</a>
@@ -30,15 +30,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <rect
-                  x="2"
-                  y="2"
-                  width="20"
-                  height="20"
-                  rx="5"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
                 <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
                 <circle cx="18" cy="6" r="1.2" fill="currentColor" />
               </svg>
@@ -63,11 +55,7 @@
                 />
               </svg>
             </a>
-            <a
-              class="header-icon-circle"
-              href="./contact.html#wechat"
-              data-i18n-aria="nav.wechatAria"
-            >
+            <a class="header-icon-circle" href="./contact.html#wechat" data-i18n-aria="nav.wechatAria">
               <svg
                 class="header-icon-circle__svg"
                 viewBox="0 0 24 24"
@@ -81,8 +69,7 @@
                 />
               </svg>
             </a>
-
-            </div>
+          </div>
           <div class="lang-switcher">
             <select id="lang-select" class="lang-select" aria-label="Language">
               <option value="en">English</option>
@@ -110,12 +97,7 @@
     </header>
 
     <div id="nav-overlay" class="nav-overlay" hidden aria-hidden="true">
-      <div
-        class="nav-overlay__panel"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="nav-overlay-heading"
-      >
+      <div class="nav-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="nav-overlay-heading">
         <div class="nav-overlay__top">
           <a class="nav-overlay__brand brand" href="./index.html">Mashiro Visuals</a>
           <div class="header-tools nav-overlay__tools">
@@ -134,15 +116,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                 >
-                  <rect
-                    x="2"
-                    y="2"
-                    width="20"
-                    height="20"
-                    rx="5"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  />
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
                   <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
                   <circle cx="18" cy="6" r="1.2" fill="currentColor" />
                 </svg>
@@ -167,11 +141,7 @@
                   />
                 </svg>
               </a>
-              <a
-                class="header-icon-circle header-icon-circle--on-dark"
-                href="./contact.html#wechat"
-                data-i18n-aria="nav.wechatAria"
-              >
+              <a class="header-icon-circle header-icon-circle--on-dark" href="./contact.html#wechat" data-i18n-aria="nav.wechatAria">
                 <svg
                   class="header-icon-circle__svg"
                   viewBox="0 0 24 24"
@@ -185,8 +155,7 @@
                   />
                 </svg>
               </a>
-
-              </div>
+            </div>
             <button
               type="button"
               class="header-menu-btn header-menu-btn--close"
@@ -214,9 +183,7 @@
             <span class="nav-overlay__sub" data-i18n="nav.subGallery">Selected work</span>
           </a>
           <a class="nav-overlay__link" href="./costume.html">
-            <span class="nav-overlay__title nav-overlay__title--costume" data-i18n="nav.costume"
-              >COSTUME</span
-            >
+            <span class="nav-overlay__title nav-overlay__title--costume" data-i18n="nav.costume">COSTUME</span>
             <span class="nav-overlay__sub" data-i18n="nav.subCostume">Outfits &amp; styling</span>
           </a>
           <a class="nav-overlay__link" href="./about.html">
@@ -230,42 +197,119 @@
         </nav>
       </div>
     </div>
-    <main class="ai-chat-main" id="main-content">
-      <div class="container ai-chat-layout">
-        <div class="ai-chat-shell ai-consult--page" id="ai-consult-page">
-          <div class="ai-chat-top">
-            <a
-              class="ai-chat-back"
-              href="./index.html"
-              data-i18n="common.aiBack"
-              data-i18n-aria="common.aiBackAria"
-              >Back</a>
-            <h1 id="ai-consult-title" class="ai-consult__title ai-chat-page-title" data-i18n="common.aiPanelTitle">
-              Mashiro AI assistant
-            </h1>
-          </div>
-          <div class="ai-consult__messages" id="ai-consult-messages" aria-live="polite"></div>
-          <p class="ai-consult__disclaimer" data-i18n="common.aiDisclaimer"></p>
-          <a
-            class="ai-consult__wa"
-            href="https://wa.me/819083038369"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><span data-i18n="common.aiWhatsAppCta">WhatsApp</span></a>
-          <form class="ai-consult__form" id="ai-consult-form">
-            <input
-              type="text"
-              class="ai-consult__input"
-              id="ai-consult-input"
-              autocomplete="off"
-              data-i18n-placeholder="common.aiPlaceholder"
-              placeholder=""
-            />
-            <button type="submit" class="ai-consult__submit" data-i18n="common.aiSend">Send</button>
-          </form>
+
+    <main>
+      <section class="page-hero flow-page-hero">
+        <div class="container">
+          <div class="eyebrow" data-i18n="flowPage.hero.eyebrow">Flow</div>
+          <h1 data-i18n="flowPage.hero.h1">From inquiry to your shoot day</h1>
+          <p data-i18n="flowPage.hero.lead">
+            A clear overview of how we plan, confirm, and photograph your session in Japan.
+          </p>
         </div>
-      </div>
+      </section>
+
+      <section class="flow-page">
+        <div class="container flow-page__grid">
+          <div class="flow-page__intro">
+            <p class="flow-page__kicker" data-i18n="flowPage.kicker">Simple and calm</p>
+            <h2 class="flow-page__title" data-i18n="flowPage.title">A clear process, with room for real moments</h2>
+            <p class="flow-page__body" data-i18n="flowPage.body">
+              We keep the booking flow structured, but the day itself flexible enough for weather, pace, and emotion.
+            </p>
+            <figure class="flow-page__visual">
+              <img
+                class="flow-page__visual-main"
+                src="images/gallery/250408镰仓/MILA5557.jpg"
+                alt=""
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="flow-page__visual-float"
+                src="images/gallery/250408Studio/MILA5090.jpg"
+                alt=""
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+          <ol class="flow-steps" aria-label="Booking flow">
+            <li class="flow-step" data-step-deco="01">
+              <span class="flow-step__num">01</span>
+              <div class="flow-step__copy">
+                <p class="flow-step__label" data-i18n="flowPage.stepLabel">Step</p>
+                <h3 data-i18n="flowPage.step1.title">Tell us your dates and region</h3>
+                <p data-i18n="flowPage.step1.body">
+                  Start with your month, preferred area, and whether you already know the kind of session you want.
+                </p>
+              </div>
+            </li>
+            <li class="flow-step" data-step-deco="02">
+              <span class="flow-step__num">02</span>
+              <div class="flow-step__copy">
+                <p class="flow-step__label" data-i18n="flowPage.stepLabel">Step</p>
+                <h3 data-i18n="flowPage.step2.title">We suggest the right plan and route</h3>
+                <p data-i18n="flowPage.step2.body">
+                  Based on timing, light, and travel rhythm, we propose a plan, route, and realistic shoot structure.
+                </p>
+              </div>
+            </li>
+            <li class="flow-step" data-step-deco="03">
+              <span class="flow-step__num">03</span>
+              <div class="flow-step__copy">
+                <p class="flow-step__label" data-i18n="flowPage.stepLabel">Step</p>
+                <h3 data-i18n="flowPage.step3.title">Confirm styling, timing, and backup ideas</h3>
+                <p data-i18n="flowPage.step3.body">
+                  We align outfits, meeting time, weather fallback ideas, and any add-ons before the shoot day.
+                </p>
+              </div>
+            </li>
+            <li class="flow-step" data-step-deco="04">
+              <span class="flow-step__num">04</span>
+              <div class="flow-step__copy">
+                <p class="flow-step__label" data-i18n="flowPage.stepLabel">Step</p>
+                <h3 data-i18n="flowPage.step4.title">Shoot, edit, and deliver</h3>
+                <p data-i18n="flowPage.step4.body">
+                  On the day, we guide lightly and keep things moving naturally. Afterward, your edited gallery is delivered online.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="flow-cta-band">
+        <div class="container flow-cta-band__inner">
+          <div class="flow-cta-band__copy">
+            <p class="flow-cta-band__eyebrow" data-i18n="flowPage.cta.eyebrow">Ready to start?</p>
+            <h2 class="flow-cta-band__title" data-i18n="flowPage.cta.title">Share your dates and we will shape the next step</h2>
+            <p class="flow-cta-band__body" data-i18n="flowPage.cta.body">
+              If you already know your season or destination, we can guide you to the most suitable plan first.
+            </p>
+            <div class="flow-cta-band__actions">
+              <a class="btn btn-primary" href="./contact.html" data-i18n="flowPage.cta.primary">Send an inquiry</a>
+              <a class="btn" href="./reserve.html" data-i18n="flowPage.cta.secondary">Book a consultation</a>
+            </div>
+          </div>
+          <figure class="flow-cta-band__visual">
+            <img
+              src="images/gallery/home/about-secondary-bw.png"
+              alt=""
+              width="900"
+              height="675"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
     </main>
+
     <footer class="site-footer site-footer--dark">
       <div class="container site-footer__main">
         <div class="site-footer__brand-col">
@@ -282,13 +326,7 @@
               rel="noopener noreferrer"
               data-i18n-aria="nav.instagramAria"
             >
-              <svg
-                class="site-footer__soc-svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
+              <svg class="site-footer__soc-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
                 <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
                 <circle cx="18" cy="6" r="1.2" fill="currentColor" />
@@ -301,39 +339,22 @@
               rel="noopener noreferrer"
               data-i18n-aria="nav.whatsappAria"
             >
-              <svg
-                class="site-footer__soc-svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
+              <svg class="site-footer__soc-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
                 />
               </svg>
             </a>
-            <a
-              class="site-footer__soc"
-              href="./contact.html#wechat"
-              data-i18n-aria="nav.wechatAria"
-            >
-              <svg
-                class="site-footer__soc-svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
+            <a class="site-footer__soc" href="./contact.html#wechat" data-i18n-aria="nav.wechatAria">
+              <svg class="site-footer__soc-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M8.25 4.5c-2.9 0-5.25 2.1-5.25 4.7 0 1.5.8 2.8 2.1 3.6l-.5 2.9 2.9-1.2c.7.2 1.4.3 2.15.3.25 0 .5-.02.75-.05-.15-.45-.23-.92-.23-1.4 0-2.85 2.75-5.15 6.15-5.15.35 0 .7.03 1.03.08-.95-1.55-3.05-2.58-5.4-2.58zm7.5 4.8c-3.45 0-6.25 2.35-6.25 5.25 0 2.9 2.8 5.25 6.25 5.25.65 0 1.28-.08 1.88-.23l2.55 1.05-.45-2.55c1.05-.9 1.7-2.15 1.7-3.52 0-2.9-2.8-5.25-6.25-5.25zm-4.35 2.55a.9.9 0 11-1.8 0 .9.9 0 011.8 0zm3.6 0a.9.9 0 11-1.8 0 .9.9 0 011.8 0z"
                 />
               </svg>
             </a>
-
-            </div>
+          </div>
         </div>
         <nav class="site-footer__nav-col" aria-label="Site links">
           <ul class="site-footer__list">
@@ -367,6 +388,7 @@
     </footer>
     <script src="./i18n.js" defer></script>
     <script src="./nav-overlay.js" defer></script>
+    <script src="./floating-cta.js" defer></script>
     <script src="./ai-consult.js" defer></script>
     <script src="./footer-strip.js" defer></script>
   </body>

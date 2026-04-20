@@ -8,11 +8,43 @@
   var WA = "https://wa.me/819083038369";
   var PAGE = (document.body && document.body.getAttribute("data-page")) || "";
 
-  function t(key) {
+  function t(key, langOverride) {
     var M = window.MashiroI18n;
     if (!M || typeof M.get !== "function") return "";
-    var lang = typeof M.detect === "function" ? M.detect() : "en";
+    var lang = langOverride || (typeof M.detect === "function" ? M.detect() : "en");
     return M.get(key, lang) || "";
+  }
+
+  function normalizeLang(code) {
+    var s = String(code || "").toLowerCase();
+    if (!s) return "en";
+    if (s.indexOf("zh") === 0) return "zh-TW";
+    if (s.indexOf("ja") === 0) return "ja";
+    if (s.indexOf("ko") === 0) return "ko";
+    if (s.indexOf("ru") === 0) return "ru";
+    if (s.indexOf("es") === 0) return "es";
+    return "en";
+  }
+
+  function detectInputLang(text) {
+    var raw = String(text || "").trim();
+    if (!raw) return "";
+
+    if (/[\u3040-\u30ff]/.test(raw)) return "ja"; // Hiragana / Katakana
+    if (/[\uac00-\ud7af]/.test(raw)) return "ko"; // Hangul
+    if (/[\u0400-\u04ff]/.test(raw)) return "ru"; // Cyrillic
+    if (/[\u4e00-\u9fff]/.test(raw)) return "zh-TW"; // CJK unified (prefer Chinese unless kana exists)
+
+    var l = raw.toLowerCase();
+    if (/(hola|precio|reserva|ubicaci[oó]n|consulta|gracias|cu[aá]nto)/.test(l)) return "es";
+    if (/(privet|spasibo|цена|бронь|локац|достав|сколько)/.test(l)) return "ru";
+    if (/(tokyo|price|booking|location|quote|whatsapp|deliver)/.test(l)) return "en";
+
+    return "";
+  }
+
+  function getReplyLang(qRaw, preferredLang) {
+    return detectInputLang(qRaw) || normalizeLang(preferredLang) || "en";
   }
 
   function hasNeedle(raw, needle) {
@@ -22,7 +54,7 @@
     return a.indexOf(n) !== -1 || b.indexOf(needle) !== -1;
   }
 
-  function pickReply(qRaw) {
+  function pickReply(qRaw, replyLang) {
     var rules = [
       {
         keys: [
@@ -172,10 +204,10 @@
     for (var i = 0; i < rules.length; i++) {
       var r = rules[i];
       for (var j = 0; j < r.keys.length; j++) {
-        if (hasNeedle(qRaw, r.keys[j])) return t(r.key);
+        if (hasNeedle(qRaw, r.keys[j])) return t(r.key, replyLang);
       }
     }
-    return t("common.aiReplyDefault");
+    return t("common.aiReplyDefault", replyLang);
   }
 
   function wireChatUi(root) {
@@ -194,11 +226,11 @@
       messagesEl.scrollTop = messagesEl.scrollHeight;
     }
 
-    function appendThinking() {
+    function appendThinking(replyLang) {
       var row = document.createElement("div");
       row.className = "ai-consult__row ai-consult__row--bot ai-consult__row--thinking";
       row.id = "ai-consult-thinking";
-      row.textContent = t("common.aiThinking");
+      row.textContent = t("common.aiThinking", replyLang);
       messagesEl.appendChild(row);
       messagesEl.scrollTop = messagesEl.scrollHeight;
     }
@@ -219,37 +251,38 @@
       appendRow(text, "user");
       input.value = "";
 
+      var currentLang =
+        window.MashiroI18n && typeof window.MashiroI18n.detect === "function"
+          ? window.MashiroI18n.detect()
+          : "en";
+      var replyLang = getReplyLang(text, currentLang);
       var ep = document.body.getAttribute("data-ai-chat-endpoint");
       if (ep) {
-        appendThinking();
-        var lang =
-          window.MashiroI18n && typeof window.MashiroI18n.detect === "function"
-            ? window.MashiroI18n.detect()
-            : "en";
+        appendThinking(replyLang);
         fetch(ep, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ q: text, lang: lang }),
+          body: JSON.stringify({ q: text, lang: replyLang }),
         })
           .then(function (r) {
             return r.json();
           })
           .then(function (data) {
             removeThinking();
-            var reply = data && typeof data.reply === "string" ? data.reply : pickReply(text);
+            var reply = data && typeof data.reply === "string" ? data.reply : pickReply(text, replyLang);
             appendRow(reply, "bot");
           })
           .catch(function () {
             removeThinking();
-            appendRow(pickReply(text), "bot");
+            appendRow(pickReply(text, replyLang), "bot");
           });
         return;
       }
 
-      appendThinking();
+      appendThinking(replyLang);
       window.setTimeout(function () {
         removeThinking();
-        appendRow(pickReply(text), "bot");
+        appendRow(pickReply(text, replyLang), "bot");
       }, 320);
     });
 

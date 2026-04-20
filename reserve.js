@@ -323,7 +323,7 @@
     if (taxEl) taxEl.textContent = fmtYen(tax);
     if (inEl) inEl.textContent = fmtYen(totalIn);
     if (hxEx) hxEx.value = String(totalEx);
-    if (hxIn) hxEx.value = String(totalIn);
+    if (hxIn) hxIn.value = String(totalIn);
     if (hxAd) hxAd.value = String(addons);
     syncPkgHighlight();
     renderPackageIncludes(pkgVal);
