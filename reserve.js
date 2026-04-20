@@ -172,8 +172,6 @@
   var hxEx = document.getElementById("reserve-total-ex");
   var hxIn = document.getElementById("reserve-total-in");
   var hxAd = document.getElementById("reserve-addons-ex");
-  var summaryAside = document.getElementById("reserve-summary");
-  var scrollSummaryTimer = null;
   var includesPanel = document.getElementById("reserve-includes-panel");
   var includesList = document.getElementById("reserve-includes-list");
 
@@ -266,23 +264,6 @@
     }
   }
 
-  function maybeScrollSummary() {
-    if (!summaryAside || !window.matchMedia) return;
-    if (!window.matchMedia("(max-width: 1023px)").matches) return;
-    clearTimeout(scrollSummaryTimer);
-    scrollSummaryTimer = setTimeout(function () {
-      try {
-        var reduce =
-          window.matchMedia &&
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        summaryAside.scrollIntoView({
-          behavior: reduce ? "auto" : "smooth",
-          block: "nearest",
-        });
-      } catch (err) {}
-    }, 220);
-  }
-
   function syncKantoRouteUI() {
     var wrap = document.getElementById("reserve-kanto-route-wrap");
     if (!wrap) return;
@@ -348,11 +329,8 @@
     renderPackageIncludes(pkgVal);
   }
 
-  function onFormChange(ev) {
+  function onFormChange() {
     updateTotals();
-    if (ev && ev.target && ev.target.name === "photo_package") {
-      maybeScrollSummary();
-    }
   }
 
   form.addEventListener("change", onFormChange);
@@ -375,6 +353,7 @@
   if (!form) return;
 
   var stepOpts = document.getElementById("reserve-step-options");
+  var includesPanel = document.getElementById("reserve-includes-panel");
   var stepSched = document.getElementById("reserve-step-schedule");
   var stepDetails = document.getElementById("reserve-step-details");
   var stepPayment = document.getElementById("reserve-step-payment");
@@ -449,16 +428,21 @@
   function scrollTo(el) {
     if (!el) return;
     try {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      var reduce =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
     } catch (err) {}
   }
 
   form.addEventListener("change", function (e) {
     if (e.target && e.target.name === "photo_package") {
       refreshPkgGate();
-      if (selectedPackage() && stepOpts) {
+      if (selectedPackage()) {
         setTimeout(function () {
-          scrollTo(stepOpts);
+          if (includesPanel && !includesPanel.hidden) {
+            scrollTo(includesPanel);
+          }
         }, 120);
       }
     }
@@ -494,6 +478,25 @@
     });
   }
 
+  function externalReservePaymentUrl() {
+    try {
+      if (typeof window.MASHIRO_RESERVE_PAYMENT_URL === "string") {
+        var w = String(window.MASHIRO_RESERVE_PAYMENT_URL).trim();
+        if (w) return w;
+      }
+    } catch (e0) {}
+    return String(form.getAttribute("data-reserve-payment-url") || "").trim();
+  }
+
+  function isHttpUrlForRedirect(url) {
+    try {
+      var u = new URL(url, window.location.href);
+      return u.protocol === "https:" || u.protocol === "http:";
+    } catch (e1) {
+      return false;
+    }
+  }
+
   if (btnToPayment && stepPayment) {
     btnToPayment.addEventListener("click", function () {
       if (nameInput && !nameInput.checkValidity()) {
@@ -502,6 +505,11 @@
       }
       if (emailInput && !emailInput.checkValidity()) {
         emailInput.reportValidity();
+        return;
+      }
+      var payUrl = externalReservePaymentUrl();
+      if (payUrl && isHttpUrlForRedirect(payUrl)) {
+        window.location.assign(payUrl);
         return;
       }
       setPhase("payment");

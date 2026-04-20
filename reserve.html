@@ -255,7 +255,15 @@
             <p class="reserve-phone" data-i18n="reserve.phoneLine">Phone inquiries: 10:00–18:00</p>
           </div>
 
-          <form id="reserve-form" class="reserve-form" action="#" method="post" novalidate>
+          <!-- Set data-reserve-payment-url to your hosted checkout (e.g. Stripe Payment Link). Or set window.MASHIRO_RESERVE_PAYMENT_URL before reserve.js loads. -->
+          <form
+            id="reserve-form"
+            class="reserve-form"
+            action="#"
+            method="post"
+            novalidate
+            data-reserve-payment-url="https://buy.stripe.com/test_8x24gz7ZhgEP4lVasqeME00"
+          >
             <p id="reserve-success-msg" class="visually-hidden" data-i18n="reserve.successMsg">Order placed.</p>
 
             <input type="hidden" name="booking_total_ex" id="reserve-total-ex" value="" />

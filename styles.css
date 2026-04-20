@@ -3444,6 +3444,45 @@ body[data-page="reserve"] .reserve-page {
   scroll-margin-top: 5rem;
 }
 
+#reserve-includes-panel {
+  scroll-margin-top: 5rem;
+}
+
+/* Reserve checkout — tighter vertical rhythm (steps + stack gaps) */
+.reserve-configurator .reserve-wizard-nav {
+  margin: 0 0 0.85rem;
+}
+
+.reserve-configurator .reserve-os__stack--booking {
+  gap: 0.7rem;
+}
+
+.reserve-configurator .reserve-apple-step {
+  margin-bottom: 1.1rem;
+}
+
+.reserve-configurator #reserve-step-model {
+  margin-bottom: 0.55rem;
+}
+
+.reserve-configurator .reserve-apple-step__head {
+  margin-bottom: 0.75rem;
+}
+
+.reserve-configurator .reserve-win__links {
+  margin-top: 0.65rem;
+  padding-top: 0.55rem;
+}
+
+body[data-page="reserve"] .page-hero {
+  padding: clamp(2.75rem, 7vw, 5rem) 0 clamp(1.75rem, 4vw, 2.25rem);
+}
+
+body[data-page="reserve"] .reserve-flow {
+  margin-bottom: 1.1rem;
+  padding: 1.25rem 1.2rem;
+}
+
 .reserve-os--with-sidebar {
   display: grid;
   gap: 1.25rem;
@@ -3764,7 +3803,7 @@ body[data-page="reserve"] .reserve-page {
 }
 
 .reserve-model-hint {
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
 }
 
 .reserve-pkg-grid {
@@ -3888,7 +3927,7 @@ body[data-page="reserve"] .reserve-flow.card {
 }
 
 .reserve-includes {
-  margin-top: 1.25rem;
+  margin-top: 0.85rem;
 }
 
 .reserve-includes__title {
@@ -4147,7 +4186,7 @@ label.reserve-addon-legend {
 }
 
 .reserve-calendar-wrap {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.85rem;
 }
 
 .reserve-calendar__heading {
