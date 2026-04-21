@@ -75,6 +75,10 @@
       var vw = viewport.getBoundingClientRect().width;
       var el = slides[index];
       if (!el) return 0;
+      /* Mobile first: keep the whole card inside viewport, avoid center overflow crop. */
+      if (window.matchMedia && window.matchMedia("(max-width: 900px)").matches) {
+        return -el.offsetLeft;
+      }
       var center = el.offsetLeft + el.offsetWidth / 2;
       return vw / 2 - center;
     }

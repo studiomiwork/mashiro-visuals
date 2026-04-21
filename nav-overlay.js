@@ -6,6 +6,20 @@
     if (!overlay || overlay.querySelector(".nav-overlay__link--accent")) return;
     var grid = overlay.querySelector(".nav-overlay__grid");
     if (!grid) return;
+    if (!overlay.querySelector(".nav-overlay__link--travel")) {
+      var planLink = grid.querySelector('a[href="./plan.html"]');
+      var travel = document.createElement("a");
+      travel.className = "nav-overlay__link nav-overlay__link--travel";
+      travel.href = "./travel-shoot.html";
+      travel.innerHTML =
+        '<span class="nav-overlay__title" data-i18n="nav.travelPhoto">CASUAL SESSIONS</span>' +
+        '<span class="nav-overlay__sub" data-i18n="nav.subTravelPhoto">Casual sessions in Japan</span>';
+      if (planLink && planLink.nextSibling) {
+        grid.insertBefore(travel, planLink.nextSibling);
+      } else if (planLink) {
+        grid.appendChild(travel);
+      }
+    }
     var rule = document.createElement("span");
     rule.className = "nav-overlay__grid-rule";
     rule.setAttribute("aria-hidden", "true");

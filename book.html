@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elopement and on-location wedding photography across Japan — routes, packages, and what to expect."
+      content="A calm, step-by-step way to choose your Japan prewedding destination, plan, and options—then reach us by message. No online checkout."
     />
-    <title>Elopement | Mashiro Visuals</title>
+    <title>Book | Mashiro Visuals</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body data-page="elopement">
+  <body class="page-plan page-book">
     <header class="site-header site-header--bar">
       <div class="container header-inner header-inner--bar">
         <a class="brand" href="./index.html">Mashiro Visuals</a>
@@ -82,7 +82,7 @@
               </svg>
             </a>
 
-            </div>
+          </div>
           <div class="lang-switcher">
             <select id="lang-select" class="lang-select" aria-label="Language">
               <option value="en">English</option>
@@ -186,7 +186,7 @@
                 </svg>
               </a>
 
-              </div>
+            </div>
             <button
               type="button"
               class="header-menu-btn header-menu-btn--close"
@@ -230,104 +230,151 @@
         </nav>
       </div>
     </div>
-    <main>
-      <section class="page-hero">
-        <div class="container">
-          <div class="eyebrow" data-i18n="elopement.hero.eyebrow">Elopement in Japan</div>
-          <h1 data-i18n="elopement.hero.h1">Your vows, framed by nature</h1>
-          <p data-i18n="elopement.hero.lead">
-            From Tokyo outskirts to Fuji, Hokkaido, and Karuizawa. Routes are customized by season and light.
+
+    <main class="book-flow" id="book-flow-main">
+      <div class="book-flow__wrap container">
+        <header class="book-flow__masthead">
+          <p class="book-flow__eyebrow">Prewedding</p>
+          <h1 class="book-flow__title">Begin quietly.</h1>
+          <p class="book-flow__subtitle">
+            Choose a destination, then an experience level. Add only what you need. When you are ready, we
+            continue the conversation in person—never as an anonymous checkout.
           </p>
-        </div>
-      </section>
+        </header>
 
-      <section id="wedding-products" class="product-section" aria-labelledby="wedding-products-heading">
-        <div class="container">
-          <div class="product-section__head">
-            <h2 id="wedding-products-heading" data-i18n="elopement.products.h2">
-              Wedding &amp; elopement packages
-            </h2>
-            <p class="lead" data-i18n="elopement.products.lead">
-              Coverage, deliverables, and travel notes for each line. All include a private online gallery and
-              print-ready files.
-            </p>
+        <div class="book-flow__progress" aria-label="Booking steps">
+          <div class="book-flow__progress-track">
+            <span class="book-flow__progress-step" data-progress-step="1"></span>
+            <span class="book-flow__progress-step" data-progress-step="2"></span>
+            <span class="book-flow__progress-step" data-progress-step="3"></span>
+            <span class="book-flow__progress-step" data-progress-step="4"></span>
           </div>
-
-          <article id="p-fuji" class="product-card">
-            <h3 data-i18n="elopement.products.fuji.title">Mount Fuji — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.fuji.price">From ¥180,000</p>
-            <ul>
-              <li data-i18n="elopement.products.fuji.b1">
-                Lakeside and fifth-station routes; sunrise and golden-hour windows
-              </li>
-              <li data-i18n="elopement.products.fuji.b2">
-                500+ edited images; timeline planned around weather and crowds
-              </li>
-              <li data-i18n="elopement.products.fuji.b3">
-                Iconic peak backdrops and wide landscape portraits
-              </li>
-            </ul>
-          </article>
-
-          <article id="p-kyoto" class="product-card">
-            <h3 data-i18n="elopement.products.kyoto.title">Kyoto — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.kyoto.price">From ¥200,000</p>
-            <ul>
-              <li data-i18n="elopement.products.kyoto.b1">
-                Gion, Arashiyama, bamboo groves, and temple gardens (permits where required)
-              </li>
-              <li data-i18n="elopement.products.kyoto.b2">
-                Classic kimono or modern dress; quiet morning slots available
-              </li>
-              <li data-i18n="elopement.products.kyoto.b3">
-                Heritage streets, stone paths, and seasonal maples or blossoms
-              </li>
-            </ul>
-          </article>
-
-          <article id="p-hokkaido" class="product-card">
-            <h3 data-i18n="elopement.products.hokkaido.title">Hokkaido — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.hokkaido.price">From ¥280,000</p>
-            <ul>
-              <li data-i18n="elopement.products.hokkaido.b1">
-                Snow fields, ski areas, and open coastlines — full-day coverage
-              </li>
-              <li data-i18n="elopement.products.hokkaido.b2">
-                700+ images; cold-weather guidance and flexible routing
-              </li>
-              <li data-i18n="elopement.products.hokkaido.b3">
-                Second shooter available; strong winter bridal portraits
-              </li>
-            </ul>
-          </article>
-
-          <article id="p-kamakura" class="product-card">
-            <h3 data-i18n="elopement.products.kamakura.title">Kamakura — Wedding &amp; elopement</h3>
-            <p class="product-price" data-i18n="elopement.products.kamakura.price">From ¥160,000</p>
-            <ul>
-              <li data-i18n="elopement.products.kamakura.b1">
-                Shrines, bamboo paths, and coastline — easy day trip from Tokyo
-              </li>
-              <li data-i18n="elopement.products.kamakura.b2">
-                Half- to full-day options; relaxed pacing for couples and families
-              </li>
-              <li data-i18n="elopement.products.kamakura.b3">
-                Ocean breeze, torii gates, and forest trails in one compact area
-              </li>
-            </ul>
-          </article>
+          <p class="book-flow__progress-label" aria-live="polite">Location</p>
         </div>
-      </section>
 
-      <section>
-        <div class="container gallery">
-          <img class="shot-lg" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1800&q=80" alt="elopement" />
-          <img class="shot-sm" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80" alt="couple" />
-          <img class="shot-sm" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1400&q=80" alt="outdoor wedding" />
-          <img class="shot-lg" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80" alt="natural motion" />
+        <section id="book-step-location" class="book-flow__step" aria-label="Choose location">
+          <h2 class="visually-hidden">Choose location</h2>
+          <div class="book-flow__loc-grid">
+            <button type="button" class="book-flow__loc" data-location="tokyo">
+              <span class="book-flow__loc-media">
+                <img
+                  src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+                  alt=""
+                  width="900"
+                  height="600"
+                  loading="eager"
+                  decoding="async"
+                />
+              </span>
+              <span class="book-flow__loc-label">Tokyo</span>
+              <span class="book-flow__loc-sub">City light &amp; editorial pacing</span>
+            </button>
+            <button type="button" class="book-flow__loc" data-location="fuji">
+              <span class="book-flow__loc-media">
+                <img
+                  src="https://images.unsplash.com/photo-1576678927114-204c6a782d56?auto=format&fit=crop&w=900&q=80"
+                  alt=""
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="book-flow__loc-label">Mt. Fuji</span>
+              <span class="book-flow__loc-sub">Lakes &amp; open horizon</span>
+            </button>
+            <button type="button" class="book-flow__loc" data-location="hokkaido">
+              <span class="book-flow__loc-media">
+                <img
+                  src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=900"
+                  alt=""
+                  width="900"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="book-flow__loc-label">Hokkaido</span>
+              <span class="book-flow__loc-sub">Northern scale &amp; colour</span>
+            </button>
+          </div>
+          <p class="book-flow__footnote">
+            <a href="./plan.html">All destinations &amp; brochures</a>
+            ·
+            <a href="./plan-shonan.html">Shonan prewedding</a>
+          </p>
+        </section>
+
+        <section id="book-step-experience" class="book-flow__step" hidden aria-label="Experience and plan">
+          <div class="book-flow__hero">
+            <img id="book-hero-img" src="" alt="" width="1600" height="900" loading="lazy" decoding="async" />
+          </div>
+          <h2 id="book-loc-title" class="book-flow__section-title"></h2>
+          <p id="book-loc-lead" class="book-flow__lead"></p>
+          <div id="book-loc-story" class="book-flow__story"></div>
+          <h3 class="book-flow__pick-title">Select your plan</h3>
+          <div id="book-plan-grid" class="book-flow__plan-grid"></div>
+        </section>
+
+        <section id="book-step-addons" class="book-flow__step" hidden aria-label="Optional add-ons">
+          <h2 class="book-flow__section-title">Refine your day</h2>
+          <p class="book-flow__lead book-flow__lead--tight">
+            Optional touches—quoted precisely after we understand your route and season.
+          </p>
+          <div id="book-addon-list" class="book-flow__addon-list"></div>
+        </section>
+
+        <section id="book-step-send" class="book-flow__step" hidden aria-label="Send inquiry">
+          <h2 class="book-flow__section-title">Almost there</h2>
+          <p class="book-flow__lead book-flow__lead--tight">
+            We open WhatsApp with your summary so nothing is lost. No payment on this page.
+          </p>
+          <pre id="book-summary-text" class="book-flow__summary" aria-label="Your selection summary"></pre>
+          <form class="book-flow__form" id="book-final-form" action="#" method="post" onsubmit="return false;">
+            <label class="book-flow__field">
+              <span>Name</span>
+              <input id="book-final-name" name="name" type="text" autocomplete="name" required />
+            </label>
+            <label class="book-flow__field">
+              <span>Email</span>
+              <input id="book-final-email" name="email" type="email" autocomplete="email" required />
+            </label>
+            <label class="book-flow__field">
+              <span>Preferred timing</span>
+              <input id="book-final-date" name="date" type="text" autocomplete="off" placeholder="e.g. Spring 2027" />
+            </label>
+            <label class="book-flow__field book-flow__field--full">
+              <span>Notes</span>
+              <textarea id="book-final-notes" name="notes" rows="3" placeholder="Anything we should know"></textarea>
+            </label>
+          </form>
+          <p class="book-flow__fineprint">
+            Prefer email only?
+            <a href="./contact.html">Contact form</a>
+            ·
+            <a href="./reserve.html">Reserve a consultation</a>
+          </p>
+        </section>
+
+        <section id="book-step-done" class="book-flow__step book-flow__step--done" hidden aria-label="Complete">
+          <h2 class="book-flow__section-title">Message opened</h2>
+          <p class="book-flow__lead">
+            If WhatsApp did not open, use Contact with the same details. We reply personally—usually within one
+            to two days.
+          </p>
+          <div class="book-flow__done-actions">
+            <button type="button" class="btn btn-ghost" id="book-reset">Start another request</button>
+            <a class="btn btn-primary" href="./plan.html">Browse plans</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="book-flow__bar">
+        <div class="container book-flow__bar-inner">
+          <button type="button" class="btn btn-ghost book-flow__back" id="book-btn-back">Back</button>
+          <button type="button" class="btn btn-primary book-flow__next" id="book-btn-next">Continue</button>
         </div>
-      </section>
-
+      </div>
     </main>
     <footer class="site-footer site-footer--dark">
       <div class="container site-footer__main">
@@ -396,7 +443,7 @@
               </svg>
             </a>
 
-            </div>
+          </div>
         </div>
         <nav class="site-footer__nav-col" aria-label="Site links">
           <ul class="site-footer__list">
@@ -412,7 +459,7 @@
             <li><a href="./reserve.html" data-i18n="footer.linkReserve">Reserve</a></li>
             <li><a href="./contact.html" data-i18n="footer.linkContact">Contact</a></li>
             <li><a href="./about.html" data-i18n="footer.linkAbout">About</a></li>
-            <li><a href="./elopement.html" aria-current="page" data-i18n="footer.linkElopement">Elopement</a></li>
+            <li><a href="./elopement.html" data-i18n="footer.linkElopement">Elopement</a></li>
             <li><a href="./ski.html" data-i18n="footer.linkOutdoor">Outdoor</a></li>
           </ul>
         </nav>
@@ -429,6 +476,7 @@
       </div>
     </footer>
     <script src="./i18n.js" defer></script>
+    <script src="./book.js" defer></script>
     <script src="./nav-overlay.js" defer></script>
     <script src="./floating-cta.js" defer></script>
     <script src="./ai-consult.js" defer></script>
