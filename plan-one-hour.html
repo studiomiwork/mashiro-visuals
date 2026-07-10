@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Reach Mashiro Visuals for dates, destinations, and budgets — form, WhatsApp, or WeChat."
+      content="Packages and products for wedding and elopement photography in Japan."
     />
-    <title>Contact | Mashiro Visuals</title>
+    <title>One-Hour Photoshoot Experience | Mashiro Visuals</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body data-page="contact">
+  <body class="page-plan page-plan-detail" data-page="plan-one-hour">
     <header class="site-header site-header--bar">
       <div class="container header-inner header-inner--bar">
         <a class="brand" href="./index.html">Mashiro Visuals</a>
@@ -223,103 +223,55 @@
             <span class="nav-overlay__title" data-i18n="nav.about">About</span>
             <span class="nav-overlay__sub" data-i18n="nav.subAbout">Our story</span>
           </a>
-          <a class="nav-overlay__link" href="./contact.html" aria-current="page">
+          <a class="nav-overlay__link" href="./contact.html">
             <span class="nav-overlay__title" data-i18n="nav.contact">Contact</span>
             <span class="nav-overlay__sub" data-i18n="nav.subContact">Inquire &amp; booking</span>
           </a>
         </nav>
       </div>
     </div>
-    <main>
-      <section class="page-hero">
-        <div class="content-narrow">
-          <div class="eyebrow" data-i18n="contact.hero.eyebrow">Contact</div>
-          <h1 data-i18n="contact.hero.h1">Tell me about your plan</h1>
-          <p data-i18n="contact.hero.lead">
-            I usually reply within 24-48 hours. Feel free to include your budget and destination.
-          </p>
+
+    <main class="plan-detail-main">
+      <div class="container plan-detail-toolbar">
+        <a class="plan-detail-back" href="./plan.html"
+          ><span data-i18n="plan.detail.back">All plans</span></a
+        >
+      </div>
+      <div class="plan-detail-hero">
+        <img
+          src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          width="1600"
+          height="857"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <article class="container plan-detail-content">
+        <div class="plan-detail-tags">
+          <span class="plan-chip" data-i18n="plan.pkg.one_hour.cardTag1"></span>
+          <span class="plan-chip" data-i18n="plan.pkg.one_hour.cardTag2"></span>
         </div>
-      </section>
-      <section id="site-faq" class="contact-faq" aria-labelledby="contact-faq-h">
-        <div class="content-narrow">
-          <h2 id="contact-faq-h" class="contact-faq__h" data-i18n="contact.faq.h2">Frequently asked questions</h2>
-          <dl class="contact-faq__list">
-            <div class="contact-faq__item">
-              <dt data-i18n="contact.faq.q1">How far ahead should we book?</dt>
-              <dd data-i18n="contact.faq.a1">
-                Popular seasons fill early; share your month and region and we will suggest realistic windows.
-              </dd>
-            </div>
-            <div class="contact-faq__item">
-              <dt data-i18n="contact.faq.q2">What if the weather is bad on shoot day?</dt>
-              <dd data-i18n="contact.faq.a2">
-                Outdoor days are planned with buffer where possible; your consult covers backup ideas and safety.
-              </dd>
-            </div>
-            <div class="contact-faq__item">
-              <dt data-i18n="contact.faq.q3">Do you help with outfits and routes?</dt>
-              <dd data-i18n="contact.faq.a3">
-                Yes — see Costume for wardrobe samples and Plan for what each line includes; we align routes to light and pace.
-              </dd>
-            </div>
-          </dl>
+        <h1 data-i18n="plan.pkg.one_hour.title"></h1>
+        <div class="plan-detail-price-row plan-price-ref plan-price-ref--detail">
+          <span class="plan-card-lux__yen-label" data-i18n="plan.list.priceLabel">Price</span>
+          <div class="plan-price-ref__block">
+            <span class="plan-price-ref__ex">
+              <span class="plan-price-ref__amount" data-i18n="plan.pkg.one_hour.priceExNum"></span><span class="plan-price-ref__yen" data-i18n="plan.list.yenSuffix"></span><span class="plan-price-ref__tag plan-price-ref__tag--ex" data-i18n="plan.list.taxExcludedTag"></span>
+            </span>
+            <span class="plan-price-ref__in">
+              <span class="plan-price-ref__amount-in" data-i18n="plan.pkg.one_hour.priceInNum"></span><span class="plan-price-ref__yen plan-price-ref__yen--in" data-i18n="plan.list.yenSuffix"></span><span class="plan-price-ref__tag-in" data-i18n="plan.list.taxIncludedTag"></span>
+            </span>
+          </div>
         </div>
-      </section>
-      <section id="wechat" class="contact-wechat" aria-labelledby="contact-wechat-h">
-        <div class="content-narrow contact-wechat__inner">
-          <h2 id="contact-wechat-h" class="contact-wechat__title" data-i18n="contact.wechat.heading">WeChat</h2>
-          <p class="contact-wechat__lead" data-i18n="contact.wechat.lead"></p>
-          <p class="contact-wechat__id-line">
-            <span data-i18n="contact.wechat.idLabel">WeChat ID</span>
-            <strong id="contact-wechat-id-text" class="contact-wechat__id" data-i18n="contact.wechat.idValue"
-              >photour_mi</strong>
-          </p>
-          <button type="button" class="btn contact-wechat__copy" id="contact-wechat-copy" data-i18n="contact.wechat.copyBtn">
-            Copy ID
-          </button>
-          <p class="contact-wechat__note" data-i18n="contact.wechat.note"></p>
+        <p class="plan-detail-body" data-i18n="plan.pkg.one_hour.body"></p>
+        <p class="plan-detail-body plan-detail-body--tight" data-i18n="plan.oneHour.detailP1"></p>
+        <p class="plan-detail-body plan-detail-body--tight" data-i18n="plan.oneHour.detailP2"></p>
+        <div class="plan-detail-actions">
+          <a class="btn btn-primary" href="./contact.html" data-i18n="plan.detail.inquire">Inquire</a>
+          <a class="btn btn-ghost" href="./reserve.html" data-i18n="plan.detail.reserve">Reserve</a>
         </div>
-      </section>
-      <section>
-        <div class="content-narrow contact-form">
-          <form action="#" method="post">
-            <div class="form-grid">
-              <div class="form-row">
-                <label for="name" data-i18n="contact.form.name">Name</label>
-                <input id="name" name="name" required />
-              </div>
-              <div class="form-row">
-                <label for="email" data-i18n="contact.form.email">Email</label>
-                <input id="email" name="email" type="email" required />
-              </div>
-            </div>
-            <div class="form-grid">
-              <div class="form-row">
-                <label for="date" data-i18n="contact.form.date">Preferred Date</label>
-                <input id="date" name="date" data-i18n-placeholder="contact.form.datePh" placeholder="e.g. 2026-12" />
-              </div>
-              <div class="form-row">
-                <label for="service" data-i18n="contact.form.service">Service Type</label>
-                <select id="service" name="service">
-                  <option value="elopement" data-i18n="contact.form.opt1">Elopement / Couples</option>
-                  <option value="outdoor" data-i18n="contact.form.opt2">Outdoor Photography</option>
-                  <option value="unsure" data-i18n="contact.form.opt3">Not sure yet, I need guidance</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <label for="message" data-i18n="contact.form.message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                data-i18n-placeholder="contact.form.messagePh"
-                placeholder="Your story, trip plan, and budget range"
-              ></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit" data-i18n="contact.form.submit">Submit Inquiry</button>
-          </form>
-        </div>
-      </section>
+      </article>
 
     </main>
     <footer class="site-footer site-footer--dark">
@@ -403,7 +355,7 @@
         <nav class="site-footer__nav-col" aria-label="Site links secondary">
           <ul class="site-footer__list">
             <li><a href="./reserve.html" data-i18n="footer.linkReserve">Reserve</a></li>
-            <li><a href="./contact.html" aria-current="page" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="./contact.html" data-i18n="footer.linkContact">Contact</a></li>
             <li><a href="./about.html" data-i18n="footer.linkAbout">About</a></li>
             <li><a href="./elopement.html" data-i18n="footer.linkElopement">Elopement</a></li>
             <li><a href="./ski.html" data-i18n="footer.linkOutdoor">Outdoor</a></li>
@@ -422,7 +374,6 @@
       </div>
     </footer>
     <script src="./i18n.js" defer></script>
-    <script src="./contact-wechat.js" defer></script>
     <script src="./nav-overlay.js" defer></script>
     <script src="./floating-cta.js" defer></script>
     <script src="./ai-consult.js" defer></script>

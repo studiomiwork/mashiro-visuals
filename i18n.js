@@ -16,7 +16,7 @@
         portfolio: "Portfolio",
         about: "About",
         contact: "Contact",
-        plan: "PREWEDDING",
+        plan: "PLAN",
         gallery: "Gallery",
         costume: "COSTUME",
         subPlan: "Premium prewedding packages",
@@ -59,7 +59,7 @@
         aiReplyPricing:
           "Published plans and price bands are on the Plan page (tax notes included where shown). Final quotes depend on season, locations, and add-ons — Reserve or WhatsApp for a tailored estimate.",
         aiReplyLocations:
-          "We often shoot around Tokyo, Shonan, Mt. Fuji & lakes, Kyoto, Kamakura, Hokkaido, Karuizawa, and Nikko — see Gallery → Location spots. Your route is shaped for light, weather, and pace.",
+          "We often shoot around Tokyo, Mt. Fuji & lakes, Kyoto, Kamakura, Hokkaido, Karuizawa, and Nikko — see Gallery → Location spots. Your route is shaped for light, weather, and pace.",
         aiReplyBooking:
           "Start from the RESERVE button, the Reserve page, or WhatsApp. We confirm dates and deliverables before any payment link.",
         aiReplyDeliver:
@@ -113,6 +113,16 @@
           description:
             "Packages and products for wedding and elopement photography in Japan.",
         },
+        planTokyo: {
+          title: "Tokyo Prewedding | Mashiro Visuals",
+          description:
+            "Tokyo prewedding tiers—Essential, + Night, and Signature—with clear scope and tailored routing.",
+        },
+        planOneHour: {
+          title: "One-Hour Photoshoot Experience | Mashiro Visuals",
+          description:
+            "A compact one-hour on-location photoshoot session in Japan—scope and booking via consult.",
+        },
         costume: {
           title: "Costume | Mashiro Visuals",
           description:
@@ -132,6 +142,56 @@
           description:
             "Configure your photo package and add-ons, pick a date, and check out online. Secure payment on the next step.",
         },
+        book: {
+          title: "Book | Mashiro Visuals",
+          description:
+            "Guided steps to choose your Japan prewedding destination and options—then message us. No checkout on this site.",
+        },
+        privacy: {
+          title: "Privacy Policy | Mashiro Visuals",
+          description:
+            "How Mashiro Visuals handles data for this website, inquiries, and booking channels.",
+        },
+        company: {
+          title: "Company | Mashiro Visuals",
+          description:
+            "Mashiro Visuals — Japan pre-wedding, elopement, and editorial destination photography.",
+        },
+        travelShoot: {
+          title: "Casual Photo Sessions | Mashiro Visuals",
+          description:
+            "Relaxed on-location sessions in Tokyo or near Mt. Fuji — natural light, effortless pacing. Scope via consult.",
+        },
+        planFuji: {
+          title: "Mt. Fuji Prewedding | Mashiro Visuals",
+          description:
+            "Lakeside Mt. Fuji prewedding — private car, full-day hair and makeup, two looks, curated shoreline locations.",
+        },
+        planHokkaido: {
+          title: "Hokkaido Prewedding | Mashiro Visuals",
+          description:
+            "Northern Japan prewedding — private car, full-day styling, two looks, routes around Sapporo and Otaru.",
+        },
+        planKansai: {
+          title: "Kyoto & Nara Prewedding | Mashiro Visuals",
+          description:
+            "Kansai prewedding — shrines, bamboo, Nara Park; private car and two looks, planned with your photographer.",
+        },
+        planShonan: {
+          title: "Kamakura Prewedding | Mashiro Visuals",
+          description:
+            "Coastal Shonan prewedding — Kamakura, Enoshima, shoreline light; same core inclusions as the Tokyo line.",
+        },
+        planTraditional: {
+          title: "Traditional Kimono Prewedding | Mashiro Visuals",
+          description:
+            "Shiromuku or iro-uchikake — professional kitsuke, studio and nearby Kasai greenery, half-day formality.",
+        },
+        planKantoDay: {
+          title: "Kanto Day Trip Prewedding | Mashiro Visuals",
+          description:
+            "One-day Greater Tokyo routes — Tokyo + Kamakura or Mt. Fuji + Hakone; per-day pricing, tax at checkout.",
+        },
       },
       index: {
         hero: {
@@ -139,7 +199,7 @@
           eyebrow: "Japan Pre-Wedding & Elopement Photography",
           h1: "Pre-wedding & elopement photography in Japan, with cinematic calm",
           lead:
-            "Refined pre-wedding, elopement, and destination wedding photography for couples coming to Japan. Honest direction, natural light, and quiet emotion - shaped with cinematic restraint.",
+            "Refined pre-wedding, elopement, and destination wedding photography for couples coming to Japan. Honest direction, natural light, and quiet emotion—shaped with cinematic restraint.",
           ctaPortfolio: "View Portfolio",
           ctaInquire: "Inquire Now",
           circleReserve: "RESERVE",
@@ -391,7 +451,7 @@
           spotsTitle: "LOCATION SPOTS",
           spotsLead: "Regions we return to often for elopement & couples work.",
           spot1: "Tokyo · urban core",
-          spot2: "Shonan · coast",
+          spot2: "Kamakura · coast",
           spot3: "Mt. Fuji · lakes",
           spot4: "Kyoto · heritage streets",
           spot5: "Kamakura · shrine & sea",
@@ -453,9 +513,10 @@
             "Browse options, pricing, and what is included for your photography in Japan.",
           brandNote:
             "All packages and prices are Mashiro Visuals offerings. Final quotes depend on season, locations, and add-ons.",
+          ctaPrimary: "Start booking",
         },
         list: {
-          kicker: "PREWEDDING",
+          kicker: "PLAN",
           sub1: "Everything you need is built into every plan.",
           sub2: "All-inclusive destination wedding photography across Japan.",
           viewDetails: "View details",
@@ -464,6 +525,135 @@
           taxExcludedTag: "(excl. tax)",
           taxIncludedTag: "(incl. tax)",
           taxNote: "",
+        },
+        locations: {
+          stepEyebrow: "Step one",
+          heading: "Choose your destination",
+          lead:
+            "Same lineup as the booking form below—open a card for details; each Book now opens checkout with that package pre-selected.",
+        },
+        locationCards: {
+          tokyoDesc: "City light, refined pacing, and editorial Tokyo stories.",
+          fujiDesc: "Lakes, open views, and iconic mountain atmosphere.",
+          hokkaidoDesc: "Northern scale, seasonal colour, and travel-session rhythm.",
+          kamakuraDesc: "Coastal light, softer pacing, and relaxed seaside mood.",
+          kyotoNaraDesc: "Historic streets, bamboo groves, Nara Park—Kyoto & Nara in one route.",
+          tokyoFromPrice: "From ¥148,000 (excl. tax)",
+          fujiFromPrice: "From ¥288,000 (excl. tax)",
+          kyotoNaraFromPrice: "From ¥238,000 (excl. tax)",
+          kamakuraFromPrice: "From ¥238,000 (excl. tax)",
+          hokkaidoFromPrice: "From ¥308,000 (excl. tax)",
+          traditionalDesc: "Formal wasou—iro-uchikake or shiromuku—with studio portraits and nearby park exteriors.",
+          traditionalFromPrice: "From ¥138,000 (excl. tax)",
+          kantoDayDesc: "One-day travel shoot around Greater Tokyo; choose Tokyo + Kamakura or Fuji + Hakone when you book.",
+          kantoDayFromPrice: "From ¥60,000 (excl. tax)",
+        },
+        oneHour: {
+          sectionEyebrow: "Experiences",
+          sectionTitle: "Short sessions",
+          readMore: "Read more",
+          priceDisplay: "From ¥50,000",
+          bookNow: "Book now",
+          detailP1:
+            "A focused one-hour session on location—ideal as a light introduction in Japan or a compact add-on alongside a longer prewedding day.",
+          detailP2:
+            "Coverage, meeting point, and delivery counts are confirmed during your consult; wardrobe and HM can stay minimal for this format.",
+        },
+        pageTokyo: {
+          heroAlt: "Tokyo pre-wedding bouquet portrait",
+          bodyIntro:
+            "Choose your experience level below. Each tier is a complete Tokyo prewedding package with clear scope, then we tailor routing and timing to your dates and light.",
+          guidedHtml:
+            '<a href="./book.html?location=tokyo">Guided booking path</a> — the same decisions in a calmer, step-by-step flow (no checkout on the site).',
+          ladderAria: "Tokyo prewedding tiers",
+          stepEyebrow: "Step two",
+          ladderTitle: "Choose your Tokyo experience level",
+          badgeEntry: "Entry",
+          badgeUpgrade: "Upgrade",
+          badgePremium: "Premium",
+          pillMostPopular: "Most couples choose this option",
+          nameEssential: "Tokyo Prewedding Essential",
+          nameNight: "Tokyo Prewedding + Night",
+          nameSignature: "Tokyo Signature",
+          priceEssential: "Price: ¥148,000 (excl. tax)",
+          priceNight: "Price: ¥198,000 (excl. tax)",
+          priceSignature: "Price: ¥248,000 (excl. tax)",
+          entryLi1: "1 location (daytime)",
+          entryLi2: "1 styling look",
+          entryLi3: "Focused, efficient Tokyo coverage",
+          upgradeLi1: "Daytime location plus Tokyo night shooting",
+          upgradeLi2: "1 styling look",
+          upgradeLi3: "Strong balance of clarity and atmosphere",
+          premiumLi1: "Up to 3 locations",
+          premiumLi2: "Day + night shooting",
+          premiumLi3: "2 styling looks",
+          premiumLi4: "Full-day storytelling across Tokyo",
+          ctaEssential: "Inquire about Essential",
+          ctaNight: "Inquire about + Night",
+          ctaSignature: "Inquire about Signature",
+          microNight:
+            "Ideal when you want the city after dark without the full Signature scope.",
+          microSignature:
+            "Our most complete Tokyo narrative—more scenes, more wardrobe, more room to breathe.",
+          richAria: "Tokyo prewedding details",
+          richH2: "Tokyo prewedding experience",
+          richP1:
+            "No fixed tourist route. We shape the day around light, crowd flow, and how you move together—sometimes quiet and minimal, sometimes cinematic and bold.",
+          richP2:
+            "Hours, locations, and deliverables follow the tier you select above; we confirm every detail at booking.",
+          incH: "What is included",
+          incLi1: "Location planning based on season and light",
+          incLi2: "Professional hair and makeup",
+          incLi3: "Styling guidance for both of you",
+          incLi4: "Private transportation during the shoot",
+          styleH: "Styling options",
+          styleLi1Html:
+            "<strong>Wedding dress x2</strong> — clean, modern, editorial moods.",
+          styleLi2Html:
+            "<strong>Wedding dress + kimono</strong> — contemporary and traditional balance.",
+          styleLi3Html:
+            "<strong>Wedding dress + traditional kimono</strong> — shiromuku / iro-uchikake styling.",
+          prepH: "Prepare for the day",
+          prepLi1Html: "<strong>Groom:</strong> suit, shirt, shoes",
+          prepLi2Html:
+            "<strong>Bride:</strong> innerwear (NuBra recommended), heels or comfortable shoes",
+          prepLi3: "We walk you through everything before the shoot so the day feels calm.",
+          photoH: "Photo delivery",
+          photoLi1:
+            "Original files on a fast timeline, with a retouch selection step",
+          photoLi2: "Final edited set delivered via online gallery",
+          photoLi3: "Exact counts and turnaround are quoted for your tier",
+          optH: "Optional",
+          optP:
+            "Behind-the-scenes video can be added; delivery follows your final photo set.",
+          aboutH: "About the photographer",
+          aboutP:
+            "Based in Tokyo. Direction stays light and honest so the images feel like you—still refined and cinematic on the wall.",
+          destH: "Other destinations",
+          destP:
+            "Browse Mt. Fuji, Hokkaido, and Kamakura when you want a different landscape from the city.",
+          destLink: "Back to all prewedding locations",
+        },
+        pageTravel: {
+          heroAlt: "Tokyo street at dusk — relaxed portrait light",
+          chip1: "CASUAL",
+          chip2: "ON LOCATION",
+          h1: "Casual photo sessions",
+          body:
+            "A lighter on-location option while you travel — Tokyo rhythm or Fuji scale. Final scope and timing are set at consult.",
+          ladderAria: "Casual session destinations",
+          cardTokyoName: "Tokyo casual session",
+          cardTokyoPrice: "From ¥58,000",
+          cardTokyoL1: "Relaxed city pacing",
+          cardTokyoL2: "Natural moments during your trip",
+          cardTokyoL3: "Simple, unobtrusive direction",
+          cardTokyoCta: "Inquire — Tokyo",
+          cardFujiName: "Mt. Fuji casual session",
+          cardFujiPrice: "From ¥88,000",
+          cardFujiL1: "Open views and iconic landscape",
+          cardFujiL2: "Lakeside light and quiet scale",
+          cardFujiL3: "More room to breathe in the frame",
+          cardFujiCta: "Inquire — Mt. Fuji",
         },
         detail: {
           back: "All plans",
@@ -481,13 +671,13 @@
               "A full-day Tokyo prewedding experience designed around your rhythm, natural interaction, and cinematic city light.",
           },
           shonan: {
-            title: "Shonan Prewedding",
+            title: "Kamakura Prewedding",
             cardTag1: "COAST",
-            cardTag2: "SHONAN",
+            cardTag2: "KAMAKURA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "Same inclusions as Tokyo. Service 8:00–18:00. Locations include the coastal train crossing, Shonan shoreline, Enoshima, and beach—soft, lyrical seaside light. Delivery: 400+ files, 30 retouched. Add-ons mirror the Tokyo package.",
+              "Same inclusions as Tokyo. Service 8:00–18:00. Locations include the coastal train crossing, Kamakura and the shoreline, Enoshima, and the beach—soft, lyrical seaside light. Delivery: 400+ files, 30 retouched. Add-ons mirror the Tokyo package.",
           },
           fuji: {
             title: "Mt. Fuji Prewedding",
@@ -499,13 +689,13 @@
               "Private car; full-day hair and makeup; two dresses and two looks. Service 7:00–18:00; gowns chosen in advance at the studio. Lakeside photography around Mt. Fuji—Yamanakako, Kawaguchiko—plus private shoreline locations curated by Mashiro Visuals. Delivery: 400+ files, 30 retouched. Add-ons: extra dress ¥20,000 · behind-the-scenes film ¥50,000.",
           },
           kansai: {
-            title: "Kansai (one city)",
-            cardTag1: "KANSAI",
-            cardTag2: "ONE CITY",
+            title: "Kyoto & Nara Prewedding",
+            cardTag1: "KYOTO",
+            cardTag2: "NARA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "Private car; full-day hair and makeup; two dresses and two looks. Service 8:00–18:00. Collaborate with your photographer to plan one city—Kyoto, Nara, or Osaka—literary Japanese aesthetic. Delivery: 400+ files, 30 retouched. Optional kimono upgrade available.",
+              "Private car; full-day hair and makeup; two dresses and two looks. Service 8:00–18:00. Shaped around Kyoto and Nara—shrines, bamboo groves, Nara Park, and quieter pockets—planned with your photographer. Delivery: 400+ files, 30 retouched. Optional kimono upgrade available.",
           },
           hokkaido: {
             title: "Hokkaido Prewedding",
@@ -540,6 +730,15 @@
             priceExNumB: "80,000",
             body:
               "A compact one-day travel shoot in the Greater Tokyo area. Two routes: Tokyo and Kamakura in one day (¥60,000 excl. tax), or Mt. Fuji and Hakone in one day (¥80,000 excl. tax). Coverage, hours, and deliverables are scoped for a single day—confirm details at consult. Consumption tax is added at checkout (10%). Optional add-ons follow the same dress / BTS / kimono rules as other packages where applicable.",
+          },
+          one_hour: {
+            title: "One-Hour Photoshoot Experience",
+            cardTag1: "EXPERIENCE",
+            cardTag2: "1 HOUR",
+            priceExNum: "50,000",
+            priceInNum: "55,000",
+            body:
+              "One hour of guided photography on location in the agreed area; natural direction and a compact edited set. Full-day hair and makeup, wardrobe changes, and multi-location routing are quoted separately if you want to combine this with a longer package.",
           },
         },
       },
@@ -632,6 +831,9 @@
           h1: "Order your photo session",
           lead:
             "Choose your package and date, then enter your details, then pay securely online. A confirmation email is sent after payment.",
+          ctaPrimary: "Build your order",
+          ctaCalendly: "Pick a consultation time",
+          ctaCalendlyHint: "If the scheduling page doesn’t load, use the form below and we’ll confirm by message.",
         },
         flowTitle: "How checkout works",
         step1: "Choose your session, add-ons, and a preferred date.",
@@ -675,7 +877,7 @@
           shonan: [
             "Same service scope as the Tokyo package",
             "Service window 8:00–18:00",
-            "Coastal train line, Shonan shoreline, Enoshima, beach—lyrical seaside light",
+            "Coastal train line, Kamakura shoreline, Enoshima, beach—lyrical seaside light",
             "400+ delivered files, 30 retouched selects",
           ],
           fuji: [
@@ -689,7 +891,7 @@
             "Private transfer vehicle for the session day",
             "Full-day hair & makeup; two dresses / two looks",
             "Service window 8:00–18:00",
-            "One Kansai city on the day—Kyoto, Nara, or Osaka (planned with your photographer)",
+            "Kyoto & Nara route for the day—planned with your photographer",
             "400+ delivered files, 30 retouched selects",
           ],
           hokkaido: [
@@ -712,6 +914,12 @@
             "Two route options: Tokyo + Kamakura, or Mt. Fuji + Hakone — prices differ (see Plan page)",
             "Scoped for a single shooting day; timing and logistics confirmed at consult",
             "Add-ons (dress, BTS, kimono) follow the same rules as other packages where applicable",
+          ],
+          one_hour: [
+            "About one hour of on-location photography in the agreed area",
+            "Meeting point, coverage, and delivery scope confirmed when you book",
+            "Light direction with a compact edited set",
+            "Full-day hair and makeup, wardrobe changes, and multi-location routing are quoted separately with longer packages",
           ],
         },
         selectLabel: "Photo package",
@@ -819,7 +1027,7 @@
           "Japan-based photographer. Visits and consultations by appointment.",
         linkHome: "Home",
         linkCampaign: "Campaign & Event",
-        linkPlan: "PREWEDDING",
+        linkPlan: "Plan",
         linkGallery: "Gallery",
         linkCostume: "Costume",
         linkReserve: "Reserve",
@@ -883,7 +1091,7 @@
         aiReplyPricing:
           "公開方案與價格區間請見 Plan 頁（含稅註記以頁面為準）。最終費用依季節、地點與加購而定，建議 Reserve 或 WhatsApp 取得專屬估價。",
         aiReplyLocations:
-          "常拍區域包含東京、湘南、富士湖畔、京都、鎌倉、北海道、輕井澤、日光等，可至 Gallery 的 Location spots 查看；路線會依光線與節奏安排。",
+          "常拍區域包含東京、鎌倉、富士湖畔、京都、北海道、輕井澤、日光等，可至 Gallery 的 Location spots 查看；路線會依光線與節奏安排。",
         aiReplyBooking:
           "可從右下角 RESERVE、Reserve 頁面或 WhatsApp 開始諮詢；付款連結前會先確認日期與交付內容。",
         aiReplyDeliver:
@@ -930,6 +1138,15 @@
           title: "方案｜Mashiro Visuals",
           description: "日本婚紗與私奔攝影的方案與產品說明。",
         },
+        planTokyo: {
+          title: "東京婚紗｜Mashiro Visuals",
+          description:
+            "東京婚紗三階方案——Essential、夜間加拍與 Signature，範圍清楚、路線可依檔期調整。",
+        },
+        planOneHour: {
+          title: "一小時拍攝體驗｜Mashiro Visuals",
+          description: "日本外景輕量一小時拍攝方案——實際範圍與預約以諮詢為準。",
+        },
         costume: {
           title: "衣裳｜Mashiro Visuals",
           description:
@@ -948,6 +1165,47 @@
           description:
             "線上選擇攝影方案與加購、希望日期並下單；於下一步安全完成付款。",
         },
+        book: {
+          title: "預約引導｜Mashiro Visuals",
+          description:
+            "依步驟選擇日本婚紗目的地與選項，再以訊息聯繫我們；本站不提供線上結帳。",
+        },
+        privacy: {
+          title: "隱私權政策｜Mashiro Visuals",
+          description: "Mashiro Visuals 網站、諮詢與預約管道的資料處理說明。",
+        },
+        company: {
+          title: "公司資訊｜Mashiro Visuals",
+          description: "Mashiro Visuals — 日本婚紗、私奔與具編輯感的海外婚禮攝影。",
+        },
+        travelShoot: {
+          title: "輕鬆外景時段｜Mashiro Visuals",
+          description: "東京或富士近郊的輕鬆外景——自然光、從容節奏；實際範圍以諮詢為準。",
+        },
+        planFuji: {
+          title: "富士山湖區婚紗｜Mashiro Visuals",
+          description: "富士湖畔婚紗——專車、全日妝髮、雙造型與精選湖岸景點。",
+        },
+        planHokkaido: {
+          title: "北海道婚紗｜Mashiro Visuals",
+          description: "北國婚紗路線——專車、全日造型、雙禮服，札幌與小樽為主軸。",
+        },
+        planKansai: {
+          title: "京都＆奈良婚紗｜Mashiro Visuals",
+          description: "關西婚紗——神社、竹林、奈良公園；專車雙造型，與攝影師行前規劃。",
+        },
+        planShonan: {
+          title: "鎌倉海岸婚紗｜Mashiro Visuals",
+          description: "湘南海岸婚紗——鎌倉、江之島與海岸光線；核心內容與東京套系一致。",
+        },
+        planTraditional: {
+          title: "和裝正式婚紗｜Mashiro Visuals",
+          description: "白無垢或色打褂——專業穿戴、棚內與葛西周邊綠意，半日正式感。",
+        },
+        planKantoDay: {
+          title: "關東一日旅拍｜Mashiro Visuals",
+          description: "東京近郊一日路線——東京＋鎌倉或富士＋箱根；按日計價，稅金於結帳加計。",
+        },
       },
       index: {
         hero: {
@@ -958,7 +1216,7 @@
             "為來日本的新人與伴侶，拍攝誠實、有電影感的婚紗與私奔影像。雪山、曠野與戶外——不擺拍，只記錄你們與風景。自然光與真實情緒。",
           ctaPortfolio: "瀏覽作品",
           ctaInquire: "預約諮詢",
-          circleReserve: "RESERVE",
+          circleReserve: "立即預約",
           circleReserveSub: "預約來訪",
           scrollAria: "向下捲動至內容",
           note: "駐點日本。歡迎以英文聯絡。",
@@ -1185,7 +1443,7 @@
           spotsTitle: "LOCATION SPOTS",
           spotsLead: "私奔與情侶拍攝常回到的區域參考。",
           spot1: "東京 · 都市核心",
-          spot2: "湘南 · 海岸",
+          spot2: "鎌倉 · 海岸",
           spot3: "富士山 · 湖畔",
           spot4: "京都 · 老街與寺院巷弄",
           spot5: "鎌倉 · 神社與海",
@@ -1246,6 +1504,7 @@
           lead: "瀏覽內容、價格與包含項目，規劃你在日本的拍攝。",
           brandNote:
             "方案與標價均由 Mashiro Visuals 提供；最終報價依檔期、地點與加購項目而定。",
+          ctaPrimary: "開始預約",
         },
         list: {
           kicker: "PHOTO WEDDING 方案",
@@ -1257,6 +1516,131 @@
           taxExcludedTag: "(稅別)",
           taxIncludedTag: "(稅込)",
           taxNote: "",
+        },
+        locations: {
+          stepEyebrow: "第一步",
+          heading: "選擇你的目的地",
+          lead:
+            "與下方線上預約表單相同的方案列表—點卡片看詳情；「立即預約」會開啟結帳並預先選好對應方案。",
+        },
+        locationCards: {
+          tokyoDesc: "都會光線、從容節奏，東京編輯感故事。",
+          fujiDesc: "湖畔視野、開闊感與富士意象。",
+          hokkaidoDesc: "北國尺度、季節色與旅行節奏。",
+          kamakuraDesc: "海岸光感、輕鬆節奏與放鬆氛圍。",
+          kyotoNaraDesc: "古寺街道、竹林與奈良公園—京都・奈良一條路線。",
+          tokyoFromPrice: "起價 ¥148,000（未稅）",
+          fujiFromPrice: "起價 ¥288,000（未稅）",
+          kyotoNaraFromPrice: "起價 ¥238,000（未稅）",
+          kamakuraFromPrice: "起價 ¥238,000（未稅）",
+          hokkaidoFromPrice: "起價 ¥308,000（未稅）",
+          traditionalDesc: "色打掛或白無垢正式和裝，棚內＋鄰近公園外拍，半日節奏。",
+          traditionalFromPrice: "起價 ¥138,000（未稅）",
+          kantoDayDesc: "東京近郊一日旅拍；預約時選東京＋鎌倉或富士＋箱根路線。",
+          kantoDayFromPrice: "稅前 ¥60,000 起（未稅）",
+        },
+        oneHour: {
+          sectionEyebrow: "體驗",
+          sectionTitle: "輕量時段",
+          readMore: "了解更多",
+          priceDisplay: "起價 ¥50,000（未稅）",
+          bookNow: "立即預約",
+          detailP1:
+            "精簡的一小時外景拍攝——適合當作在日本的第一步體驗，或與全日婚紗搭配的小型加購。",
+          detailP2:
+            "拍攝範圍、集合地點與交付內容於諮詢時確認；妝髮與換裝可依此格式維持輕便。",
+        },
+        pageTokyo: {
+          heroAlt: "東京婚紗手捧花肖像",
+          bodyIntro:
+            "請先從下方選擇體驗層級。每一階都是完整的東京婚紗方案、範圍清楚；接著再依你的檔期與光線微調路線與節奏。",
+          guidedHtml:
+            '<a href="./book.html?location=tokyo">引導式預約路徑</a> — 同樣的決策，以更從容、一步步完成（本站不提供線上結帳）。',
+          ladderAria: "東京婚紗方案階級",
+          stepEyebrow: "第二步",
+          ladderTitle: "選擇你的東京體驗層級",
+          badgeEntry: "入門",
+          badgeUpgrade: "升級",
+          badgePremium: "旗艦",
+          pillMostPopular: "多數新人選擇此方案",
+          nameEssential: "東京婚紗 Essential",
+          nameNight: "東京婚紗＋夜景",
+          nameSignature: "東京 Signature",
+          priceEssential: "價格：¥148,000（未稅）",
+          priceNight: "價格：¥198,000（未稅）",
+          priceSignature: "價格：¥248,000（未稅）",
+          entryLi1: "1 處外景（日間）",
+          entryLi2: "1 組造型",
+          entryLi3: "聚焦、有效率涵蓋東京重點",
+          upgradeLi1: "日間外景＋東京夜景拍攝",
+          upgradeLi2: "1 組造型",
+          upgradeLi3: "清晰與氛圍兼顧",
+          premiumLi1: "最多 3 處外景",
+          premiumLi2: "日間＋夜景拍攝",
+          premiumLi3: "2 組造型",
+          premiumLi4: "全日故事感走遍東京",
+          ctaEssential: "詢問 Essential",
+          ctaNight: "詢問＋夜景方案",
+          ctaSignature: "詢問 Signature",
+          microNight: "想要夜之城景、但尚未需要 Signature 完整規模時最合適。",
+          microSignature:
+            "最完整的東京敘事——更多場景、更多換裝空間、節奏更從容。",
+          richAria: "東京婚紗詳情",
+          richH2: "東京婚紗體驗",
+          richP1:
+            "沒有固定觀光動線。我們依光線、人潮與你們互動的方式安排——可極簡安靜，也可大器電影感。",
+          richP2:
+            "時數、地點與交付內容依你上方選擇的層級；預約時我們會逐一確認細節。",
+          incH: "方案包含",
+          incLi1: "依季節與光線規劃地點",
+          incLi2: "專業化妝髮型",
+          incLi3: "兩人造型建議",
+          incLi4: "拍攝當日專車移動",
+          styleH: "造型選項",
+          styleLi1Html:
+            "<strong>婚紗 x2</strong> — 俐落、現代、編輯感氛圍。",
+          styleLi2Html:
+            "<strong>婚紗＋和服</strong> — 當代與傳統並行。",
+          styleLi3Html:
+            "<strong>婚紗＋正式和裝</strong> — 白無垢／色打褂造型。",
+          prepH: "拍攝日準備",
+          prepLi1Html: "<strong>新郎：</strong>西裝、襯衫、皮鞋",
+          prepLi2Html:
+            "<strong>新娘：</strong>內衣（建議 NuBra）、高跟鞋或舒適好走的鞋",
+          prepLi3: "拍攝前我們會一步步帶你準備，讓當天更安心。",
+          photoH: "照片交付",
+          photoLi1: "原檔快速提供，並有精修挑選流程",
+          photoLi2: "最終修圖組以線上相簿交付",
+          photoLi3: "張數與交件時程依所選層級報價",
+          optH: "可加購",
+          optP: "可加購幕後花絮影片；交件順序隨最終照片組。",
+          aboutH: "關於攝影師",
+          aboutP:
+            "據點東京。引導輕盈誠實，讓照片像你們本人——掛牆上仍保有精緻與電影感。",
+          destH: "其他目的地",
+          destP: "若想換個城市氛圍，也歡迎瀏覽富士山、北海道與鎌倉方案。",
+          destLink: "返回所有婚紗目的地",
+        },
+        pageTravel: {
+          heroAlt: "東京街頭、黃昏時分的輕鬆人像光線",
+          chip1: "輕鬆",
+          chip2: "外景",
+          h1: "輕鬆外景時段",
+          body:
+            "旅途中更輕量的外景選項——東京節奏或富士的尺度感；最終範圍與時間於諮詢時確認。",
+          ladderAria: "輕鬆時段地點",
+          cardTokyoName: "東京輕鬆時段",
+          cardTokyoPrice: "起價 ¥58,000",
+          cardTokyoL1: "從容的都會節奏",
+          cardTokyoL2: "旅途中的自然片刻",
+          cardTokyoL3: "輕量、不干擾的引導",
+          cardTokyoCta: "諮詢東京時段",
+          cardFujiName: "富士輕鬆時段",
+          cardFujiPrice: "起價 ¥88,000",
+          cardFujiL1: "開闊視野與指標性山景",
+          cardFujiL2: "湖畔光線與靜謐尺度",
+          cardFujiL3: "畫面裡更多呼吸空間",
+          cardFujiCta: "諮詢富士時段",
         },
         detail: {
           back: "返回方案總覽",
@@ -1274,13 +1658,13 @@
               "私車、化妝師全天跟妝；婚紗兩套、造型兩組。服務 8:00–18:00，可提前到店選禮服或當日提前一小時。內容含攝影棚拍，外拍含東京鐵塔、東京車站、台場、葛西臨海公園等都市路線。400 張以上，精修 30 張。可加購婚紗一套 ¥2 萬、花絮影片 ¥5 萬、男女和服 ¥5 萬。",
           },
           shonan: {
-            title: "湘南海岸",
+            title: "鎌倉海岸",
             cardTag1: "海岸",
-            cardTag2: "湘南",
+            cardTag2: "鎌倉",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "與東京套系同樣包含項目。服務 8:00–18:00。外拍元素含灌籃高手電車沿線、湘南海岸、江之島與海邊，走文藝日系風。400 張以上，精修 30 張；加購項目同東京套系。",
+              "與東京套系同樣包含項目。服務 8:00–18:00。外拍元素含灌籃高手電車沿線、鎌倉海岸、江之島與海邊，走文藝日系風。400 張以上，精修 30 張；加購項目同東京套系。",
           },
           fuji: {
             title: "富士山湖區",
@@ -1292,13 +1676,13 @@
               "私車、化妝師全天跟妝；婚紗兩套、造型兩組。服務 7:00–18:00，需提前到店選禮服。外拍含山中湖、河口湖與 Mashiro Visuals 私房湖畔景，自然大氣路線。400 張以上，精修 30 張。可加購婚紗一套 ¥2 萬、花絮影片 ¥5 萬。",
           },
           kansai: {
-            title: "關西（單一城市）",
-            cardTag1: "關西",
-            cardTag2: "單城",
+            title: "京都＆奈良婚紗",
+            cardTag1: "京都",
+            cardTag2: "奈良",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "私車、化妝師全天跟妝；婚紗兩套、造型兩組。服務 8:00–18:00。可與攝影師商議；京都、奈良、大阪擇一行文藝日系拍攝。400 張以上，精修 30 張。可加購婚紗一套、花絮、和服等。",
+              "私車、化妝師全天跟妝；婚紗兩套、造型兩組。服務 8:00–18:00。以京都與奈良為主軸—神社、竹林、奈良公園等—與攝影師行前規劃文藝日系路線。400 張以上，精修 30 張。可加購婚紗一套、花絮、和服等。",
           },
           hokkaido: {
             title: "北海道",
@@ -1332,6 +1716,15 @@
             priceExNumB: "80,000",
             body:
               "以東京圈為主的一日旅拍方案。路線 A：東京與鎌倉同日拍攝，稅前 6 萬日元起。路線 B：富士山與箱根同日拍攝，稅前 8 萬日元。單日行程的服務範圍、移動與交付張數於諮詢時確認；加購禮服套數、花絮、和服等規則與其他方案相同（適用時）。",
+          },
+          one_hour: {
+            title: "一小時拍攝體驗",
+            cardTag1: "體驗",
+            cardTag2: "1 小時",
+            priceExNum: "50,000",
+            priceInNum: "55,000",
+            body:
+              "約定區域內一小時的引導式外景拍攝，含自然互動引導與精簡後製組；全日妝髮、多套禮服換裝與跨點移動若需加購，請於預約時一併討論。",
           },
         },
       },
@@ -1417,6 +1810,9 @@
           h1: "線上下單｜攝影方案",
           lead:
             "先選方案與加購並選好日期，接著填寫個人資料，最後於安全付款頁完成線上付款；付款成功後會寄出訂單確認信。",
+          ctaPrimary: "開始填寫",
+          ctaCalendly: "選擇諮詢時間",
+          ctaCalendlyHint: "若預約頁無法載入，請先用下方表單提交，我們會用訊息確認時間。",
         },
         flowTitle: "結帳流程",
         step1: "選擇攝影方案、加購與希望日期。",
@@ -1460,7 +1856,7 @@
           shonan: [
             "服務內容與東京套系同級",
             "服務時段 8:00–18:00",
-            "沿線電車、湘南海岸、江之島、沙灘等海邊路線",
+            "沿線電車、鎌倉海岸、江之島、沙灘等海邊路線",
             "400 張以上檔案，精修 30 張",
           ],
           fuji: [
@@ -1474,7 +1870,7 @@
             "當日專車接送",
             "化妝師全天跟妝；婚紗兩套／造型兩組",
             "服務時段 8:00–18:00",
-            "關西單一城市當日拍攝（京都／奈良／大阪擇一，與攝影師行前規劃）",
+            "京都＆奈良當日路線（與攝影師行前規劃）",
             "400 張以上檔案，精修 30 張",
           ],
           hokkaido: [
@@ -1497,6 +1893,12 @@
             "路線：東京＋鎌倉 或 富士山＋箱根 — 價格不同（見方案頁）",
             "單日行程；時間與動線於諮詢時確認",
             "加購禮服／花絮／和服等，適用時與其他方案相同規則",
+          ],
+          one_hour: [
+            "約定地點約一小時外景拍攝",
+            "集合點、範圍與交付內容於預約時確認",
+            "自然引導與精簡修圖組合",
+            "全日化妝、換裝與多點行程需另與長日方案併計或另報",
           ],
         },
         selectLabel: "攝影方案",
@@ -1661,7 +2063,7 @@
         aiReplyPricing:
           "料金の目安は Plan ページに記載されています（税表記は各表記に準拠）。最終見積は季節・ロケーション・オプションにより変わります。Reserve や WhatsApp で個別にお問い合わせください。",
         aiReplyLocations:
-          "東京・湘南・富士周辺の湖・京都・鎌倉・北海道・軽井沢・日光などでよく撮影します。Gallery の Location spots もご参照ください。",
+          "東京・鎌倉・富士周辺の湖・京都・北海道・軽井沢・日光などでよく撮影します。Gallery の Location spots もご参照ください。",
         aiReplyBooking:
           "RESERVE ボタン、Reserve ページ、または WhatsApp からご相談いただけます。お支払い前に日程と納品内容を確認します。",
         aiReplyDeliver:
@@ -1709,6 +2111,15 @@
           title: "プラン | Mashiro Visuals",
           description: "日本での前撮り・エロープメントのプランと商品案内。",
         },
+        planTokyo: {
+          title: "東京・前撮り | Mashiro Visuals",
+          description:
+            "東京前撮りの3段階——Essential、ナイト追加、Signature。スコープが明確で、日程に合わせルーティングします。",
+        },
+        planOneHour: {
+          title: "1時間フォト体験 | Mashiro Visuals",
+          description: "日本ロケのコンパクトな1時間撮影プラン——内容・予約はご相談時に確定。",
+        },
         costume: {
           title: "衣裳 | Mashiro Visuals",
           description:
@@ -1727,6 +2138,55 @@
           description:
             "撮影プラン・オプション・希望日を選び、オンラインで注文。安全な決済ページでお支払い。",
         },
+        book: {
+          title: "ご予約の流れ | Mashiro Visuals",
+          description:
+            "日本での前撮りの目的地とオプションをステップで選び、メッセージでご連絡ください（サイト内決済はありません）。",
+        },
+        privacy: {
+          title: "プライバシーポリシー | Mashiro Visuals",
+          description: "本サイト・お問い合わせ・予約チャネルにおけるデータの取り扱い。",
+        },
+        company: {
+          title: "会社情報 | Mashiro Visuals",
+          description:
+            "Mashiro Visuals — 日本の前撮り・エロープメント、エディトリアルな海外ウェディングフォト。",
+        },
+        travelShoot: {
+          title: "カジュアルセッション | Mashiro Visuals",
+          description:
+            "東京または富士周辺のライトなロケ撮影。自然光とゆったりしたテンポ。内容はご相談で確定。",
+        },
+        planFuji: {
+          title: "富士・湖畔 前撮り | Mashiro Visuals",
+          description:
+            "富士五湖エリアの前撮り — 送迎、終日ヘアメイク、2ルック、選定の湖畔ロケーション。",
+        },
+        planHokkaido: {
+          title: "北海道 前撮り | Mashiro Visuals",
+          description:
+            "北のロケーション前撮り — 送迎、終日スタイリング、2ルック、札幌・小樽中心のルート。",
+        },
+        planKansai: {
+          title: "京都＆奈良 前撮り | Mashiro Visuals",
+          description:
+            "関西前撮り — 社寺・竹林・奈良公園など。送迎と2ルック、フォトグラファーと事前にルート設計。",
+        },
+        planShonan: {
+          title: "鎌倉・湘南 前撮り | Mashiro Visuals",
+          description:
+            "海岸の前撮り — 鎌倉・江の島・海岸の光。コア内容は東京ラインと同様。",
+        },
+        planTraditional: {
+          title: "和装フォーマル 前撮り | Mashiro Visuals",
+          description:
+            "白無垢または色打掛 — 着付け付き、スタジオと葛西周辺の緑、半日のフォーマル感。",
+        },
+        planKantoDay: {
+          title: "関東1日ロケ | Mashiro Visuals",
+          description:
+            "首都圏1日ルート — 東京＋鎌倉、または富士＋箱根。日額料金、税金は決済時に加算。",
+        },
       },
       index: {
         hero: {
@@ -1737,7 +2197,7 @@
             "日本を旅するふたりへ。ウェディングとエロープメントの、誠実でシネマティックな写真。雪と山、開けた空の下で—無理なポーズではなく、ふたりと風景だけを。自然光と本当の感情。",
           ctaPortfolio: "作品を見る",
           ctaInquire: "相談する",
-          circleReserve: "RESERVE",
+          circleReserve: "予約",
           circleReserveSub: "今すぐご予約",
           scrollAria: "下にスクロール",
           note: "日本を拠点に。英語でのお問い合わせ歓迎。",
@@ -1967,7 +2427,7 @@
           spotsTitle: "LOCATION SPOTS",
           spotsLead: "エロープメント・カップルでよく戻るエリア。",
           spot1: "東京 · アーバン",
-          spot2: "湘南 · 海岸",
+          spot2: "鎌倉 · 海岸",
           spot3: "富士 · 湖畔",
           spot4: "京都 · 石畳と寺社",
           spot5: "鎌倉 · 鳥居と海",
@@ -2028,6 +2488,7 @@
           lead: "内容・料金・含まれるものをご覧いただき、日本での撮影をご計画ください。",
           brandNote:
             "プラン・表示料金は Mashiro Visuals のご案内です。確定見積りは時期・ロケーション・オプションにより異なります。",
+          ctaPrimary: "予約する",
         },
         list: {
           kicker: "PREWEDDING",
@@ -2039,6 +2500,134 @@
           taxExcludedTag: "(税別)",
           taxIncludedTag: "(税込)",
           taxNote: "",
+        },
+        locations: {
+          stepEyebrow: "ステップ 1",
+          heading: "目的地を選ぶ",
+          lead:
+            "下の予約フォームと同じラインナップです。カードで詳細を確認し、「予約する」でそのプランが選ばれた状態で開きます。",
+        },
+        locationCards: {
+          tokyoDesc: "都市の光、丁寧なテンポ、エディトリアルな東京。",
+          fujiDesc: "湖畔の開けた眺めと象徴的な富士の空気。",
+          hokkaidoDesc: "北のスケール、季節の色、旅するセッションのリズム。",
+          kamakuraDesc: "海沿いの光、穏やかなテンポとリラックスした雰囲気。",
+          kyotoNaraDesc: "社寺の街、竹林、奈良公園—京都と奈良をつなぐルート。",
+          tokyoFromPrice: "¥148,000〜（税抜）",
+          fujiFromPrice: "¥288,000〜（税抜）",
+          kyotoNaraFromPrice: "¥238,000〜（税抜）",
+          kamakuraFromPrice: "¥238,000〜（税抜）",
+          hokkaidoFromPrice: "¥308,000〜（税抜）",
+          traditionalDesc: "色打掛または白無垢の正装—スタジオと近隣公園のハーフデイ。",
+          traditionalFromPrice: "¥138,000〜（税抜）",
+          kantoDayDesc: "首都圏の1日旅ロケ。予約時に東京＋鎌倉／富士＋箱根から選択。",
+          kantoDayFromPrice: "¥60,000〜（税抜）",
+        },
+        oneHour: {
+          sectionEyebrow: "体験",
+          sectionTitle: "ライトな時間",
+          readMore: "詳細を見る",
+          priceDisplay: "¥50,000〜（税抜）",
+          bookNow: "予約する",
+          detailP1:
+            "約1時間のオンサイト撮影——初めての日本撮影の入り口として、またはフルデイ前撮りと組み合わせる軽いオプションに。",
+          detailP2:
+            "範囲・集合・納品枚数はご相談で確定します。ヘアメイクや衣裳替えはこの枠に合わせてミニマルに。",
+        },
+        pageTokyo: {
+          heroAlt: "東京・前撮り・ブーケのポートレート",
+          bodyIntro:
+            "まず下から体験レベルをお選びください。各ティアは東京前撮りとしてスコープが明確なパッケージで、その上で日程と光に合わせルートとタイミングを調整します。",
+          guidedHtml:
+            '<a href="./book.html?location=tokyo">ガイド付き予約フロー</a> — 同じ判断を、落ち着いたステップで進められます（サイト内決済はありません）。',
+          ladderAria: "東京前撮りのティア",
+          stepEyebrow: "ステップ2",
+          ladderTitle: "東京の体験レベルを選ぶ",
+          badgeEntry: "エントリー",
+          badgeUpgrade: "アップグレード",
+          badgePremium: "プレミアム",
+          pillMostPopular: "多くのカップルが選ぶプラン",
+          nameEssential: "Tokyo Prewedding Essential",
+          nameNight: "Tokyo Prewedding + Night",
+          nameSignature: "Tokyo Signature",
+          priceEssential: "料金：¥148,000（税抜）",
+          priceNight: "料金：¥198,000（税抜）",
+          priceSignature: "料金：¥248,000（税抜）",
+          entryLi1: "ロケーション1箇所（日中）",
+          entryLi2: "スタイリング1ルック",
+          entryLi3: "集中して効率よく東京を撮る",
+          upgradeLi1: "日中ロケに東京の夜景撮影を追加",
+          upgradeLi2: "スタイリング1ルック",
+          upgradeLi3: "明瞭さと雰囲気のバランス",
+          premiumLi1: "最大3ロケーション",
+          premiumLi2: "日中＋夜景",
+          premiumLi3: "スタイリング2ルック",
+          premiumLi4: "終日で東京を物語として撮る",
+          ctaEssential: "Essential を相談する",
+          ctaNight: "＋Night を相談する",
+          ctaSignature: "Signature を相談する",
+          microNight:
+            "夜景の街を撮りたいが、Signature のフル範囲はまだ不要なときに。",
+          microSignature:
+            "東京の物語として最も充実——シーンと衣裳、余裕のある一日。",
+          richAria: "東京前撮りの詳細",
+          richH2: "東京前撮りの体験",
+          richP1:
+            "定番観光ルートに縛りません。光、人の流れ、ふたりの動きに合わせて一日を組み立てます—静かでミニマルにも、シネマティックにも。",
+          richP2:
+            "時間・ロケーション・納品内容は上で選んだティアに従います。ご予約時にすべて確認します。",
+          incH: "含まれるもの",
+          incLi1: "季節と光に合わせたロケーション計画",
+          incLi2: "プロのヘアメイク",
+          incLi3: "ふたりへのスタイリング提案",
+          incLi4: "撮影中の専用送迎",
+          styleH: "スタイリングの選択肢",
+          styleLi1Html:
+            "<strong>ウェディングドレス×2</strong> — クリーンでモダン、エディトリアルな表情。",
+          styleLi2Html:
+            "<strong>ウェディングドレス＋着物</strong> — 現代と伝統のバランス。",
+          styleLi3Html:
+            "<strong>ウェディングドレス＋正式和装</strong> — 白無垢／色打掛のスタイル。",
+          prepH: "当日の持ち物",
+          prepLi1Html: "<strong>新郎：</strong>スーツ・シャツ・靴",
+          prepLi2Html:
+            "<strong>新婦：</strong>下着（ヌーブラ推奨）、ヒールまたは歩きやすい靴",
+          prepLi3: "撮影前に手順を一緒に確認し、当日が落ち着くようサポートします。",
+          photoH: "写真のお渡し",
+          photoLi1: "オリジナルデータは速やかに、レタッチはお選びいただく流れ",
+          photoLi2: "最終編集セットをオンラインギャラリーで納品",
+          photoLi3: "枚数・納期はティアに応じて見積り",
+          optH: "オプション",
+          optP:
+            "メイキング映像を追加可能。納品は最終フォトセットに合わせます。",
+          aboutH: "フォトグラファーについて",
+          aboutP:
+            "東京を拠点に活動。軽やかで誠実なディレクションで、そのままのふたりらしさと、壁に飾れる洗練を両立します。",
+          destH: "他のエリア",
+          destP:
+            "都市とは違う景色を求めるなら、富士・北海道・鎌倉のプランもご覧ください。",
+          destLink: "前撮りロケーション一覧へ戻る",
+        },
+        pageTravel: {
+          heroAlt: "夕暮れの東京の街並み — リラックスしたポートレートの光",
+          chip1: "CASUAL",
+          chip2: "ロケーション",
+          h1: "カジュアルフォトセッション",
+          body:
+            "旅の合間のライトなロケ撮影 — 東京のリズムか、富士のスケール感。最終の範囲と時間はご相談で確定します。",
+          ladderAria: "カジュアルセッションのエリア",
+          cardTokyoName: "東京カジュアル",
+          cardTokyoPrice: "¥58,000〜",
+          cardTokyoL1: "落ち着いた都市のテンポ",
+          cardTokyoL2: "旅の自然な瞬間",
+          cardTokyoL3: "シンプルでさりげないディレクション",
+          cardTokyoCta: "東京を相談",
+          cardFujiName: "富士カジュアル",
+          cardFujiPrice: "¥88,000〜",
+          cardFujiL1: "開けた眺めと象徴的な風景",
+          cardFujiL2: "湖畔の光と静かなスケール",
+          cardFujiL3: "余白のある構図",
+          cardFujiCta: "富士を相談",
         },
         detail: {
           back: "プラン一覧へ",
@@ -2056,13 +2645,13 @@
               "送迎車、ヘアメイク終日付き同行、ウェディングドレス2着／スタイリング2種。8:00–18:00。事前または当日早めにご来店してドレスを選択。スタジオに加え、東京タワー、東京駅、お台場、葛西臨海公園など都市ロケ。400カット以上・レタッチ30枚。オプション：ドレス追加 ¥2万・メイキング映像 ¥5万・ペア着物 ¥5万。",
           },
           shonan: {
-            title: "湘南・海岸",
+            title: "鎌倉・海岸",
             cardTag1: "COAST",
-            cardTag2: "湘南",
+            cardTag2: "鎌倉",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "東京プランと同内容。8:00–18:00。ロケーションは沿線電車・湘南海岸、江の島、砂浜など、抒情的な海沿いの光。400カット以上・レタッチ30枚。オプション料金は東京プランと同様。",
+              "東京プランと同内容。8:00–18:00。ロケーションは沿線電車・鎌倉海岸、江の島、砂浜など、抒情的な海沿いの光。400カット以上・レタッチ30枚。オプション料金は東京プランと同様。",
           },
           fuji: {
             title: "富士・湖畔",
@@ -2074,13 +2663,13 @@
               "送迎車、ヘアメイク終日、ドレス2着／スタイリング2種。7:00–18:00、事前試着必須。山中湖・河口湖、Mashiro Visuals 選定のプライベート湖畔スポットで自然なスケール感。400カット以上・レタッチ30枚。オプション：ドレス追加・メイキング映像など。",
           },
           kansai: {
-            title: "関西・都市一か所",
-            cardTag1: "KANSAI",
-            cardTag2: "1 CITY",
+            title: "京都＆奈良 プレウェディング",
+            cardTag1: "京都",
+            cardTag2: "奈良",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "送迎車、ヘアメイク終日、ドレス2着／スタイリング2種。8:00–18:00。京都・奈良・大阪のいずれか一都市で、フォトグラファーと相談の上文芸的なトーン。400カット以上・レタッチ30枚。着物などオプション可。",
+              "送迎車、ヘアメイク終日、ドレス2着／スタイリング2種。8:00–18:00。京都と奈良を軸に—社寺、竹林、奈良公園ほか—フォトグラファーと事前にルートを組み、文芸的なトーンで。400カット以上・レタッチ30枚。着物などオプション可。",
           },
           hokkaido: {
             title: "北海道",
@@ -2114,6 +2703,15 @@
             priceExNumB: "80,000",
             body:
               "首都圏エリアを対象とした1日ロケ撮影プラン。A：東京と鎌倉を同日に回るコース（税抜¥60,000〜）。B：富士山周辺と箱根を同日に回るコース（税抜¥80,000）。撮影時間・移動・納品枚数はご相談で確定します。ドレス追加・メイキング・着物などのオプションは他プランと同様のルールが適用されます（該当時）。",
+          },
+          one_hour: {
+            title: "1時間フォト体験",
+            cardTag1: "体験",
+            cardTag2: "1H",
+            priceExNum: "50,000",
+            priceInNum: "55,000",
+            body:
+              "エリアと時間枠をそろえた1時間のロケーション撮影。自然な立ち振る舞いのフォローとコンパクトな編集セット。終日ヘアメイク・複数衣裳・複数スポットは別見積りで、長時間プランとの併用もご相談ください。",
           },
         },
       },
@@ -2199,6 +2797,9 @@
           h1: "フォトプランを注文",
           lead:
             "プラン・オプション・ご希望日を選び、お客様情報を入力し、最後に安全な決済ページでお支払いください。決済後に確認メールをお送りします。",
+          ctaPrimary: "注文内容を作成",
+          ctaCalendly: "相談の時間を選ぶ",
+          ctaCalendlyHint: "予約ページが表示されない場合は、下のフォームから送信してください。メッセージで日程を確定します。",
         },
         flowTitle: "◆ご注文の流れ◆",
         step1: "撮影プラン、オプション、ご希望日を選びます。",
@@ -2242,7 +2843,7 @@
           shonan: [
             "東京プランと同内容のサービス範囲",
             "サービス 8:00–18:00",
-            "沿線・湘南海岸・江の島・砂浜など海辺のロケーション",
+            "沿線・鎌倉海岸・江の島・砂浜など海辺のロケーション",
             "400カット以上納品、レタッチ30枚",
           ],
           fuji: [
@@ -2256,7 +2857,7 @@
             "当日の専用送迎車",
             "ヘアメイク終日・ドレス2着／スタイリング2種",
             "サービス 8:00–18:00",
-            "関西・都市一か所（京都・奈良・大阪のいずれか、事前打合せ）",
+            "京都＆奈良の当日ルート（事前打合せ）",
             "400カット以上納品、レタッチ30枚",
           ],
           hokkaido: [
@@ -2279,6 +2880,12 @@
             "東京＋鎌倉、または富士山＋箱根 — 料金が異なります（プラン参照）",
             "単日スケジュール；時間・移動はご相談で確定",
             "ドレス・メイキング・着物などの追加は、該当時は他プランと同様のルール",
+          ],
+          one_hour: [
+            "事前に合意したエリアでのロケ撮影（約1時間）",
+            "集合・範囲・納品内容はご予約時に確定",
+            "自然な誘導とコンパクトな編集セット",
+            "終日ヘアメイク・衣裳替え・複数ロケは長時間プランで別途",
           ],
         },
         selectLabel: "撮影プラン",
@@ -2446,7 +3053,7 @@
         aiReplyPricing:
           "공개 요금은 Plan 페이지에 안내됩니다(세금 표기는 페이지 기준). 최종 견적은 시즌·지역·옵션에 따라 달라지며 Reserve 또는 WhatsApp으로 개별 문의하세요.",
         aiReplyLocations:
-          "도쿄·쇼난·후지 호숫가·교토·가마쿠라·홋카이도·가루이자와·닛코 등에서 자주 촬영합니다. Gallery의 Location spots를 참고하세요.",
+          "도쿄·후지 호숫가·교토·가마쿠라·홋카이도·가루이자와·닛코 등에서 자주 촬영합니다. Gallery의 Location spots를 참고하세요.",
         aiReplyBooking:
           "RESERVE 버튼, Reserve 페이지 또는 WhatsApp으로 상담을 시작할 수 있습니다. 결제 링크 전에 일정과 납품을 확인합니다.",
         aiReplyDeliver:
@@ -2493,6 +3100,15 @@
           title: "플랜 | Mashiro Visuals",
           description: "일본 웨딩·엘로프먼트 촬영 플랜과 상품 안내.",
         },
+        planTokyo: {
+          title: "도쿄 프리웨딩 | Mashiro Visuals",
+          description:
+            "도쿄 프리웨딩 3단계—Essential, 야경 추가, Signature. 범위가 명확하고 일정에 맞춰 루트를 조정합니다.",
+        },
+        planOneHour: {
+          title: "1시간 포토 체험 | Mashiro Visuals",
+          description: "일본 로케의 간단한 1시간 촬영 패키지—범위와 예약은 상담 시 확정됩니다.",
+        },
         costume: {
           title: "코스튬 | Mashiro Visuals",
           description:
@@ -2511,6 +3127,55 @@
           description:
             "촬영 패키지·옵션·희망일을 선택해 온라인으로 주문하고, 다음 단계에서 안전하게 결제합니다.",
         },
+        book: {
+          title: "예약 안내 | Mashiro Visuals",
+          description:
+            "일본 프리웨딩 목적지와 옵션을 단계별로 고른 뒤 메시지로 문의하세요. 사이트 내 결제는 없습니다.",
+        },
+        privacy: {
+          title: "개인정보 처리방침 | Mashiro Visuals",
+          description: "웹사이트·문의·예약 채널에서의 데이터 처리 안내.",
+        },
+        company: {
+          title: "회사 정보 | Mashiro Visuals",
+          description:
+            "Mashiro Visuals — 일본 프리웨딩, 엘로프먼트, 에디토리얼 감성의 데스티네이션 웨딩 촬영.",
+        },
+        travelShoot: {
+          title: "캐주얼 세션 | Mashiro Visuals",
+          description:
+            "도쿄 또는 후지 인근의 가벼운 로케 촬영 — 자연광과 여유로운 템포. 범위는 상담 시 확정.",
+        },
+        planFuji: {
+          title: "후지 프리웨딩 | Mashiro Visuals",
+          description:
+            "후지 호숫가 프리웨딩 — 전용 차량, 종일 HMU, 두 룩, 큐레이션된 호숫가 로케이션.",
+        },
+        planHokkaido: {
+          title: "홋카이도 프리웨딩 | Mashiro Visuals",
+          description:
+            "북쪽 로케 프리웨딩 — 전용 차량, 종일 스타일링, 두 룩, 삿포로·오타루 중심 루트.",
+        },
+        planKansai: {
+          title: "교토·나라 프리웨딩 | Mashiro Visuals",
+          description:
+            "간사이 프리웨딩 — 신사, 대나무, 나라 공원; 전용 차량·두 룩, 작가와 사전 루트 조율.",
+        },
+        planShonan: {
+          title: "가마쿠라 프리웨딩 | Mashiro Visuals",
+          description:
+            "해안 쇼난 프리웨딩 — 가마쿠라, 에노시마, 해안 빛. 핵심 구성은 도쿄 라인과 동일.",
+        },
+        planTraditional: {
+          title: "전통 기모노 프리웨딩 | Mashiro Visuals",
+          description:
+            "시로무쿠 또는 이로우치카케 — 전문 입기, 스튜디오와 가사이 인근 녹지, 반나절 포멀 무드.",
+        },
+        planKantoDay: {
+          title: "간토 당일 로케 | Mashiro Visuals",
+          description:
+            "수도권 당일 루트 — 도쿄+가마쿠라 또는 후지+하코네. 일당 요금, 세금은 결제 시 추가.",
+        },
       },
       index: {
         hero: {
@@ -2521,7 +3186,7 @@
             "일본을 여행하는 커플을 위한 웨딩·엘로프먼트 촬영. 솔직하고 시네마틱하게. 눈과 산, 열린 하늘 아래—억지 포즈 없이 둘과 풍경만. 자연광과 진짜 감정.",
           ctaPortfolio: "작품 보기",
           ctaInquire: "문의하기",
-          circleReserve: "RESERVE",
+          circleReserve: "예약",
           circleReserveSub: "방문 예약",
           scrollAria: "아래로 스크롤",
           note: "일본 기반. 영어 문의 환영.",
@@ -2751,7 +3416,7 @@
           spotsTitle: "LOCATION SPOTS",
           spotsLead: "엘로프먼트·커플 촬영에 자주 다시 가는 지역.",
           spot1: "도쿄 · 도심",
-          spot2: "쇼난 · 해안",
+          spot2: "가마쿠라 · 해안",
           spot3: "후지 · 호수",
           spot4: "교토 · 골목과 사찰",
           spot5: "가마쿠라 · 도리이와 바다",
@@ -2812,6 +3477,7 @@
           lead: "옵션·가격·포함 사항을 확인하고 일본 촬영을 계획하세요.",
           brandNote:
             "모든 패키지와 표시 가격은 Mashiro Visuals의 안내입니다. 최종 견적은 시즌·장소·추가 옵션에 따라 달라질 수 있습니다.",
+          ctaPrimary: "예약하기",
         },
         list: {
           kicker: "PREWEDDING",
@@ -2823,6 +3489,132 @@
           taxExcludedTag: "(세금 별도)",
           taxIncludedTag: "(세금 포함)",
           taxNote: "",
+        },
+        locations: {
+          stepEyebrow: "1단계",
+          heading: "목적지 선택",
+          lead:
+            "아래 예약 폼과 동일한 패키지 목록입니다. 카드로 상세를 확인하고, 「예약하기」로 해당 패키지가 미리 선택된 결제 화면으로 이동합니다.",
+        },
+        locationCards: {
+          tokyoDesc: "도시의 빛과 편집적인 도쿄 스토리.",
+          fujiDesc: "호수, 탁 트인 시야, 후지의 분위기.",
+          hokkaidoDesc: "북쪽의 스케일과 계절 색, 여행 세션의 리듬.",
+          kamakuraDesc: "해안의 빛과 느긋한 리듬.",
+          kyotoNaraDesc: "고도의 거리, 대나무 숲, 나라 공원—교토와 나라.",
+          tokyoFromPrice: "¥148,000~ (세금 별도)",
+          fujiFromPrice: "¥288,000~ (세금 별도)",
+          kyotoNaraFromPrice: "¥238,000~ (세금 별도)",
+          kamakuraFromPrice: "¥238,000~ (세금 별도)",
+          hokkaidoFromPrice: "¥308,000~ (세금 별도)",
+          traditionalDesc: "이로우치카케 또는 시로무쿠 정장—스튜디오와 인근 공원, 하프데이 리듬.",
+          traditionalFromPrice: "¥138,000~ (세금 별도)",
+          kantoDayDesc: "수도권 1일 트래블 촬영. 예약 시 도쿄+가마쿠라 또는 후지+하코네 루트 선택.",
+          kantoDayFromPrice: "¥60,000~ (세금 별도)",
+        },
+        oneHour: {
+          sectionEyebrow: "체험",
+          sectionTitle: "짧은 세션",
+          readMore: "자세히 보기",
+          priceDisplay: "¥50,000~ (세금 별도)",
+          bookNow: "예약하기",
+          detailP1:
+            "약 1시간 로케이션 촬영—일본에서 처음 맞이하는 가벼운 촬영이나, 풀데이 프리웨딩과 함께하는 소형 옵션에 적합합니다.",
+          detailP2:
+            "촬영 범위·집결지·납품 내역은 상담 시 확정합니다. HMU와 의상은 이 포맷에 맞게 가볍게 구성할 수 있습니다.",
+        },
+        pageTokyo: {
+          heroAlt: "도쿄 프리웨딩 부케 포트레이트",
+          bodyIntro:
+            "아래에서 경험 단계를 선택하세요. 각 단계는 범위가 분명한 도쿄 프리웨딩 패키지이며, 일정과 빛에 맞춰 루트와 타이밍을 조정합니다.",
+          guidedHtml:
+            '<a href="./book.html?location=tokyo">안내형 예약 플로우</a> — 같은 결정을 더 차분하게 단계별로 진행합니다(사이트 내 결제 없음).',
+          ladderAria: "도쿄 프리웨딩 단계",
+          stepEyebrow: "2단계",
+          ladderTitle: "도쿄 경험 단계 선택",
+          badgeEntry: "엔트리",
+          badgeUpgrade: "업그레이드",
+          badgePremium: "프리미엄",
+          pillMostPopular: "많은 커플이 선택하는 옵션",
+          nameEssential: "Tokyo Prewedding Essential",
+          nameNight: "Tokyo Prewedding + Night",
+          nameSignature: "Tokyo Signature",
+          priceEssential: "가격: ¥148,000 (세금 별도)",
+          priceNight: "가격: ¥198,000 (세금 별도)",
+          priceSignature: "가격: ¥248,000 (세금 별도)",
+          entryLi1: "로케 1곳(주간)",
+          entryLi2: "스타일링 1룩",
+          entryLi3: "집중적이고 효율적인 도쿄 촬영",
+          upgradeLi1: "주간 로케 + 도쿄 야간 촬영",
+          upgradeLi2: "스타일링 1룩",
+          upgradeLi3: "선명함과 분위기의 균형",
+          premiumLi1: "최대 3곳 로케이션",
+          premiumLi2: "주간 + 야간 촬영",
+          premiumLi3: "스타일링 2룩",
+          premiumLi4: "하루 종일 도쿄를 스토리로 담기",
+          ctaEssential: "Essential 문의",
+          ctaNight: "+ Night 문의",
+          ctaSignature: "Signature 문의",
+          microNight:
+            "야간 도시를 원하지만 Signature 전 범위는 아직 필요 없을 때.",
+          microSignature:
+            "가장 완성도 높은 도쿄 이야기—더 많은 장면, 의상, 여유.",
+          richAria: "도쿄 프리웨딩 상세",
+          richH2: "도쿄 프리웨딩 경험",
+          richP1:
+            "정해진 관광 루트는 없습니다. 빛, 사람의 흐름, 둘이 움직이는 방식에 맞춰 하루를 설계합니다—조용하고 미니멀하게 혹은 시네마틱하게.",
+          richP2:
+            "시간·장소·납품 내용은 위에서 고른 단계를 따르며, 예약 시 모두 확인합니다.",
+          incH: "포함 사항",
+          incLi1: "계절과 빛에 맞춘 로케이션 계획",
+          incLi2: "전문 헤어·메이크업",
+          incLi3: "두 사람을 위한 스타일링 가이드",
+          incLi4: "촬영 중 전용 이동",
+          styleH: "스타일링 옵션",
+          styleLi1Html:
+            "<strong>웨딩드레스 x2</strong> — 깔끔하고 모던한 에디토리얼 무드.",
+          styleLi2Html:
+            "<strong>웨딩드레스 + 기모노</strong> — 현대와 전통의 균형.",
+          styleLi3Html:
+            "<strong>웨딩드레스 + 정식 기모노</strong> — 시로무쿠 / 이로우치카케 스타일.",
+          prepH: "당일 준비",
+          prepLi1Html: "<strong>신랑:</strong> 정장, 셔츠, 구두",
+          prepLi2Html:
+            "<strong>신부:</strong> 이너웨어(누브라 권장), 힐 또는 편한 신발",
+          prepLi3: "촬영 전 단계별로 안내해 당일을 차분하게 만듭니다.",
+          photoH: "사진 납품",
+          photoLi1: "빠른 일정으로 원본 제공, 리터치 셀렉 단계 포함",
+          photoLi2: "최종 편집 세트는 온라인 갤러리로 전달",
+          photoLi3: "장수·납기는 단계별로 견적",
+          optH: "옵션",
+          optP: "비하인드 영상 추가 가능; 최종 사진 세트에 맞춰 납품 순서를 맞춥니다.",
+          aboutH: "포토그래퍼 소개",
+          aboutP:
+            "도쿄 거점. 가볍고 솔직한 디렉션으로 ‘당신들’ 답게, 벽에 걸어도 세련되고 시네마틱하게.",
+          destH: "다른 지역",
+          destP: "도시와 다른 풍경을 원하면 후지, 홋카이도, 가마쿠라 플랜도 둘러보세요.",
+          destLink: "모든 프리웨딩 로케이션으로 돌아가기",
+        },
+        pageTravel: {
+          heroAlt: "도쿄 거리, 해질녘 — 편안한 인물 조명",
+          chip1: "캐주얼",
+          chip2: "로케이션",
+          h1: "캐주얼 포토 세션",
+          body:
+            "여행 중 가벼운 로케 옵션 — 도쿄의 리듬 또는 후지의 스케일. 최종 범위와 시간은 상담에서 확정합니다.",
+          ladderAria: "캐주얼 세션 지역",
+          cardTokyoName: "도쿄 캐주얼 세션",
+          cardTokyoPrice: "¥58,000~",
+          cardTokyoL1: "느긋한 도시 템포",
+          cardTokyoL2: "여행 중 자연스러운 순간",
+          cardTokyoL3: "담백하고 방해 없는 디렉션",
+          cardTokyoCta: "도쿄 문의",
+          cardFujiName: "후지 캐주얼 세션",
+          cardFujiPrice: "¥88,000~",
+          cardFujiL1: "탁 트인 전망과 상징적 풍경",
+          cardFujiL2: "호숫가 빛과 고요한 스케일",
+          cardFujiL3: "프레임 안에 여유",
+          cardFujiCta: "후지 문의",
         },
         detail: {
           back: "전체 플랜",
@@ -2840,13 +3632,13 @@
               "전용 차량, 종일 헤어·메이크업, 웨딩드레스 2벌·스타일링 2회. 8:00–18:00. 스튜디오와 도쿄 타워·도쿄역·오다이바·가사이 린카이 공원 등 도시 로케. 400컷 이상·리터칭 30장. 옵션: 드레스 추가 ¥2만·메이킹 영상 ¥5만·커플 기모노 ¥5만.",
           },
           shonan: {
-            title: "쇼난·해안",
+            title: "가마쿠라·해안",
             cardTag1: "COAST",
-            cardTag2: "SHONAN",
+            cardTag2: "KAMAKURA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "도쿄 패키지와 동일 구성. 8:00–18:00. 전차 코스·쇼난 해안·에노시마·해변 등 서정적인 빛. 400컷 이상·리터칭 30장. 옵션은 도쿄와 동일.",
+              "도쿄 패키지와 동일 구성. 8:00–18:00. 전차 노선·가마쿠라 해안·에노시마·해변 등 서정적인 빛. 400컷 이상·리터칭 30장. 옵션은 도쿄와 동일.",
           },
           fuji: {
             title: "후지·호수",
@@ -2858,13 +3650,13 @@
               "전용 차량, 종일 HMU, 드레스 2벌·스타일링 2회. 7:00–18:00, 사전 피팅 필수. 야마나코·가와구치코와 Mashiro Visuals 선정 프라이빗 호숫가. 400컷 이상·리터칭 30장.",
           },
           kansai: {
-            title: "간사이·도시 하나",
-            cardTag1: "KANSAI",
-            cardTag2: "ONE CITY",
+            title: "교토·나라 프리웨딩",
+            cardTag1: "KYOTO",
+            cardTag2: "NARA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "전용 차량·종일 HMU·드레스 2벌·스타일링 2회. 8:00–18:00. 교토·나라·오사카 중 한 도시—작가와 협의. 400컷 이상·리터칭 30장. 기모노 옵션 가능.",
+              "전용 차량·종일 HMU·드레스 2벌·스타일링 2회. 8:00–18:00. 교토와 나라를 중심으로 신사·대나무 숲·나라 공원 등—작가와 사전 협의. 400컷 이상·리터칭 30장. 기모노 옵션 가능.",
           },
           hokkaido: {
             title: "홋카이도",
@@ -2898,6 +3690,15 @@
             priceExNumB: "80,000",
             body:
               "수도권을 중심으로 한 1일 로케 촬영. A: 도쿄와 가마쿠라를 같은 날(세전 ¥60,000~). B: 후지와 하코네를 같은 날(세전 ¥80,000). 촬영 시간·이동·납품은 상담 시 확정합니다. 드레스·메이킹·기모노 등 추가 옵션은 다른 패키지와 동일 규칙이 적용될 수 있습니다.",
+          },
+          one_hour: {
+            title: "1시간 포토 체험",
+            cardTag1: "체험",
+            cardTag2: "1시간",
+            priceExNum: "50,000",
+            priceInNum: "55,000",
+            body:
+              "합의한 구역에서 1시간 진행하는 로케이션 촬영. 자연스러운 포징 안내와 소규모 편집 세트가 포함됩니다. 종일 HMU·다중 의상·복수 스폿은 별도 견적이며, 장시간 패키지와 병행 시 상담해 주세요.",
           },
         },
       },
@@ -2983,6 +3784,9 @@
           h1: "포토 패키지 주문",
           lead:
             "패키지·옵션·희망일을 고른 뒤 개인 정보를 입력하고, 마지막에 안전한 결제 페이지에서 온라인 결제를 완료하세요. 결제 후 확인 메일이 발송됩니다.",
+          ctaPrimary: "주문 시작",
+          ctaCalendly: "상담 시간 선택",
+          ctaCalendlyHint: "예약 페이지가 열리지 않으면 아래 폼으로 먼저 제출해 주세요. 메시지로 시간을 확정합니다.",
         },
         flowTitle: "◆주문·결제 흐름◆",
         step1: "촬영 패키지, 옵션, 희망 날짜를 선택합니다.",
@@ -3026,7 +3830,7 @@
           shonan: [
             "도쿄 패키지와 동일 수준의 포함 범위",
             "촬영 8:00–18:00",
-            "해안 전철·쇼난 해안·에노시마·해변 루트",
+            "해안 전철·가마쿠라 해안·에노시마·해변 루트",
             "400컷 이상 전달, 리터칭 30장",
           ],
           fuji: [
@@ -3040,7 +3844,7 @@
             "당일 전용 차량 이동",
             "종일 HMU·드레스 2벌·스타일링 2회",
             "촬영 8:00–18:00",
-            "간사이 도시 하나(교토·나라·오사카 중 택1, 사전 협의)",
+            "교토·나라 당일 루트(사전 협의)",
             "400컷 이상 전달, 리터칭 30장",
           ],
           hokkaido: [
@@ -3063,6 +3867,12 @@
             "도쿄+가마쿠라 또는 후지+하코네 — 요금 상이(플랜 참고)",
             "1일 일정; 시간·이동은 상담 시 확정",
             "드레스·메이킹·기모노 추가는 해당 시 다른 패키지와 동일 규칙",
+          ],
+          one_hour: [
+            "합의된 장소에서 약 1시간 로케이션 촬영",
+            "집결·범위·납품 내역은 예약 시 확정",
+            "가벼운 연출과 간결한 편집 세트",
+            "종일 HMU·의상 교체·복수 로케는 장시간 패키지에서 별도 안내",
           ],
         },
         selectLabel: "촬영 패키지",
@@ -3231,7 +4041,7 @@
         aiReplyPricing:
           "Ориентиры цен — на странице Plan (налогообложение — как указано). Финальная сумма зависит от сезона, локаций и опций; для оценки — Reserve или WhatsApp.",
         aiReplyLocations:
-          "Часто снимаем: Токио, Сёнан, Фудзи и озёра, Киото, Камакура, Хоккайдо, Каруидзава, Никко — см. список Location spots в Gallery.",
+          "Часто снимаем: Токио, Фудзи и озёра, Киото, Камакура, Хоккайдо, Каруидзава, Никко — см. список Location spots в Gallery.",
         aiReplyBooking:
           "Начать можно с кнопки RESERVE, страницы Reserve или WhatsApp. Перед ссылкой на оплату подтверждаем даты и состав работ.",
         aiReplyDeliver:
@@ -3279,6 +4089,15 @@
           title: "План | Mashiro Visuals",
           description: "Пакеты и продукты для свадебной и элопмент-съёмки в Японии.",
         },
+        planTokyo: {
+          title: "Предсвадебная съёмка в Токио | Mashiro Visuals",
+          description:
+            "Уровни токийского пакета — Essential, ночная съёмка, Signature: понятный объём и маршрут под ваши даты.",
+        },
+        planOneHour: {
+          title: "Часовая фотосессия | Mashiro Visuals",
+          description: "Компактная часовая съёмка на локации в Японии — зона и запись согласуются при консультации.",
+        },
         costume: {
           title: "Костюмы | Mashiro Visuals",
           description:
@@ -3297,6 +4116,55 @@
           description:
             "Соберите фотопакет и опции, выберите дату и оформите заказ онлайн. Оплата на защищённой странице.",
         },
+        book: {
+          title: "Бронирование | Mashiro Visuals",
+          description:
+            "Пошагово выберите направление и опции предсвадебной съёмки в Японии — затем напишите нам. Оплаты на сайте нет.",
+        },
+        privacy: {
+          title: "Политика конфиденциальности | Mashiro Visuals",
+          description: "Как обрабатываются данные на сайте, в запросах и каналах бронирования.",
+        },
+        company: {
+          title: "Компания | Mashiro Visuals",
+          description:
+            "Mashiro Visuals — предсвадебная и элопмент-съёмка в Японии, выдержанный эдиториальный стиль.",
+        },
+        travelShoot: {
+          title: "Кэжуал-сессии | Mashiro Visuals",
+          description:
+            "Ненавязчивая съёмка в Токио или у Фудзи — естественный свет, спокойный темп. Детали на консультации.",
+        },
+        planFuji: {
+          title: "Предсвадебная съёмка у Фудзи | Mashiro Visuals",
+          description:
+            "У озёр Фудзи — трансфер, визаж на день, два образа, отобранные береговые локации.",
+        },
+        planHokkaido: {
+          title: "Предсвадебная съёмка на Хоккайдо | Mashiro Visuals",
+          description:
+            "Северные маршруты — трансфер, стилистика на день, два образа, Саппоро и Отару.",
+        },
+        planKansai: {
+          title: "Предсвадебная съёмка в Киото и Наре | Mashiro Visuals",
+          description:
+            "Кансай — храмы, бамбук, парк Нары; трансфер и два образа, маршрут с фотографом.",
+        },
+        planShonan: {
+          title: "Предсвадебная съёмка в Камакуре | Mashiro Visuals",
+          description:
+            "Побережье Сёнан — Камакура, Эносима, свет у воды; базовый пакет как в линии Токио.",
+        },
+        planTraditional: {
+          title: "Формальная съёмка в кимоно | Mashiro Visuals",
+          description:
+            "Сиромуку или ироутикакэ — дрессер, студия и зелень у Касая, полудневная формальность.",
+        },
+        planKantoDay: {
+          title: "Однодневная съёмка в Канто | Mashiro Visuals",
+          description:
+            "Маршруты на день — Токио + Камакура или Фудзи + Хаконэ; цена за день, налог при оплате.",
+        },
       },
       index: {
         hero: {
@@ -3307,7 +4175,7 @@
             "Честная кинематографичная съёмка свадеб и элопментов для пар, путешествующих по Японии. Снег, горы и открытое небо — без жёстких поз, только вы и пейзаж. Естественный свет и настоящие эмоции.",
           ctaPortfolio: "Портфолио",
           ctaInquire: "Связаться",
-          circleReserve: "RESERVE",
+          circleReserve: "Запись",
           circleReserveSub: "Записаться на визит",
           scrollAria: "Прокрутить к содержимому",
           note: "Базируюсь в Японии. Пишите на английском — добро пожаловать.",
@@ -3544,7 +4412,7 @@
           spotsTitle: "LOCATION SPOTS",
           spotsLead: "Регионы, куда мы часто возвращаемся для пар и элопмента.",
           spot1: "Токио · центр",
-          spot2: "Сёнан · побережье",
+          spot2: "Камакура · побережье",
           spot3: "Фудзи · озёра",
           spot4: "Киото · улочки и храмы",
           spot5: "Камакура · тории и море",
@@ -3606,6 +4474,7 @@
             "Опции, цены и что входит в съёмку в Японии.",
           brandNote:
             "Пакеты и цены указаны как предложения Mashiro Visuals. Итоговая стоимость зависит от сезона, локаций и опций.",
+          ctaPrimary: "Забронировать",
         },
         list: {
           kicker: "PREWEDDING",
@@ -3617,6 +4486,134 @@
           taxExcludedTag: "(без НДС)",
           taxIncludedTag: "(с НДС)",
           taxNote: "",
+        },
+        locations: {
+          stepEyebrow: "Шаг 1",
+          heading: "Выберите направление",
+          lead:
+            "Тот же список пакетов, что в форме бронирования ниже: карточка открывает детали, «Забронировать» — оформление с уже выбранным пакетом.",
+        },
+        locationCards: {
+          tokyoDesc: "Городской свет и спокойный ритм Токио.",
+          fujiDesc: "Озёра, простор и атмосфера Фудзи.",
+          hokkaidoDesc: "Масштаб севера и цвет сезона.",
+          kamakuraDesc: "Побережье, мягкий свет и расслабленный настрой.",
+          kyotoNaraDesc: "Улицы храмов, бамбук, парк Нары — Киото и Нара.",
+          tokyoFromPrice: "От ¥148 000 (без НДС)",
+          fujiFromPrice: "От ¥288 000 (без НДС)",
+          kyotoNaraFromPrice: "От ¥238 000 (без НДС)",
+          kamakuraFromPrice: "От ¥238 000 (без НДС)",
+          hokkaidoFromPrice: "От ¥308 000 (без НДС)",
+          traditionalDesc: "Формальное кимоно — ироутикакэ или сиромуку: студия и парк, полдня.",
+          traditionalFromPrice: "От ¥138 000 (без НДС)",
+          kantoDayDesc: "Однодневная съёмка в регионе Токио; маршрут — при бронировании.",
+          kantoDayFromPrice: "От ¥60 000 (без НДС)",
+        },
+        oneHour: {
+          sectionEyebrow: "Опыт",
+          sectionTitle: "Короткие сессии",
+          readMore: "Подробнее",
+          priceDisplay: "От ¥50 000 (без НДС)",
+          bookNow: "Забронировать",
+          detailP1:
+            "Около часа съёмки на локации — лёгкий первый шаг в Японии или компактное дополнение к полному предсвадебному дню.",
+          detailP2:
+            "Зона, встреча и объём материалов фиксируются при консультации; образ и визаж остаются минимальными под формат часа.",
+        },
+        pageTokyo: {
+          heroAlt: "Токио — предсвадебный портрет с букетом",
+          bodyIntro:
+            "Сначала выберите уровень ниже. Каждый уровень — полный токийский предсвадебный пакет с ясным объёмом; маршрут и время подбираем под ваши даты и свет.",
+          guidedHtml:
+            '<a href="./book.html?location=tokyo">Пошаговое бронирование</a> — те же решения в спокойном режиме (оплаты на сайте нет).',
+          ladderAria: "Уровни предсвадебной съёмки в Токио",
+          stepEyebrow: "Шаг 2",
+          ladderTitle: "Выберите уровень съёмки в Токио",
+          badgeEntry: "Базовый",
+          badgeUpgrade: "Апгрейд",
+          badgePremium: "Премиум",
+          pillMostPopular: "Частый выбор пар",
+          nameEssential: "Tokyo Prewedding Essential",
+          nameNight: "Tokyo Prewedding + Night",
+          nameSignature: "Tokyo Signature",
+          priceEssential: "Цена: ¥148 000 (без НДС)",
+          priceNight: "Цена: ¥198 000 (без НДС)",
+          priceSignature: "Цена: ¥248 000 (без НДС)",
+          entryLi1: "1 локация (днём)",
+          entryLi2: "1 образ",
+          entryLi3: "Сфокусированная, эффективная съёмка Токио",
+          upgradeLi1: "Дневная площадка + ночной Токио",
+          upgradeLi2: "1 образ",
+          upgradeLi3: "Баланс ясности и атмосферы",
+          premiumLi1: "До 3 локаций",
+          premiumLi2: "День + ночь",
+          premiumLi3: "2 образа",
+          premiumLi4: "Целый день — история по Токио",
+          ctaEssential: "Узнать про Essential",
+          ctaNight: "Узнать про + Night",
+          ctaSignature: "Узнать про Signature",
+          microNight:
+            "Когда нужен ночной город, но не весь масштаб Signature.",
+          microSignature:
+            "Самая полная токийская история — больше сцен, образов, воздуха в кадре.",
+          richAria: "Подробности предсвадебной съёмки в Токио",
+          richH2: "Опыт предсвадебной съёмки в Токио",
+          richP1:
+            "Без фиксированного туристического маршрута. Строим день вокруг света, толпы и того, как вы вместе движетесь — от тихого минимализма до киношной смелости.",
+          richP2:
+            "Часы, локации и состав работы следуют выбранному выше уровню; все детали фиксируем при бронировании.",
+          incH: "Что входит",
+          incLi1: "Планирование локаций по сезону и свету",
+          incLi2: "Профессиональный визаж",
+          incLi3: "Подсказки по образу для обоих",
+          incLi4: "Отдельный транспорт на съёмке",
+          styleH: "Варианты образов",
+          styleLi1Html:
+            "<strong>Свадебное платье x2</strong> — чистый современный эдиториал.",
+          styleLi2Html:
+            "<strong>Платье + кимоно</strong> — баланс современного и традиционного.",
+          styleLi3Html:
+            "<strong>Платье + классическое кимоно</strong> — сиромуку / ироутикакэ.",
+          prepH: "Подготовка к дню",
+          prepLi1Html: "<strong>Жених:</strong> костюм, рубашка, обувь",
+          prepLi2Html:
+            "<strong>Невеста:</strong> нижнее бельё (рекомендуем NuBra), каблуки или удобная обувь",
+          prepLi3: "Перед съёмкой проходим всё по шагам, чтобы день был спокойным.",
+          photoH: "Передача фото",
+          photoLi1: "Исходники в короткие сроки и этап выбора для ретуши",
+          photoLi2: "Финальный набор — через онлайн-галерею",
+          photoLi3: "Количество кадров и сроки — по вашему уровню",
+          optH: "Опции",
+          optP:
+            "Можно добавить видео за кадром; передача — после основного фотонабора.",
+          aboutH: "О фотографе",
+          aboutP:
+            "База — Токио. Лёгкая честная постановка, чтобы снимки были про вас — и при этом изящными и киношными на стене.",
+          destH: "Другие направления",
+          destP:
+            "Если хочется не город — смотрите планы Фудзи, Хоккайдо и Камакуры.",
+          destLink: "Ко всем локациям предсвадебной съёмки",
+        },
+        pageTravel: {
+          heroAlt: "Улица Токио в сумерках — мягкий свет для портрета",
+          chip1: "CASUAL",
+          chip2: "НА ЛОКАЦИИ",
+          h1: "Кэжуал-сессии",
+          body:
+            "Лёгкая съёмка в поездке — ритм Токио или масштаб Фудзи. Итоговая зона и время — на консультации.",
+          ladderAria: "Направления кэжуал-сессий",
+          cardTokyoName: "Кэжуал в Токио",
+          cardTokyoPrice: "От ¥58 000",
+          cardTokyoL1: "Спокойный городской темп",
+          cardTokyoL2: "Естественные моменты в поездке",
+          cardTokyoL3: "Простая ненавязчивая постановка",
+          cardTokyoCta: "Запрос — Токио",
+          cardFujiName: "Кэжуал у Фудзи",
+          cardFujiPrice: "От ¥88 000",
+          cardFujiL1: "Открытые виды и узнаваемый пейзаж",
+          cardFujiL2: "Свет у воды и тихий масштаб",
+          cardFujiL3: "Больше воздуха в кадре",
+          cardFujiCta: "Запрос — Фудзи",
         },
         detail: {
           back: "Все планы",
@@ -3634,13 +4631,13 @@
               "Трансфер, визажист на весь день, два платья и два образа. 8:00–18:00. Студия и городские локации — Tokyo Tower, станция Токио, Одайба, парк Касай Ринкай. 400+ кадров, 30 ретуши. Опции: доп. платье ¥20 000 · backstage-ролик ¥50 000 · кимоно пары ¥50 000.",
           },
           shonan: {
-            title: "Сёнан, побережье",
+            title: "Камакура, побережье",
             cardTag1: "COAST",
-            cardTag2: "SHONAN",
+            cardTag2: "KAMAKURA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "То же включение, что и в токийском пакете. 8:00–18:00. Поезд, берег Сёнана, остров Эносима, пляж. 400+ кадров, 30 ретуши. Опции по прайсу Токио.",
+              "То же включение, что и в токийском пакете. 8:00–18:00. Поезд, побережье Камакуры, остров Эносима, пляж. 400+ кадров, 30 ретуши. Опции по прайсу Токио.",
           },
           fuji: {
             title: "Фудзи и озёра",
@@ -3652,13 +4649,13 @@
               "Трансфер, визаж на день, два платья и два образа. 7:00–18:00, примерка заранее. Озёра Яманако и Кавагутико частные береговые точки Mashiro Visuals. 400+ кадров, 30 ретуши.",
           },
           kansai: {
-            title: "Кансай, один город",
-            cardTag1: "KANSAI",
-            cardTag2: "ONE CITY",
+            title: "Киото и Нара — предсвадебная съёмка",
+            cardTag1: "KYOTO",
+            cardTag2: "NARA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "Трансфер, визаж, два платья. 8:00–18:00. Киото, Нара или Осака — один город, по согласованию с фотографом. 400+ кадров, 30 ретуши.",
+              "Трансфер, визаж, два платья. 8:00–18:00. Маршрут вокруг Киото и Нары — храмы, бамбук, парк Нары — по согласованию с фотографом. 400+ кадров, 30 ретуши.",
           },
           hokkaido: {
             title: "Хоккайдо",
@@ -3692,6 +4689,15 @@
             priceExNumB: "80,000",
             body:
               "Компактная однодневная поездная съёмка в столичном регионе. Маршрут A: Токио и Камакура за день (¥60 000 без НДС). Маршрут B: Фудзи и Хаконе за день (¥80 000 без НДС). Детали по времени, переездам и объёму съёмки — на консультации. НДС 10% добавляется при оплате.",
+          },
+          one_hour: {
+            title: "Часовая фотосессия",
+            cardTag1: "ОПЫТ",
+            cardTag2: "1 ЧАС",
+            priceExNum: "50,000",
+            priceInNum: "55,000",
+            body:
+              "Один час съёмки на согласованной территории: мягкое ведение и компактный набор обработанных кадров. Полный день HM, несколько образов и несколько точек считаются отдельно — уточняйте при брони длинного пакета.",
           },
         },
       },
@@ -3780,6 +4786,9 @@
           h1: "Заказать фотопакет онлайн",
           lead:
             "Выберите пакет, опции и дату, затем введите личные данные и оплатите онлайн на защищённой странице. После оплаты придёт письмо с подтверждением.",
+          ctaPrimary: "Начать оформление",
+          ctaCalendly: "Выбрать время консультации",
+          ctaCalendlyHint: "Если страница записи не загружается, отправьте форму ниже — мы подтвердим время сообщением.",
         },
         flowTitle: "◆Как оформить заказ◆",
         step1: "Выберите пакет, опции и желаемую дату.",
@@ -3823,7 +4832,7 @@
           shonan: [
             "Тот же объём услуг, что в токийском пакете",
             "Съёмка 8:00–18:00",
-            "Поезд, берег Сёнана, Эносима, пляж",
+            "Поезд, побережье Камакуры, Эносима, пляж",
             "400+ файлов, 30 ретуши",
           ],
           fuji: [
@@ -3837,7 +4846,7 @@
             "Трансфер на день съёмки",
             "Визаж на день; два платья / два образа",
             "Съёмка 8:00–18:00",
-            "Один город Кансая в день — Киото, Нара или Осака (по плану с фотографом)",
+            "Маршрут Киото и Нара на день (по плану с фотографом)",
             "400+ файлов, 30 ретуши",
           ],
           hokkaido: [
@@ -3860,6 +4869,12 @@
             "Токио + Камакура или Фудзи + Хаконе — разные цены (см. план)",
             "Один съёмочный день; время и логистика — на консультации",
             "Доп. платья, BTS, кимоно — по общим правилам, если применимо",
+          ],
+          one_hour: [
+            "Около часа съёмки на согласованной локации",
+            "Встреча, зона и объём материалов — при бронировании",
+            "Лёгкое ведение и компактный набор кадров",
+            "Визаж на весь день, смены образов и несколько точек — в расширенных пакетах отдельно",
           ],
         },
         selectLabel: "Фотопакет",
@@ -4030,7 +5045,7 @@
         aiReplyPricing:
           "Los planes y rangos públicos están en Plan (impuestos según indique cada tarjeta). El total final depende de temporada, locaciones y extras — Reserve o WhatsApp para un presupuesto a medida.",
         aiReplyLocations:
-          "Solemos trabajar en Tokio, Shonan, Fuji y lagos, Kioto, Kamakura, Hokkaido, Karuizawa y Nikko — ver la lista Location spots en Gallery.",
+          "Solemos trabajar en Tokio, Fuji y lagos, Kioto, Kamakura, Hokkaido, Karuizawa y Nikko — ver la lista Location spots en Gallery.",
         aiReplyBooking:
           "Puedes empezar con el botón RESERVE, la página Reserve o WhatsApp. Confirmamos fechas y entregables antes del enlace de pago.",
         aiReplyDeliver:
@@ -4078,6 +5093,16 @@
           title: "Plan | Mashiro Visuals",
           description: "Paquetes y productos para boda y elopement en Japón.",
         },
+        planTokyo: {
+          title: "Preboda en Tokio | Mashiro Visuals",
+          description:
+            "Niveles de preboda en Tokio — Essential, noche y Signature — con alcance claro y rutas adaptadas a fechas.",
+        },
+        planOneHour: {
+          title: "Sesión fotográfica de 1 hora | Mashiro Visuals",
+          description:
+            "Sesión compacta de una hora en locación en Japón; alcance y reserva se confirman en consulta.",
+        },
         costume: {
           title: "Vestuario | Mashiro Visuals",
           description:
@@ -4096,6 +5121,55 @@
           description:
             "Configura tu paquete y opciones, elige fecha y compra en línea. Pago seguro en el siguiente paso.",
         },
+        book: {
+          title: "Reserva guiada | Mashiro Visuals",
+          description:
+            "Pasos para elegir destino y opciones de preboda en Japón — luego escríbenos. Sin pago en la web.",
+        },
+        privacy: {
+          title: "Política de privacidad | Mashiro Visuals",
+          description: "Cómo tratamos los datos en la web, consultas y canales de reserva.",
+        },
+        company: {
+          title: "Empresa | Mashiro Visuals",
+          description:
+            "Mashiro Visuals — preboda y elopement en Japón, fotografía editorial de destino.",
+        },
+        travelShoot: {
+          title: "Sesiones casuales | Mashiro Visuals",
+          description:
+            "Sesiones relajadas en Tokio o cerca del Fuji — luz natural, ritmo pausado. Alcance en consulta.",
+        },
+        planFuji: {
+          title: "Preboda en el Fuji | Mashiro Visuals",
+          description:
+            "Preboda junto a los lagos del Fuji — coche privado, maquillaje de día completo, dos looks, ubicaciones lacustres.",
+        },
+        planHokkaido: {
+          title: "Preboda en Hokkaidō | Mashiro Visuals",
+          description:
+            "Rutas en el norte — coche privado, estilismo de día completo, dos looks, Sapporo y Otaru.",
+        },
+        planKansai: {
+          title: "Preboda en Kioto y Nara | Mashiro Visuals",
+          description:
+            "Preboda en Kansai — templos, bambú, Nara Park; coche privado y dos looks, ruta con el fotógrafo.",
+        },
+        planShonan: {
+          title: "Preboda en Kamakura | Mashiro Visuals",
+          description:
+            "Costa de Shonan — Kamakura, Enoshima, luz marina; mismo núcleo que la línea de Tokio.",
+        },
+        planTraditional: {
+          title: "Preboda en kimono formal | Mashiro Visuals",
+          description:
+            "Shiromuku o iro-uchikake — kitsuke profesional, estudio y verde cerca de Kasai, media jornada formal.",
+        },
+        planKantoDay: {
+          title: "Preboda día en Kantō | Mashiro Visuals",
+          description:
+            "Rutas de un día — Tokio + Kamakura o Fuji + Hakone; precio por día, impuestos al pagar.",
+        },
       },
       index: {
         hero: {
@@ -4106,7 +5180,7 @@
             "Fotografía honesta y cinematográfica de bodas y elopements para parejas que viajan a Japón. Nieve, montañas y aire libre—sin poses forzadas, solo vosotros y el paisaje. Luz natural y emoción real.",
           ctaPortfolio: "Ver portafolio",
           ctaInquire: "Consultar",
-          circleReserve: "RESERVE",
+          circleReserve: "Reservar",
           circleReserveSub: "Reservar visita",
           scrollAria: "Desplazar al contenido",
           note: "Basado en Japón. Consultas en inglés bienvenidas.",
@@ -4343,7 +5417,7 @@
           spotsTitle: "LOCATION SPOTS",
           spotsLead: "Regiones a las que volvemos a menudo para parejas y elopement.",
           spot1: "Tokio · núcleo urbano",
-          spot2: "Shonan · costa",
+          spot2: "Kamakura · costa",
           spot3: "Monte Fuji · lagos",
           spot4: "Kioto · calles patrimonio",
           spot5: "Kamakura · santuario y mar",
@@ -4404,6 +5478,7 @@
           lead: "Opciones, precios e inclusión para vuestra sesión en Japón.",
           brandNote:
             "Los paquetes y precios son oferta de Mashiro Visuals. La cotización final depende de temporada, ubicaciones y extras.",
+          ctaPrimary: "Reservar",
         },
         list: {
           kicker: "PREWEDDING",
@@ -4415,6 +5490,134 @@
           taxExcludedTag: "(sin imp.)",
           taxIncludedTag: "(con imp.)",
           taxNote: "",
+        },
+        locations: {
+          stepEyebrow: "Paso 1",
+          heading: "Elige tu destino",
+          lead:
+            "La misma lista que el formulario de reserva: la tarjeta abre detalles; «Reservar» abre el checkout con ese paquete ya seleccionado.",
+        },
+        locationCards: {
+          tokyoDesc: "Luz urbana, ritmo refinado, historia editorial en Tokio.",
+          fujiDesc: "Lagunas, vistas abiertas y atmósfera icónica del Fuji.",
+          hokkaidoDesc: "Escala norteña, color de temporada, ritmo de viaje.",
+          kamakuraDesc: "Luz costera, ritmo suave y ambiente relajado.",
+          kyotoNaraDesc: "Calles históricas, bambú y Nara Park—Kioto y Nara.",
+          tokyoFromPrice: "Desde ¥148.000 (sin imp.)",
+          fujiFromPrice: "Desde ¥288.000 (sin imp.)",
+          kyotoNaraFromPrice: "Desde ¥238.000 (sin imp.)",
+          kamakuraFromPrice: "Desde ¥238.000 (sin imp.)",
+          hokkaidoFromPrice: "Desde ¥308.000 (sin imp.)",
+          traditionalDesc: "Wasou formal—iro-uchikake o shiromuku—estudio y parque cercano, medio día.",
+          traditionalFromPrice: "Desde ¥138.000 (sin imp.)",
+          kantoDayDesc: "Sesión de un día en el área de Tokio; elige ruta al reservar.",
+          kantoDayFromPrice: "Desde ¥60.000 (sin imp.)",
+        },
+        oneHour: {
+          sectionEyebrow: "Experiencias",
+          sectionTitle: "Sesiones breves",
+          readMore: "Leer más",
+          priceDisplay: "Desde ¥50.000 (sin imp.)",
+          bookNow: "Reservar",
+          detailP1:
+            "Una sesión enfocada de una hora en exterior: ideal como primera toma de contacto en Japón o como extra ligero junto a un día completo de preboda.",
+          detailP2:
+            "Cobertura, punto de encuentro y entregables se confirman en consulta; maquillaje y vestuario pueden mantenerse mínimos para este formato.",
+        },
+        pageTokyo: {
+          heroAlt: "Retrato preboda en Tokio con ramo",
+          bodyIntro:
+            "Elige tu nivel de experiencia abajo. Cada nivel es un paquete completo de preboda en Tokio con alcance claro; luego adaptamos ruta y timing a tus fechas y la luz.",
+          guidedHtml:
+            '<a href="./book.html?location=tokyo">Reserva guiada</a> — las mismas decisiones, paso a paso y con calma (sin pago en la web).',
+          ladderAria: "Niveles de preboda en Tokio",
+          stepEyebrow: "Paso 2",
+          ladderTitle: "Elige el nivel de experiencia en Tokio",
+          badgeEntry: "Entrada",
+          badgeUpgrade: "Subida",
+          badgePremium: "Premium",
+          pillMostPopular: "La opción más elegida por parejas",
+          nameEssential: "Tokyo Prewedding Essential",
+          nameNight: "Tokyo Prewedding + Night",
+          nameSignature: "Tokyo Signature",
+          priceEssential: "Precio: ¥148.000 (sin imp.)",
+          priceNight: "Precio: ¥198.000 (sin imp.)",
+          priceSignature: "Precio: ¥248.000 (sin imp.)",
+          entryLi1: "1 localización (día)",
+          entryLi2: "1 look de estilismo",
+          entryLi3: "Cobertura de Tokio enfocada y eficiente",
+          upgradeLi1: "Exterior de día más rodaje nocturno en Tokio",
+          upgradeLi2: "1 look de estilismo",
+          upgradeLi3: "Buen equilibrio entre nitidez y atmósfera",
+          premiumLi1: "Hasta 3 localizaciones",
+          premiumLi2: "Día y noche",
+          premiumLi3: "2 looks de estilismo",
+          premiumLi4: "Historia de día completo por Tokio",
+          ctaEssential: "Consultar Essential",
+          ctaNight: "Consultar + Night",
+          ctaSignature: "Consultar Signature",
+          microNight:
+            "Ideal si quieres la ciudad de noche sin el alcance completo de Signature.",
+          microSignature:
+            "Nuestra historia más completa en Tokio: más escenas, vestuario y aire.",
+          richAria: "Detalles preboda en Tokio",
+          richH2: "Experiencia de preboda en Tokio",
+          richP1:
+            "Sin ruta turística fija. Ordenamos el día según la luz, la gente y cómo os movéis juntos — a veces minimal, a veces muy cinematográfico.",
+          richP2:
+            "Horas, localizaciones y entregables siguen el nivel elegido arriba; confirmamos cada detalle al reservar.",
+          incH: "Qué incluye",
+          incLi1: "Planificación de locaciones según estación y luz",
+          incLi2: "Peluquería y maquillaje profesional",
+          incLi3: "Guía de estilo para ambos",
+          incLi4: "Transporte privado durante el rodaje",
+          styleH: "Opciones de estilismo",
+          styleLi1Html:
+            "<strong>Vestido de novia x2</strong> — limpio, moderno, editorial.",
+          styleLi2Html:
+            "<strong>Vestido de novia + kimono</strong> — equilibrio contemporáneo y tradicional.",
+          styleLi3Html:
+            "<strong>Vestido de novia + kimono formal</strong> — estilo shiromuku / iro-uchikake.",
+          prepH: "Prepara el día",
+          prepLi1Html: "<strong>Novio:</strong> traje, camisa, zapatos",
+          prepLi2Html:
+            "<strong>Novia:</strong> ropa interior (recom. NuBra), tacones o calzado cómodo",
+          prepLi3: "Os guiamos antes del rodaje para que el día se sienta tranquilo.",
+          photoH: "Entrega de fotos",
+          photoLi1: "Originales en plazo breve con paso de selección para retoque",
+          photoLi2: "Set final editado en galería online",
+          photoLi3: "Cantidades y plazos según tu nivel",
+          optH: "Opcional",
+          optP:
+            "Se puede añadir vídeo de making-of; la entrega va después del set principal de fotos.",
+          aboutH: "Sobre el fotógrafo",
+          aboutP:
+            "Con base en Tokio. Dirección ligera y honesta para que las imágenes os parezcáis — refinadas y cinematográficas en la pared.",
+          destH: "Otros destinos",
+          destP:
+            "Mira Fuji, Hokkaido y Kamakura cuando quieras un paisaje distinto al de la ciudad.",
+          destLink: "Volver a todas las localizaciones de preboda",
+        },
+        pageTravel: {
+          heroAlt: "Calle de Tokio al anochecer — luz suave para retrato",
+          chip1: "CASUAL",
+          chip2: "EN LOCACIÓN",
+          h1: "Sesiones casuales",
+          body:
+            "Una opción de locación más ligera en viaje — ritmo de Tokio o escala del Fuji. Alcance y horario se fijan en consulta.",
+          ladderAria: "Destinos de sesión casual",
+          cardTokyoName: "Sesión casual en Tokio",
+          cardTokyoPrice: "Desde ¥58.000",
+          cardTokyoL1: "Ritmo urbano relajado",
+          cardTokyoL2: "Momentos naturales en el viaje",
+          cardTokyoL3: "Dirección simple y discreta",
+          cardTokyoCta: "Consultar — Tokio",
+          cardFujiName: "Sesión casual en el Fuji",
+          cardFujiPrice: "Desde ¥88.000",
+          cardFujiL1: "Vistas abiertas y paisaje icónico",
+          cardFujiL2: "Luz lacustre y escala serena",
+          cardFujiL3: "Más aire en el encuadre",
+          cardFujiCta: "Consultar — Fuji",
         },
         detail: {
           back: "Todos los planes",
@@ -4432,13 +5635,13 @@
               "Coche privado; maquillaje todo el día; dos vestidos y dos looks. 8:00–18:00. Estudio más exteriores urbanos—Tokyo Tower, Estación de Tokio, Odaiba, Kasai Kaihin. Entrega: 400+ archivos, 30 retoques. Extras: vestido adicional ¥20.000 · vídeo making-of ¥50.000 · kimonos pareja ¥50.000.",
           },
           shonan: {
-            title: "Costa de Shōnan",
+            title: "Kamakura (costa)",
             cardTag1: "COAST",
-            cardTag2: "SHONAN",
+            cardTag2: "KAMAKURA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "Mismo núcleo que Tokio. 8:00–18:00. Tren costero, costa de Shōnan, Enoshima y playa. 400+ archivos, 30 retoques; mismos extras que Tokio.",
+              "Mismo núcleo que Tokio. 8:00–18:00. Tren costero, costa de Kamakura, Enoshima y playa. 400+ archivos, 30 retoques; mismos extras que Tokio.",
           },
           fuji: {
             title: "Fuji y lagos",
@@ -4450,13 +5653,13 @@
               "Coche privado; peluquería todo el día; dos vestidos y dos looks. 7:00–18:00; prueba previa. Lagos Yamanaka y Kawaguchi y puntos lacustres privados Mashiro Visuals. 400+ archivos, 30 retoques.",
           },
           kansai: {
-            title: "Kansai (una ciudad)",
-            cardTag1: "KANSAI",
-            cardTag2: "UNA CIUDAD",
+            title: "Kioto y Nara — preboda",
+            cardTag1: "KYOTO",
+            cardTag2: "NARA",
             priceExNum: "238,000",
             priceInNum: "261,800",
             body:
-              "Coche privado; maquillaje; dos vestidos. 8:00–18:00. Kioto, Nara u Osaka—una ciudad, en coordinación con el fotógrafo. 400+ archivos, 30 retoques.",
+              "Coche privado; maquillaje; dos vestidos. 8:00–18:00. Basado en Kioto y Nara—templos, bambú, Nara Park—en coordinación con el fotógrafo. 400+ archivos, 30 retoques.",
           },
           hokkaido: {
             title: "Hokkaidō",
@@ -4490,6 +5693,15 @@
             priceExNumB: "80,000",
             body:
               "Sesión de viaje de un día en el área metropolitana. Opción A: Tokio y Kamakura el mismo día (desde ¥60.000 sin imp.). Opción B: Fuji y Hakone el mismo día (¥80.000 sin imp.). Horarios, desplazamientos y entregables se confirman en consulta. El impuesto al consumo (10%) se añade al pagar.",
+          },
+          one_hour: {
+            title: "Sesión fotográfica de 1 hora",
+            cardTag1: "EXPERIENCIA",
+            cardTag2: "1 HORA",
+            priceExNum: "50,000",
+            priceInNum: "55,000",
+            body:
+              "Una hora de fotografía en la zona acordada; dirección natural y un bloque de edición reducido. HM a jornada completa, varios vestidos y varias locaciones se presupuestan aparte—consultad si queréis combinarlo con un paquete largo.",
           },
         },
       },
@@ -4578,6 +5790,9 @@
           h1: "Compra tu sesión fotográfica",
           lead:
             "Elige paquete, opciones y fecha; luego introduce tus datos y paga en línea en la página segura. Tras el pago recibirás un email de confirmación.",
+          ctaPrimary: "Empezar pedido",
+          ctaCalendly: "Elegir hora de consulta",
+          ctaCalendlyHint: "Si la página de agenda no carga, usa el formulario de abajo y confirmaremos por mensaje.",
         },
         flowTitle: "◆Cómo comprar◆",
         step1: "Elige tu paquete, opciones y una fecha preferida.",
@@ -4621,7 +5836,7 @@
           shonan: [
             "Mismo alcance de servicio que el paquete Tokio",
             "Horario 8:00–18:00",
-            "Tren costero, costa de Shonan, Enoshima, playa",
+            "Tren costero, costa de Kamakura, Enoshima, playa",
             "400+ archivos, 30 retoques",
           ],
           fuji: [
@@ -4635,7 +5850,7 @@
             "Coche privado el día de la sesión",
             "Maquillaje todo el día; dos vestidos / dos looks",
             "Horario 8:00–18:00",
-            "Una ciudad de Kansai en el día — Kioto, Nara u Osaka (según plan previo)",
+            "Ruta Kioto y Nara en el día (según plan previo)",
             "400+ archivos, 30 retoques",
           ],
           hokkaido: [
@@ -4658,6 +5873,12 @@
             "Tokio + Kamakura o Fuji + Hakone — precios distintos (ver plan)",
             "Un solo día de trabajo; horarios en consulta",
             "Extras de vestido, BTS y kimono según reglas generales si aplica",
+          ],
+          one_hour: [
+            "Una hora aproximada de fotografía en la zona acordada",
+            "Punto de encuentro, cobertura y entregables confirmados al reservar",
+            "Dirección ligera y un set de edición compacto",
+            "Maquillaje de día completo, cambios y varias localizaciones van con paquetes largos aparte",
           ],
         },
         selectLabel: "Paquete fotográfico",
@@ -4857,6 +6078,13 @@
       if (!key) return;
       var val = getNested(pack, key);
       if (val != null && typeof val === "string") el.innerHTML = val;
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-alt");
+      if (!key) return;
+      var val = getNested(pack, key);
+      if (val != null && typeof val === "string") el.setAttribute("alt", val);
     });
 
     var page = document.body && document.body.getAttribute("data-page");

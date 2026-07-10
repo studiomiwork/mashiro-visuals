@@ -84,9 +84,9 @@
 
           </div>
           <div class="lang-switcher">
-            <select id="lang-select" class="lang-select" aria-label="Language">
+            <select id="lang-select" class="lang-select" data-i18n-aria="common.langAria">
               <option value="en">English</option>
-              <option value="zh-TW">繁體中文</option>
+              <option value="zh-TW">中文</option>
               <option value="ja">日本語</option>
               <option value="ko">한국어</option>
               <option value="ru">Русский</option>
@@ -234,7 +234,7 @@
     <main class="plan-page-main">
       <section class="plan-page-head">
         <div class="container plan-page-head__inner">
-          <h1 class="plan-page-kicker" data-i18n="plan.list.kicker">PREWEDDING</h1>
+          <h1 class="plan-page-kicker" data-i18n="plan.list.kicker">PLAN</h1>
           <p class="plan-page-sub plan-page-sub--1" data-i18n="plan.list.sub1">
             Everything you need is built into every plan.
           </p>
@@ -249,83 +249,230 @@
             This page is dedicated to premium wedding and prewedding packages only.
           </p>
           <div class="plan-sales-hero-cta">
-            <a class="btn btn-primary" href="./book.html">Guided booking</a>
-            <a class="btn btn-ghost" href="./contact.html">Get a tailored recommendation</a>
-            <a class="btn btn-ghost" href="./reserve.html">Reserve a consultation</a>
+            <a class="btn btn-primary" href="./reserve.html" data-i18n="plan.hero.ctaPrimary">Start booking</a>
           </div>
         </div>
       </section>
 
-      <section class="plan-lux-grid-wrap" aria-label="Prewedding by location">
+      <section class="plan-lux-grid-wrap" aria-labelledby="plan-dest-heading">
         <div class="container plan-section-head">
-          <p class="plan-section-head__eyebrow">Step one</p>
-          <h2 class="plan-section-head__title">Choose your destination</h2>
-          <p class="plan-section-head__lead">
-            Each location opens its own page where you compare experience levels and pricing.
+          <p class="plan-section-head__eyebrow" data-i18n="plan.locations.stepEyebrow">Step one</p>
+          <h2 id="plan-dest-heading" class="plan-section-head__title" data-i18n="plan.locations.heading">
+            Choose your destination
+          </h2>
+          <p class="plan-section-head__lead" data-i18n="plan.locations.lead">
+            Same lineup as the booking form below—open a card for details; each Book now opens checkout with that package
+            pre-selected.
           </p>
         </div>
-        <div class="container plan-lux-grid plan-location-grid">
-          <a class="plan-card-lux plan-card-lux--location" href="./plan-tokyo.html">
-            <div class="plan-card-lux__media">
-              <img
-                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
-                alt=""
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h2 class="plan-card-lux__title">Tokyo Prewedding</h2>
-            <p class="plan-card-lux__desc">City light, refined pacing, and editorial Tokyo stories.</p>
-            <span class="plan-card-lux__cta">
-              <span data-i18n="plan.list.viewDetails">View details</span>
-              <span class="plan-card-lux__rule" aria-hidden="true"></span>
-            </span>
-          </a>
 
-          <a class="plan-card-lux plan-card-lux--location" href="./plan-fuji.html">
-            <div class="plan-card-lux__media">
-              <img
-                src="https://images.unsplash.com/photo-1576678927114-204c6a782d56?auto=format&fit=crop&w=1200&q=80"
-                alt=""
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h2 class="plan-card-lux__title">Mt. Fuji Prewedding</h2>
-            <p class="plan-card-lux__desc">Lakes, open views, and iconic mountain atmosphere.</p>
-            <span class="plan-card-lux__cta">
-              <span data-i18n="plan.list.viewDetails">View details</span>
-              <span class="plan-card-lux__rule" aria-hidden="true"></span>
-            </span>
-          </a>
+        <div class="container plan-lux-grid plan-location-grid plan-location-grid--lineup">
+          <article class="plan-card-lux plan-card-lux--location">
+            <a class="plan-card-lux__main" href="./plan-tokyo.html">
+              <div class="plan-card-lux__media">
+                <img
+                  src="./images/plan/tokyo-prewedding-cover.jpg"
+                  alt=""
+                  width="682"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 class="plan-card-lux__title" data-i18n="plan.pkg.tokyo.title">Tokyo Prewedding</h2>
+              <p class="plan-card-lux__desc" data-i18n="plan.locationCards.tokyoDesc">
+                City light, refined pacing, and editorial Tokyo stories.
+              </p>
+              <p class="plan-card-lux__simple-price" data-i18n="plan.locationCards.tokyoFromPrice">
+                From ¥148,000 (excl. tax)
+              </p>
+              <span class="plan-card-lux__cta">
+                <span data-i18n="plan.list.viewDetails">View details</span>
+                <span class="plan-card-lux__rule" aria-hidden="true"></span>
+              </span>
+            </a>
+            <a
+              class="plan-card-lux__book"
+              href="./reserve.html?package=tokyo"
+              data-i18n="plan.oneHour.bookNow"
+              >Book now</a
+            >
+          </article>
 
-          <a class="plan-card-lux plan-card-lux--location" href="./plan-hokkaido.html">
-            <div class="plan-card-lux__media">
-              <img
-                src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt=""
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h2 class="plan-card-lux__title">Hokkaido Prewedding</h2>
-            <p class="plan-card-lux__desc">Northern scale, seasonal colour, and travel-session rhythm.</p>
-            <span class="plan-card-lux__cta">
-              <span data-i18n="plan.list.viewDetails">View details</span>
-              <span class="plan-card-lux__rule" aria-hidden="true"></span>
-            </span>
-          </a>
+          <article class="plan-card-lux plan-card-lux--location">
+            <a class="plan-card-lux__main" href="./plan-shonan.html">
+              <div class="plan-card-lux__media">
+                <img
+                  src="./images/plan/kamakura-prewedding-cover.jpg"
+                  alt=""
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 class="plan-card-lux__title" data-i18n="plan.pkg.shonan.title">Kamakura Prewedding</h2>
+              <p class="plan-card-lux__desc" data-i18n="plan.locationCards.kamakuraDesc">
+                Coastal light, softer pacing, and relaxed seaside mood.
+              </p>
+              <p class="plan-card-lux__simple-price" data-i18n="plan.locationCards.kamakuraFromPrice">
+                From ¥238,000 (excl. tax)
+              </p>
+              <span class="plan-card-lux__cta">
+                <span data-i18n="plan.list.viewDetails">View details</span>
+                <span class="plan-card-lux__rule" aria-hidden="true"></span>
+              </span>
+            </a>
+            <a
+              class="plan-card-lux__book"
+              href="./reserve.html?package=shonan"
+              data-i18n="plan.oneHour.bookNow"
+              >Book now</a
+            >
+          </article>
 
-          <a class="plan-card-lux plan-card-lux--location" href="./plan-shonan.html">
-            <div class="plan-card-lux__media">
+          <article class="plan-card-lux plan-card-lux--location">
+            <a class="plan-card-lux__main" href="./plan-fuji.html">
+              <div class="plan-card-lux__media">
+                <img
+                  src="./images/plan/fuji-prewedding-cover.jpg"
+                  alt=""
+                  width="682"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 class="plan-card-lux__title" data-i18n="plan.pkg.fuji.title">Mt. Fuji Prewedding</h2>
+              <p class="plan-card-lux__desc" data-i18n="plan.locationCards.fujiDesc">
+                Lakes, open views, and iconic mountain atmosphere.
+              </p>
+              <p class="plan-card-lux__simple-price" data-i18n="plan.locationCards.fujiFromPrice">
+                From ¥288,000 (excl. tax)
+              </p>
+              <span class="plan-card-lux__cta">
+                <span data-i18n="plan.list.viewDetails">View details</span>
+                <span class="plan-card-lux__rule" aria-hidden="true"></span>
+              </span>
+            </a>
+            <a
+              class="plan-card-lux__book"
+              href="./reserve.html?package=fuji"
+              data-i18n="plan.oneHour.bookNow"
+              >Book now</a
+            >
+          </article>
+
+          <article class="plan-card-lux plan-card-lux--location">
+            <a class="plan-card-lux__main" href="./plan-kansai.html">
+              <div class="plan-card-lux__media">
+                <img
+                  src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1200&q=80"
+                  alt=""
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 class="plan-card-lux__title" data-i18n="plan.pkg.kansai.title">Kyoto &amp; Nara Prewedding</h2>
+              <p class="plan-card-lux__desc" data-i18n="plan.locationCards.kyotoNaraDesc">
+                Historic streets, bamboo groves, Nara Park—Kyoto &amp; Nara in one route.
+              </p>
+              <p class="plan-card-lux__simple-price" data-i18n="plan.locationCards.kyotoNaraFromPrice">
+                From ¥238,000 (excl. tax)
+              </p>
+              <span class="plan-card-lux__cta">
+                <span data-i18n="plan.list.viewDetails">View details</span>
+                <span class="plan-card-lux__rule" aria-hidden="true"></span>
+              </span>
+            </a>
+            <a
+              class="plan-card-lux__book"
+              href="./reserve.html?package=kansai"
+              data-i18n="plan.oneHour.bookNow"
+              >Book now</a
+            >
+          </article>
+
+          <article class="plan-card-lux plan-card-lux--location">
+            <a class="plan-card-lux__main" href="./plan-hokkaido.html">
+              <div class="plan-card-lux__media">
+                <img
+                  src="./images/plan/hokkaido-prewedding-cover.jpg"
+                  alt=""
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 class="plan-card-lux__title" data-i18n="plan.pkg.hokkaido.title">Hokkaido Prewedding</h2>
+              <p class="plan-card-lux__desc" data-i18n="plan.locationCards.hokkaidoDesc">
+                Northern scale, seasonal colour, and travel-session rhythm.
+              </p>
+              <p class="plan-card-lux__simple-price" data-i18n="plan.locationCards.hokkaidoFromPrice">
+                From ¥308,000 (excl. tax)
+              </p>
+              <span class="plan-card-lux__cta">
+                <span data-i18n="plan.list.viewDetails">View details</span>
+                <span class="plan-card-lux__rule" aria-hidden="true"></span>
+              </span>
+            </a>
+            <a
+              class="plan-card-lux__book"
+              href="./reserve.html?package=hokkaido"
+              data-i18n="plan.oneHour.bookNow"
+              >Book now</a
+            >
+          </article>
+
+          <article class="plan-card-lux plan-card-lux--location">
+            <a class="plan-card-lux__main" href="./plan-traditional.html">
+              <div class="plan-card-lux__media">
+                <img
+                  src="./images/plan/traditional-iro-uchikake-cover.jpg"
+                  alt=""
+                  width="1024"
+                  height="682"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h2 class="plan-card-lux__title" data-i18n="plan.pkg.traditional.title">Iro-uchikake or shiromuku</h2>
+              <p class="plan-card-lux__desc" data-i18n="plan.locationCards.traditionalDesc">
+                Formal wasou in studio and nearby park—half-day pacing.
+              </p>
+              <p class="plan-card-lux__simple-price" data-i18n="plan.locationCards.traditionalFromPrice">
+                From ¥138,000 (excl. tax)
+              </p>
+              <span class="plan-card-lux__cta">
+                <span data-i18n="plan.list.viewDetails">View details</span>
+                <span class="plan-card-lux__rule" aria-hidden="true"></span>
+              </span>
+            </a>
+            <a
+              class="plan-card-lux__book"
+              href="./reserve.html?package=traditional"
+              data-i18n="plan.oneHour.bookNow"
+              >Book now</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="plan-experience-band" aria-labelledby="plan-1h-heading">
+        <div class="container plan-section-head">
+          <p class="plan-section-head__eyebrow" data-i18n="plan.oneHour.sectionEyebrow">Experiences</p>
+          <h2 id="plan-1h-heading" class="plan-section-head__title" data-i18n="plan.oneHour.sectionTitle">
+            Short sessions
+          </h2>
+        </div>
+        <div class="container plan-experience-band__layout">
+          <article class="plan-card-experience">
+            <div class="plan-card-experience__media">
               <img
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+                src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80"
                 alt=""
                 width="1200"
                 height="800"
@@ -333,13 +480,51 @@
                 decoding="async"
               />
             </div>
-            <h2 class="plan-card-lux__title">Shonan Prewedding</h2>
-            <p class="plan-card-lux__desc">Coastal light, softer pacing, and relaxed seaside mood.</p>
-            <span class="plan-card-lux__cta">
-              <span data-i18n="plan.list.viewDetails">View details</span>
-              <span class="plan-card-lux__rule" aria-hidden="true"></span>
-            </span>
-          </a>
+            <div class="plan-card-experience__body">
+              <h3 class="plan-card-experience__title" data-i18n="plan.pkg.one_hour.title">
+                One-Hour Photoshoot Experience
+              </h3>
+              <a class="plan-card-experience__read" href="./plan-one-hour.html" data-i18n="plan.oneHour.readMore"
+                >Read more</a
+              >
+              <div class="plan-card-experience__rule" aria-hidden="true"></div>
+              <p class="plan-card-experience__price" data-i18n="plan.oneHour.priceDisplay">From ¥50,000</p>
+              <a
+                class="plan-card-experience__book btn plan-card-experience__book-btn"
+                href="./reserve.html?package=one_hour"
+                data-i18n="plan.oneHour.bookNow"
+                >Book now</a
+              >
+            </div>
+          </article>
+          <article class="plan-card-experience">
+            <div class="plan-card-experience__media">
+              <img
+                src="./images/gallery/230307Tokyo/210A3839.jpg"
+                alt=""
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="plan-card-experience__body">
+              <h3 class="plan-card-experience__title" data-i18n="plan.pkg.kanto_day.title">Tokyo area day trip</h3>
+              <a class="plan-card-experience__read" href="./plan-kanto-day.html" data-i18n="plan.oneHour.readMore"
+                >Read more</a
+              >
+              <div class="plan-card-experience__rule" aria-hidden="true"></div>
+              <p class="plan-card-experience__price" data-i18n="reserve.booking.kantoPkgMeta">
+                From ¥60,000 (excl. tax)
+              </p>
+              <a
+                class="plan-card-experience__book btn plan-card-experience__book-btn"
+                href="./reserve.html?package=kanto_day"
+                data-i18n="plan.oneHour.bookNow"
+                >Book now</a
+              >
+            </div>
+          </article>
         </div>
       </section>
 
@@ -460,7 +645,9 @@
     <script src="./i18n.js" defer></script>
     <script>
       (function () {
-        var links = document.querySelectorAll(".plan-lux-grid-wrap .plan-card-lux");
+        var links = document.querySelectorAll(
+          ".plan-lux-grid-wrap .plan-card-lux__main, .plan-lux-grid-wrap .plan-card-lux__book, .plan-experience-band .plan-card-experience__read, .plan-experience-band .plan-card-experience__book-btn"
+        );
         links.forEach(function (link) {
           link.addEventListener("click", function (e) {
             var href = link.getAttribute("href");

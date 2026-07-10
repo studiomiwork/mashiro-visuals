@@ -91,9 +91,9 @@
 
           </div>
           <div class="lang-switcher">
-            <select id="lang-select" class="lang-select" aria-label="Language">
+            <select id="lang-select" class="lang-select" data-i18n-aria="common.langAria">
               <option value="en">English</option>
-              <option value="zh-TW">繁體中文</option>
+              <option value="zh-TW">中文</option>
               <option value="ja">日本語</option>
               <option value="ko">한국어</option>
               <option value="ru">Русский</option>
@@ -423,10 +423,10 @@
                 >
                   <div class="home-plan-card__media">
                     <img
-                      src="images/gallery/250408Studio/MILA5090.jpg"
-                      alt="Studio pre-wedding portrait in Tokyo"
-                      width="1200"
-                      height="1600"
+                      src="./images/plan/tokyo-prewedding-cover.jpg"
+                      alt="Tokyo Tower night pre-wedding portrait"
+                      width="682"
+                      height="1024"
                       loading="lazy"
                       decoding="async"
                     />
@@ -464,10 +464,10 @@
                 >
                   <div class="home-plan-card__media">
                     <img
-                      src="images/gallery/240514Mt.Fuji/WMA_4866.jpg"
-                      alt="Couple by the lakes near Mount Fuji"
-                      width="1200"
-                      height="900"
+                      src="./images/plan/fuji-prewedding-cover.jpg"
+                      alt="Pre-wedding couple with Mount Fuji in the background"
+                      width="682"
+                      height="1024"
                       loading="lazy"
                       decoding="async"
                     />
@@ -542,10 +542,10 @@
                 >
                   <div class="home-plan-card__media">
                     <img
-                      src="images/gallery/250408镰仓/MILA5188.jpg"
-                      alt="Seaside pre-wedding portrait in Kamakura"
-                      width="1200"
-                      height="900"
+                      src="./images/plan/kamakura-prewedding-cover.jpg"
+                      alt="Pre-wedding couple at Gokurakuji Station, Kamakura"
+                      width="1024"
+                      height="682"
                       loading="lazy"
                       decoding="async"
                     />
@@ -554,9 +554,9 @@
                     <span class="home-plan-card__index" aria-hidden="true">04</span>
                     <div class="home-plan-card__tags" aria-hidden="true">
                       <span class="home-plan-card__tag" data-i18n="plan.pkg.shonan.cardTag1">COAST</span>
-                      <span class="home-plan-card__tag" data-i18n="plan.pkg.shonan.cardTag2">SHONAN</span>
+                      <span class="home-plan-card__tag" data-i18n="plan.pkg.shonan.cardTag2">KAMAKURA</span>
                     </div>
-                    <h3 class="home-plan-card__title" data-i18n="plan.pkg.shonan.title">Shonan coast</h3>
+                    <h3 class="home-plan-card__title" data-i18n="plan.pkg.shonan.title">Kamakura Prewedding</h3>
                     <p class="home-plan-card__body" data-i18n="index.combos.c4Body">
                       Gentle coastal light and an easy, romantic seaside mood.
                     </p>
@@ -580,10 +580,10 @@
                 >
                   <div class="home-plan-card__media">
                     <img
-                      src="images/gallery/230203Hokaido/210A7051.jpg"
-                      alt="Outdoor destination portrait in Hokkaido"
-                      width="1200"
-                      height="900"
+                      src="./images/plan/hokkaido-prewedding-cover.jpg"
+                      alt="Pre-wedding couple by a snowy canal in Hokkaido"
+                      width="1024"
+                      height="682"
                       loading="lazy"
                       decoding="async"
                     />
@@ -618,10 +618,10 @@
                 >
                   <div class="home-plan-card__media">
                     <img
-                      src="images/gallery/250408镰仓/MILA5557.jpg"
+                      src="images/plan/traditional-iro-uchikake-cover.jpg"
                       alt="Traditional attire pre-wedding portrait"
-                      width="1200"
-                      height="1600"
+                      width="1024"
+                      height="682"
                       loading="lazy"
                       decoding="async"
                     />
@@ -666,6 +666,24 @@
             <div class="float-carousel__dots" role="group" aria-label="Plan slides"></div>
             <a class="home-plan-showcase__more" href="./plan.html" data-i18n="portfolio.moreBtn">VIEW MORE</a>
           </div>
+        </div>
+      </section>
+
+      <section class="home-ig reveal reveal--soft-rise" aria-label="Instagram">
+        <div class="container home-ig__top">
+          <div class="home-ig__head">
+            <p class="home-ig__kicker">FOLLOW US ON INSTAGRAM</p>
+            <a
+              class="home-ig__handle"
+              href="https://www.instagram.com/mashirovisuals/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@mashirovisuals</a
+            >
+          </div>
+        </div>
+        <div class="home-ig__feed">
+          <behold-widget feed-id="j4dyA0JB14NtNUyEAgAd"></behold-widget>
         </div>
       </section>
 
@@ -1015,5 +1033,15 @@
     <script src="./index-reveal.js" defer></script>
     <script src="./floating-cta.js" defer></script>
     <script src="./ai-consult.js" defer></script>
+    <script>
+      (() => {
+        if (window.__beholdWidgetLoaded) return;
+        window.__beholdWidgetLoaded = true;
+        const s = document.createElement("script");
+        s.type = "module";
+        s.src = "https://w.behold.so/widget.js";
+        document.head.appendChild(s);
+      })();
+    </script>
   </body>
 </html>

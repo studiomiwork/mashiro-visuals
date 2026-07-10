@@ -144,6 +144,7 @@
     kansai: 238000,
     hokkaido: 308000,
     traditional: 138000,
+    one_hour: 50000,
   };
   var KANTO_ROUTE_EX = { tk: 60000, fh: 80000 };
   var DRESS = { dress0: 0, dress1: 20000, dress2: 40000, dress3: 60000 };
@@ -158,6 +159,7 @@
     hokkaido: 2,
     traditional: 1,
     kanto_day: 2,
+    one_hour: 0,
   };
   var MAX_DRESSES_PER_DAY = 4;
   var BTS = { bts_none: 0, bts50: 50000, bts70: 70000 };
@@ -335,6 +337,21 @@
 
   form.addEventListener("change", onFormChange);
   form.addEventListener("input", onFormChange);
+
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var prefPkg = params.get("package") || params.get("pkg");
+    if (prefPkg) {
+      var pkgRadios = form.querySelectorAll('input[name="photo_package"]');
+      for (var pri = 0; pri < pkgRadios.length; pri++) {
+        if (pkgRadios[pri].value === prefPkg) {
+          pkgRadios[pri].checked = true;
+          break;
+        }
+      }
+    }
+  } catch (ePkg) {}
+
   updateTotals();
 
   var langSel = document.getElementById("lang-select");
@@ -558,4 +575,67 @@
   if (stepPayment) stepPayment.hidden = true;
   refreshPkgGate();
   syncCheckoutWizardNav();
+})();
+
+/** Optional Calendly shortcut: append selected package + date. */
+(function () {
+  var form = document.getElementById("reserve-form");
+  if (!form) return;
+
+  var link = document.getElementById("reserve-calendly-link");
+  if (!link) return;
+
+  var hintEl = document.querySelector(".reserve-hero-hint");
+  var base =
+    link.getAttribute("data-calendly-base-url") ||
+    (typeof window !== "undefined" ? window.MASHIRO_CALENDLY_URL : "");
+
+  base = String(base || "").trim();
+  if (!base || base === "#") {
+    link.hidden = true;
+    link.setAttribute("aria-hidden", "true");
+    if (hintEl) hintEl.hidden = true;
+    return;
+  }
+
+  function selectedPackage() {
+    var el = form.querySelector('input[name="photo_package"]:checked');
+    return el && el.value ? String(el.value) : "";
+  }
+
+  function selectedDate() {
+    var dateEl = document.getElementById("reserve-date");
+    return dateEl ? String(dateEl.value || "") : "";
+  }
+
+  function buildUrl() {
+    var pkg = selectedPackage();
+    var dt = selectedDate();
+    try {
+      var u = new URL(base);
+      u.searchParams.set("utm_source", "website");
+      u.searchParams.set("utm_medium", "reserve");
+      u.searchParams.set("utm_campaign", "consultation");
+      if (pkg) u.searchParams.set("package", pkg);
+      if (dt) u.searchParams.set("preferred_date", dt);
+      return u.toString();
+    } catch (e) {
+      var join = base.indexOf("?") >= 0 ? "&" : "?";
+      var q = "utm_source=website&utm_medium=reserve&utm_campaign=consultation";
+      if (pkg) q += "&package=" + encodeURIComponent(pkg);
+      if (dt) q += "&preferred_date=" + encodeURIComponent(dt);
+      return base + join + q;
+    }
+  }
+
+  function sync() {
+    link.href = buildUrl();
+  }
+
+  sync();
+  form.addEventListener("change", sync);
+  form.addEventListener("input", function (e) {
+    var t = e && e.target ? e.target : null;
+    if (t && t.id === "reserve-date") sync();
+  });
 })();

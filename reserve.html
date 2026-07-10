@@ -84,9 +84,9 @@
 
           </div>
           <div class="lang-switcher">
-            <select id="lang-select" class="lang-select" aria-label="Language">
+            <select id="lang-select" class="lang-select" data-i18n-aria="common.langAria">
               <option value="en">English</option>
-              <option value="zh-TW">繁體中文</option>
+              <option value="zh-TW">中文</option>
               <option value="ja">日本語</option>
               <option value="ko">한국어</option>
               <option value="ru">Русский</option>
@@ -240,6 +240,24 @@
             Choose your package and date, then enter your details, then pay online on the secure checkout step. A
             confirmation email follows payment.
           </p>
+          <div class="plan-sales-hero-cta reserve-hero-cta">
+            <a class="btn btn-primary" href="#reserve-step-model" data-i18n="reserve.hero.ctaPrimary"
+              >Build your order</a
+            >
+            <a
+              class="btn btn-ghost"
+              id="reserve-calendly-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-calendly-base-url="https://calendly.com/studiomi-work/30min"
+              data-i18n="reserve.hero.ctaCalendly"
+              >Pick a consultation time</a
+            >
+          </div>
+          <p class="reserve-hero-hint" data-i18n="reserve.hero.ctaCalendlyHint">
+            If the scheduling page doesn’t load, use the form below and we’ll confirm by message.
+          </p>
         </div>
       </section>
 
@@ -319,7 +337,7 @@
                     <label class="reserve-pkg reserve-pkg--tile">
                         <input type="radio" name="photo_package" value="shonan" />
                         <span class="reserve-pkg__text">
-                          <span class="reserve-pkg__name" data-i18n="plan.pkg.shonan.title">Shonan coast</span>
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.shonan.title">Kamakura Prewedding</span>
                           <span class="reserve-pkg__meta">
                             ¥<span data-i18n="plan.pkg.shonan.priceExNum">238,000</span><span
                               data-i18n="plan.list.yenSuffix"
@@ -345,7 +363,7 @@
                     <label class="reserve-pkg reserve-pkg--tile">
                         <input type="radio" name="photo_package" value="kansai" />
                         <span class="reserve-pkg__text">
-                          <span class="reserve-pkg__name" data-i18n="plan.pkg.kansai.title">Kansai (one city)</span>
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.kansai.title">Kyoto &amp; Nara Prewedding</span>
                           <span class="reserve-pkg__meta">
                             ¥<span data-i18n="plan.pkg.kansai.priceExNum">238,000</span><span
                               data-i18n="plan.list.yenSuffix"
@@ -394,6 +412,21 @@
                           </span>
                         </span>
               </label>
+                    <label class="reserve-pkg reserve-pkg--tile">
+                        <input type="radio" name="photo_package" value="one_hour" />
+                        <span class="reserve-pkg__text">
+                          <span class="reserve-pkg__name" data-i18n="plan.pkg.one_hour.title"
+                            >One-Hour Photoshoot Experience</span
+                          >
+                          <span class="reserve-pkg__meta">
+                            ¥<span data-i18n="plan.pkg.one_hour.priceExNum">50,000</span><span
+                              data-i18n="plan.list.yenSuffix"
+                              >円</span
+                            >
+                            <span class="reserve-pkg__tax" data-i18n="plan.list.taxExcludedTag"></span>
+                          </span>
+                        </span>
+                      </label>
                   </div>
                   <div id="reserve-kanto-route-wrap" class="reserve-kanto-route" hidden>
                     <fieldset class="reserve-addon-fieldset">

@@ -10,7 +10,7 @@
     <title>Tokyo Prewedding | Mashiro Visuals</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="page-plan page-plan-detail">
+  <body class="page-plan page-plan-detail" data-page="plan-tokyo">
     <header class="site-header site-header--bar">
       <div class="container header-inner header-inner--bar">
         <a class="brand" href="./index.html">Mashiro Visuals</a>
@@ -84,9 +84,9 @@
 
             </div>
           <div class="lang-switcher">
-            <select id="lang-select" class="lang-select" aria-label="Language">
+            <select id="lang-select" class="lang-select" data-i18n-aria="common.langAria">
               <option value="en">English</option>
-              <option value="zh-TW">繁體中文</option>
+              <option value="zh-TW">中文</option>
               <option value="ja">日本語</option>
               <option value="ko">한국어</option>
               <option value="ru">Русский</option>
@@ -239,10 +239,11 @@
       </div>
       <div class="plan-detail-hero">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80"
-          alt="Tokyo pre-wedding bouquet portrait"
-          width="1600"
-          height="857"
+          src="./images/plan/tokyo-prewedding-cover.jpg"
+          alt=""
+          data-i18n-alt="plan.pageTokyo.heroAlt"
+          width="682"
+          height="1024"
           loading="eager"
           decoding="async"
         />
@@ -253,126 +254,139 @@
           <span class="plan-chip" data-i18n="plan.pkg.tokyo.cardTag2"></span>
         </div>
         <h1 data-i18n="plan.pkg.tokyo.title"></h1>
-        <p class="plan-detail-body">
-          Choose your experience level below. Each tier is a complete Tokyo prewedding package with clear scope,
-          then we tailor routing and timing to your dates and light.
-        </p>
-        <p class="plan-detail-lead--kanto">
-          <a href="./book.html?location=tokyo">Guided booking path</a>
-          — the same decisions in a calmer, step-by-step flow (no checkout on the site).
-        </p>
+        <p class="plan-detail-body" data-i18n="plan.pageTokyo.bodyIntro"></p>
+        <p class="plan-detail-lead--kanto" data-i18n-html="plan.pageTokyo.guidedHtml"></p>
 
-        <section class="plan-sales-ladder plan-sales-ladder--embedded" aria-label="Tokyo prewedding tiers">
+        <section
+          class="plan-sales-ladder plan-sales-ladder--embedded"
+          data-i18n-aria="plan.pageTokyo.ladderAria"
+        >
           <div class="plan-sales-ladder__head">
-            <p class="plan-sales-ladder__eyebrow">Step two</p>
-            <h2 class="plan-sales-ladder__title">Choose your Tokyo experience level</h2>
+            <p class="plan-sales-ladder__eyebrow" data-i18n="plan.pageTokyo.stepEyebrow"></p>
+            <h2 class="plan-sales-ladder__title" data-i18n="plan.pageTokyo.ladderTitle"></h2>
           </div>
           <div class="plan-sales-ladder__grid">
             <article class="plan-tier-card plan-tier-card--entry">
-              <p class="plan-tier-card__badge">Entry</p>
-              <p class="plan-tier-card__name">Tokyo Prewedding Essential</p>
-              <p class="plan-tier-card__price">Price: ¥148,000</p>
+              <p class="plan-tier-card__badge" data-i18n="plan.pageTokyo.badgeEntry"></p>
+              <p class="plan-tier-card__name" data-i18n="plan.pageTokyo.nameEssential"></p>
+              <p class="plan-tier-card__price" data-i18n="plan.pageTokyo.priceEssential"></p>
               <ul>
-                <li>1 location (daytime)</li>
-                <li>1 styling look</li>
-                <li>Focused, efficient Tokyo coverage</li>
+                <li data-i18n="plan.pageTokyo.entryLi1"></li>
+                <li data-i18n="plan.pageTokyo.entryLi2"></li>
+                <li data-i18n="plan.pageTokyo.entryLi3"></li>
               </ul>
-              <a class="plan-tier-card__link" href="./contact.html">Inquire about Essential</a>
+              <a class="plan-tier-card__link" href="./contact.html" data-i18n="plan.pageTokyo.ctaEssential"></a>
+              <a
+                class="plan-tier-card__book"
+                href="./reserve.html?package=tokyo"
+                data-i18n="plan.oneHour.bookNow"
+                >Book now</a
+              >
             </article>
             <article class="plan-tier-card plan-tier-card--featured plan-tier-card--mid">
-              <p class="plan-tier-card__badge">Upgrade</p>
-              <p class="plan-tier-card__pill">Most couples choose this option</p>
-              <p class="plan-tier-card__name">Tokyo Prewedding + Night</p>
-              <p class="plan-tier-card__price">Price: ¥198,000</p>
+              <p class="plan-tier-card__badge" data-i18n="plan.pageTokyo.badgeUpgrade"></p>
+              <p class="plan-tier-card__pill" data-i18n="plan.pageTokyo.pillMostPopular"></p>
+              <p class="plan-tier-card__name" data-i18n="plan.pageTokyo.nameNight"></p>
+              <p class="plan-tier-card__price" data-i18n="plan.pageTokyo.priceNight"></p>
               <ul>
-                <li>Daytime location plus Tokyo night shooting</li>
-                <li>1 styling look</li>
-                <li>Strong balance of clarity and atmosphere</li>
+                <li data-i18n="plan.pageTokyo.upgradeLi1"></li>
+                <li data-i18n="plan.pageTokyo.upgradeLi2"></li>
+                <li data-i18n="plan.pageTokyo.upgradeLi3"></li>
               </ul>
-              <a class="plan-tier-card__link plan-tier-card__link--primary" href="./contact.html">Inquire about + Night</a>
-              <p class="plan-tier-card__micro">Ideal when you want the city after dark without the full Signature scope.</p>
+              <a
+                class="plan-tier-card__link plan-tier-card__link--primary"
+                href="./contact.html"
+                data-i18n="plan.pageTokyo.ctaNight"
+              ></a>
+              <a
+                class="plan-tier-card__book"
+                href="./reserve.html?package=tokyo"
+                data-i18n="plan.oneHour.bookNow"
+                >Book now</a
+              >
+              <p class="plan-tier-card__micro" data-i18n="plan.pageTokyo.microNight"></p>
             </article>
             <article class="plan-tier-card plan-tier-card--premium">
-              <p class="plan-tier-card__badge">Premium</p>
-              <p class="plan-tier-card__name">Tokyo Signature</p>
-              <p class="plan-tier-card__price">Price: ¥248,000</p>
+              <p class="plan-tier-card__badge" data-i18n="plan.pageTokyo.badgePremium"></p>
+              <p class="plan-tier-card__name" data-i18n="plan.pageTokyo.nameSignature"></p>
+              <p class="plan-tier-card__price" data-i18n="plan.pageTokyo.priceSignature"></p>
               <ul>
-                <li>Up to 3 locations</li>
-                <li>Day + night shooting</li>
-                <li>2 styling looks</li>
-                <li>Full-day storytelling across Tokyo</li>
+                <li data-i18n="plan.pageTokyo.premiumLi1"></li>
+                <li data-i18n="plan.pageTokyo.premiumLi2"></li>
+                <li data-i18n="plan.pageTokyo.premiumLi3"></li>
+                <li data-i18n="plan.pageTokyo.premiumLi4"></li>
               </ul>
-              <p class="plan-tier-card__micro">Our most complete Tokyo narrative—more scenes, more wardrobe, more room to breathe.</p>
-              <a class="plan-tier-card__link" href="./contact.html">Inquire about Signature</a>
+              <p class="plan-tier-card__micro" data-i18n="plan.pageTokyo.microSignature"></p>
+              <a class="plan-tier-card__link" href="./contact.html" data-i18n="plan.pageTokyo.ctaSignature"></a>
+              <a
+                class="plan-tier-card__book"
+                href="./reserve.html?package=tokyo"
+                data-i18n="plan.oneHour.bookNow"
+                >Book now</a
+              >
             </article>
           </div>
         </section>
 
-        <section class="plan-detail-rich" aria-label="Tokyo prewedding details">
-          <h2 class="plan-detail-rich__title">Tokyo prewedding experience</h2>
-          <p>
-            No fixed tourist route. We shape the day around light, crowd flow, and how you move together—sometimes
-            quiet and minimal, sometimes cinematic and bold.
-          </p>
-          <p>Hours, locations, and deliverables follow the tier you select above; we confirm every detail at booking.</p>
+        <section class="plan-detail-rich" data-i18n-aria="plan.pageTokyo.richAria">
+          <h2 class="plan-detail-rich__title" data-i18n="plan.pageTokyo.richH2"></h2>
+          <p data-i18n="plan.pageTokyo.richP1"></p>
+          <p data-i18n="plan.pageTokyo.richP2"></p>
 
           <div class="plan-detail-grid">
             <section class="plan-detail-block">
-              <h3>What is included</h3>
+              <h3 data-i18n="plan.pageTokyo.incH"></h3>
               <ul>
-                <li>Location planning based on season and light</li>
-                <li>Professional hair and makeup</li>
-                <li>Styling guidance for both of you</li>
-                <li>Private transportation during the shoot</li>
+                <li data-i18n="plan.pageTokyo.incLi1"></li>
+                <li data-i18n="plan.pageTokyo.incLi2"></li>
+                <li data-i18n="plan.pageTokyo.incLi3"></li>
+                <li data-i18n="plan.pageTokyo.incLi4"></li>
               </ul>
             </section>
 
             <section class="plan-detail-block">
-              <h3>Styling options</h3>
+              <h3 data-i18n="plan.pageTokyo.styleH"></h3>
               <ul>
-                <li><strong>Wedding dress x2</strong> — clean, modern, editorial moods.</li>
-                <li><strong>Wedding dress + kimono</strong> — contemporary and traditional balance.</li>
-                <li><strong>Wedding dress + traditional kimono</strong> — shiromuku / iro-uchikake styling.</li>
+                <li data-i18n-html="plan.pageTokyo.styleLi1Html"></li>
+                <li data-i18n-html="plan.pageTokyo.styleLi2Html"></li>
+                <li data-i18n-html="plan.pageTokyo.styleLi3Html"></li>
               </ul>
             </section>
 
             <section class="plan-detail-block">
-              <h3>Prepare for the day</h3>
+              <h3 data-i18n="plan.pageTokyo.prepH"></h3>
               <ul>
-                <li><strong>Groom:</strong> suit, shirt, shoes</li>
-                <li><strong>Bride:</strong> innerwear (NuBra recommended), heels or comfortable shoes</li>
-                <li>We walk you through everything before the shoot so the day feels calm.</li>
+                <li data-i18n-html="plan.pageTokyo.prepLi1Html"></li>
+                <li data-i18n-html="plan.pageTokyo.prepLi2Html"></li>
+                <li data-i18n="plan.pageTokyo.prepLi3"></li>
               </ul>
             </section>
 
             <section class="plan-detail-block">
-              <h3>Photo delivery</h3>
+              <h3 data-i18n="plan.pageTokyo.photoH"></h3>
               <ul>
-                <li>Original files on a fast timeline, with a retouch selection step</li>
-                <li>Final edited set delivered via online gallery</li>
-                <li>Exact counts and turnaround are quoted for your tier</li>
+                <li data-i18n="plan.pageTokyo.photoLi1"></li>
+                <li data-i18n="plan.pageTokyo.photoLi2"></li>
+                <li data-i18n="plan.pageTokyo.photoLi3"></li>
               </ul>
             </section>
           </div>
 
           <section class="plan-detail-block">
-            <h3>Optional</h3>
-            <p>Behind-the-scenes video can be added; delivery follows your final photo set.</p>
+            <h3 data-i18n="plan.pageTokyo.optH"></h3>
+            <p data-i18n="plan.pageTokyo.optP"></p>
           </section>
 
           <section class="plan-detail-block">
-            <h3>About the photographer</h3>
-            <p>
-              Based in Tokyo. Direction stays light and honest so the images feel like you—still refined and
-              cinematic on the wall.
-            </p>
+            <h3 data-i18n="plan.pageTokyo.aboutH"></h3>
+            <p data-i18n="plan.pageTokyo.aboutP"></p>
           </section>
 
           <div class="plan-detail-more">
-            <h3>Other destinations</h3>
-            <p>Browse Mt. Fuji, Hokkaido, and Shonan when you want a different landscape from the city.</p>
+            <h3 data-i18n="plan.pageTokyo.destH"></h3>
+            <p data-i18n="plan.pageTokyo.destP"></p>
             <p>
-              <a class="plan-detail-more__link" href="./plan.html">Back to all prewedding locations</a>
+              <a class="plan-detail-more__link" href="./plan.html" data-i18n="plan.pageTokyo.destLink"></a>
             </p>
           </div>
         </section>
