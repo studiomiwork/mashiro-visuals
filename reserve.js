@@ -144,7 +144,7 @@
     kansai: 238000,
     hokkaido: 308000,
     traditional: 138000,
-    one_hour: 50000,
+    one_hour: 39800,
   };
   var KANTO_ROUTE_EX = { tk: 60000, fh: 80000 };
   var DRESS = { dress0: 0, dress1: 20000, dress2: 40000, dress3: 60000 };
