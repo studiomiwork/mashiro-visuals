@@ -3866,6 +3866,7 @@ textarea {
 .page-home .home-end-tiles__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
   gap: clamp(0.9rem, 2vw, 1.35rem);
   position: relative;
   z-index: 1;
@@ -3900,19 +3901,11 @@ textarea {
   pointer-events: none;
 }
 
-.page-home .home-end-tile:nth-child(2) {
-  transform: translateY(clamp(18px, 2.8vw, 34px));
-}
-
 .page-home .home-end-tile:hover {
   transform: translateY(-4px);
   box-shadow: 0 22px 50px rgb(31 31 28 / 0.16);
   background:
     linear-gradient(180deg, rgb(43 45 49) 0%, rgb(28 30 34) 100%);
-}
-
-.page-home .home-end-tile:nth-child(2):hover {
-  transform: translateY(clamp(14px, 2.3vw, 30px));
 }
 
 .page-home .home-end-tile__copy {
@@ -4429,13 +4422,11 @@ textarea {
     font-size: clamp(3.6rem, 18vw, 5.8rem);
   }
 
-  .page-home .home-end-tile,
-  .page-home .home-end-tile:nth-child(2) {
+  .page-home .home-end-tile {
     transform: none;
   }
 
-  .page-home .home-end-tile:hover,
-  .page-home .home-end-tile:nth-child(2):hover {
+  .page-home .home-end-tile:hover {
     transform: translateY(-3px);
   }
 
